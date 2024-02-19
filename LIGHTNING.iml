@@ -7,5 +7,22 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/11- Dependency JARS/flatlaf-3.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/11- Dependency JARS/flatlaf-jide-oss-3.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/11- Dependency JARS/flatlaf-swingx-3.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/11- Dependency JARS/jide-oss-3.7.14.jar!/" />
+          <root url="jar://$MODULE_DIR$/11- Dependency JARS/miglayout-core-11.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/11- Dependency JARS/miglayout-swing-11.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/11- Dependency JARS/swingx-all-1.6.5-1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/11- Dependency JARS/swingx-all-1.6.5-1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
