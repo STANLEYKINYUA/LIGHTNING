@@ -36,7 +36,19 @@ public class Main {
             //try setting the Default look and Feel to use FlatLaf MACOS Light.
             UIManager.setLookAndFeel(new FlatMacLightLaf());
 
-            //Load the SplashScreen.
+            //Load the SplashScreen. - Create the EventQueue to Load the Splash Screen Form
+            java.awt.EventQueue.invokeLater(new Runnable() {
+                @Override
+                public void run()
+                {
+                    // Load Splash Screen with GlassMorphism Effect and Wait 5 - 7 seconds
+
+                    // Load Login Form in the Background.
+
+                    // Close Splash Screen.
+
+                }
+            });
         }
         catch(Exception EX)
         {
