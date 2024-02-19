@@ -1,3 +1,23 @@
+/*
+*   PROGRAM     :  LIGHTNING TRADER WORKSTATION.
+*
+*   AUTHOR      :   STANLEY ANDREW KINYUA
+*
+*   PURPOSE     :   An advanced Trading Platform that integrates seamlessly with multiple Brokers and Execution Venues
+*                   and allows for Trades, Orders and Positions to be managed from a singular point thus improving
+*                   efficiency and allowing for new features such as Liquidity Sourcing + Leverage Management  and
+*                   Improved reporting after Trading periods are over.
+*
+*   LICENSE     :   None
+*
+*   COPYRIGHT   :   2024.
+*
+*
+*
+*
+* */
+
+
 import com.formdev.flatlaf.themes.FlatMacLightLaf;
 
 import javax.swing.*;
