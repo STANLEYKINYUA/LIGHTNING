@@ -19,7 +19,6 @@
 
 
 import com.formdev.flatlaf.themes.FlatMacLightLaf;
-
 import javax.swing.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -53,7 +52,7 @@ public class Main {
         catch(Exception EX)
         {
             //print out the exception.
-            System.out.println("Failed to Load SplashScreen with Exception" + EX);
+            EX.printStackTrace();
         }
 
 
