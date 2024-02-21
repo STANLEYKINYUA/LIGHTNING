@@ -40,7 +40,7 @@ public class Splash_Screen_Window extends JFrame
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         //Set the size and the placement of the window.
-        this.setBounds(200,200,300,200);
+        this.setBounds(400,250,600,300);
 
         //Create a Label and add it's parametres
         JLabel SplashScreen_Label = new JLabel("LIGHTNING TRADER WORKSTATION");
