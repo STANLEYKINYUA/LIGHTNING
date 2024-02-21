@@ -19,6 +19,7 @@
 
 
 import aa_UI_Login_and_Startup_Windows.Splash_Screen_Window;
+import com.formdev.flatlaf.themes.FlatMacDarkLaf;
 import com.formdev.flatlaf.themes.FlatMacLightLaf;
 import javax.swing.*;
 
@@ -34,7 +35,8 @@ public class Main {
         try
         {
             //try setting the Default look and Feel to use FlatLaf MACOS Light.
-            UIManager.setLookAndFeel(new FlatMacLightLaf());
+            UIManager.setLookAndFeel(new FlatMacDarkLaf());
+
 
             //Load the SplashScreen. - Create the EventQueue to Load the Splash Screen Form
             java.awt.EventQueue.invokeLater(new Runnable() {
