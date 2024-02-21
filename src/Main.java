@@ -18,6 +18,7 @@
 * */
 
 
+import aa_UI_Login_and_Startup_Windows.Splash_Screen_Window;
 import com.formdev.flatlaf.themes.FlatMacLightLaf;
 import javax.swing.*;
 
@@ -41,6 +42,8 @@ public class Main {
                 public void run()
                 {
                     // Load Splash Screen with GlassMorphism Effect and Wait 5 - 7 seconds
+                    JFrame Splash_Screen = new Splash_Screen_Window();
+                    Splash_Screen.setVisible(true);
 
                     // Load Login Form in the Background.
 
