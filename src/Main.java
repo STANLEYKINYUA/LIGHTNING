@@ -28,7 +28,7 @@ public class Main {
     public static void main(String[] args)
     {
         //Hello World to prove that the program works.
-        System.out.println("HELLO WORLD!!");
+        System.out.println("BUILD SUCCESS!!");
 
         //Start the Swing Application with  a try catch block.
         try
