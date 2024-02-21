@@ -19,6 +19,10 @@
 
 
 import aa_UI_Login_and_Startup_Windows.Splash_Screen_Window;
+import com.formdev.flatlaf.fonts.inter.FlatInterFont;
+import com.formdev.flatlaf.fonts.jetbrains_mono.FlatJetBrainsMonoFont;
+import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
+import com.formdev.flatlaf.fonts.roboto_mono.FlatRobotoMonoFont;
 import com.formdev.flatlaf.themes.FlatMacDarkLaf;
 import com.formdev.flatlaf.themes.FlatMacLightLaf;
 import javax.swing.*;
@@ -33,8 +37,18 @@ public class Main {
         //Start the Swing Application with  a try catch block.
         try
         {
+            //Install Font Packs
+            FlatRobotoMonoFont.install();
+            FlatRobotoFont.install();
+            FlatInterFont.install();
+            FlatJetBrainsMonoFont.install();
+
+            //Set the Themes File. - Set Dark Theme
+            FlatMacDarkLaf.registerCustomDefaultsSource("aa_Themes.Dark_Theme_MacOS_Default");
+
             //try setting the Default look and Feel to use FlatLaf MACOS Light.
-            UIManager.setLookAndFeel(new FlatMacDarkLaf());
+            //UIManager.setLookAndFeel(new FlatMacDarkLaf());
+            FlatMacDarkLaf.setup();
 
 
             //Load the SplashScreen. - Create the EventQueue to Load the Splash Screen Form
