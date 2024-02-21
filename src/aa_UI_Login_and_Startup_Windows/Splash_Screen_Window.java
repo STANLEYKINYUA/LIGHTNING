@@ -11,12 +11,9 @@
 
 package aa_UI_Login_and_Startup_Windows;
 
-import com.formdev.flatlaf.FlatClientProperties;
-import com.formdev.flatlaf.fonts.inter.FlatInterFont;
+
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
-import com.formdev.flatlaf.fonts.roboto_mono.FlatRobotoMonoFont;
-import com.formdev.flatlaf.themes.FlatMacLightLaf;
-import net.miginfocom.swing.MigLayout;
+
 
 import javax.swing.*;
 import java.awt.*;
@@ -36,6 +33,9 @@ public class Splash_Screen_Window extends JFrame
         // The window is not expandable
         this.setResizable(false);
 
+        //  Set the Opacity via flatlaf
+
+
         // SetLayout
         this.setLayout(null);
 
@@ -45,7 +45,7 @@ public class Splash_Screen_Window extends JFrame
         //Set the size and the placement of the window.
         this.setBounds(400,250,600,300);
 
-        //Create a Label and add it's parameters
+        //Create a Label and add its parameters
         JLabel SplashScreen_Label = new JLabel("LIGHTNING TRADER WORKSTATION");
         SplashScreen_Label.setBounds(150,50,400,30);
 
