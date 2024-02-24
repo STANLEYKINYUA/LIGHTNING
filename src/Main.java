@@ -71,6 +71,9 @@ public class Main {
         {
             //print out the exception.
             EX.printStackTrace();
+
+            //Draw an Alert Window that shows the full exception Message.
+
         }
 
 
