@@ -34,36 +34,33 @@ public class Main {
         //Hello World to prove that the program works.
         System.out.println("BUILD SUCCESS!!");
 
+        //Install Font Packs
+        FlatRobotoMonoFont.install();
+        FlatRobotoFont.install();
+        FlatInterFont.install();
+        FlatJetBrainsMonoFont.install();
+
         // Read Config File and determine whether to load Dark/ Light Mode
 
         //Load and Start
-        init();
+        init_dark_theme();
 
 
 
 
     }
 
-    static void init()
+    static void init_dark_theme()
     {
         //Start the Swing Application with  a try catch block.
         try
         {
-            //Install Font Packs
-            FlatRobotoMonoFont.install();
-            FlatRobotoFont.install();
-            FlatInterFont.install();
-            FlatJetBrainsMonoFont.install();
-
-            // Read Default Config File and Set THE THEME.
-
+            
             //Set the Themes File. - Set Dark Theme
             FlatMacDarkLaf.registerCustomDefaultsSource("aa_Themes.Dark_Theme_MacOS_Default");
 
-            //try setting the Default look and Feel to use FlatLaf MACOS Light.
             //UIManager.setLookAndFeel(new FlatMacDarkLaf());
             FlatMacDarkLaf.setup();
-
 
             //Load the SplashScreen. - Create the EventQueue to Load the Splash Screen Form
             java.awt.EventQueue.invokeLater(new Runnable() {
