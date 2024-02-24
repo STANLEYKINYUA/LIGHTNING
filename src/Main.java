@@ -43,6 +43,8 @@ public class Main {
             FlatInterFont.install();
             FlatJetBrainsMonoFont.install();
 
+            // Read Default Config File and Set THE THEME.
+            
             //Set the Themes File. - Set Dark Theme
             FlatMacDarkLaf.registerCustomDefaultsSource("aa_Themes.Dark_Theme_MacOS_Default");
 
