@@ -34,6 +34,18 @@ public class Main {
         //Hello World to prove that the program works.
         System.out.println("BUILD SUCCESS!!");
 
+        // Read Config File and determine whether to load Dark/ Light Mode
+
+        //Load and Start
+        init();
+
+
+
+
+    }
+
+    static void init()
+    {
         //Start the Swing Application with  a try catch block.
         try
         {
@@ -44,7 +56,7 @@ public class Main {
             FlatJetBrainsMonoFont.install();
 
             // Read Default Config File and Set THE THEME.
-            
+
             //Set the Themes File. - Set Dark Theme
             FlatMacDarkLaf.registerCustomDefaultsSource("aa_Themes.Dark_Theme_MacOS_Default");
 
@@ -78,6 +90,8 @@ public class Main {
 
         }
 
-
     }
+
+
+
 }
