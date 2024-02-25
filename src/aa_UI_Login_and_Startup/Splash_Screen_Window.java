@@ -9,12 +9,10 @@
     USE     -   Draws a splash Screen that will be used during App Startup.
 */
 
-package aa_UI_Login_and_Startup_Windows;
+package aa_UI_Login_and_Startup;
 
 
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
-
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -42,6 +40,7 @@ public class Splash_Screen_Window extends JFrame
         //Set Close action to exit
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
+
         //Set the size and the placement of the window.
         this.setBounds(400,250,600,300);
 
@@ -54,6 +53,20 @@ public class Splash_Screen_Window extends JFrame
 
         //add the Label to the Form
         this.add(SplashScreen_Label);
+
+        //Create a Button that loads the
+        JButton ENTER_APPLICATION_BUTTON = new JButton();
+        ENTER_APPLICATION_BUTTON.setText("ENTER");
+        ENTER_APPLICATION_BUTTON.setBounds(200,100,100,60);
+
+
+        //Add the button to the Form
+        this.add(ENTER_APPLICATION_BUTTON);
+
+
+
+
+
 
 
 

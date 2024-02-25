@@ -1,4 +1,4 @@
 package INPUT_OUTPUT;
 
-public class File_Access {
+public abstract class File_Access {
 }

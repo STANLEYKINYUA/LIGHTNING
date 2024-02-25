@@ -9,10 +9,11 @@
 *               2.  Redirects to Registration Window allowing us to register.
 *
 * */
-package aa_UI_Login_and_Startup_Windows;
+package aa_UI_Login_and_Startup;
 
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import net.miginfocom.swing.MigLayout;
+import org.jdesktop.swingx.JXHyperlink;
 
 import javax.swing.*;
 import java.awt.*;
@@ -29,7 +30,7 @@ public class Login_Window extends JFrame
         //This Window is not expandable.
         this.setResizable(false);
 
-        //Create an Opacity for glassmorphism.
+       // Create a transparency effect
 
         //set Layout to MigLayout.
         this.setLayout(new MigLayout());
@@ -52,11 +53,33 @@ public class Login_Window extends JFrame
 
             // USERNAME Label with Validation
         JLabel Usr_Name_Label = new JLabel("USER NAME");
+        Usr_Name_Label.setText("USER NAME");
         this.add(Usr_Name_Label);
 
             // TextField for Username with Default Text
         JTextPane User_Name_Text_Pane = new JTextPane();
+        User_Name_Text_Pane.setText("Enter User Name");
+        this.add(User_Name_Text_Pane);
 
+            // Password Field for User
+        JPasswordField User_Password = new JPasswordField();
+        User_Password.setText("Enter Password");
+        this.add(User_Password);
+
+            //Login Button
+        JButton Login_Button = new JButton();
+        Login_Button.setText("LOGIN");
+        this.add(Login_Button);
+
+            // HyperLink for Forgot Password
+        JXHyperlink Forgot_Password = new JXHyperlink();
+        this.add(Forgot_Password);
+
+            // Registration Button.
+        JButton Create_Account_Button = new JButton();
+        Create_Account_Button.setText("Create Account");
+        Create_Account_Button.setFont(new Font(FlatRobotoFont.FAMILY , Font.PLAIN , 12));
+        this.add(Create_Account_Button);
 
 
             //  Login Password Label

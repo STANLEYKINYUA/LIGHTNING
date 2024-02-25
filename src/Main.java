@@ -18,13 +18,13 @@
 * */
 
 
-import aa_UI_Login_and_Startup_Windows.Splash_Screen_Window;
+import aa_UI_Login_and_Startup.Splash_Screen_Window;
 import com.formdev.flatlaf.fonts.inter.FlatInterFont;
 import com.formdev.flatlaf.fonts.jetbrains_mono.FlatJetBrainsMonoFont;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import com.formdev.flatlaf.fonts.roboto_mono.FlatRobotoMonoFont;
 import com.formdev.flatlaf.themes.FlatMacDarkLaf;
-import com.formdev.flatlaf.themes.FlatMacLightLaf;
+
 import javax.swing.*;
 
 
@@ -40,6 +40,10 @@ public class Main {
         FlatInterFont.install();
         FlatJetBrainsMonoFont.install();
 
+
+
+
+
         // Read Config File and determine whether to load Dark/ Light Mode
 
         //Load and Start
@@ -48,14 +52,19 @@ public class Main {
 
 
 
+
+
+
+
     }
 
+    //Dark Theme Initialization
     static void init_dark_theme()
     {
         //Start the Swing Application with  a try catch block.
         try
         {
-            
+
             //Set the Themes File. - Set Dark Theme
             FlatMacDarkLaf.registerCustomDefaultsSource("aa_Themes.Dark_Theme_MacOS_Default");
 
@@ -71,7 +80,8 @@ public class Main {
                     JFrame Splash_Screen = new Splash_Screen_Window();
                     Splash_Screen.setVisible(true);
 
-                    // Load Login Form in the Background.
+                    // Timer CountDown
+
 
                     // Close Splash Screen.
 
@@ -88,6 +98,10 @@ public class Main {
         }
 
     }
+
+    // Light Theme Initialization
+    static void init_light_theme(){}
+
 
 
 
