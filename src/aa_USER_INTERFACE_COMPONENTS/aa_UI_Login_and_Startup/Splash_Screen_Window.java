@@ -64,7 +64,14 @@ public class Splash_Screen_Window extends JFrame
         this.add(ENTER_APPLICATION_BUTTON);
 
 
-        // 
+        //TODO  Create Event Listener for SplashScreen Button
+
+
+
+        // Create Event Listener for Button.
+
+
+        //TODO  Respond to Button Click and Open next Form
 
 
 
@@ -78,6 +85,8 @@ public class Splash_Screen_Window extends JFrame
 
 
     }
+
+
 
 
 

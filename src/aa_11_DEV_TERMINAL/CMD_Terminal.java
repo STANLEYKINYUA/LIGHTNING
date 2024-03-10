@@ -8,13 +8,13 @@ public class CMD_Terminal
 
     public CMD_Terminal()
     {
+        //TODO  Create Window and Set Window Parameters
 
-        //Create Window and Set Window Parametres
+        //TODO  Add Large TextBox
 
-        //Add Large TextBox
+        //TODO  Set Default Color of Text in textbox to :
 
-        //Set Default Color of Text in textbox to :
-        // Set default color of Commands in textbox to
+        //TODO  Set default color of Commands in textbox to
 
 
     }
