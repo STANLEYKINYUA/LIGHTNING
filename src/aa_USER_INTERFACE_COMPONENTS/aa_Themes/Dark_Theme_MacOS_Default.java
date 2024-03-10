@@ -4,7 +4,7 @@
 *   purpose :
 *               * Default Dark theme that Describes how features look like.
 */
-package aa_Themes;
+package aa_USER_INTERFACE_COMPONENTS.aa_Themes;
 
 import com.formdev.flatlaf.themes.FlatMacDarkLaf;
 

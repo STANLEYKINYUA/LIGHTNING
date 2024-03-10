@@ -5,10 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/FEED/cTrader_FEED/cTrader_Feed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_11_DEV_TERMINAL/CMD_Terminal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_11_DEV_TERMINAL/CMD_Terminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_11_DEV_TERMINAL/CMD_Terminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_Themes/Dark_Theme_MacOS_Default.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_Themes/Dark_Theme_MacOS_Default.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_Themes/Dark_Theme_MacOS_Default.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_Themes/Dark_Theme_MacOS_Default.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_Themes/Light_Theme_MacOS_Default.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_Themes/Light_Theme_MacOS_Default.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_Themes/Light_Theme_MacOS_Default.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_Themes/Light_Theme_MacOS_Default.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI_Charts_and_Charting_Engine/Chart_Type_CANDLE_STICK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_and_Charting_Engine/Chart_Type_CANDLE_STICK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI_Charts_and_Charting_Engine/Chart_Type_RANGE_BAR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_and_Charting_Engine/Chart_Type_RANGE_BAR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI_Charts_and_Charting_Engine/Chart_Type_RANGE_BAR_TIME_THICKNESS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_and_Charting_Engine/Chart_Type_RANGE_BAR_TIME_THICKNESS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI_Charts_and_Charting_Engine/Chart_Type_RENKO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_and_Charting_Engine/Chart_Type_RENKO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI_Charts_and_Charting_Engine/Chart_Type_RENKO_MEDIAN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_and_Charting_Engine/Chart_Type_RENKO_MEDIAN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI_Charts_and_Charting_Engine/Chart_Type_RENKO_TIME_THICKNESS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_and_Charting_Engine/Chart_Type_RENKO_TIME_THICKNESS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI_Charts_and_Charting_Engine/INDICATOR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_and_Charting_Engine/INDICATOR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI_Charts_and_Charting_Engine/XY_CHART.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_and_Charting_Engine/XY_CHART.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI_Login_and_Startup/Account_Recovery_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Login_and_Startup/Account_Recovery_Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI_Login_and_Startup/Login_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Login_and_Startup/Login_Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI_Login_and_Startup/Registration_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Login_and_Startup/Registration_Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI_Login_and_Startup/Splash_Screen_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Login_and_Startup/Splash_Screen_Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI_Main_Operational_Windows/DASHBOARD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Main_Operational_Windows/DASHBOARD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI_Main_Operational_Windows/Portfolio_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Main_Operational_Windows/Portfolio_Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI_Main_Operational_Windows/Settings_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Main_Operational_Windows/Settings_Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI_Trading_and_Trading_WorkFlow_Windows/Order_Entry_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Trading_and_Trading_WorkFlow_Windows/Order_Entry_Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI_Trading_and_Trading_WorkFlow_Windows/Order_Manager_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Trading_and_Trading_WorkFlow_Windows/Order_Manager_Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI_Trading_and_Trading_WorkFlow_Windows/Scanner_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Trading_and_Trading_WorkFlow_Windows/Scanner_Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,25 +91,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/11- Dependency JARS/swingx-all-1.6.5-1.jar",
-    "onboarding.tips.debug.path": "E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.46206897",
-    "settings.editor.selected.configurable": "settings.sync"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/11- Dependency JARS/swingx-all-1.6.5-1.jar&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.46206897&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\111 - REPO - MKU PROJECT REPO\LIGHTNING\src\aa_Themes" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="aa_USER_INTERFACE_COMPONENTS" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

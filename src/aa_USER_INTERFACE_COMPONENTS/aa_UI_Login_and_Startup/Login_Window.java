@@ -9,7 +9,7 @@
 *               2.  Redirects to Registration Window allowing us to register.
 *
 * */
-package aa_UI_Login_and_Startup;
+package aa_USER_INTERFACE_COMPONENTS.aa_UI_Login_and_Startup;
 
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import net.miginfocom.swing.MigLayout;

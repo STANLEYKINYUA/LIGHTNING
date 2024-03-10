@@ -5,12 +5,16 @@ public class CMD_Terminal
 
     String Current_Command;
 
-    //Constructor for Terminal Class
+
     public CMD_Terminal()
     {
-        //Plot Window.
+
+        //Create Window and Set Window Parametres
 
         //Add Large TextBox
+
+        //Set Default Color of Text in textbox to :
+        // Set default color of Commands in textbox to
 
 
     }
@@ -21,6 +25,7 @@ public class CMD_Terminal
     //Event Handler that is Listening for Press of Enter Key.
 
 
+    // Function that prints Information to the commandline.
 
     // Function to Accept Terminal Command from Command Line and Intepret It.
     void Interpret( String Message)

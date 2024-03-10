@@ -18,7 +18,7 @@
 * */
 
 
-import aa_UI_Login_and_Startup.Splash_Screen_Window;
+import aa_USER_INTERFACE_COMPONENTS.aa_UI_Login_and_Startup.Splash_Screen_Window;
 import com.formdev.flatlaf.fonts.inter.FlatInterFont;
 import com.formdev.flatlaf.fonts.jetbrains_mono.FlatJetBrainsMonoFont;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
@@ -61,7 +61,7 @@ public class Main {
         {
 
             //Set the Themes File. - Set Dark Theme
-            FlatMacDarkLaf.registerCustomDefaultsSource("aa_Themes.Dark_Theme_MacOS_Default");
+            FlatMacDarkLaf.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.aa_Themes.Dark_Theme_MacOS_Default");
 
             //UIManager.setLookAndFeel(new FlatMacDarkLaf());
             FlatMacDarkLaf.setup();

@@ -9,7 +9,7 @@
     USE     -   Draws a splash Screen that will be used during App Startup.
 */
 
-package aa_UI_Login_and_Startup;
+package aa_USER_INTERFACE_COMPONENTS.aa_UI_Login_and_Startup;
 
 
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
@@ -62,6 +62,9 @@ public class Splash_Screen_Window extends JFrame
 
         //Add the button to the Form
         this.add(ENTER_APPLICATION_BUTTON);
+
+
+        // 
 
 
 
