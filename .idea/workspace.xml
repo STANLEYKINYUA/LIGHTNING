@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/INPUT_OUTPUT/OS_MacOS_File_Access.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/INPUT_OUTPUT/OS_Windows_File_Access.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_UI_Charts_and_Charting_Engine/Chart_Type_RANGE_BAR_TIME_THICKNESS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_UI_Charts_and_Charting_Engine/Chart_Type_RENKO_TIME_THICKNESS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_UI_Charts_and_Charting_Engine/XY_CHART.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_UI_Trading_and_Trading_WorkFlow_Windows/Order_Entry_Window.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_UI_Trading_and_Trading_WorkFlow_Windows/Order_Manager_Window.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FEED/cTrader_FEED/cTrader_Feed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_11_DEV_TERMINAL/CMD_Terminal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/INPUT_OUTPUT/File_Access.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/INPUT_OUTPUT/File_Access.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI_Charts_and_Charting_Engine/Chart_Type_RENKO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI_Charts_and_Charting_Engine/Chart_Type_RENKO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI_Login_and_Startup_Windows/Login_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI_Login_and_Startup_Windows/Login_Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI_Login_and_Startup_Windows/Splash_Screen_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI_Login_and_Startup_Windows/Splash_Screen_Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI_Main_Operational_Windows/DashBoard_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI_Main_Operational_Windows/DASHBOARD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI_Main_Operational_Windows/Scanner_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI_Trading_and_Trading_WorkFlow_Windows/Scanner_Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +24,33 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="DEV" />
+                <branch-info repo="$PROJECT_DIR$" source="STABLE" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -68,7 +83,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.46206897",
-    "settings.editor.selected.configurable": "configurable.group.build"
+    "settings.editor.selected.configurable": "settings.sync"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -86,6 +101,42 @@
       <updated>1708333787626</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="DEV" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="STABLE" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
