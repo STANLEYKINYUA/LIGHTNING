@@ -57,22 +57,27 @@ public class Login_Window extends JFrame
         Usr_Name_Label.setText("USER NAME");
         this.add(Usr_Name_Label);
 
-            //UserName Text Box where User Name is Entered.
+            //UserName Text Box where UserName is Entered.
         JTextPane User_Name_Text_Pane = new JTextPane();
         User_Name_Text_Pane.setToolTipText("Enter User Name");
         this.add(User_Name_Text_Pane,"wrap");
+
+            //TODO  Mouse Listener that displays tooltip on Mouse enter Username Field
 
         //----------------------------------------------------------------------------
 
             // Password Field for User
         JLabel Password_Label = new JLabel();
-        Password_Label.setText("Enter Password");
+        Password_Label.setText("PASSWORD");
         this.add(Password_Label);
 
             //  Password Text Field
         JPasswordField User_Password = new JPasswordField();
-        User_Password.setToolTipText("Enter Password");
+        User_Password.setToolTipText("ENTER PASSWORD");
         this.add(User_Password,"span");
+
+        //TODO Create a Mouse Listener that opens tooltip on Hover.
+
         //----------------------------------------------------------------------------
 
             //Login Button
@@ -113,7 +118,7 @@ public class Login_Window extends JFrame
 
 
         //Hide the Login Window
-        this.hide();
+        this.dispose();
 
 
     }
@@ -127,7 +132,7 @@ public class Login_Window extends JFrame
 
 
         //Hide the Login Window
-        //this.hide();
+        this.dispose();
 
     }
 
