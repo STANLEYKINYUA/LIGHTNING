@@ -12,16 +12,12 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
     public MAIN_TRADING_WINDOW()
     {
-        //Initialize the
+        //Initialize the JFrame and show all Features.
         init_Trading_Window();
 
 
 
-        //TODO  Set Layout to MigLayout.
-        //TODO  Create a Menu System.
-        //TODO  Create a ToolBar
 
-        //TODO  Create A JDESKTOP Pane to Host MDI Windows
 
 
     }
@@ -36,7 +32,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
             //Load Window and Set Parametres.
 
             //1. Set Window Size and spawn Location.
-            this.setBounds(200,200,1000,1000);
+            this.setBounds(200,200,800,800);
 
             //2.    Set Window Close Action.
             this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -49,6 +45,47 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
             //5.    Set Default Font for the Frame as Roboto
             this.setFont(new Font(FlatRobotoFont.FAMILY ,Font.PLAIN ,12));
+
+            //TODO  Change Icon for this Window to Lightning and keep Frame Name.
+            this.setTitle("LIGHTNING WORKSTATION.");
+
+
+            //TODO  Create a Menu System.
+            JMenuBar Trading_Window_MenuBar = new JMenuBar();
+
+                    //Create Menus.
+                JMenu File_Menu         =   new JMenu("FILE");
+                JMenu Edit_Menu         =   new JMenu("EDIT");
+                JMenu Views_Menu        =   new JMenu("VIEWS");
+                JMenu Connections_Menu  =   new JMenu("CONNECTIONS");
+                JMenu Settings_Menu     =   new JMenu("SETTINGS");
+
+
+                    // Add the Menus to the MenuBar.
+                Trading_Window_MenuBar.add(File_Menu);
+                Trading_Window_MenuBar.add(Edit_Menu);
+                Trading_Window_MenuBar.add(Views_Menu);
+                Trading_Window_MenuBar.add(Connections_Menu);
+                Trading_Window_MenuBar.add(Settings_Menu);
+
+                    //TODO  Create Menu Items
+                    //TODO  Add Menu Items to Menu Bars
+                    //TODO  Add FlatLaf Specific Features
+                        //TODO   Add FLATLAF underline.
+                        //TODO   Add Flatlaf Color on Mouse Hover.
+
+                    //TODO  Display the Menu Bar
+                    this.setJMenuBar(Trading_Window_MenuBar);
+
+            //-------------------------------------------------------------------------------------------------------
+            //TODO  Create a ToolBar
+            JMenuBar Trading_Window_ToolBar = new JMenuBar();
+
+
+            //TODO  Create A JDESKTOP Pane to Host MDI Windows
+
+
+
 
         }
         catch(Exception Trading_Window_Exception)

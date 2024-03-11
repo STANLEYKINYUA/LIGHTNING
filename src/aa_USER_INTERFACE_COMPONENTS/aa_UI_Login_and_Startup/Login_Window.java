@@ -11,6 +11,7 @@
 * */
 package aa_USER_INTERFACE_COMPONENTS.aa_UI_Login_and_Startup;
 
+import aa_USER_INTERFACE_COMPONENTS.aa_UI_Main_Operational_Windows.MAIN_TRADING_WINDOW;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import net.miginfocom.swing.MigLayout;
 import org.jdesktop.swingx.JXHyperlink;
@@ -109,7 +110,9 @@ public class Login_Window extends JFrame
     void Display_Main_Trading_Window()
     {
         //Display the Trading Window using JDesktop Pane.
-        JFrame Main_Trading_Window = new JFrame();
+        JFrame Main_Trading_Window = new MAIN_TRADING_WINDOW();
+        Main_Trading_Window.setVisible(true);
+
 
         //Hide the Login Window
         this.hide();
