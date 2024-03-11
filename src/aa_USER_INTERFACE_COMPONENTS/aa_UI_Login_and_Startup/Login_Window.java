@@ -80,6 +80,8 @@ public class Login_Window extends JFrame
         this.add(Login_Button);
 
         //Event Listener for Login Button to Open Main Trading Window
+
+        //TODO  Create an exception Handling block to deal with Opening of Main trading Window
         Login_Button.addActionListener(e -> {Display_Main_Trading_Window();});
         //----------------------------------------------------------------------------
 
@@ -95,6 +97,8 @@ public class Login_Window extends JFrame
         this.add(Create_Account_Button);
 
         // Event Listener to display Registration Window.
+
+        //TODO  Create an Exception Handling Block to deal with this Opening of registration window.
         Create_Account_Button.addActionListener(e -> {Display_Registration_Window();});
 
 
@@ -104,8 +108,8 @@ public class Login_Window extends JFrame
     //Display THE Main Trading Window
     void Display_Main_Trading_Window()
     {
-        //Display the Trading Window
-        JDesktopPane Main_Trading_Window = new JDesktopPane();
+        //Display the Trading Window using JDesktop Pane.
+        JFrame Main_Trading_Window = new JFrame();
 
         //Hide the Login Window
         this.hide();
