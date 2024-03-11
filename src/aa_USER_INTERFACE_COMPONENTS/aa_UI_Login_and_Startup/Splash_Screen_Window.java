@@ -15,6 +15,7 @@ package aa_USER_INTERFACE_COMPONENTS.aa_UI_Login_and_Startup;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import javax.swing.*;
 import java.awt.*;
+import java.util.TimerTask;
 
 public class Splash_Screen_Window extends JFrame
 {
@@ -31,18 +32,14 @@ public class Splash_Screen_Window extends JFrame
         // The window is not expandable
         this.setResizable(false);
 
-        //  Set the Opacity via flatlaf
-
-
         // SetLayout
         this.setLayout(null);
 
         //Set Close action to exit
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-
         //Set the size and the placement of the window.
-        this.setBounds(400,250,600,300);
+        this.setBounds(200,250,600,300);
 
         //Create a Label and add its parameters
         JLabel SplashScreen_Label = new JLabel("LIGHTNING TRADER WORKSTATION");
@@ -64,27 +61,49 @@ public class Splash_Screen_Window extends JFrame
         this.add(ENTER_APPLICATION_BUTTON);
 
 
-        //TODO  Create Event Listener for SplashScreen Button
+        //Event Listener for Splash Screen that redirects to Login Form.
+        ENTER_APPLICATION_BUTTON.addActionListener(e -> {SHOW_LOGIN_FORM();});
+
+        //TODO  Respond to Button Click and Open next Form as well as dispose of this Form.
+
+        //TODO  Read Config File and Determine whether it is First Load / Other load
+
+        //TODO  Decide Whether to redirect towards Login Form or towards
 
 
-
-        // Create Event Listener for Button.
-
-
-        //TODO  Respond to Button Click and Open next Form
+    }
 
 
+    // This Function is used to dispose of this Form.
+    void SPLASH_SCREEN_FORM_HIDE()
+    {
+            // Dispose of this Form.
+            this.dispose();
 
+    }
 
-
-
-
-
-
+    //
+    void SHOW_REGISTRATION_WINDOW()
+    {
+        // Display Registration Form.
 
 
 
     }
+
+    void SHOW_LOGIN_FORM()
+    {
+        //Display the Login Form.
+        JFrame Login_Form = new Login_Window();
+        Login_Form.setVisible(true);
+
+        // hide Current Form.
+        SPLASH_SCREEN_FORM_HIDE();
+
+
+    }
+
+
 
 
 

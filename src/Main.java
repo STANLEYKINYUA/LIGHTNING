@@ -71,7 +71,7 @@ public class Main {
                 @Override
                 public void run()
                 {
-                    // Load Splash Screen with GlassMorphism Effect and Wait 5 - 7 seconds
+                    //Load Direct to the Splash Screen.
                     JFrame Splash_Screen = new Splash_Screen_Window();
                     Splash_Screen.setVisible(true);
 
