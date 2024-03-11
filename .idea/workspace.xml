@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/CONFIG_and_WORKSPACE/Chart_WorkSpace_Handler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CONFIG_and_WORKSPACE/System_Config_File_Handler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CONFIG_and_WORKSPACE/XML_CONFIG_FILE_PARSER.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_11_DEV_TERMINAL/CMD_Terminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_11_DEV_TERMINAL/CMD_Terminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Login_and_Startup/Login_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Login_and_Startup/Login_Window.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Login_and_Startup/Splash_Screen_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Login_and_Startup/Splash_Screen_Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +60,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8

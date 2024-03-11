@@ -15,6 +15,7 @@ package aa_USER_INTERFACE_COMPONENTS.aa_UI_Login_and_Startup;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import javax.swing.*;
 import java.awt.*;
+import java.util.TimerTask;
 
 public class Splash_Screen_Window extends JFrame
 {
@@ -31,15 +32,11 @@ public class Splash_Screen_Window extends JFrame
         // The window is not expandable
         this.setResizable(false);
 
-        //  Set the Opacity via flatlaf
-
-
         // SetLayout
         this.setLayout(null);
 
         //Set Close action to exit
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-
 
         //Set the size and the placement of the window.
         this.setBounds(400,250,600,300);
@@ -65,26 +62,40 @@ public class Splash_Screen_Window extends JFrame
 
 
         //TODO  Create Event Listener for SplashScreen Button
+        ENTER_APPLICATION_BUTTON.addActionListener(e -> {SHOW_REGISTRATION_WINDOW();});
 
+        //TODO  Respond to Button Click and Open next Form as well as dispose of this Form.
 
+        //TODO  Read Config File and Determine whether it is First Load / Other load
 
-        // Create Event Listener for Button.
-
-
-        //TODO  Respond to Button Click and Open next Form
-
-
-
-
-
-
-
-
-
-
+        //TODO  Decide Whether to redirect towards Login Form or towards
 
 
     }
+
+
+    // This Function is used to dispose of this Form.
+    void FORM_HIDE()
+    {
+            // Dispose of this Form.
+            this.dispose();
+    }
+
+    //
+    void SHOW_REGISTRATION_WINDOW()
+    {
+        // Display Registration Form.
+
+
+    }
+
+    void SHOW_LOGIN_FORM()
+    {
+
+
+    }
+
+
 
 
 

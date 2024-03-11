@@ -82,11 +82,6 @@ public class Login_Window extends JFrame
         this.add(Create_Account_Button);
 
 
-            //  Login Password Label
-            //  Password Field with Login
-
-
-            //  Forgot Password HyperLink   -   Redirect to Account Recovery Dialog
 
 
     }
