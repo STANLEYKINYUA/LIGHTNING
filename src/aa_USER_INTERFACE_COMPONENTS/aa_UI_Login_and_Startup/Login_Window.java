@@ -78,6 +78,9 @@ public class Login_Window extends JFrame
         JButton Login_Button = new JButton();
         Login_Button.setText("LOGIN");
         this.add(Login_Button);
+
+        //Event Listener for Login Button to Open Main Trading Window
+        Login_Button.addActionListener(e -> {Display_Main_Trading_Window();});
         //----------------------------------------------------------------------------
 
             // HyperLink for Forgot Password
@@ -91,9 +94,35 @@ public class Login_Window extends JFrame
         Create_Account_Button.setFont(new Font(FlatRobotoFont.FAMILY , Font.PLAIN , 12));
         this.add(Create_Account_Button);
 
-
+        // Event Listener to display Registration Window.
+        Create_Account_Button.addActionListener(e -> {Display_Registration_Window();});
 
 
     }
+
+
+    //Display THE Main Trading Window
+    void Display_Main_Trading_Window()
+    {
+        //Display the Trading Window
+        JDesktopPane Main_Trading_Window = new JDesktopPane();
+
+        //Hide the Login Window
+        this.hide();
+
+
+    }
+
+    //Display the Registration Window.
+    void Display_Registration_Window()
+    {
+        //Display the Registration Form.
+        JFrame Registration_Window = new JFrame();
+
+        //Hide the Login Window
+        this.hide();
+
+    }
+
 
 }

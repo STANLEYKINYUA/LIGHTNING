@@ -61,7 +61,7 @@ public class Splash_Screen_Window extends JFrame
         this.add(ENTER_APPLICATION_BUTTON);
 
 
-        //TODO  Create Event Listener for SplashScreen Button
+        //Event Listener for Splash Screen that redirects to Login Form.
         ENTER_APPLICATION_BUTTON.addActionListener(e -> {SHOW_LOGIN_FORM();});
 
         //TODO  Respond to Button Click and Open next Form as well as dispose of this Form.
