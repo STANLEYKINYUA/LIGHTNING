@@ -97,9 +97,7 @@ public class Login_Window extends JFrame
         Create_Account_Button.setFont(new Font(FlatRobotoFont.FAMILY , Font.PLAIN , 12));
         this.add(Create_Account_Button);
 
-        // Event Listener to display Registration Window.
-
-        //TODO  Create an Exception Handling Block to deal with this Opening of registration window.
+        // Event Listener to display Opening of registration window.
         Create_Account_Button.addActionListener(e -> {Display_Registration_Window();});
 
 
@@ -124,10 +122,12 @@ public class Login_Window extends JFrame
     void Display_Registration_Window()
     {
         //Display the Registration Form.
-        JFrame Registration_Window = new JFrame();
+        JFrame Registration_Form = new REGISTRATION_WINDOW();
+        Registration_Form.setVisible(true);
+
 
         //Hide the Login Window
-        this.hide();
+        //this.hide();
 
     }
 
