@@ -39,7 +39,7 @@ public class Login_Window extends JFrame
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         //Set the Placement as well as the size of the Window
-        this.setBounds(400,250,250,800);
+        this.setBounds(400,250,800,800);
 
         //Set the Default Label for this Form as ROBOTO
         this.setFont(new Font(FlatRobotoFont.FAMILY , Font.PLAIN , 12));
@@ -50,30 +50,40 @@ public class Login_Window extends JFrame
         JLabel Login_Label = new JLabel("LOGIN");
         this.add(Login_Label,"span");
 
-
+        //----------------------------------------------------------------------------
             // USERNAME Label with Validation
         JLabel Usr_Name_Label = new JLabel("USER NAME");
         Usr_Name_Label.setText("USER NAME");
         this.add(Usr_Name_Label);
 
-            // TextField for Username with Default Text
+            //UserName Text Box where User Name is Entered.
         JTextPane User_Name_Text_Pane = new JTextPane();
-        User_Name_Text_Pane.setText("Enter User Name");
-        this.add(User_Name_Text_Pane);
+        User_Name_Text_Pane.setToolTipText("Enter User Name");
+        this.add(User_Name_Text_Pane,"wrap");
+
+        //----------------------------------------------------------------------------
 
             // Password Field for User
+        JLabel Password_Label = new JLabel();
+        Password_Label.setText("Enter Password");
+        this.add(Password_Label);
+
+            //  Password Text Field
         JPasswordField User_Password = new JPasswordField();
-        User_Password.setText("Enter Password");
-        this.add(User_Password);
+        User_Password.setToolTipText("Enter Password");
+        this.add(User_Password,"span");
+        //----------------------------------------------------------------------------
 
             //Login Button
         JButton Login_Button = new JButton();
         Login_Button.setText("LOGIN");
         this.add(Login_Button);
+        //----------------------------------------------------------------------------
 
             // HyperLink for Forgot Password
         JXHyperlink Forgot_Password = new JXHyperlink();
         this.add(Forgot_Password);
+        //----------------------------------------------------------------------------
 
             // Registration Button.
         JButton Create_Account_Button = new JButton();

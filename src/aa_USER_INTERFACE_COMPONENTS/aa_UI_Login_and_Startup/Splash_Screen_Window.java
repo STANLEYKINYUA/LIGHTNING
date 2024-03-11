@@ -39,7 +39,7 @@ public class Splash_Screen_Window extends JFrame
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         //Set the size and the placement of the window.
-        this.setBounds(400,250,600,300);
+        this.setBounds(200,250,600,300);
 
         //Create a Label and add its parameters
         JLabel SplashScreen_Label = new JLabel("LIGHTNING TRADER WORKSTATION");
@@ -62,7 +62,7 @@ public class Splash_Screen_Window extends JFrame
 
 
         //TODO  Create Event Listener for SplashScreen Button
-        ENTER_APPLICATION_BUTTON.addActionListener(e -> {SHOW_REGISTRATION_WINDOW();});
+        ENTER_APPLICATION_BUTTON.addActionListener(e -> {SHOW_LOGIN_FORM();});
 
         //TODO  Respond to Button Click and Open next Form as well as dispose of this Form.
 
@@ -75,10 +75,11 @@ public class Splash_Screen_Window extends JFrame
 
 
     // This Function is used to dispose of this Form.
-    void FORM_HIDE()
+    void SPLASH_SCREEN_FORM_HIDE()
     {
             // Dispose of this Form.
             this.dispose();
+
     }
 
     //
@@ -87,10 +88,17 @@ public class Splash_Screen_Window extends JFrame
         // Display Registration Form.
 
 
+
     }
 
     void SHOW_LOGIN_FORM()
     {
+        //Display the Login Form.
+        JFrame Login_Form = new Login_Window();
+        Login_Form.setVisible(true);
+
+        // hide Current Form.
+        SPLASH_SCREEN_FORM_HIDE();
 
 
     }
