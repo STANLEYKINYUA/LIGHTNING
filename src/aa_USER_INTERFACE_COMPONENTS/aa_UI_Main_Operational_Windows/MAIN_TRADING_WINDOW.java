@@ -15,11 +15,6 @@ public class MAIN_TRADING_WINDOW extends JFrame
         //Initialize the JFrame and show all Features.
         init_Trading_Window();
 
-
-
-
-
-
     }
 
 
@@ -41,7 +36,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
             this.setResizable(true);
 
             //4.    Set MigLayout as the Window Layout
-            this.setLayout(new MigLayout());
+            //this.setLayout(new MigLayout());
 
             //5.    Set Default Font for the Frame as Roboto
             this.setFont(new Font(FlatRobotoFont.FAMILY ,Font.PLAIN ,12));
@@ -81,15 +76,29 @@ public class MAIN_TRADING_WINDOW extends JFrame
                         //TODO   Add FLATLAF underline.
                         //TODO   Add Flatlaf Color on Mouse Hover.
 
+
                     //TODO  Display the Menu Bar
                     this.setJMenuBar(Trading_Window_MenuBar);
 
             //-------------------------------------------------------------------------------------------------------
             //TODO  Create a ToolBar
-            JMenuBar Trading_Window_ToolBar = new JMenuBar();
+            JToolBar Trading_Window_ToolBar = new JToolBar();
+
+                //TODO  Create Different Toolbar Icons and Commands separated by Seperators
+                //TODO  Display Different Toolbar Items
+                //TODO  Add FlatLaf specific features to the toolbar
+                //TODO  Display the ToolBar
 
 
-            //TODO  Create A JDESKTOP Pane to Host MDI Windows
+
+            //TODO  Create A JDESKTOP Pane to Host MDI Windows - No layout elements
+            JDesktopPane Chart_Area_Desktop_Pane = new CHART_AREA_DESKTOP_PANE();
+
+            //Add Jdesktop Pane to this Form and make it Visible.
+            this.add(Chart_Area_Desktop_Pane,BorderLayout.CENTER);
+            Chart_Area_Desktop_Pane.setVisible(true);
+
+
 
 
 

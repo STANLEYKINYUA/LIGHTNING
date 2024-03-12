@@ -134,8 +134,8 @@ public class Login_Window extends JFrame
     void Display_Main_Trading_Window()
     {
         //Display the Trading Window using JDesktop Pane.
-        JFrame Main_Trading_Window = new MAIN_TRADING_WINDOW();
-        Main_Trading_Window.setVisible(true);
+       JFrame Main_Trading_Window = new MAIN_TRADING_WINDOW();
+       Main_Trading_Window.setVisible(true);
 
 
         //Hide the Login Window

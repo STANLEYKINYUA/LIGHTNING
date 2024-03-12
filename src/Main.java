@@ -42,14 +42,13 @@ public class Main {
         FlatInterFont.install();
         FlatJetBrainsMonoFont.install();
 
-        // Read Config File and determine whether to peform first load actions. load Dark/ Light Mode
+        // Read Config File and determine whether to perform first load actions. load Dark/ Light Mode
 
         //Load and Start
         init_dark_theme();
 
         //Start and Display the Terminal Window.
         init_TERMINAL();
-
 
     }
 
@@ -107,6 +106,7 @@ public class Main {
         //Display the Terminal.
 
     }
+
 
 
 }
