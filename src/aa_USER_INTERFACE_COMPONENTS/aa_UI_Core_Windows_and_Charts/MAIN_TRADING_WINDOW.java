@@ -1,8 +1,6 @@
-package aa_USER_INTERFACE_COMPONENTS.aa_UI_Main_Operational_Windows;
+package aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_Windows_and_Charts;
 
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
-import com.formdev.flatlaf.fonts.roboto_mono.FlatRobotoMonoFont;
-import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
 import java.awt.*;

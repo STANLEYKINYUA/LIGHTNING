@@ -11,7 +11,7 @@
 * */
 package aa_USER_INTERFACE_COMPONENTS.aa_UI_Login_and_Startup;
 
-import aa_USER_INTERFACE_COMPONENTS.aa_UI_Main_Operational_Windows.MAIN_TRADING_WINDOW;
+import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_Windows_and_Charts.MAIN_TRADING_WINDOW;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import net.miginfocom.swing.MigLayout;
 import org.jdesktop.swingx.JXHyperlink;

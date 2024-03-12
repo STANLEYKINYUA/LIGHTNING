@@ -1,4 +1,4 @@
-package aa_USER_INTERFACE_COMPONENTS.aa_UI_Main_Operational_Windows;
+package aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_Windows_and_Charts;
 
 import net.miginfocom.swing.MigLayout;
 
