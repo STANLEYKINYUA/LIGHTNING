@@ -25,89 +25,110 @@ public class Login_Window extends JFrame
     //Create Constructor for this class.
     public Login_Window()
     {
-        //this window is not always on top.
-        this.setAlwaysOnTop(false);
+        //Initialize Window.
+        init_Login_Window();
 
-        //This Window is not expandable.
-        this.setResizable(false);
 
-       // Create a transparency effect
-
-        //set Layout to MigLayout.
-        this.setLayout(new MigLayout());
-
-        //Set the Close Action to Exit the Program.
-        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-
-        //Set the Placement as well as the size of the Window
-        this.setBounds(400,250,800,800);
-
-        //Set the Default Label for this Form as ROBOTO
-        this.setFont(new Font(FlatRobotoFont.FAMILY , Font.PLAIN , 12));
-
-        // START LAYING OUT FORM ELEMENTS
-
-            // LOGIN LABEL for LOGIN FORM.
-        JLabel Login_Label = new JLabel("LOGIN");
-        this.add(Login_Label,"span");
-
-        //----------------------------------------------------------------------------
-            // USERNAME Label with Validation
-        JLabel Usr_Name_Label = new JLabel("USER NAME");
-        Usr_Name_Label.setText("USER NAME");
-        this.add(Usr_Name_Label);
-
-            //UserName Text Box where UserName is Entered.
-        JTextPane User_Name_Text_Pane = new JTextPane();
-        User_Name_Text_Pane.setToolTipText("Enter User Name");
-        this.add(User_Name_Text_Pane,"wrap");
-
-            //TODO  Mouse Listener that displays tooltip on Mouse enter Username Field
-
-        //----------------------------------------------------------------------------
-
-            // Password Field for User
-        JLabel Password_Label = new JLabel();
-        Password_Label.setText("PASSWORD");
-        this.add(Password_Label);
-
-            //  Password Text Field
-        JPasswordField User_Password = new JPasswordField();
-        User_Password.setToolTipText("ENTER PASSWORD");
-        this.add(User_Password,"span");
-
-        //TODO Create a Mouse Listener that opens tooltip on Hover.
-
-        //----------------------------------------------------------------------------
-
-            //Login Button
-        JButton Login_Button = new JButton();
-        Login_Button.setText("LOGIN");
-        this.add(Login_Button);
-
-        //Event Listener for Login Button to Open Main Trading Window
-
-        //TODO  Create an exception Handling block to deal with Opening of Main trading Window
-        Login_Button.addActionListener(e -> {Display_Main_Trading_Window();});
-        //----------------------------------------------------------------------------
-
-            // HyperLink for Forgot Password
-        JXHyperlink Forgot_Password = new JXHyperlink();
-        this.add(Forgot_Password);
-        //----------------------------------------------------------------------------
-
-            // Registration Button.
-        JButton Create_Account_Button = new JButton();
-        Create_Account_Button.setText("Create Account");
-        Create_Account_Button.setFont(new Font(FlatRobotoFont.FAMILY , Font.PLAIN , 12));
-        this.add(Create_Account_Button);
-
-        // Event Listener to display Opening of registration window.
-        Create_Account_Button.addActionListener(e -> {Display_Registration_Window();});
 
 
     }
 
+
+    //Use Exception handling to Create and Load form safely.
+    void init_Login_Window()
+    {
+        //Try - Catch block to catch any exceptions.
+        try
+        {
+            //this window is not always on top.
+            this.setAlwaysOnTop(false);
+
+            //This Window is not expandable.
+            this.setResizable(false);
+
+            // Create a transparency effect
+
+            //set Layout to MigLayout.
+            this.setLayout(new MigLayout());
+
+            //Set the Close Action to Exit the Program.
+            this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+            //Set the Placement as well as the size of the Window
+            this.setBounds(400,250,800,800);
+
+            //Set the Default Label for this Form as ROBOTO
+            this.setFont(new Font(FlatRobotoFont.FAMILY , Font.PLAIN , 12));
+
+            // START LAYING OUT FORM ELEMENTS
+
+            // LOGIN LABEL for LOGIN FORM.
+            JLabel Login_Label = new JLabel("LOGIN");
+            this.add(Login_Label,"span");
+
+            //----------------------------------------------------------------------------
+            // USERNAME Label with Validation
+            JLabel Usr_Name_Label = new JLabel("USER NAME");
+            Usr_Name_Label.setText("USER NAME");
+            this.add(Usr_Name_Label);
+
+            //UserName Text Box where UserName is Entered.
+            JTextPane User_Name_Text_Pane = new JTextPane();
+            User_Name_Text_Pane.setToolTipText("Enter User Name");
+            this.add(User_Name_Text_Pane,"span");
+
+
+            //TODO  Mouse Listener that displays tooltip on Mouse enter Username Field
+
+            //----------------------------------------------------------------------------
+
+            // Password Field for User
+            JLabel Password_Label = new JLabel();
+            Password_Label.setText("PASSWORD");
+            this.add(Password_Label);
+
+            //  Password Text Field
+            JPasswordField User_Password = new JPasswordField();
+            User_Password.setToolTipText("ENTER PASSWORD");
+            this.add(User_Password,"span");
+
+            //TODO Create a Mouse Listener that opens tooltip on Hover.
+
+            //----------------------------------------------------------------------------
+
+            //Login Button
+            JButton Login_Button = new JButton();
+            Login_Button.setText("LOGIN");
+            this.add(Login_Button);
+
+            //Event Listener for Login Button to Open Main Trading Window
+
+            //TODO  Create an exception Handling block to deal with Opening of Main trading Window
+            Login_Button.addActionListener(e -> {Display_Main_Trading_Window();});
+            //----------------------------------------------------------------------------
+
+            // HyperLink for Forgot Password
+            JXHyperlink Forgot_Password = new JXHyperlink();
+            this.add(Forgot_Password);
+            //----------------------------------------------------------------------------
+
+            // Registration Button.
+            JButton Create_Account_Button = new JButton();
+            Create_Account_Button.setText("Create Account");
+            Create_Account_Button.setFont(new Font(FlatRobotoFont.FAMILY , Font.PLAIN , 12));
+            this.add(Create_Account_Button);
+
+            // Event Listener to display Opening of registration window.
+            Create_Account_Button.addActionListener(e -> {Display_Registration_Window();});
+
+        }
+        catch(Exception Login_Window_Exception)
+        {
+            //TODO  Utilize Logging engine to write the General Log and Exceptions Log.
+            Login_Window_Exception.printStackTrace();
+
+        }
+    }
 
     //Display THE Main Trading Window
     void Display_Main_Trading_Window()

@@ -50,22 +50,29 @@ public class MAIN_TRADING_WINDOW extends JFrame
             this.setTitle("LIGHTNING WORKSTATION.");
 
 
+
             //TODO  Create a Menu System.
             JMenuBar Trading_Window_MenuBar = new JMenuBar();
 
                     //Create Menus.
-                JMenu File_Menu         =   new JMenu("FILE");
-                JMenu Edit_Menu         =   new JMenu("EDIT");
-                JMenu Views_Menu        =   new JMenu("VIEWS");
-                JMenu Connections_Menu  =   new JMenu("CONNECTIONS");
-                JMenu Settings_Menu     =   new JMenu("SETTINGS");
+                JMenu File_Menu             =   new JMenu("FILE");
+                JMenu Trade_Menu            =   new JMenu("TRADE");
+                JMenu Accounts_Menu         =   new JMenu("ACCOUNTS");
+                JMenu Nodes_Menu            =   new JMenu("NODES");
+                JMenu Connections_Menu      =   new JMenu("CONNECTIONS");
+                JMenu Trading_Tools_Menu    =   new JMenu("TRADING TOOLS");
+                JMenu Analysis_Tools_Menu   =   new JMenu("ANALYSIS TOOLS");
+                JMenu Settings_Menu         =   new JMenu("SETTINGS");
 
 
                     // Add the Menus to the MenuBar.
                 Trading_Window_MenuBar.add(File_Menu);
-                Trading_Window_MenuBar.add(Edit_Menu);
-                Trading_Window_MenuBar.add(Views_Menu);
+                Trading_Window_MenuBar.add(Trade_Menu);
+                Trading_Window_MenuBar.add(Accounts_Menu);
+                Trading_Window_MenuBar.add(Nodes_Menu);
                 Trading_Window_MenuBar.add(Connections_Menu);
+                Trading_Window_MenuBar.add(Trading_Tools_Menu);
+                Trading_Window_MenuBar.add(Analysis_Tools_Menu);
                 Trading_Window_MenuBar.add(Settings_Menu);
 
                     //TODO  Create Menu Items
