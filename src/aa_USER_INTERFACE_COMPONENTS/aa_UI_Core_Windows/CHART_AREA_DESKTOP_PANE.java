@@ -1,4 +1,4 @@
-package aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_Windows_and_Charts;
+package aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_Windows;
 
 import net.miginfocom.swing.MigLayout;
 
@@ -7,8 +7,7 @@ import java.awt.*;
 
 public class CHART_AREA_DESKTOP_PANE extends JDesktopPane
 {
-    int Trading_Window_X_Size;
-    int Trading_Window_Y_Size;
+
     public CHART_AREA_DESKTOP_PANE()
     {
         //Initialize the Desktop Pane
@@ -48,6 +47,8 @@ public class CHART_AREA_DESKTOP_PANE extends JDesktopPane
             //TODO  Add better Logging Facilities with Logging Engine.
             Chart_Area_Desktop_Pane_Exception.printStackTrace();
         }
+
+
     }
 
 

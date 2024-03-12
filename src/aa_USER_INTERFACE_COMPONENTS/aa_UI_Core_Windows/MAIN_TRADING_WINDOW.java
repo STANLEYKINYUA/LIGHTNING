@@ -1,4 +1,4 @@
-package aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_Windows_and_Charts;
+package aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_Windows;
 
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 
@@ -111,17 +111,48 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
     }
 
-    //Function to create MDI Windows
-    void MDI_Window_Creator()
+
+    //Function to spawn a new Chart Window.
+    void Spawn_MDI_Chart_Window(String Chart_Type , String Market_Symbol , String Chart_Period )
     {
+        String Chart_type_to_Spawn = Chart_Type;
+        String Financial_Symbol  = Market_Symbol;
+        String Period = Chart_Period;
+
+        //TODO  Write the Code that allows us to spawn MDI Chart Windows
+        // 1.  Determine the Chart Type to Spawn.
+        //
+
 
     }
 
-    //Function to Destroy MDI windows
-    void MDI_Window_Destroyer()
+    void Spawn_MDI_Operational_Windows(String Window_Type)
     {
+        String Spawn_Window = Window_Type;
 
     }
-    
+
+    void Spawn_CandleStick_Chart(String Market_Symbol , String Chart_Period)
+    {
+        //TODO  Write Code that Spawns a Candle Stick Chart and Fetches Data to Plot.
+    }
+
+    void Spawn_RangeBar_Chart(String Market_Symbol , int Range_Bar_Size)
+    {
+        //TODO  Write Code that Spawns a Range Bar Chart and Fetches Data to Plot.
+    }
+
+    void Spawn_RenkoBar_Chart(String Market_Symbol , int Renko_Bar_Size)
+    {
+        //TODO  Write Code that Spawns a Renko Bar Chart and Fetches Data to Plot.
+    }
+
+    void Spawn_Median_Renko_Chart(String Market_Symbol , int Renko_Size)
+    {
+        //TODO  Write Code that Spawns a Median Renko Bar Chart and Fetches Data to Plot.
+    }
+
+
+
 }
 
