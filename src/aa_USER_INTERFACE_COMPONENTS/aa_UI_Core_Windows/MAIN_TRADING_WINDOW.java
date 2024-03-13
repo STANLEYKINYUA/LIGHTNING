@@ -80,12 +80,16 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
             //-------------------------------------------------------------------------------------------------------
             //TODO  Create a ToolBar
-            JToolBar Trading_Window_ToolBar = new JToolBar();
+            JToolBar ToolBar = new JToolBar();
+
+                // Set Color of Toolbar to unique Color so I can show it easily.
+                ToolBar.setBackground(Color.magenta);
 
                 //TODO  Create Different Toolbar Icons and Commands separated by Seperators
                 //TODO  Display Different Toolbar Items
                 //TODO  Add FlatLaf specific features to the toolbar
                 //TODO  Display the ToolBar
+
 
 
 
@@ -111,8 +115,32 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
     }
 
+    //----------------------------------------------------------------------------------------------
+    // THis functions are used to display non MDI Windows
+    void Spawn_Operational_Windows_that_dont_Lose_Focus(String Window_Type)
+    {
+        String Spawn_Window = Window_Type;
 
-    //Function to spawn a new Chart Window.
+        /*
+        >   These Windows never lose Focus and only way to return focus to main Window is to close them.
+        >   These Windows must be spawned in a new Swing Worker thread to avoid program hanging.
+
+            these windows are :
+                1.  Settings Window
+                2.  Create Order Window
+                3.  EXIT ALERT Window - JDialog
+
+        * */
+    }
+
+    void Display_SETTINGS_Window_that_does_not_lose_Focus_till_Closed(){}
+    void Display_NODES_Window_that_does_not_lose_Focus_till_Closed(){}
+
+    //----------------------------------------------------------------------------------------------
+
+
+    // ----------------------------------------------------------------------------------------------
+    //This Collection of Functions is used to spawn MDI Windows
     void Spawn_MDI_Chart_Window(String Chart_Type , String Market_Symbol , String Chart_Period )
     {
         String Chart_type_to_Spawn = Chart_Type;
@@ -121,36 +149,37 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
         //TODO  Write the Code that allows us to spawn MDI Chart Windows
         // 1.  Determine the Chart Type to Spawn.
-        //
+        // 2.   Chart Windows are spawned on a new Swing Worker Thread to avoid System Hanging.
 
 
     }
 
-    void Spawn_MDI_Operational_Windows(String Window_Type)
-    {
-        String Spawn_Window = Window_Type;
 
-    }
-
-    void Spawn_CandleStick_Chart(String Market_Symbol , String Chart_Period)
+    //TODO  Create a Common Class/Interface that will allow the methods to Inherit a Generic Chart then Specify type.
+    void Spawn_CandleStick_Chart(String Market_Symbol , String Chart_Period , String Start_Date)
     {
         //TODO  Write Code that Spawns a Candle Stick Chart and Fetches Data to Plot.
     }
 
-    void Spawn_RangeBar_Chart(String Market_Symbol , int Range_Bar_Size)
+    void Spawn_RangeBar_Chart(String Market_Symbol , int Range_Bar_Size, String Start_Date)
     {
         //TODO  Write Code that Spawns a Range Bar Chart and Fetches Data to Plot.
     }
 
-    void Spawn_RenkoBar_Chart(String Market_Symbol , int Renko_Bar_Size)
+    void Spawn_RenkoBar_Chart(String Market_Symbol , int Renko_Bar_Size, String Start_Date)
     {
         //TODO  Write Code that Spawns a Renko Bar Chart and Fetches Data to Plot.
     }
 
-    void Spawn_Median_Renko_Chart(String Market_Symbol , int Renko_Size)
+    void Spawn_Median_Renko_Chart(String Market_Symbol , int Renko_Size, String Start_Date)
     {
         //TODO  Write Code that Spawns a Median Renko Bar Chart and Fetches Data to Plot.
     }
+
+
+
+
+
 
 
 
