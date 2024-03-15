@@ -60,7 +60,6 @@ public class Main {
         {
 
 
-
             //Load the SplashScreen. - Create the EventQueue to Load the Splash Screen Form
             java.awt.EventQueue.invokeLater(new Runnable() {
                 @Override
