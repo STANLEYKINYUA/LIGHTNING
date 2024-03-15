@@ -1,5 +1,6 @@
-package aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_Windows;
+package aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW;
 
+import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.CHART_AREA_DESKTOP_PANE;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 
 import javax.swing.*;
@@ -33,8 +34,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
             //3.    This Window is Resizable.
             this.setResizable(true);
 
-            //4.    Set MigLayout as the Window Layout
-            //this.setLayout(new MigLayout());
+            //4.    Set the BackGround Color to Black.
 
             //5.    Set Default Font for the Frame as Roboto
             this.setFont(new Font(FlatRobotoFont.FAMILY ,Font.PLAIN ,12));
@@ -51,7 +51,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
                 JMenu File_Menu             =   new JMenu("FILE");
                 JMenu Trade_Menu            =   new JMenu("TRADE");
                 JMenu Accounts_Menu         =   new JMenu("ACCOUNTS");
-                JMenu Nodes_Menu            =   new JMenu("NODES");
+
                 JMenu Connections_Menu      =   new JMenu("CONNECTIONS");
                 JMenu Trading_Tools_Menu    =   new JMenu("TRADING TOOLS");
                 JMenu Analysis_Tools_Menu   =   new JMenu("ANALYSIS TOOLS");
@@ -62,7 +62,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
                 Trading_Window_MenuBar.add(File_Menu);
                 Trading_Window_MenuBar.add(Trade_Menu);
                 Trading_Window_MenuBar.add(Accounts_Menu);
-                Trading_Window_MenuBar.add(Nodes_Menu);
+
                 Trading_Window_MenuBar.add(Connections_Menu);
                 Trading_Window_MenuBar.add(Trading_Tools_Menu);
                 Trading_Window_MenuBar.add(Analysis_Tools_Menu);
@@ -80,15 +80,45 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
             //-------------------------------------------------------------------------------------------------------
             //TODO  Create a ToolBar
+
             JToolBar ToolBar = new JToolBar();
 
-                // Set Color of Toolbar to unique Color so I can show it easily.
-                ToolBar.setBackground(Color.magenta);
+                ToolBar.setRollover(true);
+
+
+                //Change BackGround Color of Toolbar so it stands out.
+                //ToolBar.setBackground(Color.GRAY);
+
+                //Create Buttons to add to ToolBar.
+
+                JButton New_Window_ToolBar_Button = new JButton();
+                New_Window_ToolBar_Button.setText("New Window");
+                // Special FlatLaf Customization Features
+                New_Window_ToolBar_Button.putClientProperty("Button.arc",100);
+
+                JButton NODES_Button = new JButton();
+                NODES_Button.setText("NODES");
+
+                JButton ANALYSIS_BUTTON = new JButton();
+                ANALYSIS_BUTTON.setText("ANALYSIS");
+
+                //Add this buttons to the toolbar.
+                ToolBar.add(New_Window_ToolBar_Button);
+                ToolBar.addSeparator();
+                ToolBar.add(NODES_Button);
+                ToolBar.addSeparator();
+                ToolBar.add(ANALYSIS_BUTTON);
+
 
                 //TODO  Create Different Toolbar Icons and Commands separated by Seperators
                 //TODO  Display Different Toolbar Items
                 //TODO  Add FlatLaf specific features to the toolbar
-                //TODO  Display the ToolBar
+
+                // Create a Content Pane.
+                Container ContentPane = this.getContentPane();
+
+                //Add toolbar to the Contentpane Docked North.
+                ContentPane.add(ToolBar , BorderLayout.NORTH);
 
 
 
