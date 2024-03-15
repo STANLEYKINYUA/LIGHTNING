@@ -45,7 +45,7 @@ public class Main {
         // Read Config File and determine whether to perform first load actions. load Dark/ Light Mode
 
         //Load and Start
-        init_dark_theme();
+        init_Application();
 
         //Start and Display the Terminal Window.
         init_TERMINAL();
@@ -53,13 +53,13 @@ public class Main {
     }
 
     //Dark Theme Initialization
-    static void init_dark_theme()
+    static void init_Application()
     {
         //Start the Swing Application with  a try catch block.
         try
         {
 
-            
+
 
             //Load the SplashScreen. - Create the EventQueue to Load the Splash Screen Form
             java.awt.EventQueue.invokeLater(new Runnable() {
@@ -92,8 +92,7 @@ public class Main {
 
 
 
-    // Light Theme Initialization
-    static void init_light_theme(){}
+
 
 
     // Initialize the Terminal
