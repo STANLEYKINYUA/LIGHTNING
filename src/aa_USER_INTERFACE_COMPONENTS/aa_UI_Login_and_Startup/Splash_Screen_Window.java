@@ -19,7 +19,7 @@ import java.util.TimerTask;
 
 public class Splash_Screen_Window extends JFrame
 {
-    //This is a blank Window with Some Transparency and some Text.
+    double Version_Number = 0.01;   //  Version Number of the Program.
 
 
     public Splash_Screen_Window()
@@ -43,10 +43,12 @@ public class Splash_Screen_Window extends JFrame
 
         //Create a Label and add its parameters
         JLabel SplashScreen_Label = new JLabel("LIGHTNING TRADER WORKSTATION");
-        SplashScreen_Label.setBounds(150,50,400,30);
+        SplashScreen_Label.setBounds(0,50,400,30);
 
         //Set the Font for the Label as well as the Size
-        SplashScreen_Label.setFont(new Font(FlatRobotoFont.FAMILY , Font.PLAIN ,16));
+        SplashScreen_Label.setFont(new Font(FlatRobotoFont.FAMILY , Font.PLAIN ,24));
+
+
 
         //add the Label to the Form
         this.add(SplashScreen_Label);
@@ -64,7 +66,12 @@ public class Splash_Screen_Window extends JFrame
         //Event Listener for Splash Screen that redirects to Login Form.
         ENTER_APPLICATION_BUTTON.addActionListener(e -> {SHOW_LOGIN_FORM();});
 
-        //TODO  Respond to Button Click and Open next Form as well as dispose of this Form.
+        //Version Number Label.
+        JLabel Version_Number_Label = new JLabel();
+        var Version = Double.toString(Version_Number);
+        Version_Number_Label.setText("Version" +" "+ Version);
+        this.add(Version_Number_Label);
+        Version_Number_Label.setBounds(500,230,100,20);
 
         //TODO  Read Config File and Determine whether it is First Load / Other load
 

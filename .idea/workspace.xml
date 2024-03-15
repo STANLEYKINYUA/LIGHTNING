@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_ChartEngine_and_INDICATORS/INDICATORS/Alligator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_ChartEngine_and_INDICATORS/INDICATORS/Moving_Average.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_ChartEngine_and_INDICATORS/INDICATORS/Moving_Average_Exponential.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_ChartEngine_and_INDICATORS/INDICATORS/Moving_Average_Hull.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_ChartEngine_and_INDICATORS/INDICATORS/Moving_Average_Simple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_ChartEngine_and_INDICATORS/INDICATORS/Moving_Average_Triangular.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_ChartEngine_and_INDICATORS/INDICATORS/Moving_Average_Weighted.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_ChartEngine_and_INDICATORS/INDICATOR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_ChartEngine_and_INDICATORS/INDICATORS/INDICATOR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Login_and_Startup/Login_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Login_and_Startup/Login_Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Login_and_Startup/Splash_Screen_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Login_and_Startup/Splash_Screen_Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

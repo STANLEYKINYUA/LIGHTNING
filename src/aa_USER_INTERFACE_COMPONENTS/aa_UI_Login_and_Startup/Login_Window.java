@@ -13,6 +13,7 @@ package aa_USER_INTERFACE_COMPONENTS.aa_UI_Login_and_Startup;
 
 import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MAIN_TRADING_WINDOW;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
+import com.github.weisj.jsvg.nodes.Use;
 import net.miginfocom.swing.MigLayout;
 import org.jdesktop.swingx.JXHyperlink;
 
@@ -49,7 +50,7 @@ public class Login_Window extends JFrame
             // Create a transparency effect
 
             //set Layout to MigLayout.
-            this.setLayout(new MigLayout());
+            this.setLayout(new GridBagLayout());
 
             //Set the Close Action to Exit the Program.
             this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -64,7 +65,7 @@ public class Login_Window extends JFrame
 
             // LOGIN LABEL for LOGIN FORM.
             JLabel Login_Label = new JLabel("LOGIN");
-            this.add(Login_Label,"span");
+            this.add(Login_Label);
 
             //----------------------------------------------------------------------------
             // USERNAME Label with Validation
@@ -75,7 +76,7 @@ public class Login_Window extends JFrame
             //UserName Text Box where UserName is Entered.
             JTextPane User_Name_Text_Pane = new JTextPane();
             User_Name_Text_Pane.setToolTipText("Enter User Name");
-            this.add(User_Name_Text_Pane,"span");
+            this.add(User_Name_Text_Pane);
 
 
             //TODO  Mouse Listener that displays tooltip on Mouse enter Username Field
@@ -90,7 +91,15 @@ public class Login_Window extends JFrame
             //  Password Text Field
             JPasswordField User_Password = new JPasswordField();
             User_Password.setToolTipText("ENTER PASSWORD");
-            this.add(User_Password,"span");
+            this.add(User_Password);
+
+
+                    //Show * when password is entered.
+            User_Password.setEchoChar('*');
+
+                    //Display Password reveal Icon
+           // User_Password.putClientProperty("PasswordField.revealIcon",true);
+
 
             //TODO Create a Mouse Listener that opens tooltip on Hover.
 
