@@ -59,11 +59,7 @@ public class Main {
         try
         {
 
-            //Set the Themes File. - Set Dark Theme
-            FlatMacDarkLaf.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.aa_Themes.Dark_Theme_MacOS_Default");
-
-            //UIManager.setLookAndFeel(new FlatMacDarkLaf());
-            FlatMacDarkLaf.setup();
+            
 
             //Load the SplashScreen. - Create the EventQueue to Load the Splash Screen Form
             java.awt.EventQueue.invokeLater(new Runnable() {
