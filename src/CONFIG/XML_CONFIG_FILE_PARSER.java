@@ -1,4 +1,4 @@
-package CONFIG_and_WORKSPACE;
+package CONFIG;
 
 public interface XML_CONFIG_FILE_PARSER
 {

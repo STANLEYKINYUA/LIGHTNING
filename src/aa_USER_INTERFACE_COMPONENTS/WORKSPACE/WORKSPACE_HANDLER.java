@@ -1,0 +1,4 @@
+package aa_USER_INTERFACE_COMPONENTS.WORKSPACE;
+
+public interface WORKSPACE_HANDLER {
+}
