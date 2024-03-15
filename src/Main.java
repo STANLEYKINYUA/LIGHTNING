@@ -18,34 +18,60 @@
 * */
 
 
-import aa_UI_Login_and_Startup_Windows.Splash_Screen_Window;
-import com.formdev.flatlaf.themes.FlatMacLightLaf;
+import aa_USER_INTERFACE_COMPONENTS.aa_UI_Login_and_Startup.Splash_Screen_Window;
+import com.formdev.flatlaf.fonts.inter.FlatInterFont;
+import com.formdev.flatlaf.fonts.jetbrains_mono.FlatJetBrainsMonoFont;
+import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
+import com.formdev.flatlaf.fonts.roboto_mono.FlatRobotoMonoFont;
+import com.formdev.flatlaf.themes.FlatMacDarkLaf;
 import javax.swing.*;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+
 public class Main {
     public static void main(String[] args)
     {
         //Hello World to prove that the program works.
-        System.out.println("HELLO WORLD!!");
+        System.out.println("BUILD SUCCESS!!");
 
+        // Try to set Graphics properties
+
+        //Install Font Packs
+        FlatRobotoMonoFont.install();
+        FlatRobotoFont.install();
+        FlatInterFont.install();
+        FlatJetBrainsMonoFont.install();
+
+        // Read Config File and determine whether to perform first load actions. load Dark/ Light Mode
+
+        //Load and Start
+        init_Application();
+
+        //Start and Display the Terminal Window.
+        init_TERMINAL();
+
+    }
+
+    //Dark Theme Initialization
+    static void init_Application()
+    {
         //Start the Swing Application with  a try catch block.
         try
         {
-            //try setting the Default look and Feel to use FlatLaf MACOS Light.
-            UIManager.setLookAndFeel(new FlatMacLightLaf());
+
+
 
             //Load the SplashScreen. - Create the EventQueue to Load the Splash Screen Form
             java.awt.EventQueue.invokeLater(new Runnable() {
                 @Override
                 public void run()
                 {
-                    // Load Splash Screen with GlassMorphism Effect and Wait 5 - 7 seconds
+                    //Load Direct to the Splash Screen.
                     JFrame Splash_Screen = new Splash_Screen_Window();
                     Splash_Screen.setVisible(true);
 
-                    // Load Login Form in the Background.
+                    // Timer CountDown
+
 
                     // Close Splash Screen.
 
@@ -56,8 +82,26 @@ public class Main {
         {
             //print out the exception.
             EX.printStackTrace();
+
+            //Draw an Alert Window that shows the full exception Message.
+
+
         }
 
+    }
+
+
+
+
+
+
+    // Initialize the Terminal
+    static void init_TERMINAL()
+    {
+        //Display the Terminal.
 
     }
+
+
+
 }
