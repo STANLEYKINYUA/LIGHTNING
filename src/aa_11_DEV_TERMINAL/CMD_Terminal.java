@@ -1,6 +1,8 @@
 package aa_11_DEV_TERMINAL;
 
-public class CMD_Terminal
+import javax.swing.*;
+
+public class CMD_Terminal extends JFrame
 {
 
     String Current_Command;
