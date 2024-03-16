@@ -18,6 +18,7 @@
 * */
 
 
+import aa_11_DEV_TERMINAL.CMD_Terminal;
 import aa_USER_INTERFACE_COMPONENTS.aa_UI_Login_and_Startup.Splash_Screen_Window;
 import com.formdev.flatlaf.fonts.inter.FlatInterFont;
 import com.formdev.flatlaf.fonts.jetbrains_mono.FlatJetBrainsMonoFont;
@@ -25,6 +26,7 @@ import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import com.formdev.flatlaf.fonts.roboto_mono.FlatRobotoMonoFont;
 import com.formdev.flatlaf.themes.FlatMacDarkLaf;
 import javax.swing.*;
+
 
 
 
@@ -47,8 +49,7 @@ public class Main {
         //Load and Start
         init_Application();
 
-        //Start and Display the Terminal Window.
-        init_TERMINAL();
+
 
     }
 
@@ -68,6 +69,11 @@ public class Main {
                     //Load Direct to the Splash Screen.
                     JFrame Splash_Screen = new Splash_Screen_Window();
                     Splash_Screen.setVisible(true);
+
+                    //Load Terminal for Test.
+                    JFrame Terminal = new CMD_Terminal();
+                    Terminal.setVisible(true);
+
 
                     // Timer CountDown
 
@@ -94,12 +100,6 @@ public class Main {
 
 
 
-    // Initialize the Terminal
-    static void init_TERMINAL()
-    {
-        //Display the Terminal.
-
-    }
 
 
 

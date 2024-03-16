@@ -91,7 +91,7 @@ public class Login_Window extends JFrame
 
             //  Password Text Field
             JPasswordField User_Password = new JPasswordField();
-            User_Password.setToolTipText("ENTER PASSWORD");
+            User_Password.setToolTipText("ENTER_KEY_LISTENER PASSWORD");
             this.add(User_Password);
 
 
