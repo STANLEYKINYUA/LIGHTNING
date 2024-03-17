@@ -102,6 +102,7 @@ public class Terminal_Text_Pane extends JTextArea
 
         //TODO  Set text to print when enter pressed.
 
+
     }
     //----------------------------------------------------------------------------
 

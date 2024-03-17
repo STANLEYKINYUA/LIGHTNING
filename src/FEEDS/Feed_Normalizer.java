@@ -1,4 +1,4 @@
-package FEED;
+package FEEDS;
 
 public class Feed_Normalizer {
 }
