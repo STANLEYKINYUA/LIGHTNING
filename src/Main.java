@@ -19,12 +19,15 @@
 
 
 import aa_11_DEV_TERMINAL.CMD_Terminal;
+import aa_USER_INTERFACE_COMPONENTS.aa_UI_Login_and_Startup.Login_Window;
 import aa_USER_INTERFACE_COMPONENTS.aa_UI_Login_and_Startup.Splash_Screen_Window;
 import com.formdev.flatlaf.fonts.inter.FlatInterFont;
 import com.formdev.flatlaf.fonts.jetbrains_mono.FlatJetBrainsMonoFont;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import com.formdev.flatlaf.fonts.roboto_mono.FlatRobotoMonoFont;
 import com.formdev.flatlaf.themes.FlatMacDarkLaf;
+import quickfix.Log;
+
 import javax.swing.*;
 
 
@@ -59,6 +62,15 @@ public class Main {
         //Start the Swing Application with  a try catch block.
         try
         {
+            //Fetch the Theme.
+            String Current_Theme = Theme;
+
+
+            //Here we Install the FlatLaf Theme Depending on the Selected Theme in Config File.
+
+                    //Carbon_Theme
+            if(Current_Theme == "CARBON")
+            {}
 
 
             //Load the SplashScreen. - Create the EventQueue to Load the Splash Screen Form
@@ -66,19 +78,19 @@ public class Main {
                 @Override
                 public void run()
                 {
-                    //Load Direct to the Splash Screen.
-                    JFrame Splash_Screen = new Splash_Screen_Window();
-                    Splash_Screen.setVisible(true);
+                    //Load Direct to the Login Screen.
+                    JFrame Login_Screen = new Login_Window();
+                    Login_Screen.setVisible(true);
 
                     //Load Terminal for Test.
                     JFrame Terminal = new CMD_Terminal();
                     Terminal.setVisible(true);
 
 
-                    // Timer CountDown
 
 
-                    // Close Splash Screen.
+
+
 
                 }
             });
@@ -93,6 +105,28 @@ public class Main {
 
         }
 
+    }
+
+
+    //Create a Function to Set theme.
+    static void Set_Theme(String Theme_to_Set)
+    {
+        //Create a block to catch exceptions.
+        try
+        {
+            //set the theme variable.
+            String Theme = Theme_to_Set;
+
+            //Select Appropriate Theme and Set it.
+                    //CARBON LAF
+                    //D
+        }
+        catch(Exception Theme_Install_Failed_Exception)
+        {
+            //TODO  Write to Log File.
+            //TODO  Proper exception Handling with a window and more logging
+            Theme_Install_Failed_Exception.printStackTrace();
+        }
     }
 
 

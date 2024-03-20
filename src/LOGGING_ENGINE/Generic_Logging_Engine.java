@@ -12,6 +12,7 @@ public interface Generic_Logging_Engine
 
     //-----------------------------------------------------------
     //Functions that test for File Existence and whether File is Writeable.
+
     char Does_Log_File_Exist(String LogDirectory_Address , String LogFile_Name);
     char Is_Log_File_Writable(String LogDirectory_Address , String LogFile_Name);
     //-----------------------------------------------------------
@@ -30,9 +31,21 @@ public interface Generic_Logging_Engine
 
     //-----------------------------------------------------------
     //  Functions that Handle Writing to Files.
+
     void Log_to_Specific_Log(String Specific_Log_FileName , String LogMessage);
     void Log_to_General_Log(String LogMessage);
     //-----------------------------------------------------------
 
+    //-----------------------------------------------------------
+    //LOGGING MESSAGES
+
+    void Action_Failed_with_Message(String LogMessage);
+
+    void Log_Connection();
+    void Log_Disconnect();
+    void Log_Reconnect();
+
+
+    //-----------------------------------------------------------
 
 }

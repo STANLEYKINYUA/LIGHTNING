@@ -5,7 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/CONFIG/CONFIG_System_Config_File_Handler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FEED_SCRAPER/WEB_SCRAPER.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LOGFILE_Parser/Log_File_Parser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NOTIFICATIONS_SYSTEM/NOTIFICATIONS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TRADING_VENUE/Crypto_Exchanges/CRYPTO_VENUE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TRADING_VENUE/Crypto_Exchanges/CryptoVenue_Generic_JAVASDK_Venue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TRADING_VENUE/Crypto_Exchanges/CryptoVenue_Generic_RestFul_Venue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/Carbon_Laf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/Carbon_Laf.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/DarkPurple_Laf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/DarkPurple_Laf.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatDark_Laf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatDark_Laf.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatLight_Laf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatLight_Laf.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatMacDark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatMacDark.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatMacLight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatMacLight.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CONFIG/Chart_WorkSpace_Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CONFIG/Chart_WorkSpace_Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CONFIG/System_Config_File_Handler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CONFIG/XML_CONFIG_FILE_PARSER.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CONFIG/CONFIG_FILE_PARSER.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LOGGING_ENGINE/Generic_Logging_Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LOGGING_ENGINE/Generic_Logging_Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,24 +92,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main Class of Lightning.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.Unnamed.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/11- Dependency JARS/testng-7.9.0-20230519.062711-1-javadoc.jar",
-    "onboarding.tips.debug.path": "E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.22758621",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main Class of Lightning.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/11- Dependency JARS/testng-7.9.0-20230519.062711-1-javadoc.jar&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.22758621&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\111 - REPO - MKU PROJECT REPO\LIGHTNING\src\aa_Themes" />
