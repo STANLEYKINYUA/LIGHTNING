@@ -1,0 +1,11 @@
+Sample Encrypted Authentication File :
+
+
+
+# Users_File  - Encrypted Binary File but is decrypted and read : password hashes compared not decrypted
+<
+    (UserName)="asd32erqasadasd"
+    (PasswordHash)="2q3e13e3eq3we"
+    (Config)
+
+>

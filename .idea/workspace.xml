@@ -5,32 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CONFIG/CONFIG_System_Config_File_Handler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FEED_SCRAPER/WEB_SCRAPER.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LOGFILE_Parser/Log_File_Parser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NOTIFICATIONS_SYSTEM/NOTIFICATIONS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TRADING_VENUE/Crypto_Exchanges/CRYPTO_VENUE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TRADING_VENUE/Crypto_Exchanges/CryptoVenue_Generic_JAVASDK_Venue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TRADING_VENUE/Crypto_Exchanges/CryptoVenue_Generic_RestFul_Venue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/Carbon_Laf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/Carbon_Laf.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/DarkPurple_Laf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/DarkPurple_Laf.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatDark_Laf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatDark_Laf.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatLight_Laf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatLight_Laf.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatMacDark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatMacDark.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatMacLight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatMacLight.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DEVELOPER_NOTES/ConfigFile _Sample General Config File" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatMacLight_LAF.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CONFIG/Chart_WorkSpace_Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CONFIG/Chart_WorkSpace_Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CONFIG/System_Config_File_Handler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CONFIG/XML_CONFIG_FILE_PARSER.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CONFIG/CONFIG_FILE_PARSER.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LOGGING_ENGINE/Generic_Logging_Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LOGGING_ENGINE/Generic_Logging_Engine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatMacDark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatMacDark_LAF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatMacDark.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DEVELOPER_NOTES/Authentication_Files" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatMacLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatMacLight_LAF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatMacLight.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatMacDark_LAF.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

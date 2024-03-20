@@ -19,14 +19,13 @@
 
 
 import aa_11_DEV_TERMINAL.CMD_Terminal;
+import aa_USER_INTERFACE_COMPONENTS.a_THEMES.*;
 import aa_USER_INTERFACE_COMPONENTS.aa_UI_Login_and_Startup.Login_Window;
-import aa_USER_INTERFACE_COMPONENTS.aa_UI_Login_and_Startup.Splash_Screen_Window;
 import com.formdev.flatlaf.fonts.inter.FlatInterFont;
 import com.formdev.flatlaf.fonts.jetbrains_mono.FlatJetBrainsMonoFont;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import com.formdev.flatlaf.fonts.roboto_mono.FlatRobotoMonoFont;
 import com.formdev.flatlaf.themes.FlatMacDarkLaf;
-import quickfix.Log;
 
 import javax.swing.*;
 
@@ -62,15 +61,14 @@ public class Main {
         //Start the Swing Application with  a try catch block.
         try
         {
-            //Fetch the Theme.
-            String Current_Theme = Theme;
+            //Create Variables.
+            String Theme_to_Install="";
 
+            //Read Config File and Fetch Theme.
 
             //Here we Install the FlatLaf Theme Depending on the Selected Theme in Config File.
+            Set_Theme(Theme_to_Install);
 
-                    //Carbon_Theme
-            if(Current_Theme == "CARBON")
-            {}
 
 
             //Load the SplashScreen. - Create the EventQueue to Load the Splash Screen Form
@@ -119,7 +117,52 @@ public class Main {
 
             //Select Appropriate Theme and Set it.
                     //CARBON LAF
-                    //D
+            if(Theme == "Carbon")
+            {
+                //Set Carbon as the Look and Feel.
+                FlatMacDarkLaf.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.a_THEMES");
+                Carbon_Laf.setup();
+            }
+                    //DarkPurple LAF
+            if(Theme == "DarkPurple_LAF")
+            {
+                //Set Carbon as the Look and Feel.
+                FlatMacDarkLaf.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.a_THEMES");
+                DarkPurple_Laf.setup();
+            }
+                    //FlatDark LAF
+            if(Theme == "FlatDark_LAF")
+            {
+                //Set Carbon as the Look and Feel.
+                FlatMacDarkLaf.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.a_THEMES");
+                FlatDark_Laf.setup();
+            }
+                    //FlatLight LAF
+            if(Theme == "FlatLight_LAF")
+            {
+                //Set Carbon as the Look and Feel.
+                FlatMacDarkLaf.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.a_THEMES");
+                FlatLight_Laf.setup();
+            }
+                    //FlatMacDark_LAF LAF
+            if(Theme == "FlatMacDark_LAF")
+            {
+                //Set Carbon as the Look and Feel.
+                FlatMacDarkLaf.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.a_THEMES");
+                FlatDark_Laf.setup();
+            }
+                    //FlatMacLight_LAF LAF
+            if(Theme == "FlatMacLight_LAF")
+            {
+                //Set Carbon as the Look and Feel.
+                FlatMacDarkLaf.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.a_THEMES");
+                FlatMacLight_LAF.setup();
+            }
+
+
+
+
+
         }
         catch(Exception Theme_Install_Failed_Exception)
         {
