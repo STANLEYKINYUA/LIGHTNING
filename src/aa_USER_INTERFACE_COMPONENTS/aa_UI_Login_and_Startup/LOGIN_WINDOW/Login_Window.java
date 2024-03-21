@@ -77,7 +77,7 @@ public class Login_Window extends JFrame
 
             //UserName Text Box where UserName is Entered.
             UsrNameTxtBOX User_Name_Text_Box = new UsrNameTxtBOX();
-            this.add(User_Name_Text_Box,"span, w 100px!");
+            this.add(User_Name_Text_Box,"span, w 200px! ,h 30px!");
 
 
             //TODO  Mouse Listener that displays tooltip on Mouse enter Username Field
@@ -85,21 +85,13 @@ public class Login_Window extends JFrame
             //----------------------------------------------------------------------------
 
             // Password Field for User
-            JLabel Password_Label = new JLabel();
-            Password_Label.setText("PASSWORD");
-            this.add(Password_Label);
+            PasswordLABEL Password_Label = new PasswordLABEL();
+            this.add(Password_Label,"align label");
 
             //  Password Text Field
-            JPasswordField User_Password = new JPasswordField();
-            User_Password.setToolTipText("ENTER_KEY_LISTENER PASSWORD");
-            this.add(User_Password,"wrap");
+            PasswordTxtBox User_Password = new PasswordTxtBox();
+            this.add(User_Password,"span ,w 200px! , h 30px!");
 
-
-                    //Show * when password is entered.
-            User_Password.setEchoChar('*');
-
-                    //Display Password reveal Icon
-           // User_Password.putClientProperty("PasswordField.revealIcon",true);
 
 
             //TODO Create a Mouse Listener that opens tooltip on Hover.
@@ -110,6 +102,7 @@ public class Login_Window extends JFrame
             //Login Button
             JButton Login_Button = new JButton();
             Login_Button.setText("LOGIN");
+
             this.add(Login_Button);
 
             //Event Listener for Login Button to Open Main Trading Window
