@@ -1,8 +1,10 @@
 package aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW;
 
 import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.CHART_AREA_DESKTOP_PANE;
-import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MENUS_TOOLBARS.CONNECTIONS_MENU.Connections_Menu;
-import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MENUS_TOOLBARS.FILE_MENU.File_Menu_Entry;
+import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MENUS.CONNECTIONS_MENU.Connections_Menu;
+import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MENUS.FILE_MENU.File_Menu_Entry;
+import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MENUS.REPORTS.Reports_Menu;
+import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.TOOLBAR.Trading_Window_ToolBar;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 
 import javax.swing.*;
@@ -47,7 +49,8 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
 
 
-            //TODO  Create a Menu System.
+            //TODO Finish creating theMenu System.
+
             JMenuBar Trading_Window_MenuBar = new JMenuBar();
 
                     //Create MenuBar and Add Different Components
@@ -55,9 +58,9 @@ public class MAIN_TRADING_WINDOW extends JFrame
                 //---------------------------------------------------------------------------
                 // Creating Menus by calling their respective classes
 
-                File_Menu_Entry File_Menu = new File_Menu_Entry();
-                Connections_Menu ConnectionsMENU = new Connections_Menu();
-
+                File_Menu_Entry File_Menu           = new File_Menu_Entry();
+                Connections_Menu ConnectionsMENU    = new Connections_Menu();
+                Reports_Menu    ReportsMenu         = new Reports_Menu();
                 //---------------------------------------------------------------------------
 
 
@@ -67,9 +70,10 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
                     // Add the Menus to the MenuBar.
                 Trading_Window_MenuBar.add(File_Menu);
-
                 Trading_Window_MenuBar.add(ConnectionsMENU);
                 Trading_Window_MenuBar.add(Trading_Tools_Menu);
+                Trading_Window_MenuBar.add(ReportsMenu);
+
 
 
                     //TODO  Create Menu Items
@@ -85,40 +89,16 @@ public class MAIN_TRADING_WINDOW extends JFrame
             //-------------------------------------------------------------------------------------------------------
             //TODO  Create a ToolBar
 
-            JToolBar ToolBar = new JToolBar();
-
-                ToolBar.setRollover(true);
+            Trading_Window_ToolBar ToolBar = new Trading_Window_ToolBar();
 
 
-                //Change BackGround Color of Toolbar so it stands out.
-                //ToolBar.setBackground(Color.GRAY);
-
-                //Create Buttons to add to ToolBar.
-
-                JButton New_Window_ToolBar_Button = new JButton();
-                New_Window_ToolBar_Button.setText("New Window");
-                // Special FlatLaf Customization Features
-                New_Window_ToolBar_Button.putClientProperty("Button.arc",100);
-
-                JButton NODES_Button = new JButton();
-                NODES_Button.setText("NODES");
-
-                JButton ANALYSIS_BUTTON = new JButton();
-                ANALYSIS_BUTTON.setText("ANALYSIS");
-
-                //Add this buttons to the toolbar.
-                ToolBar.add(New_Window_ToolBar_Button);
-                ToolBar.addSeparator();
-                ToolBar.add(NODES_Button);
-                ToolBar.addSeparator();
-                ToolBar.add(ANALYSIS_BUTTON);
 
 
                 //TODO  Create Different Toolbar Icons and Commands separated by Seperators
                 //TODO  Display Different Toolbar Items
                 //TODO  Add FlatLaf specific features to the toolbar
 
-                // Create a Content Pane.
+                // Create a Content Pane to display the ToolBar.
                 Container ContentPane = this.getContentPane();
 
                 //Add toolbar to the Contentpane Docked North.

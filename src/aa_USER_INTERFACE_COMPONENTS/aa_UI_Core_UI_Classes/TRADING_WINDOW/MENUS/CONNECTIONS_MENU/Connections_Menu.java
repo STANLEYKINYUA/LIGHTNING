@@ -1,4 +1,4 @@
-package aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MENUS_TOOLBARS.CONNECTIONS_MENU;
+package aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MENUS.CONNECTIONS_MENU;
 
 import javax.swing.*;
 
@@ -9,6 +9,7 @@ public class Connections_Menu extends JMenu
     /** Default Constructor for Connections Menu Class */
     public Connections_Menu()
     {
+        this.setText("CONNECTIONS");
 
     }
 }

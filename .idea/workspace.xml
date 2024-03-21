@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/SETTINGS/Settings_Window.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MENUS_TOOLBARS/CONNECTIONS_MENU/Connections_Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MENUS_TOOLBARS/FILE_MENU/Accounts_Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MENUS_TOOLBARS/FILE_MENU/File_Menu_Entry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MENUS_TOOLBARS/FILE_MENU/Preferences_MenuItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MENUS/REPORTS/Reports_Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MENUS/TOOLS_MENU/MarketCLOCK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/TOOLBAR/Trading_Window_ToolBar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_11_DEV_TERMINAL/CMD_Terminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_11_DEV_TERMINAL/CMD_Terminal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/Settings_Window.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MAIN_TRADING_WINDOW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MAIN_TRADING_WINDOW.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MENUS_TOOLBARS/CONNECTIONS_MENU/Connections_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MENUS/CONNECTIONS_MENU/Connections_Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MENUS_TOOLBARS/FILE_MENU/Accounts_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MENUS/FILE_MENU/Accounts_Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MENUS_TOOLBARS/FILE_MENU/File_Menu_Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MENUS/FILE_MENU/File_Menu_Entry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MENUS_TOOLBARS/FILE_MENU/Preferences_MenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MENUS/FILE_MENU/Preferences_MenuItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
