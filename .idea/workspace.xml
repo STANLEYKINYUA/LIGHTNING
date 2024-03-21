@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DEVELOPER_NOTES/Directory Structure" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CONFIG/General_Config/General_Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/ModernDocking_prototype/Hello.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/ModernDocking_prototype/MainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/Test_2D_Arrays_FOR_BarData_storage_for_Charts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_ChartEngine_and_INDICATORS/Chart_Type_TICK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/SETTINGS/Settings_Window.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MENUS_TOOLBARS/CONNECTIONS_MENU/Connections_Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MENUS_TOOLBARS/FILE_MENU/Accounts_Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MENUS_TOOLBARS/FILE_MENU/File_Menu_Entry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MENUS_TOOLBARS/FILE_MENU/Preferences_MenuItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DEVELOPER_NOTES/ConfigFile _Sample General Config File" beforeDir="false" afterPath="$PROJECT_DIR$/DEVELOPER_NOTES/ConfigFile _Sample General Config File" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LIGHTNING.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LIGHTNING.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CONFIG/CONFIG_FILE_PARSER.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CONFIG/CONFIG_FILE_PARSER.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_ChartEngine_and_INDICATORS/GENERIC_CHART.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_ChartEngine_and_INDICATORS/GENERIC_CHART.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_ChartEngine_and_INDICATORS/Generic_Real_Time_Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_ChartEngine_and_INDICATORS/Generic_Real_Time_Chart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_ChartEngine_and_INDICATORS/Generic_STOCK_Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Charts_ChartEngine_and_INDICATORS/Generic_STOCK_Chart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_11_DEV_TERMINAL/CMD_Terminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_11_DEV_TERMINAL/CMD_Terminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/Settings_Window.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MAIN_TRADING_WINDOW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MAIN_TRADING_WINDOW.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,11 +99,11 @@
       <recent name="E:\111 - REPO - MKU PROJECT REPO\LIGHTNING\src\aa_Themes" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MENUS.FILE_MENU" />
+      <recent name="aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.SETTINGS" />
       <recent name="FINANCIAL_DATA_and_EXECUTION_Engines" />
       <recent name="FEEDS.Market_DataFeed" />
       <recent name="" />
-      <recent name="aa_USER_INTERFACE_COMPONENTS" />
-      <recent name="aa_USER_INTERFACE_COMPONENTS.aa_UI_Charts_ChartEngine_and_INDICATORS.INDICATORS" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main Class of Lightning">

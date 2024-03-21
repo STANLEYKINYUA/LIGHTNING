@@ -16,7 +16,7 @@ public class CMD_Terminal extends JFrame
     public CMD_Terminal()
     {
         //TODO  Create Window and Set Window Parameters
-        this.setBounds(200,50,400,350);
+        this.setBounds(1000,50,400,350);
 
         //Set it to always be on top.
         this.setAlwaysOnTop(true);

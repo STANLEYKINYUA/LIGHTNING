@@ -1,6 +1,8 @@
 package aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW;
 
 import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.CHART_AREA_DESKTOP_PANE;
+import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MENUS_TOOLBARS.CONNECTIONS_MENU.Connections_Menu;
+import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MENUS_TOOLBARS.FILE_MENU.File_Menu_Entry;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 
 import javax.swing.*;
@@ -48,26 +50,27 @@ public class MAIN_TRADING_WINDOW extends JFrame
             //TODO  Create a Menu System.
             JMenuBar Trading_Window_MenuBar = new JMenuBar();
 
-                    //Create Menus.
-                JMenu File_Menu             =   new JMenu("FILE");
-                JMenu Trade_Menu            =   new JMenu("TRADE");
-                JMenu Accounts_Menu         =   new JMenu("ACCOUNTS");
+                    //Create MenuBar and Add Different Components
 
-                JMenu Connections_Menu      =   new JMenu("CONNECTIONS");
+                //---------------------------------------------------------------------------
+                // Creating Menus by calling their respective classes
+
+                File_Menu_Entry File_Menu = new File_Menu_Entry();
+                Connections_Menu ConnectionsMENU = new Connections_Menu();
+
+                //---------------------------------------------------------------------------
+
+
                 JMenu Trading_Tools_Menu    =   new JMenu("TRADING TOOLS");
-                JMenu Analysis_Tools_Menu   =   new JMenu("ANALYSIS TOOLS");
-                JMenu Settings_Menu         =   new JMenu("SETTINGS");
+
 
 
                     // Add the Menus to the MenuBar.
                 Trading_Window_MenuBar.add(File_Menu);
-                Trading_Window_MenuBar.add(Trade_Menu);
-                Trading_Window_MenuBar.add(Accounts_Menu);
 
-                Trading_Window_MenuBar.add(Connections_Menu);
+                Trading_Window_MenuBar.add(ConnectionsMENU);
                 Trading_Window_MenuBar.add(Trading_Tools_Menu);
-                Trading_Window_MenuBar.add(Analysis_Tools_Menu);
-                Trading_Window_MenuBar.add(Settings_Menu);
+
 
                     //TODO  Create Menu Items
                     //TODO  Add Menu Items to Menu Bars
