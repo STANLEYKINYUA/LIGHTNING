@@ -9,9 +9,10 @@
 *               2.  Redirects to Registration Window allowing us to register.
 *
 * */
-package aa_USER_INTERFACE_COMPONENTS.aa_UI_Login_and_Startup;
+package aa_USER_INTERFACE_COMPONENTS.aa_UI_Login_and_Startup.LOGIN_WINDOW;
 
 import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MAIN_TRADING_WINDOW;
+import aa_USER_INTERFACE_COMPONENTS.aa_UI_Login_and_Startup.REGISTRATION_WINDOW;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import com.github.weisj.jsvg.nodes.Use;
 import net.miginfocom.swing.MigLayout;
@@ -51,7 +52,8 @@ public class Login_Window extends JFrame
             // Create a transparency effect
 
             //set Layout to MigLayout.
-            this.setLayout(new GridBagLayout());
+            this.setLayout(new MigLayout());
+
 
             //Set the Close Action to Exit the Program.
             this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -65,19 +67,17 @@ public class Login_Window extends JFrame
             // START LAYING OUT FORM ELEMENTS
 
             // LOGIN LABEL for LOGIN FORM.
-            JLabel Login_Label = new JLabel("LOGIN");
-            this.add(Login_Label);
+            LoginLABEL Login_Label = new LoginLABEL();
+            this.add(Login_Label,"span,center,gapbottom 15");
 
             //----------------------------------------------------------------------------
             // USERNAME Label with Validation
-            JLabel Usr_Name_Label = new JLabel("USER NAME");
-            Usr_Name_Label.setText("USER NAME");
-            this.add(Usr_Name_Label);
+            UsrNameLABEL Usr_Name_Label = new UsrNameLABEL("USER NAME");
+            this.add(Usr_Name_Label,"align label");
 
             //UserName Text Box where UserName is Entered.
-            JTextPane User_Name_Text_Pane = new JTextPane();
-            User_Name_Text_Pane.setToolTipText("Enter User Name");
-            this.add(User_Name_Text_Pane);
+            UsrNameTxtBOX User_Name_Text_Box = new UsrNameTxtBOX();
+            this.add(User_Name_Text_Box,"span, w 100px!");
 
 
             //TODO  Mouse Listener that displays tooltip on Mouse enter Username Field
@@ -92,7 +92,7 @@ public class Login_Window extends JFrame
             //  Password Text Field
             JPasswordField User_Password = new JPasswordField();
             User_Password.setToolTipText("ENTER_KEY_LISTENER PASSWORD");
-            this.add(User_Password);
+            this.add(User_Password,"wrap");
 
 
                     //Show * when password is entered.
