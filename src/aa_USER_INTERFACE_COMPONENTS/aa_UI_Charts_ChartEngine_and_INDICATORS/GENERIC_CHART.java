@@ -15,4 +15,6 @@ public interface GENERIC_CHART
     void Set_Light_Theme();
 
     void Set_Chart_Background_Color();
+
+    //
 }

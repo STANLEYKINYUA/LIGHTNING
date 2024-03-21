@@ -7,7 +7,7 @@ public interface CONFIG_FILE_PARSER
     // FUNCTIONS THAT CREATE , MODIFY , DELETE CONFIG FILES
 
     /** Checks if the File exists  */
-    void Check_if_File_Exists(String File_Adress , String File_Name);
+    void Check_if_File_Exists();
 
     /** Check if the Folder exists */
     void Check_if_Folder_Exists(String Folder_Adress , String Folder_Name);
@@ -26,10 +26,21 @@ public interface CONFIG_FILE_PARSER
     //----------------------------------------------------------------------------
     // FUNCTIONS THAT READ / WRITE CONFIG FILES
     /** Reads Config File From File and Loads it into Memory*/
-    void Read_from_Config_File(String File_Adress, String FileName);
+    void Read_from_Config_File();
 
     /** Write Data to Config File*/
-    void Write_to_Config_File(String File_Adress,String FileName , String Message);
+    void Write_to_Config_File();
+    //----------------------------------------------------------------------------
+
+
+    //----------------------------------------------------------------------------
+    // FUNCTIONS TO PARSE CONFIG FILES.
+    /** Parse Config Files and  */
+
+    void Search_Tag(String Tag);
+    void Read_Tag_Value();
+    void Create_Tag(String Tag);
+
     //----------------------------------------------------------------------------
 
 

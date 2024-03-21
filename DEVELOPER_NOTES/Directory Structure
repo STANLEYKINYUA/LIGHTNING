@@ -1,0 +1,17 @@
+< Directory Structure for  Config Files >
+
+
+
+MyDocuments / ZZ LIGHTNING                     //Directory Location
+
+
+    <USERNAME - Folder>
+        <Config>
+                * General.Config
+                * Nodes.Config
+                * API.Config                 //  Sensitive data Stored encrypted and decrypted @ runtime.
+                 * workspace 1.config
+                 <Templates>
+                            * RenkoChart.Config
+
+    <USERNAME 2 - Folder >

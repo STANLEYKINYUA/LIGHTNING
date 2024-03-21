@@ -21,11 +21,17 @@
 import aa_11_DEV_TERMINAL.CMD_Terminal;
 import aa_USER_INTERFACE_COMPONENTS.a_THEMES.*;
 import aa_USER_INTERFACE_COMPONENTS.aa_UI_Login_and_Startup.Login_Window;
+import aa_USER_INTERFACE_COMPONENTS.aa_UI_Login_and_Startup.Splash_Screen_Window;
+import com.formdev.flatlaf.FlatDarkLaf;
+import com.formdev.flatlaf.FlatLightLaf;
 import com.formdev.flatlaf.fonts.inter.FlatInterFont;
 import com.formdev.flatlaf.fonts.jetbrains_mono.FlatJetBrainsMonoFont;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import com.formdev.flatlaf.fonts.roboto_mono.FlatRobotoMonoFont;
+import com.formdev.flatlaf.intellijthemes.FlatCarbonIJTheme;
+import com.formdev.flatlaf.intellijthemes.FlatDarkPurpleIJTheme;
 import com.formdev.flatlaf.themes.FlatMacDarkLaf;
+import com.formdev.flatlaf.themes.FlatMacLightLaf;
 
 import javax.swing.*;
 
@@ -76,9 +82,9 @@ public class Main {
                 @Override
                 public void run()
                 {
-                    //Load Direct to the Login Screen.
-                    JFrame Login_Screen = new Login_Window();
-                    Login_Screen.setVisible(true);
+                    //Need a Splash Screen so we can decide whether to create Login Form/ Registration For,
+                    JFrame Splash_Screen = new Splash_Screen_Window();
+                    Splash_Screen.setVisible(true);
 
                     //Load Terminal for Test.
                     JFrame Terminal = new CMD_Terminal();
@@ -120,46 +126,51 @@ public class Main {
             if(Theme == "Carbon")
             {
                 //Set Carbon as the Look and Feel.
-                FlatMacDarkLaf.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.a_THEMES");
+               FlatCarbonIJTheme.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.a_THEMES");
                 Carbon_Laf.setup();
             }
                     //DarkPurple LAF
             if(Theme == "DarkPurple_LAF")
             {
-                //Set Carbon as the Look and Feel.
-                FlatMacDarkLaf.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.a_THEMES");
+                //Set DarkPurple_LAF as the Look and Feel.
+                FlatDarkPurpleIJTheme.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.a_THEMES");
                 DarkPurple_Laf.setup();
             }
                     //FlatDark LAF
             if(Theme == "FlatDark_LAF")
             {
-                //Set Carbon as the Look and Feel.
-                FlatMacDarkLaf.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.a_THEMES");
+                //Set FlatDark_LAF as the Look and Feel.
+                FlatDarkLaf.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.a_THEMES");
                 FlatDark_Laf.setup();
             }
                     //FlatLight LAF
             if(Theme == "FlatLight_LAF")
             {
-                //Set Carbon as the Look and Feel.
-                FlatMacDarkLaf.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.a_THEMES");
+                //Set FlatLight_LAF as the Look and Feel.
+                FlatLightLaf.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.a_THEMES");
                 FlatLight_Laf.setup();
             }
                     //FlatMacDark_LAF LAF
             if(Theme == "FlatMacDark_LAF")
             {
-                //Set Carbon as the Look and Feel.
+                //Set Flat MacDark_LAF as the Look and Feel.
                 FlatMacDarkLaf.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.a_THEMES");
-                FlatDark_Laf.setup();
+                FlatMacDark_LAF.setup();
+
             }
                     //FlatMacLight_LAF LAF
             if(Theme == "FlatMacLight_LAF")
             {
-                //Set Carbon as the Look and Feel.
-                FlatMacDarkLaf.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.a_THEMES");
+                //Set FlatMacLight_LAF as the Look and Feel.
+                FlatMacLightLaf.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.a_THEMES");
                 FlatMacLight_LAF.setup();
             }
 
 
+            //TODO      Remove this and use Config File
+            //  Using FLATMACDark so that I can continue development
+            FlatMacDarkLaf.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.a_THEMES");
+            FlatMacDark_LAF.setup();
 
 
 

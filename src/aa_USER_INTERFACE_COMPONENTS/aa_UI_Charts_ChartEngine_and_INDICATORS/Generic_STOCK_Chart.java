@@ -1,18 +1,21 @@
 package aa_USER_INTERFACE_COMPONENTS.aa_UI_Charts_ChartEngine_and_INDICATORS;
 
+/** This Interface stores Functions related to all Stock Charts : CandleStick , Renko , Range , Tick etc */
 public interface Generic_STOCK_Chart
 {
 
-    //Set the Scale for the X,Y Axis.
+    /** Set the Scale for the X,Y Axis. */
     void Set_X_Axis_Scale();
     void Set_Y_Axis_Scale();
+
+    /** Sets the Color of the X,Y Axis Component Colors */
     void Set_X_Axis_Components_Color();
     void Set_Y_Axis_Components_Color();
 
 
     //Drawing Functions.
     void Paint_on_Chart_Creation();
-    void Chart_Events_Marker_Plot();
+    void Plot_Symbol_Event_on_Chart();
     void Set_Chart_Events_Marker_Color();
 
     void Set_Chart_Events_Time_Marker_Plot();

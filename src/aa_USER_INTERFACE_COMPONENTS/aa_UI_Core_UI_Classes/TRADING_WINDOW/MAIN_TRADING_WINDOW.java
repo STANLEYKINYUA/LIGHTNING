@@ -6,6 +6,7 @@ import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import javax.swing.*;
 import java.awt.*;
 
+/** This Window is the default window that hosts Charts and Trading Menus and Windows */
 public class MAIN_TRADING_WINDOW extends JFrame
 {
 
@@ -17,7 +18,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
     }
 
 
-
+    /** Initializes Main Trading Window that is used to Display Other Windows */
     void init_Trading_Window()
     {
         //Create a try Catch block to catch any exception.

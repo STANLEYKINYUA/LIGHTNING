@@ -151,7 +151,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/modern-docking-api-0.11.1.jar!/" />
