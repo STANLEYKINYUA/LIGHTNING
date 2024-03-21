@@ -102,6 +102,7 @@ public class Login_Window extends JFrame
             //Login Button
             JButton Login_Button = new JButton();
             Login_Button.setText("LOGIN");
+            Login_Button.setFocusPainted(true);
 
             this.add(Login_Button);
 

@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatLaf.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Login_and_Startup/LOGIN_WINDOW/PasswordLABEL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Login_and_Startup/LOGIN_WINDOW/PasswordTxtBox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatDark_Laf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatDark_Laf.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatLaf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatLaf.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatMacDark_LAF.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatMacDark_LAF.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Login_and_Startup/LOGIN_WINDOW/Login_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Login_and_Startup/LOGIN_WINDOW/Login_Window.java" afterDir="false" />
     </list>
