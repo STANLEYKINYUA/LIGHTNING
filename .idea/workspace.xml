@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/11 - FONTS_LIBRARY/Chosence Light.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11 LIGHTNING DOCUMENTATION &amp; PROPOSAL/DOCUMENTATION &amp; DESIGHN DIAGRAMS/.$ChartWORKSPACE.drawio.dtmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/FONT_TEST/Accuratist.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/FONT_TEST/Buran USSR.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/FONT_TEST/Chosence Light.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/FONT_TEST/FONT_DISPLAY.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/FONT_TEST/Font_Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/a_PROTOTYPING/ModernDocking_prototype/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/ModernDocking_prototype/Hello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Login_and_Startup/Splash_Screen_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Login_and_Startup/Splash_Screen_Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +80,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Array_of_Objects.executor": "Run",
+    "Application.Font_Test.executor": "Run",
     "Application.Hello.executor": "Run",
     "Application.Main Class of Lightning.executor": "Run",
     "Application.Main.executor": "Run",
@@ -82,7 +90,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/11- Dependency JARS/Modern Docking/modern-docking-single-app-0.11.1.jar",
+    "last_opened_file_path": "E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/src/a_PROTOTYPING/FONT_TEST",
     "onboarding.tips.debug.path": "E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/src/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -91,18 +99,22 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\111 - REPO - MKU PROJECT REPO\LIGHTNING\src\a_PROTOTYPING\FONT_TEST" />
+      <recent name="E:\111 - REPO - MKU PROJECT REPO\LIGHTNING\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\111 - REPO - MKU PROJECT REPO\LIGHTNING\src\aa_Themes" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="a_PROTOTYPING.FONT_TEST" />
       <recent name="aa_USER_INTERFACE_COMPONENTS.aa_UI_Login_and_Startup.LOGIN_WINDOW" />
       <recent name="aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MENUS.FILE_MENU" />
       <recent name="aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.SETTINGS" />
       <recent name="FINANCIAL_DATA_and_EXECUTION_Engines" />
-      <recent name="FEEDS.Market_DataFeed" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Hello">
+  <component name="RunManager" selected="Application.Font_Test">
     <configuration name="Array_of_Objects" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="a_PROTOTYPING.Array_of_Objects.Array_of_Objects" />
       <module name="LIGHTNING" />
@@ -116,12 +128,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Font_Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="a_PROTOTYPING.FONT_TEST.Font_Test" />
+      <module name="LIGHTNING" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="a_PROTOTYPING.FONT_TEST.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="a_PROTOTYPING.ModernDocking_prototype.Hello" />
       <module name="LIGHTNING" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="a_PROTOTYPING.ModernDocking_prototype.*" />
+          <option name="PATTERN" value="a_PROTOTYPING.FONT_TEST.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,6 +176,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Font_Test" />
         <item itemvalue="Application.Hello" />
         <item itemvalue="Application.Array_of_Objects" />
         <item itemvalue="Application.Test_2D_Arrays_FOR_BarData_storage_for_Charts" />

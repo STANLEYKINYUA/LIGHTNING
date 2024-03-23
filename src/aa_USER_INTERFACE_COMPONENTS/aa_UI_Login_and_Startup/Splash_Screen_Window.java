@@ -16,6 +16,9 @@ import aa_USER_INTERFACE_COMPONENTS.aa_UI_Login_and_Startup.LOGIN_WINDOW.Login_W
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import javax.swing.*;
 import java.awt.*;
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+import java.io.InputStream;
 
 public class Splash_Screen_Window extends JFrame
 {
@@ -47,6 +50,7 @@ public class Splash_Screen_Window extends JFrame
 
         //Set the Font for the Label as well as the Size
         SplashScreen_Label.setFont(new Font(FlatRobotoFont.FAMILY , Font.PLAIN ,24));
+
 
 
 
