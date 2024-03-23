@@ -1,11 +1,11 @@
-<mxfile host="Electron" modified="2024-03-23T18:27:13.171Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.4.0 Chrome/112.0.5615.204 Electron/24.5.1 Safari/537.36" etag="v2HLezJ34IQsCb-F1H9T" version="21.4.0" type="device" pages="2">
+<mxfile host="Electron" modified="2024-03-23T18:29:25.807Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.4.0 Chrome/112.0.5615.204 Electron/24.5.1 Safari/537.36" etag="GuCsP1LLfzVcLg6pTbcP" version="21.4.0" type="device" pages="3">
   <diagram id="hDycJ88SvtJFa6JFhrfH" name="Chart Classes Scopes">
-    <mxGraphModel dx="1084" dy="644" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1549" dy="920" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="wjGSmoWpYXKsBpEZAUal-4" value="" style="group;fontSize=17;" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="205" y="138" width="1291" height="564" as="geometry" />
+          <mxGeometry x="192" y="122" width="1291" height="564" as="geometry" />
         </mxCell>
         <mxCell id="wjGSmoWpYXKsBpEZAUal-5" value="CHART AREA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="wjGSmoWpYXKsBpEZAUal-4" vertex="1">
           <mxGeometry width="1315" height="585" as="geometry" />
@@ -35,7 +35,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Chart Class Hierarchy" id="kw0OghmjQcKfQ3Gxc1fl">
-    <mxGraphModel dx="2284" dy="644" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2749" dy="920" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -162,6 +162,14 @@
         <mxCell id="UJ0VAgdAeNQ9g51mtX7u-52" value="Tick Chart" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
           <mxGeometry x="-866" y="738" width="120" height="60" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="0A9jgwyKui1bZFMNao_J" name="Page-3">
+    <mxGraphModel dx="1084" dy="644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
