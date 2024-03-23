@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/Array_of_Objects/Array_of_Objects.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11- Dependency JARS/modern-docking-api-0.11.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LIGHTNING.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LIGHTNING.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/a_PROTOTYPING/ModernDocking_prototype/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/ModernDocking_prototype/Hello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/a_PROTOTYPING/ModernDocking_prototype/MainFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatLaf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatLaf.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatMacDark_LAF.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/a_THEMES/FlatMacDark_LAF.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +102,7 @@
       <recent name="FEEDS.Market_DataFeed" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main Class of Lightning">
+  <component name="RunManager" selected="Application.Hello">
     <configuration name="Array_of_Objects" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="a_PROTOTYPING.Array_of_Objects.Array_of_Objects" />
       <module name="LIGHTNING" />
@@ -158,8 +151,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Array_of_Objects" />
         <item itemvalue="Application.Hello" />
+        <item itemvalue="Application.Array_of_Objects" />
         <item itemvalue="Application.Test_2D_Arrays_FOR_BarData_storage_for_Charts" />
       </list>
     </recent_temporary>
