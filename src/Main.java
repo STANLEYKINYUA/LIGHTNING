@@ -43,7 +43,7 @@ public class Main {
         //Hello World to prove that the program works.
         System.out.println("BUILD SUCCESS!!");
 
-        // Try to set Graphics properties
+
 
         //Install Font Packs
         FlatRobotoMonoFont.install();
@@ -103,7 +103,7 @@ public class Main {
             //print out the exception.
             EX.printStackTrace();
 
-            //Draw an Alert Window that shows the full exception Message.
+            //TODO  Draw an Alert Window using my Exceptions and Notifications that shows the full exception Message.
 
 
         }
@@ -179,6 +179,22 @@ public class Main {
             //TODO  Write to Log File.
             //TODO  Proper exception Handling with a window and more logging
             Theme_Install_Failed_Exception.printStackTrace();
+        }
+    }
+
+    //Create a Function that When called Loads a Variety of Fonts into the System
+    static void Load_new_Fonts()
+    {
+        try
+        {
+
+        }
+        catch(Exception LOAD_FONTS_EXCEPTION)
+        {
+            //simple print out exception.
+            LOAD_FONTS_EXCEPTION.printStackTrace();
+
+            //TODO  Draw an Alert Window using my Exceptions and Notifications that shows the full exception Message.
         }
     }
 
