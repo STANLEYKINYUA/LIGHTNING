@@ -1,4 +1,4 @@
-package aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.Charts_ChartEngine_and_INDICATORS;
+package aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.Charts_ChartEngine_and_INDICATORS.CHARTS;
 
 /** This Interface stores Functions related to all Stock Charts : CandleStick , Renko , Range , Tick etc */
 public interface Generic_STOCK_Chart
