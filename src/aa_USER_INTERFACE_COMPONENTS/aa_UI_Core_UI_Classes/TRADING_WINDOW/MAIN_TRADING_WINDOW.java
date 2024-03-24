@@ -1,9 +1,13 @@
 package aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW;
 
+import ModernDocking.app.Docking;
+import ModernDocking.app.RootDockingPanel;
 import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.CHART_AREA_DESKTOP_PANE;
 import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MENUS.CONNECTIONS_MENU.Connections_Menu;
 import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MENUS.FILE_MENU.File_Menu_Entry;
 import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MENUS.REPORTS.Reports_Menu;
+import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MENUS.TRADING_TOOLS_MENU.Trading_Tools_Menu;
+import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MENUS.Trading_Window_MenuBar;
 import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.TOOLBAR.Trading_Window_ToolBar;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 
@@ -19,6 +23,9 @@ public class MAIN_TRADING_WINDOW extends JFrame
         //Initialize the JFrame and show all Features.
         init_Trading_Window();
 
+
+
+
     }
 
 
@@ -28,8 +35,6 @@ public class MAIN_TRADING_WINDOW extends JFrame
         //Create a try Catch block to catch any exception.
         try
         {
-            //Load Window and Set Parametres.
-
             //1. Set Window Size and spawn Location.
             this.setBounds(200,200,800,800);
 
@@ -38,8 +43,6 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
             //3.    This Window is Resizable.
             this.setResizable(true);
-
-            //4.    Set the BackGround Color to Black.
 
             //5.    Set Default Font for the Frame as Roboto
             this.setFont(new Font(FlatRobotoFont.FAMILY ,Font.PLAIN ,12));
@@ -51,72 +54,50 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
             //TODO Finish creating theMenu System.
 
-            JMenuBar Trading_Window_MenuBar = new JMenuBar();
+            //Create MenuBar and Add Different Components
+            Trading_Window_MenuBar TradingWindowMenuBar = new Trading_Window_MenuBar();
 
-                    //Create MenuBar and Add Different Components
-
-                //---------------------------------------------------------------------------
-                // Creating Menus by calling their respective classes
-
-                File_Menu_Entry File_Menu           = new File_Menu_Entry();
-                Connections_Menu ConnectionsMENU    = new Connections_Menu();
-                Reports_Menu    ReportsMenu         = new Reports_Menu();
-                //---------------------------------------------------------------------------
+            //---------------------------------------------------------------------------
+            // Create Menus by calling their respective classes
+            File_Menu_Entry     File_Menu          = new File_Menu_Entry();
+            Connections_Menu    ConnectionsMENU    = new Connections_Menu();
+            Reports_Menu        ReportsMenu        = new Reports_Menu();
+            Trading_Tools_Menu  TradingToolsMenu    = new Trading_Tools_Menu();
 
 
-                JMenu Trading_Tools_Menu    =   new JMenu("TRADING TOOLS");
+            // Add the Menus to the MenuBar.
+            TradingWindowMenuBar.add(File_Menu);
+            TradingWindowMenuBar.add(ConnectionsMENU);
+            TradingWindowMenuBar.add(TradingToolsMenu);
+            TradingWindowMenuBar.add(ReportsMenu);
+
+            //TODO  Create Menu Items in respective classes
+            //TODO  Add Menu Items to Menu Bars
+            //TODO  Add FlatLaf Specific Features
+            //TODO   Add FLATLAF underline.
 
 
-
-                    // Add the Menus to the MenuBar.
-                Trading_Window_MenuBar.add(File_Menu);
-                Trading_Window_MenuBar.add(ConnectionsMENU);
-                Trading_Window_MenuBar.add(Trading_Tools_Menu);
-                Trading_Window_MenuBar.add(ReportsMenu);
-
-
-
-                    //TODO  Create Menu Items
-                    //TODO  Add Menu Items to Menu Bars
-                    //TODO  Add FlatLaf Specific Features
-                        //TODO   Add FLATLAF underline.
-                        //TODO   Add Flatlaf Color on Mouse Hover.
-
-
-                    //TODO  Display the Menu Bar
-                    this.setJMenuBar(Trading_Window_MenuBar);
+            // Display the Menu Bar on the Form
+            this.setJMenuBar(TradingWindowMenuBar);
 
             //-------------------------------------------------------------------------------------------------------
-            //TODO  Create a ToolBar
-
+            //ToolBar that is used to Display Icons
             Trading_Window_ToolBar ToolBar = new Trading_Window_ToolBar();
 
 
 
+            // Create a Content Pane to display the ToolBar.
+            Container ContentPane = this.getContentPane();
 
-                //TODO  Create Different Toolbar Icons and Commands separated by Seperators
-                //TODO  Display Different Toolbar Items
-                //TODO  Add FlatLaf specific features to the toolbar
+            //Add toolbar to the Contentpane Docked North.
+            ContentPane.add(ToolBar , BorderLayout.NORTH);
 
-                // Create a Content Pane to display the ToolBar.
-                Container ContentPane = this.getContentPane();
+            //Initialize Docking on this JFrame
+            Docking.initialize(this);
 
-                //Add toolbar to the Contentpane Docked North.
-                ContentPane.add(ToolBar , BorderLayout.NORTH);
-
-
-
-
-            //TODO  Create A JDESKTOP Pane to Host MDI Windows - No layout elements
-            JDesktopPane Chart_Area_Desktop_Pane = new CHART_AREA_DESKTOP_PANE();
-
-            //Add Jdesktop Pane to this Form and make it Visible.
-            this.add(Chart_Area_Desktop_Pane,BorderLayout.CENTER);
-            Chart_Area_Desktop_Pane.setVisible(true);
-
-
-
-
+            //Create a Root Dock Pane where Charts can be Docked
+            RootDockingPanel Trading_Window_DOCK_Panel = new RootDockingPanel(this);
+            this.add(Trading_Window_DOCK_Panel,BorderLayout.CENTER);
 
 
         }
@@ -129,6 +110,18 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
     }
 
+
+    //---------------------------------------------------------------------------------------------
+    /**These Functions are used to Create Non Docking Windows that Appear Above the Main Trading Window and capture FOCUS*/
+    void Spawn_Settings_Window()
+    {}
+    void Spawn_Exit_Alert_Dialog(){}
+    //----------------------------------------------------------------------------------------------
+
+    //----------------------------------------------------------------------------------------------
+    /**These Windows create Non Docking Windows which do not capture Focus */
+    void Spawn_Reports_Window(){}
+
     //----------------------------------------------------------------------------------------------
     // THis functions are used to display non MDI Windows
     void Spawn_Operational_Windows_that_dont_Lose_Focus(String Window_Type)
@@ -140,9 +133,9 @@ public class MAIN_TRADING_WINDOW extends JFrame
         >   These Windows must be spawned in a new Swing Worker thread to avoid program hanging.
 
             these windows are :
-                1.  Settings Window
+
                 2.  Create Order Window
-                3.  EXIT ALERT Window - JDialog
+
 
         * */
     }
@@ -154,8 +147,8 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
 
     // ----------------------------------------------------------------------------------------------
-    //This Collection of Functions is used to spawn MDI Windows
-    void Spawn_MDI_Chart_Window(String Chart_Type , String Market_Symbol , String Chart_Period )
+    //This Collection of Functions is used to spawn Chart Windows
+    void Spawn_Chart_Window(String Chart_Type , String Market_Symbol , String Chart_Period )
     {
         String Chart_type_to_Spawn = Chart_Type;
         String Financial_Symbol  = Market_Symbol;
@@ -170,6 +163,8 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
 
     //TODO  Create a Common Class/Interface that will allow the methods to Inherit a Generic Chart then Specify type.
+
+
     void Spawn_CandleStick_Chart(String Market_Symbol , String Chart_Period , String Start_Date)
     {
         //TODO  Write Code that Spawns a Candle Stick Chart and Fetches Data to Plot.

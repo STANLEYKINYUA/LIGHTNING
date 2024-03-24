@@ -27,6 +27,10 @@ public class Trading_Window_ToolBar extends JToolBar
         JButton ANALYSIS_BUTTON = new JButton();
         ANALYSIS_BUTTON.setText("ANALYSIS");
 
+        //TODO  Create Different Toolbar Icons and Commands separated by Seperators
+        //TODO  Display Different Toolbar Items
+        //TODO  Add FlatLaf specific features to the toolbar
+
         //Add this buttons to the toolbar.
         this.add(New_Window_ToolBar_Button);
         this.addSeparator();

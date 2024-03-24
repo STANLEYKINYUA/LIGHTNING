@@ -8,7 +8,7 @@ public class Pop_Up_Positive_Notification extends Pop_Up
     /** Display PopUp Window*/
     @Override
     public void Show_Pop_up(int x, int y) {
-        
+
     }
 
     /** Register PopUp Window with PopUP Manager */

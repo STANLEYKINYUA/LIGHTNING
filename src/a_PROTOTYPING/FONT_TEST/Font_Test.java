@@ -17,8 +17,8 @@ public class Font_Test
     public static void main(String[] args)
     {
         //Set Flat Laf Theme
-        //FlatMacDark_LAF.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.a_THEMES");
-       // FlatMacDark_LAF.setup();
+        FlatMacDark_LAF.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.a_THEMES");
+        FlatMacDark_LAF.setup();
 
 
 

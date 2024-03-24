@@ -6,6 +6,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.IOException;
+import java.io.Writer;
 
 public class Terminal_Text_Pane extends JTextArea
 {
@@ -89,6 +91,9 @@ public class Terminal_Text_Pane extends JTextArea
     //Function to Execute when Enter Key is Pressed.
     void ENTER_KEY_PRESSED()
     {
+        //todo remove this later
+        System.out.println("ENTER PRESSED.");
+
         Print_to_Terminal("ENTER PRESSED SUCCESSFULLY");
     }
     //----------------------------------------------------------------------------
@@ -101,6 +106,9 @@ public class Terminal_Text_Pane extends JTextArea
         String Output = Message;
 
         //TODO  Set text to print when enter pressed.
+        this.append(Output);
+
+        // TODO Add all the written commands into a Stack that I can call again
 
 
     }
@@ -108,6 +116,9 @@ public class Terminal_Text_Pane extends JTextArea
 
 
     //----------------------------------------------------------------------------
+    void Clear_Terminal()
+    {
+    }
     //----------------------------------------------------------------------------
 
 
