@@ -15,7 +15,7 @@ public class Settings_Window extends JFrame
         //Set the title of the Window to
         this.setTitle("SETTINGS");
 
-
+        //TODO  When Settings Altered : Change Config File + Call Specific Objects to reload/Update and read new Config File.
 
     }
 

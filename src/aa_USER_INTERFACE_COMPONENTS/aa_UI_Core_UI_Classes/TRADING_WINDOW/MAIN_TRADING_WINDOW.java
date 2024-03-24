@@ -132,6 +132,21 @@ public class MAIN_TRADING_WINDOW extends JFrame
     //----------------------------------------------------------------------------------------------
     /** These Functions create Dockable Windows */
 
+
+                // WATCHLIST ,Trade Information ,PORTFOLIO Management Windows
+    void Spawn_WatchList()
+    {
+        //TODO  Spawn WatchList always Docked to the West but can be Floated.
+    };
+    void Spawn_Position_and_Order_Management_Window()
+    {}
+    void Spawn_Market_Scanner()
+    {}
+    void Spawn_L2_Dom_Window()
+    {}
+    void Spawn_Trades_Ticker_Window()
+    {}
+
                 //CHARTS
     void Spawn_Dockable_CandleStick_Chart(String Market_Symbol , String Chart_Period , String Start_Date)
     {
@@ -150,10 +165,21 @@ public class MAIN_TRADING_WINDOW extends JFrame
         //TODO  Write Code that Spawns a Median Renko Bar Chart and Fetches Data to Plot.
     }
 
+            //Informational
+    void Spawn_Calendar_Window()
+    {}
+    void Spawn_Crypto_Information_Window()
+    {
+        //TODO  All Crypto Information is held in this tabbed pane
+    }
+    void Spawn_News_Window()
+    {}
+
+
     //----------------------------------------------------------------------------------------------
 
 
-    //TODO  Create a Common Class/Interface that will allow the methods to Inherit a Generic Chart then Specify type.
+
 
 
 

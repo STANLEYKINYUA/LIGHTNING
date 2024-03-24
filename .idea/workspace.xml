@@ -5,14 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/WatchList_Window.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/L2_DOM_WINDOW.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Trades_Ticker_Window.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/STOCK_WINDOWS/Scanner_Window.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/STOCK_WINDOWS/WatchList_Window.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/DIALOG_Windows/EXIT_ALERT_DIALOG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/DIALOG_Alert_Windows/EXIT_ALERT_WINDOW.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/DIALOG_Windows/Generic_Dialog_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/DIALOG_Alert_Windows/Generic_Dialog_Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/DOM_WINDOW.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/EXIT_ALERT_WINDOW.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/ORDERS_and_POSITIONS_WINDOW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/ORDERS_and_POSITIONS_WINDOW.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/Portfolio_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Portfolio_Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/SETTINGS/Settings_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/SETTINGS/Settings_Window.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MAIN_TRADING_WINDOW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/TRADING_WINDOW/MAIN_TRADING_WINDOW.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Trading_and_Trading_WorkFlow_Windows/Order_Entry_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Order_Entry_Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Trading_and_Trading_WorkFlow_Windows/Order_Manager_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Order_Manager_Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Trading_and_Trading_WorkFlow_Windows/Scanner_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Scanner_Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Scanner_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Market_Scanner_Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/aa_UI_Core_UI_Classes/aa_MDI_WINDOW.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
