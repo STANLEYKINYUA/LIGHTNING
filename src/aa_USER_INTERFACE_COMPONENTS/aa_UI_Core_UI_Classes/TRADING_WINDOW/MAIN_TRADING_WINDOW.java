@@ -1,7 +1,9 @@
 package aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW;
 
+import ModernDocking.DockingRegion;
 import ModernDocking.app.Docking;
 import ModernDocking.app.RootDockingPanel;
+import ModernDocking.internal.DockingPanel;
 import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.CHART_AREA_DESKTOP_PANE;
 import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MENUS.CONNECTIONS_MENU.Connections_Menu;
 import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MENUS.FILE_MENU.File_Menu_Entry;
@@ -9,6 +11,8 @@ import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MENUS.R
 import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MENUS.TRADING_TOOLS_MENU.Trading_Tools_Menu;
 import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MENUS.Trading_Window_MenuBar;
 import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.TOOLBAR.Trading_Window_ToolBar;
+import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.Trading_and_Trading_WorkFlow_Windows.Market_Scanner_Window;
+import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.Trading_and_Trading_WorkFlow_Windows.WatchList.WatchList_Window;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 
 import javax.swing.*;
@@ -99,6 +103,10 @@ public class MAIN_TRADING_WINDOW extends JFrame
             RootDockingPanel Trading_Window_DOCK_Panel = new RootDockingPanel(this);
             this.add(Trading_Window_DOCK_Panel,BorderLayout.CENTER);
 
+            //TODO Spawn WatchList , Scanner , Positions for now but remove later
+            Spawn_WatchList();
+            Spawn_Market_Scanner();
+
 
         }
         catch(Exception Trading_Window_Exception)
@@ -122,6 +130,8 @@ public class MAIN_TRADING_WINDOW extends JFrame
     void Spawn_Exit_Alert_Dialog(){}
     //----------------------------------------------------------------------------------------------
 
+
+
     //----------------------------------------------------------------------------------------------
     /**These Windows create Non Docking Windows which do not capture Focus */
     void Spawn_Reports_Window(){}
@@ -129,19 +139,51 @@ public class MAIN_TRADING_WINDOW extends JFrame
     //----------------------------------------------------------------------------------------------
 
 
+
+
     //----------------------------------------------------------------------------------------------
     /** These Functions create Dockable Windows */
-
 
                 // WATCHLIST ,Trade Information ,PORTFOLIO Management Windows
     void Spawn_WatchList()
     {
         //TODO  Spawn WatchList always Docked to the West but can be Floated.
+
+        try
+        {
+            //Spawn the WatchList and Dock
+            WatchList_Window WatchList = new WatchList_Window("WatchList");
+
+            //Dock into the created
+            Docking.dock(WatchList,this);
+
+
+        }
+        catch(Exception Failed_to_Spawn_WatchList_Window)
+        {
+            Failed_to_Spawn_WatchList_Window.printStackTrace();
+
+            //TODO Handle this exception better by throwing an Exception and Displaying Window
+        }
     };
     void Spawn_Position_and_Order_Management_Window()
     {}
     void Spawn_Market_Scanner()
-    {}
+    {
+        try
+        {
+            //Spawn the MarketScanner and Dock
+            Market_Scanner_Window MarketScannerWindow = new Market_Scanner_Window("MARKET SCANNER");
+
+            //Dock into the created
+            Docking.dock(MarketScannerWindow,this, DockingRegion.EAST);
+
+        }
+        catch(Exception Spawn_Market_Scanner_Exception)
+        {
+            Spawn_Market_Scanner_Exception.printStackTrace();
+        }
+    }
     void Spawn_L2_Dom_Window()
     {}
     void Spawn_Trades_Ticker_Window()

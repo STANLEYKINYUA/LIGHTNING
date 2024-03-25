@@ -86,8 +86,8 @@ public class Main {
                     Splash_Screen.setVisible(true);
 
                     //Load Terminal for Test.
-                    JFrame Terminal = new CMD_Terminal();
-                    Terminal.setVisible(true);
+                    //JFrame Terminal = new CMD_Terminal();
+                    //Terminal.setVisible(true);
 
 
 

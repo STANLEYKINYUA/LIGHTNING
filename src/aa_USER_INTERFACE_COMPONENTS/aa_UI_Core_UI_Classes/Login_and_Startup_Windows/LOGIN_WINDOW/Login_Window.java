@@ -102,7 +102,7 @@ public class Login_Window extends JFrame
             Login_Button.setText("LOGIN");
             Login_Button.setFocusPainted(true);
 
-            this.add(Login_Button);
+            this.add(Login_Button,"span, w 200px , h 80px,center");
 
             //Event Listener for Login Button to Open Main Trading Window
 
