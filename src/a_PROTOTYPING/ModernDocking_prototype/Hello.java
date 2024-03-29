@@ -90,6 +90,8 @@ public class Hello
             hello3.addTab("Crypto",new JTabbedPane());
             hello3.addTab("Commodities",new JTabbedPane());
 
+            DockingPanel hello4 = new DockingPanel("hello4");
+
 
             /* TODO  From here I can create the max number of panels I want to be able to dock
             *           I can restrict formation of Other Panels using IF statement
@@ -107,6 +109,9 @@ public class Hello
 
             //Dock hello3 into the centre of hello2 == This creates a Tabbed Frame;
             Docking.dock(hello3,hello2 , DockingRegion.CENTER);
+
+            //Dock hello4 into global West of the entire Frame
+            Docking.dock(hello4,this, DockingRegion.WEST);
 
         }
     }

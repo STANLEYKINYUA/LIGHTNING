@@ -14,6 +14,8 @@ package aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.Login_and_Startup_Win
 
 import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.Login_and_Startup_Windows.LOGIN_WINDOW.Login_Window;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
+import net.miginfocom.swing.MigLayout;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -33,13 +35,16 @@ public class Splash_Screen_Window extends JFrame
         this.setResizable(false);
 
         // SetLayout
-        this.setLayout(null);
+        this.setLayout(new MigLayout());
+
 
         //Set Close action to exit
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         //Set the size and the placement of the window.
         this.setBounds(200,250,600,300);
+
+        //This Window does not have a title bar
 
         //Create a Label and add its parameters
         JLabel SplashScreen_Label = new JLabel("LIGHTNING TRADER WORKSTATION");
@@ -52,7 +57,7 @@ public class Splash_Screen_Window extends JFrame
 
 
         //add the Label to the Form
-        this.add(SplashScreen_Label);
+        this.add(SplashScreen_Label,"span,center");
 
         //Create a Button that loads the
         JButton ENTER_APPLICATION_BUTTON = new JButton();

@@ -44,14 +44,19 @@ public class Main {
         System.out.println("BUILD SUCCESS!!");
 
 
+        //TODO Read Config File and determine whether to perform first load actions. load Dark/ Light Mode
+            //TODO  Extract Fonts to Special Folder
+            //TODO  Write Config Files
+            //TODO  Create LogFiles and initialize Loggers
+            //TODO  Read UserAccount Files and prepare Password Hashes
 
-        //Install Font Packs
-        FlatRobotoMonoFont.install();
-        FlatRobotoFont.install();
-        FlatInterFont.install();
-        FlatJetBrainsMonoFont.install();
+        //Install FlatLaf Font Packs
+        Install_Flat_Laf_Fonts();
 
-        // Read Config File and determine whether to perform first load actions. load Dark/ Light Mode
+        //Install my Custom Fonts
+
+
+
 
         //Load and Start
         init_Application();
@@ -60,7 +65,7 @@ public class Main {
 
     }
 
-    //Dark Theme Initialization
+    /** Dark Theme Initialization */
     static void init_Application()
     {
         //Start the Swing Application with  a try catch block.
@@ -111,7 +116,7 @@ public class Main {
     }
 
 
-    //Create a Function to Set theme.
+    /** Create a Function to Set theme. */
     static void Set_Theme(String Theme_to_Set)
     {
         //Create a block to catch exceptions.
@@ -182,11 +187,31 @@ public class Main {
         }
     }
 
-    //Create a Function that When called Loads a Variety of Fonts into the System
-    static void Load_new_Fonts()
+    /** This installs Fonts Associated with FlatLaf */
+    static void Install_Flat_Laf_Fonts()
     {
         try
         {
+            //Install FlatLaf Fonts
+            FlatRobotoMonoFont.install();
+            FlatRobotoFont.install();
+            FlatInterFont.install();
+            FlatJetBrainsMonoFont.install();
+
+        }
+        catch(Exception FlatLafFonts_Install_Fail)
+        {
+            FlatLafFonts_Install_Fail.printStackTrace();
+        }
+    }
+
+    /** Create a Function that When called Loads a Variety of Fonts into the System */
+    static void Install_New_Custom_Fonts()
+    {
+        try
+        {
+            //Load Fonts
+
 
         }
         catch(Exception LOAD_FONTS_EXCEPTION)

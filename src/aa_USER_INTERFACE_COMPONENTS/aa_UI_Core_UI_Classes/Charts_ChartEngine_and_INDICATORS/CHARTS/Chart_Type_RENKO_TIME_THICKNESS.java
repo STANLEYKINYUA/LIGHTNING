@@ -1,4 +1,0 @@
-package aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.Charts_ChartEngine_and_INDICATORS.CHARTS;
-
-public class Chart_Type_RENKO_TIME_THICKNESS {
-}
