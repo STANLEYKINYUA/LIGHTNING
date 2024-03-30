@@ -9,7 +9,7 @@ public class PositionsTab_Pane extends JPanel
     /** Constructor for Positions Tab Pane */
     public PositionsTab_Pane()
     {
-       
+
 
     }
 }
