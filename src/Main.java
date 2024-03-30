@@ -18,9 +18,8 @@
 * */
 
 
-import aa_11_DEV_TERMINAL.CMD_Terminal;
 import aa_USER_INTERFACE_COMPONENTS.a_THEMES.*;
-import aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.Login_and_Startup_Windows.Splash_Screen_Window;
+import aa_USER_INTERFACE_COMPONENTS.Core_UI_Classes.Login_and_Startup_Windows.Splash_Screen_Window;
 import com.formdev.flatlaf.FlatDarkLaf;
 import com.formdev.flatlaf.FlatLightLaf;
 import com.formdev.flatlaf.fonts.inter.FlatInterFont;
