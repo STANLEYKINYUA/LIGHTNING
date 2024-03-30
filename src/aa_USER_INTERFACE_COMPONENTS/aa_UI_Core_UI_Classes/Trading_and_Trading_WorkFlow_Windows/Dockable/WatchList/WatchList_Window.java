@@ -4,9 +4,10 @@ import ModernDocking.Dockable;
 import ModernDocking.app.Docking;
 
 import javax.swing.*;
+import java.awt.*;
 
 /** This Class Describes a Window that keeps Track of all Tradeable Symbols. */
-public class WatchList_Window extends JPanel implements Dockable
+public class WatchList_Window extends JTabbedPane implements Dockable
 {
     //TODO  Write Proper Documentation for every line in this
     private final String text;
@@ -21,7 +22,10 @@ public class WatchList_Window extends JPanel implements Dockable
         Docking.registerDockable(this);
 
        //Set size`
-        this.setSize(100,100);
+        this.setSize(50,100);
+
+        //Set Max Size
+
 
 
     }

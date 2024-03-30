@@ -80,8 +80,9 @@ public class Splash_Screen_Window extends JFrame
         Version_Number_Label.setBounds(500,230,100,20);
 
         //TODO  Read Config File and Determine whether it is First Load / Other load
-
+        //TODO  Read OS and Set Config File Locations Appropriately as well as the File
         //TODO  Decide Whether to redirect towards Login Form or towards
+
 
 
     }

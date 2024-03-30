@@ -1,0 +1,57 @@
+DEVELOPMENT TASK LIST
+
+	1.		Improve Splash Screen Layout
+	
+	2.		Improve Login Form Layout
+	
+	3.		Create a Config Manager to read and Set Configurations
+	
+	4.		Create a Registration Form with a back button + Implement Registration Logic
+	
+	5.		Add the Following Menu Items to the MenuBar
+				FILE
+				CONNECTIONS
+				TRADING TOOLS
+					Currencies
+					Commoditties
+					CryptoCurrencies
+					Indices
+					Metals
+					
+				REPORTS
+					Performance Report
+					Positions Report
+					
+	6.		Create the Code to Display the Bare Window for
+				>	Orders and Positions  JTabbed Pane
+				>	Charts
+				>	DOM
+				>	
+				
+	6.b		Read from cTrader how to Compute Pip Sizes and Pip Values
+	
+	7.		Plot Charts from already given Chart Data 
+				> 	Candle Stick Chart
+				>	RenkoChart - All variations
+						* Plot a triangle @ open that shows where we opened and another that shows where we closed
+				>	TickBar Chart
+				>	RangeBar Chart
+	
+	8.		Fetch Crypto News from Dukascopy + cTrader + Fetch Crypto Market Data from Crypto Brokers
+===============================================================================================================
+All market data is stored in MySQL so ::
+- Ease of data Sorting
+- Rapid Data draw
+=====================================
+Handle Situation where there is no ask/bid price by using the last bid/ask
+* if there is no last ask/bid - utilize the current bid/ask for both spots
+
+
+===============================================================================================================
+
+* Dont Implement Too many Fonts , Implement only about 7 fonts max in my Project
+
+THINGS OUTSIDE PROJECT SCOPE.
+	>	Download Tick Data and Parse it into bars
+	>	Parse Median Renko Bars
+	>	
