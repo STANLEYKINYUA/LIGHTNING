@@ -22,10 +22,7 @@ public class WatchList_Window extends JTabbedPane implements Dockable
         //Register as a Dockable
         Docking.registerDockable(this);
 
-       //Set size`
 
-
-        //Set Max Size
 
 
 
@@ -41,5 +38,10 @@ public class WatchList_Window extends JTabbedPane implements Dockable
         return text;
     }
 
-    
+    //Create Tabs
+        //Create Favourites Tab
+        //Create Fx Tab
+        //Create
+
+        //Create Button that Adds Tabs
 }

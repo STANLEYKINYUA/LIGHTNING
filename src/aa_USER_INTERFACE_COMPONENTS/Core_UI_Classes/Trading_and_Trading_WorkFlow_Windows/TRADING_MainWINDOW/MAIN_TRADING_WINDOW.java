@@ -167,9 +167,8 @@ public class MAIN_TRADING_WINDOW extends JFrame
             WatchList_Window WatchList = new WatchList_Window("WatchList");
 
             //Dock into the created
-            Docking.dock(WatchList,this,DockingRegion.WEST);
-
-
+            //TODO  Set all Docking Windows to a Divider Proportion of 0.5 to ensure they share space equally
+            Docking.dock(WatchList,this,DockingRegion.WEST,0.5);
 
         }
         catch(Exception Failed_to_Spawn_WatchList_Window)
@@ -188,7 +187,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
             ORDERS_and_POSITIONS_WINDOW OrdersPositionsWindow = new ORDERS_and_POSITIONS_WINDOW("ORDERS & POSITIONS");
 
             //Dock into the Global South of the Main Trading Window
-            Docking.dock(OrdersPositionsWindow,this,DockingRegion.SOUTH);
+            Docking.dock(OrdersPositionsWindow,this,DockingRegion.SOUTH,0.5);
 
         }
         catch(Exception Failed_toLoad_PositionsOrdersWindow)
@@ -206,7 +205,8 @@ public class MAIN_TRADING_WINDOW extends JFrame
             Market_Scanner_Window MarketScannerWindow = new Market_Scanner_Window("MARKET SCANNER");
 
             //Dock into the created
-            Docking.dock(MarketScannerWindow,this, DockingRegion.EAST);
+            //TODO  Set all Docking Windows to a Divider Proportion of 0.5 to ensure they share space equally
+            Docking.dock(MarketScannerWindow,this, DockingRegion.EAST,0.5);
 
         }
         catch(Exception Spawn_Market_Scanner_Exception)
