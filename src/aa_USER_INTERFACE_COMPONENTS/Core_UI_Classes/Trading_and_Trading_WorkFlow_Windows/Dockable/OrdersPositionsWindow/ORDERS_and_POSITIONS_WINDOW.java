@@ -34,6 +34,8 @@ public class ORDERS_and_POSITIONS_WINDOW extends JTabbedPane implements Dockable
         this.setSize(50,100);
 
 
+
+
     }
 
     /**

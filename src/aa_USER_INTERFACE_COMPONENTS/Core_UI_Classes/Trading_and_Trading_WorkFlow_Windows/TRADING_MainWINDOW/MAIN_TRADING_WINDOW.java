@@ -9,6 +9,7 @@ import aa_USER_INTERFACE_COMPONENTS.Core_UI_Classes.Trading_and_Trading_WorkFlow
 import aa_USER_INTERFACE_COMPONENTS.Core_UI_Classes.Trading_and_Trading_WorkFlow_Windows.TRADING_MainWINDOW.MENUS.REPORTS.Reports_Menu;
 import aa_USER_INTERFACE_COMPONENTS.Core_UI_Classes.Trading_and_Trading_WorkFlow_Windows.TRADING_MainWINDOW.MENUS.TRADING_TOOLS_MENU.Trading_Tools_Menu;
 import aa_USER_INTERFACE_COMPONENTS.Core_UI_Classes.Trading_and_Trading_WorkFlow_Windows.TRADING_MainWINDOW.MENUS.Trading_Window_MenuBar;
+import aa_USER_INTERFACE_COMPONENTS.Core_UI_Classes.Trading_and_Trading_WorkFlow_Windows.TRADING_MainWINDOW.STATUS_BAR.Trading_Window_StatusBar;
 import aa_USER_INTERFACE_COMPONENTS.Core_UI_Classes.Trading_and_Trading_WorkFlow_Windows.TRADING_MainWINDOW.TOOLBAR.Trading_Window_ToolBar;
 import aa_USER_INTERFACE_COMPONENTS.Core_UI_Classes.Trading_and_Trading_WorkFlow_Windows.Dockable.Market_Scanner_Window;
 import aa_USER_INTERFACE_COMPONENTS.Core_UI_Classes.Trading_and_Trading_WorkFlow_Windows.Dockable.WatchList.WatchList_Window;
@@ -85,16 +86,17 @@ public class MAIN_TRADING_WINDOW extends JFrame
             this.setJMenuBar(TradingWindowMenuBar);
 
             //-------------------------------------------------------------------------------------------------------
-            //ToolBar that is used to Display Icons
+            //ToolBar & StatusBar that is used to Display Icons
             Trading_Window_ToolBar ToolBar = new Trading_Window_ToolBar();
+            Trading_Window_StatusBar StatusBar = new Trading_Window_StatusBar();
 
 
-
-            // Create a Content Pane to display the ToolBar.
+            // Create a Content Pane to display the ToolBar & StatusBar.
             Container ContentPane = this.getContentPane();
 
             //Add toolbar to the Contentpane Docked North.
             ContentPane.add(ToolBar , BorderLayout.NORTH);
+            ContentPane.add(StatusBar,BorderLayout.SOUTH);
 
 
 
@@ -166,6 +168,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
             //Dock into the created
             Docking.dock(WatchList,this,DockingRegion.WEST);
+
 
 
         }
