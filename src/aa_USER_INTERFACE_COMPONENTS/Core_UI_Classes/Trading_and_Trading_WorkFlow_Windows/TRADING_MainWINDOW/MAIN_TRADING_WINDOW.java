@@ -177,7 +177,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
             //TODO Handle this exception better by throwing an Exception and Displaying Window
         }
-    };
+    }
 
     void Spawn_Position_and_Order_Management_Window()
     {

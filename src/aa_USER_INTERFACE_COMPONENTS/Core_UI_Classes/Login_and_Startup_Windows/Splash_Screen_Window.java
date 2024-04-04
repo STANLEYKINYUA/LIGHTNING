@@ -19,14 +19,18 @@ import net.miginfocom.swing.MigLayout;
 import javax.swing.*;
 import java.awt.*;
 
-public class Splash_Screen_Window extends JFrame
+public class Splash_Screen_Window extends javax.swing.JFrame
 {
     double Version_Number = 0.01;   //  Version Number of the Program.
 
 
     public Splash_Screen_Window()
     {
-        //Set the Specifications of this Form in this Class Constructor
+        
+
+        //Lower the Opacity.
+
+
 
         //The splash Screen is always on top
         this.setAlwaysOnTop(true);

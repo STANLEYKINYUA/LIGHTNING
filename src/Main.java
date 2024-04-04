@@ -89,6 +89,9 @@ public class Main {
                     JFrame Splash_Screen = new Splash_Screen_Window();
                     Splash_Screen.setVisible(true);
 
+                    //Flatlaf Specific Customization
+
+
                     //Load Terminal for Test.
                     //JFrame Terminal = new CMD_Terminal();
                     //Terminal.setVisible(true);
@@ -172,6 +175,7 @@ public class Main {
 
             //TODO      Remove this and use Config File
             //  Using FLATMACDark so that I can continue development
+
             FlatMacDarkLaf.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.a_THEMES");
             FlatMacDark_LAF.setup();
 
