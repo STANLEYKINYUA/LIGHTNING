@@ -11,7 +11,6 @@ public class REGISTRATION_WINDOW extends JFrame
     public REGISTRATION_WINDOW()
     {
 
-
         //1. Set Window Size and spawn Location.
         this.setBounds(200,200,500,700);
         this.setAlwaysOnTop(true);
@@ -32,13 +31,30 @@ public class REGISTRATION_WINDOW extends JFrame
         this.setTitle("REGISTRATION WINDOW.");
 
 
+        //TODO Create a back button to return to the Login Window
 
+        //TODO  Create a Registration form
+
+            //TODO  Registration Label
+            //todo  Email label + textBox  + Status Icon
+            //TODO  Username label + textbox + status Icon
+            //Todo  Password label + Password box + status Icon
+            //TODO  Confirm password Label + Password box
+            //TODO  Password Strength Indicator
+            //TODO  Security Question   + Textbox
+            //
+
+            //TODO  Create Account button
+                    //TODO  Create Necessary Folders + Config Files
+            //TODO  Account Created Successfully PopUp Notification + Sound
+            //TODO  Implement Entry validation when textbox loses Focus
 
         // TODO  Create a JFileChooser and Select Location to Save System Files  - Files saved under UserName
 
 
     }
 
- 
+
+    public void CreateFirstStart_ConfigFiles(){}
 
 }

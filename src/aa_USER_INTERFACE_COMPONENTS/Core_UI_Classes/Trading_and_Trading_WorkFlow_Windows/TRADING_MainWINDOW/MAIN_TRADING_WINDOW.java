@@ -3,6 +3,7 @@ package aa_USER_INTERFACE_COMPONENTS.Core_UI_Classes.Trading_and_Trading_WorkFlo
 import ModernDocking.DockingRegion;
 import ModernDocking.app.Docking;
 import ModernDocking.app.RootDockingPanel;
+import aa_USER_INTERFACE_COMPONENTS.Core_UI_Classes.Trading_and_Trading_WorkFlow_Windows.Dockable.Calendar.Events_Calendar_Window;
 import aa_USER_INTERFACE_COMPONENTS.Core_UI_Classes.Trading_and_Trading_WorkFlow_Windows.Dockable.OrdersPositionsWindow.ORDERS_and_POSITIONS_WINDOW;
 import aa_USER_INTERFACE_COMPONENTS.Core_UI_Classes.Trading_and_Trading_WorkFlow_Windows.TRADING_MainWINDOW.MENUS.CONNECTIONS_MENU.Connections_Menu;
 import aa_USER_INTERFACE_COMPONENTS.Core_UI_Classes.Trading_and_Trading_WorkFlow_Windows.TRADING_MainWINDOW.MENUS.FILE_MENU.File_Menu_Entry;
@@ -28,6 +29,8 @@ public class MAIN_TRADING_WINDOW extends JFrame
     {
         //Initialize the JFrame and show all Features.
         init_Trading_Window();
+
+
     }
 
 
@@ -113,6 +116,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
             Spawn_WatchList();
             Spawn_Market_Scanner();
             Spawn_Position_and_Order_Management_Window();
+            Spawn_Calendar_Window();
 
 
         }
@@ -214,6 +218,14 @@ public class MAIN_TRADING_WINDOW extends JFrame
             Spawn_Market_Scanner_Exception.printStackTrace();
         }
     }
+    //Informational
+    void Spawn_Calendar_Window()
+    {
+        //Spawn the Calendar Window and Dock to the East
+        Events_Calendar_Window Calendar_Window = new Events_Calendar_Window("CALENDAR");
+        //Dock it into the rootpane
+        Docking.dock(Calendar_Window,this,DockingRegion.EAST,0.3);
+    }
     void Spawn_L2_Dom_Window()
     {
         try
@@ -249,9 +261,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
         //TODO  Write Code that Spawns a Median Renko Bar Chart and Fetches Data to Plot.
     }
 
-            //Informational
-    void Spawn_Calendar_Window()
-    {}
+
     void Spawn_Crypto_Information_Window()
     {
         //TODO  All Crypto Information is held in this tabbed pane

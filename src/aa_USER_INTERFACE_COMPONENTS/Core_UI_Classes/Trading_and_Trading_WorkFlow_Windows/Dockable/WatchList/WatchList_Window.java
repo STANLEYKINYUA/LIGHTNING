@@ -15,7 +15,7 @@ public class WatchList_Window extends JTabbedPane implements Dockable
     /** Default Constructor that for WatchList*/
     public WatchList_Window(String text)
     {
-        //TODO  Wrap this in a try catch block
+
 
         this.text = text;
 
