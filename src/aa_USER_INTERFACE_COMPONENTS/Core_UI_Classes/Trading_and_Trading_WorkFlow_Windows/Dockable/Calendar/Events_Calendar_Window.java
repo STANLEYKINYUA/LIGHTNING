@@ -73,6 +73,6 @@ public class Events_Calendar_Window extends JTabbedPane implements Dockable
         this.addTab("THIS YEAR", new Calendar_ThisYear_Tab());
 
     }
-  
+
 
 }

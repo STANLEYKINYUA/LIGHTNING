@@ -224,7 +224,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
         //Spawn the Calendar Window and Dock to the East
         Events_Calendar_Window Calendar_Window = new Events_Calendar_Window("CALENDAR");
         //Dock it into the rootpane
-        Docking.dock(Calendar_Window,this,DockingRegion.EAST,0.3);
+        Docking.dock(Calendar_Window,this,DockingRegion.EAST,0.5);
     }
     void Spawn_L2_Dom_Window()
     {
