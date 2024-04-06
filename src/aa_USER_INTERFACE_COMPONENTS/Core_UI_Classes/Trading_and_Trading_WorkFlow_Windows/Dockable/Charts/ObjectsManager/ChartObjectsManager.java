@@ -1,4 +1,4 @@
-package aa_USER_INTERFACE_COMPONENTS.Core_UI_Classes.Trading_and_Trading_WorkFlow_Windows.Dockable.Charts.ChartObjectsManager;
+package aa_USER_INTERFACE_COMPONENTS.Core_UI_Classes.Trading_and_Trading_WorkFlow_Windows.Dockable.Charts.ObjectsManager;
 
 public class ChartObjectsManager
 {

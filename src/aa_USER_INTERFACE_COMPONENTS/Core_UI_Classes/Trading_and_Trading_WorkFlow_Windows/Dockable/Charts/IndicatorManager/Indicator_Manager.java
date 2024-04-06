@@ -4,6 +4,12 @@ package aa_USER_INTERFACE_COMPONENTS.Core_UI_Classes.Trading_and_Trading_WorkFlo
  *      details about indicators on this chart as well as their styling and parametres */
 public class Indicator_Manager
 {
+    public Indicator_Manager(){}
 
     // Charts can have a maximum of 10 Indicators plotted on each chart
+    public void Plot_Indicator(int Indicator_Number , String Indicator_Type )
+    {}
+
+
+
 }

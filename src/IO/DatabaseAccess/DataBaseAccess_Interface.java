@@ -1,4 +1,4 @@
-package INPUT_OUTPUT.DatabaseAccess;
+package IO.DatabaseAccess;
 
 public interface DataBaseAccess_Interface
 {

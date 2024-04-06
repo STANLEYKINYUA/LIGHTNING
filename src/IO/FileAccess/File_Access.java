@@ -1,4 +1,4 @@
-package INPUT_OUTPUT.FileAccess;
+package IO.FileAccess;
 
 public abstract class File_Access {
 }

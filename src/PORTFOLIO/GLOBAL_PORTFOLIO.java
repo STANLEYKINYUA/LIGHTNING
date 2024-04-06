@@ -1,4 +1,4 @@
-package GLOBAL_PORTFOLIO;
+package PORTFOLIO;
 
 import java.math.BigDecimal;
 

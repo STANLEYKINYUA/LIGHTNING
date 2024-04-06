@@ -3,6 +3,8 @@ package aa_USER_INTERFACE_COMPONENTS.Core_UI_Classes.Trading_and_Trading_WorkFlo
 /** This class is used to Open and Manage Charts +  store Chart Settings + Chart Template Information */
 public class Chart_Manager
 {
+    private String Config_File_Location = null;
+
     private int Open_Charts = 0;
 
     //Special Data Types to track which Charts are open.
@@ -28,10 +30,15 @@ public class Chart_Manager
     public void Open_Chart(int Chart_Number ,String Symbol , String Chart_Type , int Period)
     {
         //Read Charts Array and Determine Open Charts
+
+        //Write to Config File on what has changed
+        Write_to_Config_File();
     }
     public void Close_Chart(int Chart_Number)
     {
 
+        //Write to Config File on what has changed
+        Write_to_Config_File();
     }
 
     /** Functions to manipulate Chart Array*/
@@ -41,15 +48,24 @@ public class Chart_Manager
         //Split String PositionsTo Lock and extract positions to be unlocked and add them to an array
 
     }
-    public void Lock_Chart_Position_in_ChartsArray(){}
-    public void Unlock_Chart_Position_in_ChartsArray(){}
+    public void Lock_Chart_Position_in_ChartsArray(int Position_toLock)
+    {}
+    public void Unlock_Chart_Position_in_ChartsArray(int Position_toUnlock)
+    {}
 
-    // Chart Manager Config File Reading Functions
+
+    /** Chart Manager Config File Reading Functions */
     public void Write_to_Config_File()
     {
         //Concatenate Open Positions
     }
-    public void Read_From_Config_File(){}
+    public void Read_From_Config_File()
+    {
+
+    }
+
+    public void Update_Number_ofOpen_Charts(){}
+    public void Update_Specific_Chart_Settings(int Chart_Number, String Chart_Type , int Period){}
 
 
 

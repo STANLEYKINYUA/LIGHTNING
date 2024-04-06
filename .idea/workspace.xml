@@ -5,9 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/ChartManager/Sample Chart Manager Config File" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Feed/Api_endPoints/Dukascopy/Dukascopy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Feed/Api_endPoints/Generic_Api_Handler_Interface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Feed/Feed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Feed/REST_x_WebSocket/Generic_Rest_Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Feed/REST_x_WebSocket/Generic_WebSocket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Generic_XY_Chart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FEEDS/FEED_SCRAPER/WEB_SCRAPER.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FEEDS/Market_DataFeed/cTrader_MarketDATA_FEED/cTrader_Feed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Feed/Api_endPoints/cTrader/cTrader_Feed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GLOBAL_PORTFOLIO/GLOBAL_PORTFOLIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PORTFOLIO/GLOBAL_PORTFOLIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/INPUT_OUTPUT/DatabaseAccess/DataBaseAccess_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IO/DatabaseAccess/DataBaseAccess_Interface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/INPUT_OUTPUT/DatabaseAccess/Database_Access.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IO/DatabaseAccess/Database_Access.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/INPUT_OUTPUT/FileAccess/File_Access.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IO/FileAccess/File_Access.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/INPUT_OUTPUT/FileAccess/File_Accessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IO/FileAccess/File_Accessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/INPUT_OUTPUT/FileAccess/LINUX_File_Access.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IO/FileAccess/LINUX_File_Access.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/INPUT_OUTPUT/FileAccess/MacOS_File_Access.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IO/FileAccess/MacOS_File_Access.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/INPUT_OUTPUT/FileAccess/Windows_File_Access.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IO/FileAccess/Windows_File_Access.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/ChartManager/Chart_Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/ChartManager/Chart_Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/ChartObjectsManager/ChartObjectsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/ObjectsManager/ChartObjectsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Generic_XY_Chart_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Generic_XY_Chart_Interface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/IndicatorManager/Indicator_Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/IndicatorManager/Indicator_Manager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/XY_CHART.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/XY_CHART.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +117,7 @@
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/src/a_PROTOTYPING/FONT_TEST&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.22758621&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.folding&quot;
