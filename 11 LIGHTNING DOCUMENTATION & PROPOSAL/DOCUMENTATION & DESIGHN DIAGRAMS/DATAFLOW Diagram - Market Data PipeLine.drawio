@@ -10,7 +10,7 @@
         <mxCell id="t8iQmbURCvgYpWbKPgoA-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="tYbx8QeNhivlRmEhowMX-3" target="t8iQmbURCvgYpWbKPgoA-14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tYbx8QeNhivlRmEhowMX-3" value="Real Time Data Queues&lt;br&gt;&lt;br&gt;&lt;br&gt;EURUSD Queue - Thread&lt;br&gt;USDJPY Queue - Thread&lt;br&gt;&lt;br&gt;&lt;br&gt;Decide thread to Feed&lt;br&gt;&lt;br&gt;&lt;br&gt;func get_thread_list()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
+        <mxCell id="tYbx8QeNhivlRmEhowMX-3" value="Real Time Data Queues&lt;br&gt;&lt;br&gt;&lt;br&gt;EURUSD Queue - Thread&lt;br&gt;USDJPY Queue - Thread&lt;br&gt;&lt;br&gt;&lt;br&gt;Decide thread to Venues&lt;br&gt;&lt;br&gt;&lt;br&gt;func get_thread_list()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
           <mxGeometry x="-152" y="316" width="188" height="278" as="geometry" />
         </mxCell>
         <mxCell id="tYbx8QeNhivlRmEhowMX-9" value="CHART&amp;nbsp; PLOTTER" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;fontStyle=1" vertex="1" parent="1">
@@ -124,7 +124,7 @@
         <mxCell id="t8iQmbURCvgYpWbKPgoA-77" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="t8iQmbURCvgYpWbKPgoA-58" target="tYbx8QeNhivlRmEhowMX-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="t8iQmbURCvgYpWbKPgoA-58" value="DECODING ENGINE&lt;br&gt;&lt;br&gt;1. Decode Market data Strings&lt;br&gt;2. Feed market data to data queue&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;* As many Decoding Engines as Ports" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" vertex="1" parent="1">
+        <mxCell id="t8iQmbURCvgYpWbKPgoA-58" value="DECODING ENGINE&lt;br&gt;&lt;br&gt;1. Decode Market data Strings&lt;br&gt;2. Venues market data to data queue&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;* As many Decoding Engines as Ports" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" vertex="1" parent="1">
           <mxGeometry x="196" y="649" width="164" height="324" as="geometry" />
         </mxCell>
         <mxCell id="t8iQmbURCvgYpWbKPgoA-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="t8iQmbURCvgYpWbKPgoA-59" target="t8iQmbURCvgYpWbKPgoA-12">
@@ -133,7 +133,7 @@
         <mxCell id="t8iQmbURCvgYpWbKPgoA-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="t8iQmbURCvgYpWbKPgoA-59" target="t8iQmbURCvgYpWbKPgoA-66">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="t8iQmbURCvgYpWbKPgoA-59" value="Non - Real Time Data Feed&lt;br&gt;&lt;br&gt;&lt;br&gt;* Updates every 2 -3 sec&lt;br&gt;&lt;br&gt;&lt;br&gt;&amp;gt;&amp;gt; updates load of Instruments" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
+        <mxCell id="t8iQmbURCvgYpWbKPgoA-59" value="Non - Real Time Data Venues&lt;br&gt;&lt;br&gt;&lt;br&gt;* Updates every 2 -3 sec&lt;br&gt;&lt;br&gt;&lt;br&gt;&amp;gt;&amp;gt; updates load of Instruments" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
           <mxGeometry x="-152" y="637" width="188" height="278" as="geometry" />
         </mxCell>
         <mxCell id="t8iQmbURCvgYpWbKPgoA-66" value="MARKET SCANNER" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
@@ -145,7 +145,7 @@
         <mxCell id="t8iQmbURCvgYpWbKPgoA-69" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="587" y="398" width="302.5" height="324" as="geometry" />
         </mxCell>
-        <mxCell id="tYbx8QeNhivlRmEhowMX-2" value="Network Engine&lt;br&gt;&lt;br&gt;1. Receive strings&lt;br&gt;2. Feed Decoding Engine" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="t8iQmbURCvgYpWbKPgoA-69">
+        <mxCell id="tYbx8QeNhivlRmEhowMX-2" value="Network Engine&lt;br&gt;&lt;br&gt;1. Receive strings&lt;br&gt;2. Venues Decoding Engine" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="t8iQmbURCvgYpWbKPgoA-69">
           <mxGeometry width="113.5" height="324" as="geometry" />
         </mxCell>
         <mxCell id="t8iQmbURCvgYpWbKPgoA-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="t8iQmbURCvgYpWbKPgoA-69" source="t8iQmbURCvgYpWbKPgoA-52" target="tYbx8QeNhivlRmEhowMX-2">
@@ -189,7 +189,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="vIH5RLiZkX7nLeQkcyJk-1" value="Symbol Feed Thread" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+        <mxCell id="vIH5RLiZkX7nLeQkcyJk-1" value="Symbol Venues Thread" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
           <mxGeometry x="339" y="33" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
