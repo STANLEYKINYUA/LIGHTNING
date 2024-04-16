@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/ObjectBehaviour/Child_Object.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/ObjectBehaviour/Object_Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/ObjectBehaviour/Parent_Object.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/IndicatorManager/INDICATOR_INTERFACE.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Venue_Manager/venue Manager" beforeDir="false" afterPath="$PROJECT_DIR$/src/Venue_Manager/venue Manager" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/ChartManager/Chart_Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/ChartManager/Chart_Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Generic_XY_Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Generic_XY_Chart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Generic_XY_Chart_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Generic_XY_Chart_Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_CANDLE_STICK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Chart_Type_CANDLE_STICK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_RANGE_BAR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Chart_Type_RANGE_BAR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_RANGE_BAR_TIME_THICKNESS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Chart_Type_RANGE_BAR_TIME_THICKNESS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_RENKO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Chart_Type_RENKO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_RENKO_MEDIAN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Chart_Type_RENKO_MEDIAN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_RENKO_TIME_THICKNESS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Chart_Type_RENKO_TIME_THICKNESS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_TICK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Chart_Type_TICK.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
