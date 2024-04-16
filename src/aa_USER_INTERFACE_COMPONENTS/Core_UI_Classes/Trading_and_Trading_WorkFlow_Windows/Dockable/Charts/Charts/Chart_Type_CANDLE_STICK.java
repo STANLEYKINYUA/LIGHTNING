@@ -1,0 +1,4 @@
+package aa_USER_INTERFACE_COMPONENTS.Core_UI_Classes.Trading_and_Trading_WorkFlow_Windows.Dockable.Charts.Charts;
+
+public class Chart_Type_CANDLE_STICK {
+}

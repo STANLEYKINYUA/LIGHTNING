@@ -22,7 +22,8 @@ public class Chart_Manager
         //Lock Chart Positions in Array after reading the Locked Positions
         Lock_Multiple_ChartPositions_in_ChartsArray(Locked_Positions_FromConfigFile);
 
-        // Lock Chart Positions in Chart Array if any are Open
+        //Set all unused Chart Positions to Null
+
 
     }
 
@@ -71,10 +72,13 @@ public class Chart_Manager
 
 
 
+
     //Chart Manager Supports Opening up to 30 Charts which can be accessed by their Individual names
     public void OpenChart1(String Symbol , String Chart_Type , int Period, String DockPosition , String Dock_Parent)
     {
         //Create new Chart Object and Spawn Window
+
+        //Chart name should be derived from : Symbol + Chart_Type + Period
     }
     public void OpenChart2(){}
     public void OpenChart3(){}

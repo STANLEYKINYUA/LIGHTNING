@@ -5,54 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Venue_Manager/Venue_Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Venue_Manager/venue Manager" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/ObjectBehaviour/Child_Object.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/ObjectBehaviour/Object_Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/ObjectBehaviour/Parent_Object.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11 LIGHTNING DOCUMENTATION &amp; PROPOSAL/DOCUMENTATION &amp; DESIGHN DIAGRAMS/DATAFLOW Diagram - Market Data PipeLine.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/11 LIGHTNING DOCUMENTATION &amp; PROPOSAL/DOCUMENTATION &amp; DESIGHN DIAGRAMS/DATAFLOW Diagram - Market Data PipeLine.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Feed/Api_endPoints/Dukascopy/Dukascopy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Venues/Api_endPoints/Dukascopy/Dukascopy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Feed/Api_endPoints/Generic_Api_Handler_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Venues/Api_endPoints/Generic_Api_Handler_Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Feed/Api_endPoints/cTrader/cTrader_Feed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Venues/Api_endPoints/cTrader/cTrader_Feed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Feed/Feed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Venues/Generic_Venue_Feed_and_Execution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Feed/REST_x_WebSocket/Generic_Rest_Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Venues/REST_x_WebSocket/Generic_Rest_Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Feed/REST_x_WebSocket/Generic_WebSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Venues/REST_x_WebSocket/Generic_WebSocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IO/DatabaseAccess/DataBaseAccess_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IO/DatabaseAccess/DataBaseAccess_Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IO/DatabaseAccess/Database_Access.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IO/DatabaseAccess/Database_Access.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IO/FileAccess/File_Accessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IO/FileAccess/File_Access_Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING_VENUE/Crypto_Exchanges/CRYPTO_VENUE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Venues/zzSampleVenues/Crypto_Exchanges/CRYPTO_VENUE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING_VENUE/Crypto_Exchanges/CryptoVenue_Generic_JAVASDK_Venue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Venues/zzSampleVenues/Crypto_Exchanges/CryptoVenue_Generic_JAVASDK_Venue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING_VENUE/Crypto_Exchanges/CryptoVenue_Generic_RestFul_Venue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Venues/zzSampleVenues/Crypto_Exchanges/CryptoVenue_Generic_RestFul_Venue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING_VENUE/Retail_Fx/Fx_cTrader/Axiory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING_VENUE/Retail_Fx/Fx_cTrader/BlackBull_Markets.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING_VENUE/Retail_Fx/Fx_cTrader/Pepperstone.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING_VENUE/Retail_Fx/Fx_cTrader/aa_GENERIC_cTrader_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Venues/Api_endPoints/cTrader/aa_GENERIC_cTrader_Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING_VENUE/Retail_Fx/Fx_cTrader/aa_Generic_cTrader_Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Venues/Api_endPoints/cTrader/aa_Generic_cTrader_Class.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING_VENUE/TRADING_VENUE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Venues/Generic_Trading_Venue_Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Charts_ChartEngine_and_INDICATORS/Chart_Elements/L2_DOM_WINDOW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Chart_Elements/L2_DOM_WINDOW.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_CANDLE_STICK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_CANDLE_STICK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_RANGE_BAR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_RANGE_BAR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_RANGE_BAR_TIME_THICKNESS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_RANGE_BAR_TIME_THICKNESS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_RENKO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_RENKO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_RENKO_MEDIAN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_RENKO_MEDIAN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_RENKO_TIME_THICKNESS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_RENKO_TIME_THICKNESS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_TICK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_TICK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Charts_ChartEngine_and_INDICATORS/Charts/GENERIC_CHART.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/GENERIC_CHART.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Charts_ChartEngine_and_INDICATORS/Charts/Generic_Real_Time_Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Generic_Real_Time_Chart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Charts_ChartEngine_and_INDICATORS/Charts/Generic_STOCK_Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Generic_STOCK_Chart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Charts_ChartEngine_and_INDICATORS/Indicators/Alligator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Indicators/Alligator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Charts_ChartEngine_and_INDICATORS/Indicators/INDICATOR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Indicators/INDICATOR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Charts_ChartEngine_and_INDICATORS/Indicators/INDICATOR_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Indicators/INDICATOR_Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Charts_ChartEngine_and_INDICATORS/Indicators/MovingAverage_AbstractClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Indicators/MovingAverage_AbstractClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Charts_ChartEngine_and_INDICATORS/Indicators/MovingAverage_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Indicators/MovingAverage_Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Charts_ChartEngine_and_INDICATORS/Indicators/Moving_Average_Exponential.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Indicators/Moving_Average_Exponential.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Charts_ChartEngine_and_INDICATORS/Indicators/Moving_Average_Hull.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Indicators/Moving_Average_Hull.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Charts_ChartEngine_and_INDICATORS/Indicators/Moving_Average_Simple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Indicators/Moving_Average_Simple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Charts_ChartEngine_and_INDICATORS/Indicators/Moving_Average_Triangular.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Indicators/Moving_Average_Triangular.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Charts_ChartEngine_and_INDICATORS/Indicators/Moving_Average_Weighted.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Indicators/Moving_Average_Weighted.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Venue_Manager/venue Manager" beforeDir="false" afterPath="$PROJECT_DIR$/src/Venue_Manager/venue Manager" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/ChartManager/Chart_Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/ChartManager/Chart_Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Generic_XY_Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Generic_XY_Chart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Generic_XY_Chart_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Generic_XY_Chart_Interface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_CANDLE_STICK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Chart_Type_CANDLE_STICK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_RANGE_BAR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Chart_Type_RANGE_BAR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_RANGE_BAR_TIME_THICKNESS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Chart_Type_RANGE_BAR_TIME_THICKNESS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_RENKO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Chart_Type_RENKO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_RENKO_MEDIAN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Chart_Type_RENKO_MEDIAN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_RENKO_TIME_THICKNESS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Chart_Type_RENKO_TIME_THICKNESS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Charts/Chart_Type_TICK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_USER_INTERFACE_COMPONENTS/Core_UI_Classes/Trading_and_Trading_WorkFlow_Windows/Dockable/Charts/Charts/Chart_Type_TICK.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -119,31 +94,32 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Array_of_Objects.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Font_Test.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Hello.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main Class of Lightning.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SmartDocking_Test_Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test_2D_Arrays.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Timer_Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/src/a_PROTOTYPING/FONT_TEST&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.22758621&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.folding&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Array_of_Objects.executor": "Run",
+    "Application.Font_Test.executor": "Run",
+    "Application.Hello.executor": "Run",
+    "Application.Main Class of Lightning.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Object_Main.executor": "Run",
+    "Application.SmartDocking_Test_Main.executor": "Run",
+    "Application.Test_2D_Arrays.executor": "Run",
+    "Application.Timer_Main.executor": "Run",
+    "Application.Unnamed.executor": "Run",
+    "OverrideImplement.generate.javadoc": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/src/a_PROTOTYPING/FONT_TEST",
+    "onboarding.tips.debug.path": "E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/src/Main.java",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.22758621",
+    "settings.editor.selected.configurable": "editor.preferences.folding"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\111 - REPO - MKU PROJECT REPO\LIGHTNING\src\a_PROTOTYPING\FONT_TEST" />
@@ -160,20 +136,7 @@
       <recent name="aa_USER_INTERFACE_COMPONENTS.aa_UI_Core_UI_Classes.TRADING_WINDOW.MENUS.FILE_MENU" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main Class of Lightning">
-    <configuration name="Array_of_Objects" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="a_PROTOTYPING.Array_of_Objects.Array_of_Objects" />
-      <module name="LIGHTNING" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="a_PROTOTYPING.Array_of_Objects.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Object_Main">
     <configuration name="Font_Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="a_PROTOTYPING.FONT_TEST.Font_Test" />
       <module name="LIGHTNING" />
@@ -207,6 +170,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Object_Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="a_PROTOTYPING.ObjectBehaviour.Object_Main" />
+      <module name="LIGHTNING" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="a_PROTOTYPING.ObjectBehaviour.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SmartDocking_Test_Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="a_PROTOTYPING.SMART_DOCKING_PROTOTYPE.SmartDocking_Test_Main" />
       <module name="LIGHTNING" />
@@ -235,11 +211,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Object_Main" />
         <item itemvalue="Application.Hello" />
         <item itemvalue="Application.Timer_Main" />
         <item itemvalue="Application.SmartDocking_Test_Main" />
         <item itemvalue="Application.Font_Test" />
-        <item itemvalue="Application.Array_of_Objects" />
       </list>
     </recent_temporary>
   </component>
