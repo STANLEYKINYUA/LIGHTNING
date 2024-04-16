@@ -1,4 +1,4 @@
-package aa_USER_INTERFACE_COMPONENTS.Core_UI_Classes.Trading_and_Trading_WorkFlow_Windows.Dockable.Charts_ChartEngine_and_INDICATORS.Indicators;
+package aa_USER_INTERFACE_COMPONENTS.Core_UI_Classes.Trading_and_Trading_WorkFlow_Windows.Dockable.Charts.Indicators;
 
 /** Describes Functions that must be implemented by MA  */
 public interface MovingAverage_Interface
