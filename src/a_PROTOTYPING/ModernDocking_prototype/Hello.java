@@ -4,13 +4,7 @@ import ModernDocking.Dockable;
 import ModernDocking.DockingRegion;
 import ModernDocking.app.Docking;
 import ModernDocking.app.RootDockingPanel;
-import ModernDocking.internal.DockingPanel;
-import ModernDocking.layouts.DockingTabPanelNode;
-import aa_USER_INTERFACE_COMPONENTS.a_THEMES.Carbon_Laf;
-import aa_USER_INTERFACE_COMPONENTS.a_THEMES.DarkPurple_Laf;
-import aa_USER_INTERFACE_COMPONENTS.a_THEMES.FlatDark_Laf;
-import aa_USER_INTERFACE_COMPONENTS.a_THEMES.FlatMacDark_LAF;
-import com.formdev.flatlaf.themes.FlatMacDarkLaf;
+import aa_UI.a_THEMES.FlatMacDark_LAF;
 
 import javax.swing.*;
 import java.awt.*;
@@ -118,7 +112,7 @@ public class Hello
 
     public static void main(String[] args)
     {
-        FlatMacDark_LAF.registerCustomDefaultsSource("aa_USER_INTERFACE_COMPONENTS.a_THEMES");
+        FlatMacDark_LAF.registerCustomDefaultsSource("aa_UI.a_THEMES");
         FlatMacDark_LAF.setup();
 
         SwingUtilities.invokeLater(()-> new MainFrame().setVisible(true));
