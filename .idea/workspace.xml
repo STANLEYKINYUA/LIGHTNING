@@ -5,41 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CONFIG/Config File Structure" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_UI/WORKSPACE_and_TEMPLATE/WorkSpace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aa_UI/WORKSPACE_and_TEMPLATE/WorkSpace_Manager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/a_PROTOTYPING/SMART_DOCKING_PROTOTYPE/Dockables/DockablePANEL.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/a_PROTOTYPING/SMART_DOCKING_PROTOTYPE/Dockables/DockableTABBED_PANE.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/a_PROTOTYPING/SMART_DOCKING_PROTOTYPE/Docking/DockingManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/a_PROTOTYPING/SMART_DOCKING_PROTOTYPE/Docking/DockingManager_Interface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/a_PROTOTYPING/SMART_DOCKING_PROTOTYPE/Docking_Indicator/DockIndicator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/a_PROTOTYPING/SMART_DOCKING_PROTOTYPE/SmartDocking_Test_Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Login_and_Startup_Windows/LOGIN_WINDOW/Login_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/Login_and_Startup_Windows/LOGIN_WINDOW/Login_Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/Calendar/Events_Calendar_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/Calendar/Calendar_Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/Charts_ChartEngine_and_INDICATORS/Chart_Elements/L2_DOM_WINDOW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/L2_DOM/L2_DOM_WINDOW.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/Charts_and_Objects/Charts/CandleStick_Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/Charts_and_Objects/Charts/CandleStick_Chart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/Charts_and_Objects/Charts/_Generic_XY_Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/Charts_and_Objects/Charts/_Generic_XY_Chart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/Market_ScannerWindow/Market_Scanner_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/Market_ScannerWindow/Market_Scanner_Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/TRADING_MainWINDOW/MAIN_TRADING_WINDOW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/TRADING_DashBoard_MainWINDOW/MAIN_TRADING_WINDOW.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/TRADING_MainWINDOW/MENUS/CONNECTIONS_MENU/Connections_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/TRADING_DashBoard_MainWINDOW/MENUS/CONNECTIONS_MENU/Connections_Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/TRADING_MainWINDOW/MENUS/FILE_MENU/Accounts_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/TRADING_DashBoard_MainWINDOW/MENUS/FILE_MENU/Accounts_Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/TRADING_MainWINDOW/MENUS/FILE_MENU/File_Menu_Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/TRADING_DashBoard_MainWINDOW/MENUS/FILE_MENU/File_Menu_Entry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/TRADING_MainWINDOW/MENUS/FILE_MENU/Preferences_MenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/TRADING_DashBoard_MainWINDOW/MENUS/FILE_MENU/Preferences_MenuItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/TRADING_MainWINDOW/MENUS/REPORTS/Reports_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/TRADING_DashBoard_MainWINDOW/MENUS/REPORTS/Reports_Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/TRADING_MainWINDOW/MENUS/TRADING_TOOLS_MENU/Trading_Tools_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/TRADING_DashBoard_MainWINDOW/MENUS/TRADING_TOOLS_MENU/Trading_Tools_Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/TRADING_MainWINDOW/MENUS/Trading_Window_MenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/TRADING_DashBoard_MainWINDOW/MENUS/Trading_Window_MenuBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/TRADING_MainWINDOW/STATUS_BAR/Trading_Window_StatusBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/TRADING_DashBoard_MainWINDOW/STATUS_BAR/Trading_Window_StatusBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/TRADING_MainWINDOW/TOOLBAR/LCD_Display/LCD_Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/TRADING_DashBoard_MainWINDOW/TOOLBAR/LCD_Display/LCD_Display.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/TRADING_MainWINDOW/TOOLBAR/LCD_Display/LCD_LondonTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/TRADING_DashBoard_MainWINDOW/TOOLBAR/LCD_Display/LCD_LondonTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/TRADING_MainWINDOW/TOOLBAR/LCD_Display/LCD_MyTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/TRADING_DashBoard_MainWINDOW/TOOLBAR/LCD_Display/LCD_MyTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/TRADING_MainWINDOW/TOOLBAR/LCD_Display/LCD_NegativeText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/TRADING_DashBoard_MainWINDOW/TOOLBAR/LCD_Display/LCD_NegativeText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/TRADING_MainWINDOW/TOOLBAR/LCD_Display/LCD_Network_Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/TRADING_DashBoard_MainWINDOW/TOOLBAR/LCD_Display/LCD_Network_Connection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/TRADING_MainWINDOW/TOOLBAR/LCD_Display/LCD_NewYorkTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/TRADING_DashBoard_MainWINDOW/TOOLBAR/LCD_Display/LCD_NewYorkTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/TRADING_MainWINDOW/TOOLBAR/LCD_Display/LCD_PositiveTEXT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/TRADING_DashBoard_MainWINDOW/TOOLBAR/LCD_Display/LCD_PositiveTEXT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/TRADING_MainWINDOW/TOOLBAR/LCD_Display/LCD_SHIFTER.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/TRADING_DashBoard_MainWINDOW/TOOLBAR/LCD_Display/LCD_SHIFTER.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/TRADING_MainWINDOW/TOOLBAR/Trading_Window_ToolBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/TRADING_DashBoard_MainWINDOW/TOOLBAR/Trading_Window_ToolBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/TRADING_MainWINDOW/TOOLS_MENU/MarketCLOCK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/TRADING_DashBoard_MainWINDOW/TOOLS_MENU/MarketCLOCK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/Charts_and_Objects/Charts/Generic_XY_Chart/Chart_Canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/Charts_and_Objects/Charts/Generic_XY_Chart/Chart_Canvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/Charts_and_Objects/Charts/Generic_XY_Chart/_Generic_XY_Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/Charts_and_Objects/Charts/Generic_XY_Chart/_Generic_XY_Chart.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +104,7 @@
     "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.22758621",
-    "settings.editor.selected.configurable": "editor.preferences.folding"
+    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog"
   }
 }]]></component>
   <component name="RecentsManager">
