@@ -7,7 +7,8 @@
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/Charts_and_Objects/Charts/Generic_XY_Chart/Chart_Canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/Charts_and_Objects/Charts/Generic_XY_Chart/Chart_Canvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/Charts_and_Objects/Charts/Generic_XY_Chart/_Generic_XY_Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/Charts_and_Objects/Charts/Generic_XY_Chart/_Generic_XY_Chart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI/a_THEMES/FlatLaf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/a_THEMES/FlatLaf.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI/a_THEMES/FlatMacDark_LAF.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/a_THEMES/FlatMacDark_LAF.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,31 +83,31 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Array_of_Objects.executor": "Run",
-    "Application.Font_Test.executor": "Run",
-    "Application.Hello.executor": "Run",
-    "Application.Main Class of Lightning.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.Object_Main.executor": "Run",
-    "Application.SmartDocking_Test_Main.executor": "Run",
-    "Application.Test_2D_Arrays.executor": "Run",
-    "Application.Timer_Main.executor": "Run",
-    "Application.Unnamed.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/src/a_PROTOTYPING/FONT_TEST",
-    "onboarding.tips.debug.path": "E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/src/Main.java",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.22758621",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Array_of_Objects.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Font_Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Hello.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main Class of Lightning.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Object_Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SmartDocking_Test_Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test_2D_Arrays.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Timer_Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/src/a_PROTOTYPING/FONT_TEST&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.22758621&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\111 - REPO - MKU PROJECT REPO\LIGHTNING\src\a_PROTOTYPING\FONT_TEST" />

@@ -8,7 +8,7 @@ public class Chart_Canvas extends JPanel
     public int Width;
     public int Height;
 
-   
+
 
     /**Constructor for Class */
     public Chart_Canvas()
