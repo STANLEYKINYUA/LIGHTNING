@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/Charts_and_Objects/Charts/Generic_XY_Chart/X_Axis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/Charts_and_Objects/Charts/Generic_XY_Chart/Chart_Canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/Charts_and_Objects/Charts/Generic_XY_Chart/Chart_Canvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/Charts_and_Objects/Charts/Generic_XY_Chart/_Generic_XY_Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/Trading_Windows/Dockable/Charts_and_Objects/Charts/Generic_XY_Chart/_Generic_XY_Chart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aa_UI/a_THEMES/FlatLaf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/a_THEMES/FlatLaf.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aa_UI/a_THEMES/FlatMacDark_LAF.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/aa_UI/a_THEMES/FlatMacDark_LAF.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
