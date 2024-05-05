@@ -1,0 +1,43 @@
+<mxfile host="Electron" modified="2024-03-23T18:46:25.757Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.4.0 Chrome/112.0.5615.204 Electron/24.5.1 Safari/537.36" etag="LgP5eEh0R6vvUkOdL5r1" version="21.4.0" type="device">
+  <diagram name="Page-1" id="hEe13QOGEc_TrbHQA4Oi">
+    <mxGraphModel dx="1949" dy="920" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="36GiEAym4bSPyTVTO8dV-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="36GiEAym4bSPyTVTO8dV-1" target="36GiEAym4bSPyTVTO8dV-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="36GiEAym4bSPyTVTO8dV-1" value="J Desktop Pane - MDI Container Holder" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;align=left;" vertex="1" parent="1">
+          <mxGeometry x="222" y="469" width="531" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="36GiEAym4bSPyTVTO8dV-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="36GiEAym4bSPyTVTO8dV-2" target="36GiEAym4bSPyTVTO8dV-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="36GiEAym4bSPyTVTO8dV-2" value="Workspace Manager&amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp; &amp;nbsp;Stores MDI Window Layout Settings&amp;nbsp; - Which windows will be loaded" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;align=left;" vertex="1" parent="1">
+          <mxGeometry x="211" y="407" width="531" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="36GiEAym4bSPyTVTO8dV-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="36GiEAym4bSPyTVTO8dV-3" target="36GiEAym4bSPyTVTO8dV-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="36GiEAym4bSPyTVTO8dV-3" value="Modern Docking&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp; &amp;nbsp;Allow Chart MDI Windows to be docked, resized and popped out&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;align=left;" vertex="1" parent="1">
+          <mxGeometry x="239" y="344" width="530" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="36GiEAym4bSPyTVTO8dV-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="36GiEAym4bSPyTVTO8dV-6" target="36GiEAym4bSPyTVTO8dV-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="36GiEAym4bSPyTVTO8dV-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="36GiEAym4bSPyTVTO8dV-6" target="36GiEAym4bSPyTVTO8dV-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="36GiEAym4bSPyTVTO8dV-6" value="Chart Area&amp;nbsp; &amp;nbsp;- Represents the Surface that the Chart is Plotted on&amp;nbsp; &amp;nbsp; &amp;nbsp;-&amp;nbsp; &amp;nbsp; Allows Setting Chart BackGround Color" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;align=left;" vertex="1" parent="1">
+          <mxGeometry x="244" y="278" width="631" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="36GiEAym4bSPyTVTO8dV-8" value="Chart Template&amp;nbsp; &amp;nbsp;-&amp;nbsp; Represents the Default Data that Charts Open to :: Stores -&amp;nbsp; &amp;nbsp;Colours, Indicators,Chart Settings&amp;nbsp; , Drawings plotted on this chart&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-96" y="195" width="749" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="36GiEAym4bSPyTVTO8dV-9" value="Chart Settings&amp;nbsp; &amp;nbsp;-&amp;nbsp; Chart Properties ie&amp;nbsp; Colours , things to plot/not plot ,&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;align=left;" vertex="1" parent="1">
+          <mxGeometry x="371" y="112" width="588" height="36" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

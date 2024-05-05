@@ -1,0 +1,27 @@
+SAMPLE CHART MANAGER CONFIG FILE
+
+<config manager>
+
+    <Open Charts>
+        13
+    </Open Charts>
+
+    <Open Charts Indexes>
+        1,2,4,8,9,10,12,13,14,16,22,23,24,25,26,27,28,29
+    </Open Charts Indexes>
+
+    <Open Chart Settings>
+        <1>
+            <Symbol>        EurUsd  </Symbol>
+            <ChartType>     Renko   </ChartType>
+            <Period>        5      </Period>
+        </1>
+
+        <29>
+            <Symbol>        Crude  </Symbol>
+            <ChartType>     Range   </ChartType>
+            <Period>        15      </Period>
+        </29
+    </Open Chart Settings>
+
+</config manager>

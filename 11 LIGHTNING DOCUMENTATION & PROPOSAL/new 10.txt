@@ -1,0 +1,28 @@
+SAURON COMMANDS
+
+TERMINAL NOTES	::
+
+	Create a Terminal like for BloomBerg Terminal @ the top of the Screen.
+	
+	<Site name >		--	Once the sitename is entered it displays all allowed Functions for this ::
+			>>	It also remains connected to this Object until I enter sitename Exit.
+	
+				<Site name Variants>  REDDIT   =    Reddit,reddit,REDDIT,rEDDIT	
+				
+	>>>	Once Sitename is called - Display a Control Window that allows for Special Features
+==================
+Use Terminal to call Object::
+
+	<Reddit>		--	AfterWards a small Window
+
+==================================================================================
+When we Open a Window for Each Downloader	:
+
+		>>>	We increase the Code to write and Debug.
+
+INSTEAD we Should Use a Terminal that ::
+
+	1.	Allows us to Parse Pasted urls and Determine
+	2.	Pass URLs and call needed class on its own thread and when done dispose of it
+==================================================================================
+		

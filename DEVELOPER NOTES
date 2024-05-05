@@ -1,0 +1,4 @@
+1.  Use a Button on the Splash Screen for now to reduce wait times.
+
+2.  Use MDI windows for now. Later when Improving my Code - Add Docking with my own Docking FrameWork that I develop
+    for maxumum code portability and code understanding.
