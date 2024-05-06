@@ -40,7 +40,7 @@ public class Main {
     public static void main(String[] args)
     {
         //Hello World to prove that the program works.
-        System.out.println("BUILD SUCCESS!!");
+        System.out.println("BUILD SUCCESS - POST MAVEN!!");
 
 
         //TODO Read Config File and determine whether to perform first load actions. load Dark/ Light Mode
