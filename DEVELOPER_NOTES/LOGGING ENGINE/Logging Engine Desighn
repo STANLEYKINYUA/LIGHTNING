@@ -1,0 +1,7 @@
+
+    Custom Logging Engine.
+
+    Logs to Keep.
+        1.  General Logs    -   System Activities - Login, Shutdown,New Profile Created etc
+        2.  Network Logs    -   Network Activities - Connections, disconnections, errors etc
+        3.  Database Logs   -   Connections , Database Activities etc

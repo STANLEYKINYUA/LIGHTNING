@@ -57,7 +57,7 @@ public class Login_Window extends JFrame
             this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
             //Set the Placement as well as the size of the Window
-            this.setBounds(400,250,800,800);
+            this.setBounds(400,250,400,500);
 
             //Set the Default Label for this Form as ROBOTO
             this.setFont(new Font(FlatRobotoFont.FAMILY , Font.PLAIN , 12));
@@ -69,7 +69,7 @@ public class Login_Window extends JFrame
             this.add(Login_Label,"span,center,gapbottom 15");
 
             //----------------------------------------------------------------------------
-            // USERNAME Label with Validation
+            // USERNAME Label
             UsrNameLABEL Usr_Name_Label = new UsrNameLABEL("USER NAME");
             this.add(Usr_Name_Label,"align label");
 
@@ -107,11 +107,14 @@ public class Login_Window extends JFrame
             //Event Listener for Login Button to Open Main Trading Window
 
             //TODO  Create an exception Handling block to deal with Opening of Main trading Window
-            Login_Button.addActionListener(e -> {Display_Main_Trading_Window();});
+            Login_Button.addActionListener(e ->
+            {
+                Display_Main_Trading_Window();
+            });
             //----------------------------------------------------------------------------
 
             // HyperLink for Forgot Password
-            JXHyperlink Forgot_Password = new JXHyperlink();
+            JLabel Forgot_Password = new JLabel();
             this.add(Forgot_Password);
             //----------------------------------------------------------------------------
 

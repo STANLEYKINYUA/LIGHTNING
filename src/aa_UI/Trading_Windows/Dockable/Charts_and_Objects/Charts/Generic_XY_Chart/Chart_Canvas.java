@@ -71,6 +71,7 @@ public class Chart_Canvas extends JPanel
                         RenderingHints.KEY_ANTIALIASING,
                         RenderingHints.VALUE_ANTIALIAS_ON
 
+
                 );
 
         //set the background to white
@@ -131,11 +132,20 @@ public class Chart_Canvas extends JPanel
 
             //-------------------------------------------------------------
             // Subdivide the Line into Grids based on the max Zoom Level.
+            int Number_of_Points =20;
 
+
+
+
+
+
+        //==========================================================
 
 
 
     }
+
+
 
 
 
