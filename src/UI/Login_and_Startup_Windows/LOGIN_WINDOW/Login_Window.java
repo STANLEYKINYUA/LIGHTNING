@@ -11,7 +11,7 @@
 * */
 package UI.Login_and_Startup_Windows.LOGIN_WINDOW;
 
-import UI.TRADING_DashBoard_MainWINDOW.MAIN_TRADING_WINDOW;
+import UI.Main_Trading_Window.MAIN_TRADING_WINDOW;
 import UI.Login_and_Startup_Windows.REGISTRATION_WINDOW;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import net.miginfocom.swing.MigLayout;

@@ -1,0 +1,4 @@
+package GENERAL_SYSTEMS.NOTIFICATIONS;
+
+public interface NOTIFICATIONS {
+}
