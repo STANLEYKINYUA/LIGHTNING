@@ -3,11 +3,11 @@ package UI.Main_Trading_Window;
 import ModernDocking.DockingRegion;
 import ModernDocking.app.Docking;
 import ModernDocking.app.RootDockingPanel;
-import UI.Trading_Windows.Dockable.Calendar.Calendar_Window;
-import UI.Trading_Windows.Dockable.Charts_and_Objects.Charts.CandleStick_Chart;
-import UI.Trading_Windows.Dockable.Market_ScannerWindow.Market_Scanner_Window;
-import UI.Trading_Windows.Dockable.OrdersPositionsWindow.ORDERS_and_POSITIONS_WINDOW;
-import UI.Trading_Windows.Dockable.WatchList.WatchList_Window;
+import UI.MDI_Internal_Trading_Windows.Calendar.Calendar_Window;
+import UI.Charts_and_Indicatorz.Charts.CandleStick_Chart;
+import UI.MDI_Internal_Trading_Windows.Market_ScannerWindow.Market_Scanner_Window;
+import UI.MDI_Internal_Trading_Windows.Orders_and_PositionsWindow.ORDERS_and_POSITIONS_WINDOW;
+import UI.MDI_Internal_Trading_Windows.WatchList.WatchList_Window;
 import UI.Main_Trading_Window.MENUS.CONNECTIONS_MENU.Connections_Menu;
 import UI.Main_Trading_Window.MENUS.FILE_MENU.File_Menu_Entry;
 import UI.Main_Trading_Window.MENUS.REPORTS.Reports_Menu;
@@ -22,7 +22,7 @@ import java.awt.*;
 
 //TODO  JAVADOC Every Function in this Class
 
-/** This Window is the default window that hosts Charts_and_Objects and Trading Menus and Windows */
+/** This Window is the default window that hosts Charts_and_Indicatorz and Trading Menus and Windows */
 public class MAIN_TRADING_WINDOW extends JFrame
 {
 
@@ -221,7 +221,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
     void Spawn_Trades_Ticker_Window()
     {}
 
-                //Charts_and_Objects
+                //Charts_and_Indicatorz
     void Spawn_CandleStick_Chart()
     {
         //TODO  Write Code that Spawns a Candle Stick Chart and Fetches Data to Plot.
@@ -229,8 +229,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
         //spawn the Candle Stick Chart and Dock to the Centre
         CandleStick_Chart CandleStick = new CandleStick_Chart("CANDLESTICK_CHART");
 
-        //Dock the CandleStick Chart into the RootPanes
-        Docking.dock(CandleStick,this,DockingRegion.CENTER,0.3);
+
     }
     void Spawn_Dockable_RangeBar_Chart(String Market_Symbol , String Chart_Period , String Start_Date)
     {
