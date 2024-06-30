@@ -11,10 +11,10 @@ import UI.MDI_Internal_Trading_Windows.Orders_and_PositionsWindow.WorkingOrdersT
 import javax.swing.*;
 
 /** Contains the Containers that hold Details on Orders,Positions,Historical Positions etc */
-public class ORDERS_and_POSITIONS_WINDOW extends JTabbedPane implements Dockable
+public class ORDERS_and_POSITIONS_WINDOW extends JTabbedPane
 {
     //TODO  Create a Tabbed Pane that can show open poxns , working orders ,
-    private final String text;
+
 
     /**Default Constructor  */
     public ORDERS_and_POSITIONS_WINDOW(String text)
@@ -26,9 +26,7 @@ public class ORDERS_and_POSITIONS_WINDOW extends JTabbedPane implements Dockable
         CreateHistoricalPositionsTAB();
         CreateJournalTAB();
 
-        //Set Window as Dockable and set Text
-        this.text = text;
-        Docking.registerDockable(this);
+
 
         //Set the Size
         this.setSize(50,100);
@@ -38,21 +36,7 @@ public class ORDERS_and_POSITIONS_WINDOW extends JTabbedPane implements Dockable
 
     }
 
-    /**
-     * @return
-     */
-    @Override
-    public String getPersistentID() {
-        return text;
-    }
 
-    /**
-     * @return
-     */
-    @Override
-    public String getTabText() {
-        return text;
-    }
 
     /** Creates Tab that Holds Positions Data Table */
     public void CreatePositionsTAB()

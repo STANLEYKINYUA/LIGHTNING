@@ -8,6 +8,7 @@ import UI.Charts_and_Indicatorz.Charts.CandleStick_Chart;
 import UI.MDI_Internal_Trading_Windows.Market_ScannerWindow.Market_Scanner_Window;
 import UI.MDI_Internal_Trading_Windows.Orders_and_PositionsWindow.ORDERS_and_POSITIONS_WINDOW;
 import UI.MDI_Internal_Trading_Windows.WatchList.WatchList_Window;
+import UI.Main_Trading_Window.DeskTop_Pane.MainWindow_DeskTop_Pane;
 import UI.Main_Trading_Window.MENUS.CONNECTIONS_MENU.Connections_Menu;
 import UI.Main_Trading_Window.MENUS.FILE_MENU.File_Menu_Entry;
 import UI.Main_Trading_Window.MENUS.REPORTS.Reports_Menu;
@@ -26,13 +27,42 @@ import java.awt.*;
 public class MAIN_TRADING_WINDOW extends JFrame
 {
 
+    /*  DATA TYPES  */
+
+    // MDI Windows
+    private boolean is_Calendar_Open        = false;
+    private boolean is_NewsWindow_Open      = false;
+    private boolean is_EquityBalances_Open  = false;
+    private boolean is_MarketScanner_Open   = false;
+    private boolean is_OrdersPositions_Open = false;
+
+    //
+
+
+
+
+
+
     public MAIN_TRADING_WINDOW()
     {
         //Initialize the JFrame and show all Features.
         init_Trading_Window();
 
 
+        //Create a Desktop Pane where MDI windows can be Docked.
+        MainWindow_DeskTop_Pane DesktopPane = new MainWindow_DeskTop_Pane();
+        this.add(DesktopPane, BorderLayout.CENTER);
+
+
+        //Create and Add the MDI Window
+        Create_MDI_Window(DesktopPane,"MDI Window 1");
+        Create_MDI_Window(DesktopPane,"MDI Window 2");
+
+
+
+
     }
+
 
 
     /** Initializes Main Trading Window that is used to Display Other Windows */
@@ -44,11 +74,10 @@ public class MAIN_TRADING_WINDOW extends JFrame
             //1. Set Window Size and spawn Location.
             this.setBounds(200,200,800,800);
 
-            //2.    Set Window Close Action.
-            this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+            //Set the Title of the Desktop Pane
+            this.setTitle(" LIGHTNING ");
 
-            //3.    This Window is Resizable.
-            this.setResizable(true);
+
 
             //5.    Set Default Font for the Frame as Roboto
             this.setFont(new Font(FlatRobotoFont.FAMILY ,Font.PLAIN ,12));
@@ -56,7 +85,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
             //TODO  Change Icon for this Window to Lightning and keep Frame Name.
             this.setTitle("LIGHTNING WORKSTATION.");
 
-            //SetLayout to MigLayout
+
 
 
 
@@ -104,15 +133,6 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
 
 
-
-
-            //Initialize Docking on this JFrame
-            Docking.initialize(this);
-
-            //Create a Root Dock Pane where Chartscan be Docked
-            RootDockingPanel Trading_Window_DOCK_Panel = new RootDockingPanel(this);
-            this.add(Trading_Window_DOCK_Panel,BorderLayout.CENTER);
-
             //TODO Spawn WatchList , Scanner , Positions for now but remove later
             Spawn_WatchList();
             Spawn_Market_Scanner();
@@ -138,7 +158,19 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
 
     //---------------------------------------------------------------------------------------------
-    /**These Functions are used to Create Non Docking Windows that Appear Above the Main Trading Window and capture FOCUS*/
+    /** Function that allows MDI windows to be created */
+    void Create_MDI_Window( JDesktopPane DesktopPane , String Title)
+    {
+        JInternalFrame Internal_TestFrame = new JInternalFrame(Title,true,true,true,true);
+        Internal_TestFrame.setBounds(50,50,300,200);
+
+        JTextArea Text = new JTextArea(Title);
+        Internal_TestFrame.add(Text);
+
+        DesktopPane.add(Internal_TestFrame);
+        Internal_TestFrame.setVisible(true);
+
+    }
 
     /** Settings Window that takes Focus from the Application*/
     void Spawn_Settings_Window()
@@ -170,9 +202,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
             //Spawn the WatchList and Dock
             WatchList_Window WatchList = new WatchList_Window("WatchList");
 
-            //Dock into the created
-            //TODO  Set all Docking Windows to a Divider Proportion of 0.5 to ensure they share space equally
-            Docking.dock(WatchList,this,DockingRegion.WEST,0.5);
+
 
     }
 
@@ -181,8 +211,6 @@ public class MAIN_TRADING_WINDOW extends JFrame
             //Create a new Orders and Positions Window
             ORDERS_and_POSITIONS_WINDOW OrdersPositionsWindow = new ORDERS_and_POSITIONS_WINDOW("ORDERS & POSITIONS");
 
-            //Dock into the Global South of the Main Trading Window
-            Docking.dock(OrdersPositionsWindow,this,DockingRegion.SOUTH,0.5);
 
     }
     void Spawn_Market_Scanner()
@@ -191,9 +219,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
             //Spawn the MarketScanner and Dock
             Market_Scanner_Window MarketScannerWindow = new Market_Scanner_Window("MARKET SCANNER");
 
-            //Dock into the created
-            //TODO  Set all Docking Windows to a Divider Proportion of 0.5 to ensure they share space equally
-            Docking.dock(MarketScannerWindow,this, DockingRegion.EAST,0.5);
+
 
     }
     //Informational
@@ -201,21 +227,11 @@ public class MAIN_TRADING_WINDOW extends JFrame
     {
         //Spawn the Calendar Window and Dock to the East
         Calendar_Window Calendar_Window = new Calendar_Window("CALENDAR");
-        //Dock it into the rootpane
-        Docking.dock(Calendar_Window,this,DockingRegion.EAST,0.5);
+
     }
     void Spawn_L2_Dom_Window()
     {
-        try
-        {
-            //Spawn L2 Dom Window and Dock it
 
-        }
-        catch(Exception Failed_to_Spawn_L2DOM_Window)
-        {
-            //TODO  Write Better Documentation for this
-            Failed_to_Spawn_L2DOM_Window.printStackTrace();
-        }
 
     }
     void Spawn_Trades_Ticker_Window()

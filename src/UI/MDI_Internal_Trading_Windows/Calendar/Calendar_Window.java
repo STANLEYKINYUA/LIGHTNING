@@ -7,7 +7,7 @@ import UI.MDI_Internal_Trading_Windows.Calendar.TABS.*;
 import javax.swing.*;
 
 /** This Describes a Market Calendar Window */
-public class Calendar_Window extends JTabbedPane implements Dockable
+public class Calendar_Window extends JTabbedPane
 {
     //TODO  Write Proper Documentation for every line in this
     private final String text;
@@ -16,8 +16,7 @@ public class Calendar_Window extends JTabbedPane implements Dockable
     public Calendar_Window(String text)
     {
         this.text = text;
-        //Register as a Dockable
-        Docking.registerDockable(this);
+
 
         //Create Tabs for the Calendar Window
         Create_Today_EventsTab();
@@ -32,16 +31,7 @@ public class Calendar_Window extends JTabbedPane implements Dockable
 
 
 
-    @Override
-    public String getPersistentID() {
-        return text;
-    }
 
-
-    @Override
-    public String getTabText() {
-        return text;
-    }
 
     /**Creates Tabs for the Different Events */
     public void Create_Today_EventsTab()

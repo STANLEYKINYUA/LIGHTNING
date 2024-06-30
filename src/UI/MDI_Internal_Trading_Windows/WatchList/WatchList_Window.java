@@ -6,7 +6,7 @@ import ModernDocking.app.Docking;
 import javax.swing.*;
 
 /** This Class Describes a Window that keeps Track of all Tradeable Symbols. */
-public class WatchList_Window extends JTabbedPane implements Dockable
+public class WatchList_Window extends JTabbedPane
 {
     //TODO  Write Proper Documentation for every line in this
     private final String text;
@@ -18,8 +18,7 @@ public class WatchList_Window extends JTabbedPane implements Dockable
 
         this.text = text;
 
-        //Register as a Dockable
-        Docking.registerDockable(this);
+
 
 
 
@@ -27,15 +26,7 @@ public class WatchList_Window extends JTabbedPane implements Dockable
 
     }
 
-    @Override
-    public String getPersistentID() {
-        return text;
-    }
 
-    @Override
-    public String getTabText() {
-        return text;
-    }
 
     //Create Tabs
         //Create Favourites Tab
