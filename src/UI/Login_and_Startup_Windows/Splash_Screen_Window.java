@@ -12,25 +12,24 @@
 package UI.Login_and_Startup_Windows;
 
 
+import UI.Login_and_Startup_Windows.Account_Creation_Window.Accounts_Creation_Window;
 import UI.Login_and_Startup_Windows.LOGIN_WINDOW.Login_Window;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
 
 public class Splash_Screen_Window extends javax.swing.JFrame
 {
     double Version_Number = 0.01;   //  Version Number of the Program.
 
+    boolean First_Start = false;
+
 
     public Splash_Screen_Window()
     {
-        
-
-        //Lower the Opacity.
-
-
 
         //The splash Screen is always on top
         this.setAlwaysOnTop(true);
@@ -50,31 +49,25 @@ public class Splash_Screen_Window extends javax.swing.JFrame
 
         //This Window does not have a title bar
 
-        //Create a Label and add its parameters
+        //Show the Application Name in a Label
         JLabel SplashScreen_Label = new JLabel("LIGHTNING TRADER WORKSTATION");
         SplashScreen_Label.setBounds(0,50,400,30);
-
-        //Set the Font for the Label as well as the Size
         SplashScreen_Label.setFont(new Font(FlatRobotoFont.FAMILY , Font.PLAIN ,24));
-
-
-
-
-        //add the Label to the Form
         this.add(SplashScreen_Label,"span,center");
+
 
         //Create a Button that loads the
         JButton ENTER_APPLICATION_BUTTON = new JButton();
         ENTER_APPLICATION_BUTTON.setText("ENTER");
         ENTER_APPLICATION_BUTTON.setBounds(200,100,100,60);
-
-
-        //Add the button to the Form
         this.add(ENTER_APPLICATION_BUTTON);
 
 
-        //Event Listener for Splash Screen that redirects to Login Form.
-        ENTER_APPLICATION_BUTTON.addActionListener(e -> {SHOW_LOGIN_FORM();});
+        ENTER_APPLICATION_BUTTON.addActionListener(e ->
+        {
+            Check_First_Start();
+        });
+
 
         //Version Number Label.
         JLabel Version_Number_Label = new JLabel();
@@ -82,6 +75,9 @@ public class Splash_Screen_Window extends javax.swing.JFrame
         Version_Number_Label.setText("Version" +" "+ Version);
         this.add(Version_Number_Label);
         Version_Number_Label.setBounds(500,230,100,20);
+
+
+
 
         //TODO  Read Config File and Determine whether it is First Load / Other load
         //TODO  Read OS and Set Config File Locations Appropriately as well as the File
@@ -122,6 +118,59 @@ public class Splash_Screen_Window extends javax.swing.JFrame
     }
 
 
+    //Functions that Determine whether it is the First Start or not.
+    boolean Check_First_Start()
+    {
+        boolean isFirst_Start = false;
+
+        //Check if the File or Directory exists
+        try
+        {
+           File Config_File = new File("c:/Z Lightning/General_Config");
+
+           //Check whether it exists or not
+           isFirst_Start = Config_File.exists();
+
+           /*The File does not Exist thus it is the First Start*/
+            if(!isFirst_Start)
+            {
+                //Create General Config_File
+                Config_File.createNewFile();
+
+                //Open Acc Creation Window
+                Accounts_Creation_Window AccCreation_Window = new Accounts_Creation_Window();
+                AccCreation_Window.setVisible(true);
+                SPLASH_SCREEN_FORM_HIDE();
+
+
+            }
+            else
+            {
+                //Is not the First Start - Open Login Window
+                Login_Window  LoginWindow = new Login_Window();
+                LoginWindow.setVisible(true);
+                SPLASH_SCREEN_FORM_HIDE();
+
+
+            }
+
+
+
+
+
+
+        }
+        catch(Exception FileDoes_NotExist)
+        {
+            String Log_Message="";
+
+            Log_Message = FileDoes_NotExist.toString();
+
+        }
+
+
+        return  isFirst_Start;
+    }
 
 
 

@@ -12,7 +12,7 @@
 package UI.Login_and_Startup_Windows.LOGIN_WINDOW;
 
 import UI.Main_Trading_Window.MAIN_TRADING_WINDOW;
-import UI.Login_and_Startup_Windows.REGISTRATION_WINDOW;
+import UI.Login_and_Startup_Windows.Account_Creation_Window.Accounts_Creation_Window;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import net.miginfocom.swing.MigLayout;
 
@@ -162,7 +162,7 @@ public class Login_Window extends JFrame
     void Display_Registration_Window()
     {
         //Display the Registration Form.
-        JFrame Registration_Form = new REGISTRATION_WINDOW();
+        JFrame Registration_Form = new Accounts_Creation_Window();
         Registration_Form.setVisible(true);
 
 

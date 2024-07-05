@@ -54,9 +54,12 @@ public class MAIN_TRADING_WINDOW extends JFrame
         this.add(DesktopPane, BorderLayout.CENTER);
 
 
+
         //Create and Add the MDI Window
-        Create_MDI_Window(DesktopPane,"MDI Window 1");
-        Create_MDI_Window(DesktopPane,"MDI Window 2");
+        Create_MDI_Window(DesktopPane,"MDI Window 1",50,50,300,200);
+        Create_MDI_Window(DesktopPane,"MDI Window 2",100,100,300,200);
+
+        Create_WatchList_Window(DesktopPane,300,300,250,700);
 
 
 
@@ -133,14 +136,6 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
 
 
-            //TODO Spawn WatchList , Scanner , Positions for now but remove later
-            Spawn_WatchList();
-            Spawn_Market_Scanner();
-            Spawn_Position_and_Order_Management_Window();
-            Spawn_Calendar_Window();
-            Spawn_CandleStick_Chart();
-
-
         }
         catch(Exception Trading_Window_Exception)
         {
@@ -159,12 +154,12 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
     //---------------------------------------------------------------------------------------------
     /** Function that allows MDI windows to be created */
-    void Create_MDI_Window( JDesktopPane DesktopPane , String Title)
+    void Create_MDI_Window( JDesktopPane DesktopPane , String Title,int x,int y, int W,int H)
     {
         JInternalFrame Internal_TestFrame = new JInternalFrame(Title,true,true,true,true);
-        Internal_TestFrame.setBounds(50,50,300,200);
+        Internal_TestFrame.setBounds(x,y,W,H);
 
-        JTextArea Text = new JTextArea(Title);
+        JLabel Text = new JLabel(Title);
         Internal_TestFrame.add(Text);
 
         DesktopPane.add(Internal_TestFrame);
@@ -172,22 +167,42 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
     }
 
-    /** Settings Window that takes Focus from the Application*/
+    //Spawn Chart MDI Window
+    void display_Chart(String Chart_Symbol , String Period)
+    {
+
+    }
+    //Spawn Calendar MDI Window
+    //Spawn DOM  MDI Window
+    //Spawn Equity Balances MDI Window
+    //Spawn Market Scanner MDI Window
+    //Spawn Order Entry/Management JFrame Window - Takes Focus from Application
+    //Spawn Portfolio MDI Window
+    //Spawn Watchlist MDI Window
+    void Create_WatchList_Window(JDesktopPane DesktopPane,int x,int y, int W,int H)
+    {
+        String Title = "WATCHLIST";
+
+        WatchList_Window  WatchList = new WatchList_Window(Title);
+        WatchList.setBounds(x,y,W,H);
+
+        JLabel Text = new JLabel(Title);
+        WatchList.add(Text);
+
+        DesktopPane.add(WatchList);
+        WatchList.setVisible(true);
+
+
+    }
+    //Spawn News  MDI Window
+
+    /** Spawn Settings JFrame  Window that takes Focus from the Application*/
     void Spawn_Settings_Window()
     {}
 
-    /** Exit Alert Dialog that Takes Focus from the Window*/
+    /** Spawn Exit Alert Dialog that Takes Focus from the Window*/
     void Spawn_Exit_Alert_Dialog(){}
     //----------------------------------------------------------------------------------------------
-
-
-
-    //----------------------------------------------------------------------------------------------
-    /**These Windows create Non Docking Windows which do not capture Focus */
-    void Spawn_Reports_Window(){}
-
-    //----------------------------------------------------------------------------------------------
-
 
 
 
@@ -195,16 +210,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
     /** These Functions create Dockable Windows */
 
                 // WATCHLIST ,Trade Information ,TRADING.PORTFOLIO Management Windows
-    public void Spawn_WatchList()
-    {
-        //TODO  Spawn WatchList always Docked to the West but can be Floated.
 
-            //Spawn the WatchList and Dock
-            WatchList_Window WatchList = new WatchList_Window("WatchList");
-
-
-
-    }
 
     void Spawn_Position_and_Order_Management_Window()
     {

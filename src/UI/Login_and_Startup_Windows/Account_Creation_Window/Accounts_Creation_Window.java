@@ -1,4 +1,4 @@
-package UI.Login_and_Startup_Windows;
+package UI.Login_and_Startup_Windows.Account_Creation_Window;
 
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import net.miginfocom.swing.MigLayout;
@@ -6,9 +6,9 @@ import net.miginfocom.swing.MigLayout;
 import javax.swing.*;
 import java.awt.*;
 
-public class REGISTRATION_WINDOW extends JFrame
+public class Accounts_Creation_Window extends JFrame
 {
-    public REGISTRATION_WINDOW()
+    public Accounts_Creation_Window()
     {
 
         //1. Set Window Size and spawn Location.
@@ -31,7 +31,6 @@ public class REGISTRATION_WINDOW extends JFrame
         this.setTitle("REGISTRATION WINDOW.");
 
 
-        //TODO Create a back button to return to the Login Window
 
         //TODO  Create a Registration form
 
@@ -50,6 +49,7 @@ public class REGISTRATION_WINDOW extends JFrame
             //TODO  Implement Entry validation when textbox loses Focus
 
         // TODO  Create a JFileChooser and Select Location to Save System Files  - Files saved under UserName
+        //TODO Create button to return to the Login Window
 
 
     }

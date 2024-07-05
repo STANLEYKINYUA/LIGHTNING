@@ -12,12 +12,9 @@ public class WorkSpace
 
     }
 
-    /**Create Docking Panels that I will Use to Display Info */
 
-    //Other Windows
-    Calendar_Window         Calendar        = new Calendar_Window("CALENDAR");
-    Market_Scanner_Window   MarketScanner   = new Market_Scanner_Window("MARKET_SCANNER");
-    WatchList_Window        WatchList       = new WatchList_Window("WATCH_LIST");
+
+
 
 
     //Chart Windows
