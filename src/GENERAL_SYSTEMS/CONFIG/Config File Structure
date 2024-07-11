@@ -1,0 +1,20 @@
+
+List of Config Files
+    1.  User Config Window              -   General User Settings
+    2.  WorkSpace Config Window         -   Workspace Config Window
+    3.  Chart Template Config Window    -
+
+
+Structure of Config Files
+
+    < USER FOLDER >
+        < USER GENERAL_SYSTEMS.CONFIG FOLDER >
+                - User Config File
+                - Encrypted User Data in  a binary File
+                            >> Passwords , Logins , UserNames etc
+
+        < USER WORKSPACE CONFIGS >
+                - Workspace Manager Config File
+
+        < User Modern Docking Config Files >
+                - Modern_Docking_Persistence_Files
