@@ -5,28 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DEVELOPER_NOTES/Project NOTES.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/Dukascopy/Dukascopy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/cTrader/cTrader_Feed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TRADING/ENGINES/Generic_Rest_and_WebSocket_Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TRADING/ENGINES/Generic_WebSocket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TRADING/ENGINES/REST/REST_ENGINE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TRADING/ENGINES/REST/Rate_Limiter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Login_and_Startup_Windows/Account_Creation_Window/Acc_Creation_Panel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/MDI_Internal_Trading_Windows/WatchList/WatchList_Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/Venues/Api_endPoints/Dukascopy/Dukascopy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/Venues/Api_endPoints/Generic_Api_Handler_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/Generic_Api_Handler_Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/Venues/Api_endPoints/cTrader/aa_GENERIC_cTrader_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/cTrader/aa_GENERIC_cTrader_Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/Venues/Api_endPoints/cTrader/aa_Generic_cTrader_Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/cTrader/aa_Generic_cTrader_Class.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/Venues/Api_endPoints/cTrader/cTrader_Feed.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/Venues/REST_x_WebSocket/Generic_Rest_Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/Venues/REST_x_WebSocket/Generic_WebSocket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Login_and_Startup_Windows/Account_Creation_Window/Accounts_Creation_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Login_and_Startup_Windows/Account_Creation_Window/Accounts_Creation_Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Login_and_Startup_Windows/Splash_Screen_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Login_and_Startup_Windows/Splash_Screen_Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/MDI_Internal_Trading_Windows/Chart_Window/Chart_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/MDI_Internal_Trading_Windows/Chart_Window/Chart_Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/MDI_Internal_Trading_Windows/WatchList/WatchList_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/MDI_Internal_Trading_Windows/WatchList/WatchList_Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MAIN_TRADING_WINDOW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MAIN_TRADING_WINDOW.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/MDI_Internal_Trading_Windows/WatchList/WatchList_Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/MDI_Internal_Trading_Windows/WatchList/WatchList_Manager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
