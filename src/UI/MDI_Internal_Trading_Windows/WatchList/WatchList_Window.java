@@ -1,25 +1,36 @@
 package UI.MDI_Internal_Trading_Windows.WatchList;
 
-
 import javax.swing.*;
 
 
 public class WatchList_Window extends JInternalFrame
 {
 
-    public WatchList_Window(String Title)
+    public WatchList_Window()
     {
-        this.setTitle(Title);
+        //Set Title
+        this.setTitle("WATCHLIST");
+
+        //Set the Properties
+        this.setClosable(true);
+        this.setMaximizable(true);
+        this.setResizable(true);
+        this.setIconifiable(true);
+
+        JLabel Text = new JLabel("WATCHLIST Window");
+        this.add(Text);
+
+        //Add the WatchList Tab Pane
+
 
 
     }
 
 
 
-    //Create Tabs
-        //Create Favourites Tab
-        //Create Fx Tab
-        //Create
+    //Alert MDI Window Manager that you are closing so that it can set Parametres and resave layout.
 
-        //Create Button that Adds Tabs
+
+
+
 }

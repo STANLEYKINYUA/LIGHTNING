@@ -1,4 +1,4 @@
-package TRADING.Venues.Api_endPoints.cTrader;
+package TRADING.Apis_and_SDKs.cTrader;
 
 import TRADING.Venues.Generic_Trading_Venue_Interface;
 

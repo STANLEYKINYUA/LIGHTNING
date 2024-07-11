@@ -3,6 +3,7 @@ package UI.Login_and_Startup_Windows.Account_Creation_Window;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import net.miginfocom.swing.MigLayout;
 
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -32,29 +33,33 @@ public class Accounts_Creation_Window extends JFrame
 
 
 
-        //TODO  Create a Registration form
+        //TODO  Add a Large - CREATE ACC LABEL AT THE TOP OF THE WINDOW
+        JLabel AccountCreation_Label = new JLabel("CREATE ACCOUNT ");
+        AccountCreation_Label.setVisible(true);
+        this.add(AccountCreation_Label,"span");
 
-            //TODO  Registration Label
-            //todo  Email label + textBox  + Status Icon
-            //TODO  Username label + textbox + status Icon
-            //Todo  Password label + Password box + status Icon
-            //TODO  Confirm password Label + Password box
-            //TODO  Password Strength Indicator
-            //TODO  Security Question   + Textbox
-            //
+        //TODO Add Create Acc Form Panel
 
-            //TODO  Create Account button
-                    //TODO  Create Necessary Folders + Config Files
-            //TODO  Account Created Successfully PopUp Notification + Sound
-            //TODO  Implement Entry validation when textbox loses Focus
+
 
         // TODO  Create a JFileChooser and Select Location to Save System Files  - Files saved under UserName
         //TODO Create button to return to the Login Window
+        //Todo Create an Exit Button
+        JButton Exit_Button = new JButton("EXIT");
+        Exit_Button.addActionListener(e -> Exit_Application() );
+        this.add(Exit_Button,"span");
+
 
 
     }
 
 
-    public void CreateFirstStart_ConfigFiles(){}
+    public void Exit_Application()
+    {
+        //Exit the Application
+        System.exit(0);
+
+    }
+
 
 }

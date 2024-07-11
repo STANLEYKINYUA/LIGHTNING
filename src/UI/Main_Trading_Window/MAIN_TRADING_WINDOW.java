@@ -35,6 +35,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
     private boolean is_EquityBalances_Open  = false;
     private boolean is_MarketScanner_Open   = false;
     private boolean is_OrdersPositions_Open = false;
+    private boolean is_WatchList_Open       = false;
 
     //
 
@@ -178,20 +179,18 @@ public class MAIN_TRADING_WINDOW extends JFrame
     //Spawn Market Scanner MDI Window
     //Spawn Order Entry/Management JFrame Window - Takes Focus from Application
     //Spawn Portfolio MDI Window
+
+
     //Spawn Watchlist MDI Window
     void Create_WatchList_Window(JDesktopPane DesktopPane,int x,int y, int W,int H)
     {
         String Title = "WATCHLIST";
 
-        WatchList_Window  WatchList = new WatchList_Window(Title);
+        WatchList_Window  WatchList = new WatchList_Window();
         WatchList.setBounds(x,y,W,H);
-
-        JLabel Text = new JLabel(Title);
-        WatchList.add(Text);
 
         DesktopPane.add(WatchList);
         WatchList.setVisible(true);
-
 
     }
     //Spawn News  MDI Window

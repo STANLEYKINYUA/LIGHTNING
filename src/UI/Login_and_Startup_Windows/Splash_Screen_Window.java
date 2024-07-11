@@ -65,7 +65,7 @@ public class Splash_Screen_Window extends javax.swing.JFrame
 
         ENTER_APPLICATION_BUTTON.addActionListener(e ->
         {
-            Check_First_Start();
+            SHOW_LOGIN_FORM();
         });
 
 
@@ -119,58 +119,7 @@ public class Splash_Screen_Window extends javax.swing.JFrame
 
 
     //Functions that Determine whether it is the First Start or not.
-    boolean Check_First_Start()
-    {
-        boolean isFirst_Start = false;
 
-        //Check if the File or Directory exists
-        try
-        {
-           File Config_File = new File("c:/Z Lightning/General_Config");
-
-           //Check whether it exists or not
-           isFirst_Start = Config_File.exists();
-
-           /*The File does not Exist thus it is the First Start*/
-            if(!isFirst_Start)
-            {
-                //Create General Config_File
-                Config_File.createNewFile();
-
-                //Open Acc Creation Window
-                Accounts_Creation_Window AccCreation_Window = new Accounts_Creation_Window();
-                AccCreation_Window.setVisible(true);
-                SPLASH_SCREEN_FORM_HIDE();
-
-
-            }
-            else
-            {
-                //Is not the First Start - Open Login Window
-                Login_Window  LoginWindow = new Login_Window();
-                LoginWindow.setVisible(true);
-                SPLASH_SCREEN_FORM_HIDE();
-
-
-            }
-
-
-
-
-
-
-        }
-        catch(Exception FileDoes_NotExist)
-        {
-            String Log_Message="";
-
-            Log_Message = FileDoes_NotExist.toString();
-
-        }
-
-
-        return  isFirst_Start;
-    }
 
 
 
