@@ -304,5 +304,8 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="FlatLaf - Extras" level="project" />
+    <orderEntry type="library" name="miglayout-swing-4.3-20121116.151626-3-javadoc" level="project" />
+    <orderEntry type="library" name="okhttp-5.0.0-alpha.14-sources" level="project" />
   </component>
 </module>

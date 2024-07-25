@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="FlatLaf - Extras">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/11- Dependency JARS/Flat Laf/flatlaf-3.5-20240329.141948-1-sources.jar!/" />
+      <root url="file://$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Extras" />
+      <root url="file://$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Fonts" />
+      <root url="file://$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Intellij Themes Pack" />
+      <root url="file://$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Jide Common Layer" />
+      <root url="file://$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Jide OSS" />
+      <root url="file://$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - SwingX" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/11- Dependency JARS/Flat Laf/flatlaf-3.5-20240329.141948-1-sources.jar!/" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Extras" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Fonts" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Intellij Themes Pack" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Jide Common Layer" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Jide OSS" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - SwingX" recursive="false" />
+  </library>
+</component>

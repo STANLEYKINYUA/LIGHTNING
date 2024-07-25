@@ -17,6 +17,7 @@ import UI.Main_Trading_Window.MENUS.Trading_Window_MenuBar;
 import UI.Main_Trading_Window.STATUS_BAR.Trading_Window_StatusBar;
 import UI.Main_Trading_Window.TOOLBAR.Trading_Window_ToolBar;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
+import com.github.weisj.jsvg.nodes.Title;
 
 import javax.swing.*;
 import java.awt.*;
@@ -58,9 +59,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
         //Create and Add the MDI Window
         Create_MDI_Window(DesktopPane,"MDI Window 1",50,50,300,200);
-        Create_MDI_Window(DesktopPane,"MDI Window 2",100,100,300,200);
 
-        Create_WatchList_Window(DesktopPane,300,300,250,700);
 
 
 
@@ -73,8 +72,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
     void init_Trading_Window()
     {
         //Create a try Catch block to catch any exception.
-        try
-        {
+
             //1. Set Window Size and spawn Location.
             this.setBounds(200,200,800,800);
 
@@ -137,17 +135,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
 
 
-        }
-        catch(Exception Trading_Window_Exception)
-        {
-            //TODO  Throw all Exceptions and Create an Alert Window to Display the Exception on the UI
 
-            //Print the StackTrace for this Exception.
-            Trading_Window_Exception.printStackTrace();
-
-            //TODO  Log to Error File
-
-        }
 
 
     }
@@ -252,18 +240,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
 
     }
-    void Spawn_Dockable_RangeBar_Chart(String Market_Symbol , String Chart_Period , String Start_Date)
-    {
-        //TODO  Write Code that Spawns a Range Bar Chart and Fetches Data to Plot.
-    }
-    void Spawn_Dockable_RenkoBar_Chart(String Market_Symbol , String Chart_Period , String Start_Date)
-    {
-        //TODO  Write Code that Spawns a Renko Bar Chart and Fetches Data to Plot.
-    }
-    void Spawn_Dockable_MedianRenkoBar_Chart(String Market_Symbol , String Chart_Period , String Start_Date)
-    {
-        //TODO  Write Code that Spawns a Median Renko Bar Chart and Fetches Data to Plot.
-    }
+
 
 
     void Spawn_Crypto_Information_Window()

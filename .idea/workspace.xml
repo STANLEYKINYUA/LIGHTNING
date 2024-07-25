@@ -5,7 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/UI/MDI_Internal_Trading_Windows/WatchList/WatchList_Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/MDI_Internal_Trading_Windows/WatchList/WatchList_Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/FlatLaf___Extras.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/miglayout_swing_4_3_20121116_151626_3_javadoc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/okhttp_5_0_0_alpha_14_sources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Extras/flatlaf-extras-3.4.1-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Extras/flatlaf-extras-3.4.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Extras/jsvg-1.5.0-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Extras/jsvg-1.5.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Fonts/flatlaf-fonts-inter-4.0-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Fonts/flatlaf-fonts-inter-4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Fonts/flatlaf-fonts-jetbrains-mono-2.304-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Fonts/flatlaf-fonts-jetbrains-mono-2.304.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Fonts/flatlaf-fonts-roboto-2.137-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Fonts/flatlaf-fonts-roboto-2.137.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Fonts/flatlaf-fonts-roboto-mono-3.000-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Fonts/flatlaf-fonts-roboto-mono-3.000.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Intellij Themes Pack/flatlaf-intellij-themes-3.4.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Jide Common Layer/jide-oss-3.7.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Jide OSS/flatlaf-jide-oss-3.4.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - SwingX/flatlaf-swingx-3.4.1-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - SwingX/flatlaf-swingx-3.4.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - SwingX/swingx-all-1.6.5-1-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - SwingX/swingx-all-1.6.5-1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/flatlaf-3.5-20240329.141948-1-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/flatlaf-3.5-20240329.141948-1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Mig Layout/miglayout-swing-4.3-20121116.151626-3-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Mig Layout/miglayout-swing-4.3-20121116.151626-3-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/OKHTTP/okhttp-5.0.0-alpha.14-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/OKHTTP/okhttp-5.0.0-alpha.14-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/OKHTTP/okhttp-5.0.0-alpha.14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TRADING/ENGINES/Generic_Rest_and_WebSocket_Engine_Interface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TRADING/ENGINES/REST/RateLimiter_Interface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TRADING/ENGINES/WebSocket/WebSocket_Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LIGHTNING.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LIGHTNING.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/ENGINES/Generic_Rest_and_WebSocket_Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/ENGINES/REST/REST_ENGINE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/ENGINES/REST/REST_ENGINE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/ENGINES/REST/Rate_Limiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/ENGINES/REST/Rate_Limiter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/Feed_Normalizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/Feed_Normalizer/Feed_Normalizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/aBAR_PARSER/CandleStick_Bar_Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/Data_Parsers/CandleStick_Bar_Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/aBAR_PARSER/Generic_Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/Data_Parsers/Generic_Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/aBAR_PARSER/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/Data_Parsers/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/aBAR_PARSER/Tick_Data_Bar_Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/Data_Parsers/Tick_Data_Bar_Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MAIN_TRADING_WINDOW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MAIN_TRADING_WINDOW.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +57,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -54,13 +97,18 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Application.Lightning_Main File.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/11 - PROJECTS/MKU Project/LIGHTNING&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/11 - PROJECTS/MKU Project/LIGHTNING/11- Dependency JARS/OKHTTP/okhttp-5.0.0-alpha.14.jar&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.46206897&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
