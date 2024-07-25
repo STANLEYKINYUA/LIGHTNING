@@ -5,49 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/FlatLaf___Extras.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/miglayout_swing_4_3_20121116_151626_3_javadoc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/okhttp_5_0_0_alpha_14_sources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Extras/flatlaf-extras-3.4.1-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Extras/flatlaf-extras-3.4.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Extras/jsvg-1.5.0-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Extras/jsvg-1.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Fonts/flatlaf-fonts-inter-4.0-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Fonts/flatlaf-fonts-inter-4.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Fonts/flatlaf-fonts-jetbrains-mono-2.304-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Fonts/flatlaf-fonts-jetbrains-mono-2.304.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Fonts/flatlaf-fonts-roboto-2.137-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Fonts/flatlaf-fonts-roboto-2.137.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Fonts/flatlaf-fonts-roboto-mono-3.000-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Fonts/flatlaf-fonts-roboto-mono-3.000.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Intellij Themes Pack/flatlaf-intellij-themes-3.4.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Jide Common Layer/jide-oss-3.7.15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - Jide OSS/flatlaf-jide-oss-3.4.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - SwingX/flatlaf-swingx-3.4.1-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - SwingX/flatlaf-swingx-3.4.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - SwingX/swingx-all-1.6.5-1-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/FlatLaf - SwingX/swingx-all-1.6.5-1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/flatlaf-3.5-20240329.141948-1-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Flat Laf/flatlaf-3.5-20240329.141948-1-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Mig Layout/miglayout-swing-4.3-20121116.151626-3-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Mig Layout/miglayout-swing-4.3-20121116.151626-3-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/OKHTTP/okhttp-5.0.0-alpha.14-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/OKHTTP/okhttp-5.0.0-alpha.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/OKHTTP/okhttp-5.0.0-alpha.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TRADING/ENGINES/Generic_Rest_and_WebSocket_Engine_Interface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TRADING/ENGINES/REST/RateLimiter_Interface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TRADING/ENGINES/WebSocket/WebSocket_Engine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LIGHTNING.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LIGHTNING.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/ENGINES/Generic_Rest_and_WebSocket_Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/ENGINES/REST/REST_ENGINE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/ENGINES/REST/REST_ENGINE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/ENGINES/REST/Rate_Limiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/ENGINES/REST/Rate_Limiter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/Feed_Normalizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/Feed_Normalizer/Feed_Normalizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/aBAR_PARSER/CandleStick_Bar_Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/Data_Parsers/CandleStick_Bar_Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/aBAR_PARSER/Generic_Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/Data_Parsers/Generic_Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/aBAR_PARSER/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/Data_Parsers/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/aBAR_PARSER/Tick_Data_Bar_Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/Data_Parsers/Tick_Data_Bar_Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MAIN_TRADING_WINDOW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MAIN_TRADING_WINDOW.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/TOOLBAR/LCD_Display/LCD_Display.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/TOOLBAR/LCD_Display/LCD_LondonTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/TOOLBAR/LCD_Display/LCD_MyTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/TOOLBAR/LCD_Display/LCD_NegativeText.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/TOOLBAR/LCD_Display/LCD_Network_Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/TOOLBAR/LCD_Display/LCD_NewYorkTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/TOOLBAR/LCD_Display/LCD_PositiveTEXT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/TOOLBAR/LCD_Display/LCD_SHIFTER.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/TOOLBAR/Trading_Window_ToolBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/TOOLBAR/Trading_Window_ToolBar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
