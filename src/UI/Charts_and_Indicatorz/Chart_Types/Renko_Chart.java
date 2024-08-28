@@ -1,4 +1,4 @@
-package UI.Charts_and_Indicatorz.Charts;
+package UI.Charts_and_Indicatorz.Chart_Types;
 
 public class Renko_Chart
 {

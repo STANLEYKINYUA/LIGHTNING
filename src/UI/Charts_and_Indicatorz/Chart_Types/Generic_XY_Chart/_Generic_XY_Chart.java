@@ -1,8 +1,8 @@
-package UI.Charts_and_Indicatorz.Charts.Generic_XY_Chart;
+package UI.Charts_and_Indicatorz.Chart_Types.Generic_XY_Chart;
 
 import javax.swing.*;
 
-/**Class that all XY Trading Charts inherit From */
+/**Class that all XY Trading Chart_Types inherit From */
 public class _Generic_XY_Chart extends JPanel
 {
     private int Chart_Area_Width= 0;

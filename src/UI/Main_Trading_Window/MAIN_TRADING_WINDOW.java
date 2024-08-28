@@ -1,10 +1,10 @@
 package UI.Main_Trading_Window;
 
-import ModernDocking.DockingRegion;
-import ModernDocking.app.Docking;
-import ModernDocking.app.RootDockingPanel;
+import UI.Charts_and_Indicatorz.Chart.Chart_Mdi_Window;
+import UI.Charts_and_Indicatorz.Chart.Generic_XY_Chart;
+import UI.Charts_and_Indicatorz.Chart_Elements.Chart_BackGround_Pane;
 import UI.MDI_Internal_Trading_Windows.Calendar.Calendar_Window;
-import UI.Charts_and_Indicatorz.Charts.CandleStick_Chart;
+import UI.Charts_and_Indicatorz.Chart_Types.CandleStick_Chart;
 import UI.MDI_Internal_Trading_Windows.Market_ScannerWindow.Market_Scanner_Window;
 import UI.MDI_Internal_Trading_Windows.Orders_and_PositionsWindow.ORDERS_and_POSITIONS_WINDOW;
 import UI.MDI_Internal_Trading_Windows.WatchList.WatchList_Window;
@@ -14,10 +14,8 @@ import UI.Main_Trading_Window.MENUS.FILE_MENU.File_Menu_Entry;
 import UI.Main_Trading_Window.MENUS.REPORTS.Reports_Menu;
 import UI.Main_Trading_Window.MENUS.TRADING_TOOLS_MENU.Trading_Tools_Menu;
 import UI.Main_Trading_Window.MENUS.Trading_Window_MenuBar;
-import UI.Main_Trading_Window.STATUS_BAR.Trading_Window_StatusBar;
 import UI.Main_Trading_Window.TOOLBAR.Trading_Window_ToolBar;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
-import com.github.weisj.jsvg.nodes.Title;
 
 import javax.swing.*;
 import java.awt.*;
@@ -50,6 +48,8 @@ public class MAIN_TRADING_WINDOW extends JFrame
         //Initialize the JFrame and show all Features.
         init_Trading_Window();
 
+        //Create a Menubar with it's Functions
+
 
         //Create a Desktop Pane where MDI windows can be Docked.
         MainWindow_DeskTop_Pane DesktopPane = new MainWindow_DeskTop_Pane();
@@ -60,6 +60,8 @@ public class MAIN_TRADING_WINDOW extends JFrame
         //Create and Add the MDI Window
         Create_MDI_Window(DesktopPane,"MDI Window 1",50,50,300,200);
 
+        //Create and Add the Chart Window so we can display it
+        Create_Chart_Window(DesktopPane,"CHART MDI WINDOW",250,250,300,200);
 
 
 
@@ -156,11 +158,25 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
     }
 
-    //Spawn Chart MDI Window
-    void display_Chart(String Chart_Symbol , String Period)
+    //Spawn Chart MDI Window -
+    void Create_Chart_Window(JDesktopPane DesktopPane , String Title , int x , int y , int W, int H)
     {
+        Chart_Mdi_Window Chart_MDI_Window = new Chart_Mdi_Window(Title);
+        Chart_MDI_Window.setBounds(x,y,W,H);
+
+        DesktopPane.add(Chart_MDI_Window);
+        Chart_MDI_Window.setVisible(true);
+
+
+
+
+
 
     }
+
+
+
+
     //Spawn Calendar MDI Window
     //Spawn DOM  MDI Window
     //Spawn Equity Balances MDI Window

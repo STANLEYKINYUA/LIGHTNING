@@ -1,4 +1,4 @@
-package UI.Charts_and_Indicatorz.Charts;
+package UI.Charts_and_Indicatorz.Chart_Types;
 
 /**  Interface that must be implemented by all XY Charts_and_Indicatorz*/
 public interface _Generic_XY_Chart_Interface

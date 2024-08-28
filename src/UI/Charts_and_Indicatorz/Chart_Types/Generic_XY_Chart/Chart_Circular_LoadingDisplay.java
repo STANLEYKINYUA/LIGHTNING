@@ -1,4 +1,4 @@
-package UI.Charts_and_Indicatorz.Charts.Generic_XY_Chart;
+package UI.Charts_and_Indicatorz.Chart_Types.Generic_XY_Chart;
 
 import javax.swing.*;
 

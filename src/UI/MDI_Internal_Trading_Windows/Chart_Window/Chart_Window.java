@@ -1,6 +1,6 @@
 package UI.MDI_Internal_Trading_Windows.Chart_Window;
 
-import UI.Charts_and_Indicatorz.Charts.Generic_XY_Chart.Chart_Canvas;
+import UI.Charts_and_Indicatorz.Chart_Types.Generic_XY_Chart.Chart_Canvas;
 
 import javax.swing.*;
 

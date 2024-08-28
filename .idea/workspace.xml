@@ -5,17 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/DEVELOPER_NOTES/CLASSES - STRUCTURES/.$Chart Class.drawio.bkp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DEVELOPER_NOTES/CLASSES - STRUCTURES/Chart Class.drawio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TRADING/NEWS/News" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/BackTesting_Windows/backtesting" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart/Chart_Mdi_Window.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart/Generic_XY_Chart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Elements/CandleSticks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Elements/Chart_BackGround_Pane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/ENGINES/REST/REST_ENGINE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/ENGINES/REST/REST_ENGINE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Charts/CandleStick_Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/CandleStick_Chart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Charts/Chart_Type_TICK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/Chart_Type_TICK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Charts/Generic_XY_Chart/Chart_Axis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/Generic_XY_Chart/Chart_Axis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Charts/Generic_XY_Chart/Chart_Canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/Generic_XY_Chart/Chart_Canvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Charts/Generic_XY_Chart/Chart_Circular_LoadingDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/Generic_XY_Chart/Chart_Circular_LoadingDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Charts/Generic_XY_Chart/Chart_Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/Generic_XY_Chart/Chart_Grid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Charts/Generic_XY_Chart/Chart_Horizontal_ScrollBars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/Generic_XY_Chart/Chart_Horizontal_ScrollBars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Charts/Generic_XY_Chart/Chart_MousePointer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/Generic_XY_Chart/Chart_MousePointer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Charts/Generic_XY_Chart/Chart_RC_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/Generic_XY_Chart/Chart_RC_Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Charts/Generic_XY_Chart/Chart_ToolBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/Generic_XY_Chart/Chart_ToolBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Charts/Generic_XY_Chart/_Generic_XY_Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/Generic_XY_Chart/_Generic_XY_Chart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Charts/RangeBar_Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/RangeBar_Chart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Charts/RangeBar_with_TimeBased_Thickness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/RangeBar_with_TimeBased_Thickness.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Charts/Renko_Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/Renko_Chart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Charts/Renko_MedianRenko_Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/Renko_MedianRenko_Chart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Charts/Renko_with_TimeBased_Thickness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/Renko_with_TimeBased_Thickness.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Charts/_Generic_XY_Chart_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/_Generic_XY_Chart_Interface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/XY_CHART.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/XY_CHART.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/MDI_Internal_Trading_Windows/Chart_Window/Chart_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/MDI_Internal_Trading_Windows/Chart_Window/Chart_Window.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MAIN_TRADING_WINDOW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MAIN_TRADING_WINDOW.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/TOOLBAR/LCD_Display/LCD_Display.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/TOOLBAR/LCD_Display/LCD_LondonTime.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/TOOLBAR/LCD_Display/LCD_MyTime.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/TOOLBAR/LCD_Display/LCD_NegativeText.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/TOOLBAR/LCD_Display/LCD_Network_Connection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/TOOLBAR/LCD_Display/LCD_NewYorkTime.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/TOOLBAR/LCD_Display/LCD_PositiveTEXT.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/TOOLBAR/LCD_Display/LCD_SHIFTER.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/TOOLBAR/Trading_Window_ToolBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/TOOLBAR/Trading_Window_ToolBar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +102,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="a11_Rough_TestCode" />
       <recent name="TRADING" />
     </key>
   </component>
