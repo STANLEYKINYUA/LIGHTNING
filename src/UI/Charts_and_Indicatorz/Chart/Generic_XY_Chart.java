@@ -20,13 +20,29 @@ public class Generic_XY_Chart extends JPanel implements MouseWheelListener, Mous
     //Create a List to hold the Data Bars /
     private List<CandleSticks> CandleSticks_LIST;
 
+
+    //Chart Element Positioning
+    int Y_AxisLine_x_Poxn;
+    int Y_AxisLine_y_Poxn;
+
+    int X_AxisLine_x_Poxn;
+    int X_AxisLine_y_Poxn;
+
     private double Scale = 1.0;
+
+    private final Double Min_Scale = 0.5;
+    private final Double Max_Scale = 2.0;
 
     private int translateX = 0;
     private int translateY = 0;
 
     private int prevMousePoxn_X;
     private int prevMousePoxn_Y;
+
+    private Point last_MousePosition;
+
+    private String x_Axis_Label;
+    private String y_Axis_Label;
 
 
     //The Constructor
@@ -48,8 +64,12 @@ public class Generic_XY_Chart extends JPanel implements MouseWheelListener, Mous
         //Generate Random Data
         Random rand = new Random();
 
-        int OpenPrice = rand.nextInt(100,105);
-        int ClosePrice = rand.nextInt(100,105);
+            //Generate random values that will allow candle sticks to move up and down
+        int random_Open = rand.nextInt(1,50);
+        int random_close = rand.nextInt(1,50);
+
+        int OpenPrice = rand.nextInt(100,135);
+        int ClosePrice = rand.nextInt(100,135);
         int HighPrice = Math.max(OpenPrice,ClosePrice) + rand.nextInt(50);
         int LowPrice = Math.min(OpenPrice,ClosePrice) - rand.nextInt(50);
 
@@ -63,6 +83,9 @@ public class Generic_XY_Chart extends JPanel implements MouseWheelListener, Mous
         }
 
         repaint();
+
+
+
 
 
     }
@@ -79,6 +102,8 @@ public class Generic_XY_Chart extends JPanel implements MouseWheelListener, Mous
 
         int width = getWidth();
         int height = getHeight();
+
+        //TODO Set candle width to scale with the size of the Chart
         int CandleWidth = width/(CandleSticks_LIST.size() + 1);
 
         //Draw the XY Axis with Grid Markers
@@ -142,6 +167,7 @@ public class Generic_XY_Chart extends JPanel implements MouseWheelListener, Mous
     @Override
     public void mouseDragged(MouseEvent e)
     {
+
         int dx = e.getX() - prevMousePoxn_X;
         int dy = e.getY() - prevMousePoxn_Y;
 
@@ -150,6 +176,10 @@ public class Generic_XY_Chart extends JPanel implements MouseWheelListener, Mous
 
         prevMousePoxn_X = e.getX();
         prevMousePoxn_Y = e.getY();
+
+
+        //Check for the Bounds and do not update past the bounds of the display
+
 
         //Create a Max Drag Area that does not hide any candles
 
@@ -161,7 +191,7 @@ public class Generic_XY_Chart extends JPanel implements MouseWheelListener, Mous
     @Override
     public void mouseMoved(MouseEvent e)
     {
-        prevMousePoxn_Y = e.getX();
+        prevMousePoxn_X = e.getX();
         prevMousePoxn_Y = e.getY();
 
     }
@@ -182,6 +212,8 @@ public class Generic_XY_Chart extends JPanel implements MouseWheelListener, Mous
         }
 
         //Filter movements to prevent moving out of Zoom Range
+
+        // SET MAX ZOOM RANGE
 
         repaint();
 
