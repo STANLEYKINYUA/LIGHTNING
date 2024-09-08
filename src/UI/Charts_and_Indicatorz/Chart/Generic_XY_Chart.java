@@ -20,6 +20,7 @@ public class Generic_XY_Chart extends JPanel implements MouseWheelListener, Mous
     //Create a List to hold the Data Bars /
     private List<CandleSticks> CandleSticks_LIST;
 
+    int Space_between_Bars = 10;
 
     //Chart Element Positioning
     int Y_AxisLine_x_Poxn;
@@ -76,11 +77,15 @@ public class Generic_XY_Chart extends JPanel implements MouseWheelListener, Mous
         //Add it to the List of Candles
         CandleSticks_LIST.add( new CandleSticks(OpenPrice,ClosePrice,HighPrice,LowPrice));
 
-        //
+        /*
+        //This removes the First Candle.
         if(CandleSticks_LIST.size() > 50 )
         {
             CandleSticks_LIST.removeFirst();
         }
+        */
+
+
 
         repaint();
 
@@ -104,7 +109,7 @@ public class Generic_XY_Chart extends JPanel implements MouseWheelListener, Mous
         int height = getHeight();
 
         //TODO Set candle width to scale with the size of the Chart
-        int CandleWidth = width/(CandleSticks_LIST.size() + 1);
+        int CandleWidth = width/(CandleSticks_LIST.size() + 1); // Shrinks the size of the chart as candles increase
 
         //Draw the XY Axis with Grid Markers
         //Draw the Internal Grid Lines
@@ -114,7 +119,7 @@ public class Generic_XY_Chart extends JPanel implements MouseWheelListener, Mous
         {
             CandleSticks candle = CandleSticks_LIST.get(i);
 
-            int x = (i + 1)* CandleWidth;
+            int x = ((i + 1)* CandleWidth);
             int yOpen = height - candle.Open_Price;
             int yClose = height - candle.Close_Price;
             int yHigh = height - candle.High_Price;
@@ -213,7 +218,20 @@ public class Generic_XY_Chart extends JPanel implements MouseWheelListener, Mous
 
         //Filter movements to prevent moving out of Zoom Range
 
-        // SET MAX ZOOM RANGE
+        // Set Max Zoom bound to prevent OverZooming
+        if(Scale >= 2.5)
+        {
+            Scale = 2.5;
+        }
+
+        //Set the Minimum Zoom bound to prevent Zooming out too Far
+        if(Scale <= 0.5)
+        {
+            Scale = 0.5;
+        }
+
+        //Print the value of the Scale now.
+        System.out.println("The value of Scale is now = " + Scale);
 
         repaint();
 
