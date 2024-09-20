@@ -1,5 +1,6 @@
 package UI.Login_and_Startup_Windows.Account_Creation_Window;
 
+import UI.Login_and_Startup_Windows.LOGIN_WINDOW.Login_Window;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import net.miginfocom.swing.MigLayout;
 
@@ -32,6 +33,11 @@ public class Accounts_Creation_Window extends JFrame
         this.setTitle("REGISTRATION WINDOW.");
 
 
+        //Create a back button
+        JButton Back_Button = new JButton("Return to Login");
+        this.add(Back_Button);
+        Back_Button.addActionListener( e -> Return_to_Login());
+
 
         //TODO  Add a Large - CREATE ACC LABEL AT THE TOP OF THE WINDOW
         JLabel AccountCreation_Label = new JLabel("CREATE ACCOUNT ");
@@ -39,6 +45,26 @@ public class Accounts_Creation_Window extends JFrame
         this.add(AccountCreation_Label,"span");
 
         //TODO Add Create Acc Form Panel
+
+
+
+        //Firstname
+        JLabel FirstName_Label = new JLabel("FIRST NAME");
+        this.add(FirstName_Label);
+
+        //Middle Name
+
+        //Last Name
+
+        //UserName
+        //Email
+        //Password  + Password Strength Validation ( 6 char + 1 UC+1LC + 1number+ 1symbol)
+         //Re enter Password
+        //Recovery Question1 Combo Box
+        //Recovery Questio1 Answer
+
+        //Recovery Question2 Combo Box
+        //Recovery Question2 Answer
 
 
 
@@ -53,6 +79,14 @@ public class Accounts_Creation_Window extends JFrame
 
     }
 
+
+    public void Return_to_Login()
+    {
+        Login_Window Login = new Login_Window();
+        Login.setVisible(true);
+        this.dispose();
+
+    }
 
     public void Exit_Application()
     {
