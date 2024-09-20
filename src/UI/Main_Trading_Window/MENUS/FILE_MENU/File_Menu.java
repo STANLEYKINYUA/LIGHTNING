@@ -11,8 +11,6 @@ public class File_Menu extends JMenu
         //set the text.
         this.setText("FILE");
 
-
-
         //Add MenuItems and make them Visible.
 
             //Accounts Menu

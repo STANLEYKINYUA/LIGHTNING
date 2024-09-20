@@ -12,6 +12,7 @@ import UI.Main_Trading_Window.MENUS.FILE_MENU.File_Menu;
 import UI.Main_Trading_Window.MENUS.REPORTS.Reports_Menu;
 import UI.Main_Trading_Window.MENUS.TRADING_TOOLS_MENU.Trading_Tools_Menu;
 import UI.Main_Trading_Window.MENUS.Trading_Window_MenuBar;
+import UI.Main_Trading_Window.MENUS.View_Menu.View_Menu;
 import UI.Main_Trading_Window.TOOLBAR.Trading_Window_ToolBar;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 
@@ -64,7 +65,8 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
         //---------------------------------------------------------------------------
         // Create Menus by calling their respective classes
-        File_Menu File_Menu          = new File_Menu();
+        File_Menu           File_Menu          = new File_Menu();
+        View_Menu           View_Menu          = new View_Menu();
         Connections_Menu    ConnectionsMENU    = new Connections_Menu();
         Reports_Menu        ReportsMenu        = new Reports_Menu();
         Trading_Tools_Menu  TradingToolsMenu    = new Trading_Tools_Menu();
@@ -72,6 +74,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
         // Add the Menus to the MenuBar.
         TradingWindowMenuBar.add(File_Menu);
+        TradingWindowMenuBar.add(View_Menu);
         TradingWindowMenuBar.add(ConnectionsMENU);
         TradingWindowMenuBar.add(TradingToolsMenu);
         TradingWindowMenuBar.add(ReportsMenu);

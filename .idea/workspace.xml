@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/View_Menu/View_Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/View_Menu/view" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/ENGINES/REST/REST_ENGINE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/ENGINES/REST/REST_ENGINE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart/Generic_XY_Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart/Generic_XY_Chart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MAIN_TRADING_WINDOW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MAIN_TRADING_WINDOW.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/FILE_MENU/File_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/FILE_MENU/File_Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/View_Menu/View_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/View_Menu/View_Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
