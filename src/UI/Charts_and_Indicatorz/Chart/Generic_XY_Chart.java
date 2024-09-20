@@ -1,6 +1,7 @@
 package UI.Charts_and_Indicatorz.Chart;
 
 import UI.Charts_and_Indicatorz.Chart_Elements.CandleSticks;
+import com.github.weisj.jsvg.nodes.Stop;
 import com.mysql.cj.x.protobuf.MysqlxCursor;
 
 import javax.swing.*;
@@ -186,7 +187,18 @@ public class Generic_XY_Chart extends JPanel implements MouseWheelListener, Mous
         //Check for the Bounds and do not update past the bounds of the display
 
 
-        //Create a Max Drag Area that does not hide any candles
+        //Stop Scrolling in these Directions when Mouse Leaves the Window
+
+
+            /*Stop Scrolling when Mouse Moves past X axis on the Left and value of X = 0*/
+             if(prevMousePoxn_X < 0)
+            {
+                translateX = 1;
+
+            }
+
+        //Display the values of Mouse Poxn when Dragged
+        System.out.println("Prev X = " + prevMousePoxn_X + " and Prev Y = " + prevMousePoxn_Y);
 
         repaint();
 
@@ -231,7 +243,7 @@ public class Generic_XY_Chart extends JPanel implements MouseWheelListener, Mous
         }
 
         //Print the value of the Scale now.
-        System.out.println("The value of Scale is now = " + Scale);
+       // System.out.println("The value of Scale is now = " + Scale);
 
         repaint();
 

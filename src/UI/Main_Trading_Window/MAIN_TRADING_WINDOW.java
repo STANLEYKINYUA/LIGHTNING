@@ -1,8 +1,6 @@
 package UI.Main_Trading_Window;
 
 import UI.Charts_and_Indicatorz.Chart.Chart_Mdi_Window;
-import UI.Charts_and_Indicatorz.Chart.Generic_XY_Chart;
-import UI.Charts_and_Indicatorz.Chart_Elements.Chart_BackGround_Pane;
 import UI.MDI_Internal_Trading_Windows.Calendar.Calendar_Window;
 import UI.Charts_and_Indicatorz.Chart_Types.CandleStick_Chart;
 import UI.MDI_Internal_Trading_Windows.Market_ScannerWindow.Market_Scanner_Window;
@@ -10,7 +8,7 @@ import UI.MDI_Internal_Trading_Windows.Orders_and_PositionsWindow.ORDERS_and_POS
 import UI.MDI_Internal_Trading_Windows.WatchList.WatchList_Window;
 import UI.Main_Trading_Window.DeskTop_Pane.MainWindow_DeskTop_Pane;
 import UI.Main_Trading_Window.MENUS.CONNECTIONS_MENU.Connections_Menu;
-import UI.Main_Trading_Window.MENUS.FILE_MENU.File_Menu_Entry;
+import UI.Main_Trading_Window.MENUS.FILE_MENU.File_Menu;
 import UI.Main_Trading_Window.MENUS.REPORTS.Reports_Menu;
 import UI.Main_Trading_Window.MENUS.TRADING_TOOLS_MENU.Trading_Tools_Menu;
 import UI.Main_Trading_Window.MENUS.Trading_Window_MenuBar;
@@ -45,8 +43,60 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
     public MAIN_TRADING_WINDOW()
     {
-        //Initialize the JFrame and show all Features.
-        init_Trading_Window();
+
+        //1. Set Window Size and spawn Location.
+        this.setBounds(200,200,800,800);
+
+        //Set the Title of the Desktop Pane
+        this.setTitle(" LIGHTNING ");
+
+        // Default Font for the Frame as Roboto
+        this.setFont(new Font(FlatRobotoFont.FAMILY ,Font.PLAIN ,12));
+
+
+        //TODO  Change Icon for this Window to Lightning and keep Frame Name.
+        this.setTitle("LIGHTNING WORKSTATION.");
+
+        //TODO Finish creating theMenu System.
+
+        //Create MenuBar and Add Different Components
+        Trading_Window_MenuBar TradingWindowMenuBar = new Trading_Window_MenuBar();
+
+        //---------------------------------------------------------------------------
+        // Create Menus by calling their respective classes
+        File_Menu File_Menu          = new File_Menu();
+        Connections_Menu    ConnectionsMENU    = new Connections_Menu();
+        Reports_Menu        ReportsMenu        = new Reports_Menu();
+        Trading_Tools_Menu  TradingToolsMenu    = new Trading_Tools_Menu();
+
+
+        // Add the Menus to the MenuBar.
+        TradingWindowMenuBar.add(File_Menu);
+        TradingWindowMenuBar.add(ConnectionsMENU);
+        TradingWindowMenuBar.add(TradingToolsMenu);
+        TradingWindowMenuBar.add(ReportsMenu);
+
+        //TODO  Create Menu Items in respective classes
+        //TODO  Add Menu Items to Menu Bars
+        //TODO  Add FlatLaf Specific Features
+        //TODO   Add FLATLAF underline.
+
+
+        // Display the Menu Bar on the Form
+        this.setJMenuBar(TradingWindowMenuBar);
+
+        //-------------------------------------------------------------------------------------------------------
+        //ToolBar & StatusBar that is used to Display Icons
+        Trading_Window_ToolBar ToolBar = new Trading_Window_ToolBar();
+        JToolBar StatusBar = new JToolBar();
+
+
+        // Create a Content Pane to display the ToolBar & StatusBar.
+        Container ContentPane = this.getContentPane();
+
+        //Add toolbar to the Contentpane Docked North.
+        ContentPane.add(ToolBar , BorderLayout.NORTH);
+        ContentPane.add(StatusBar,BorderLayout.SOUTH);
 
         //Create a Menubar with it's Functions
 
@@ -70,77 +120,6 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
 
 
-    /** Initializes Main Trading Window that is used to Display Other Windows */
-    void init_Trading_Window()
-    {
-        //Create a try Catch block to catch any exception.
-
-            //1. Set Window Size and spawn Location.
-            this.setBounds(200,200,800,800);
-
-            //Set the Title of the Desktop Pane
-            this.setTitle(" LIGHTNING ");
-
-
-
-            //5.    Set Default Font for the Frame as Roboto
-            this.setFont(new Font(FlatRobotoFont.FAMILY ,Font.PLAIN ,12));
-
-            //TODO  Change Icon for this Window to Lightning and keep Frame Name.
-            this.setTitle("LIGHTNING WORKSTATION.");
-
-
-
-
-
-
-            //TODO Finish creating theMenu System.
-
-            //Create MenuBar and Add Different Components
-            Trading_Window_MenuBar TradingWindowMenuBar = new Trading_Window_MenuBar();
-
-            //---------------------------------------------------------------------------
-            // Create Menus by calling their respective classes
-            File_Menu_Entry     File_Menu          = new File_Menu_Entry();
-            Connections_Menu    ConnectionsMENU    = new Connections_Menu();
-            Reports_Menu        ReportsMenu        = new Reports_Menu();
-            Trading_Tools_Menu  TradingToolsMenu    = new Trading_Tools_Menu();
-
-
-            // Add the Menus to the MenuBar.
-            TradingWindowMenuBar.add(File_Menu);
-            TradingWindowMenuBar.add(ConnectionsMENU);
-            TradingWindowMenuBar.add(TradingToolsMenu);
-            TradingWindowMenuBar.add(ReportsMenu);
-
-            //TODO  Create Menu Items in respective classes
-            //TODO  Add Menu Items to Menu Bars
-            //TODO  Add FlatLaf Specific Features
-            //TODO   Add FLATLAF underline.
-
-
-            // Display the Menu Bar on the Form
-            this.setJMenuBar(TradingWindowMenuBar);
-
-            //-------------------------------------------------------------------------------------------------------
-            //ToolBar & StatusBar that is used to Display Icons
-            Trading_Window_ToolBar ToolBar = new Trading_Window_ToolBar();
-            JToolBar StatusBar = new JToolBar();
-
-
-            // Create a Content Pane to display the ToolBar & StatusBar.
-            Container ContentPane = this.getContentPane();
-
-            //Add toolbar to the Contentpane Docked North.
-            ContentPane.add(ToolBar , BorderLayout.NORTH);
-            ContentPane.add(StatusBar,BorderLayout.SOUTH);
-
-
-
-
-
-
-    }
 
 
     //---------------------------------------------------------------------------------------------

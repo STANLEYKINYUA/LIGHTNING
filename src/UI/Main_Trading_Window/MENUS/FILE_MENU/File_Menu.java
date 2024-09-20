@@ -2,11 +2,11 @@ package UI.Main_Trading_Window.MENUS.FILE_MENU;
 
 import javax.swing.*;
 
-public class File_Menu_Entry extends JMenu
+public class File_Menu extends JMenu
 {
 
     /** Default Constructor for the File Menu - Entry */
-    public File_Menu_Entry()
+    public File_Menu()
     {
         //set the text.
         this.setText("FILE");
@@ -16,8 +16,8 @@ public class File_Menu_Entry extends JMenu
         //Add MenuItems and make them Visible.
 
             //Accounts Menu
-        Accounts_Menu Accounts_Menu = new Accounts_Menu();
-        this.add(Accounts_Menu);
+        Accounts_Menu_Item Accounts_Menu_Item = new Accounts_Menu_Item();
+        this.add(Accounts_Menu_Item);
 
             //Preferences Menu
         Preferences_MenuItem  Preferences_Menu = new Preferences_MenuItem();
