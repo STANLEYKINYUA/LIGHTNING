@@ -6,8 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Login_and_Startup_Windows/Account_Creation_Window/Accounts_Creation_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Login_and_Startup_Windows/Account_Creation_Window/Accounts_Creation_Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/CONNECTIONS_MENU/Connections_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/CONNECTIONS_MENU/Connections_Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MAIN_TRADING_WINDOW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MAIN_TRADING_WINDOW.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/CONNECTIONS_MENU/Connections_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/Connections_Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/FILE_MENU/Accounts_Menu_Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/FILE_MENU/File_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/File_Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/FILE_MENU/Preferences_MenuItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/REPORTS/Reports_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/Reports_Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/TRADING_TOOLS_MENU/Trading_Tools_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/Trading_Tools_Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/View_Menu/View_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/View_Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/View_Menu/view" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,4 +1,4 @@
-package UI.Main_Trading_Window.MENUS.TRADING_TOOLS_MENU;
+package UI.Main_Trading_Window.MENUS;
 
 import javax.swing.*;
 

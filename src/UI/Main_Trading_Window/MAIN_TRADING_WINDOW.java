@@ -7,12 +7,12 @@ import UI.MDI_Internal_Trading_Windows.Market_ScannerWindow.Market_Scanner_Windo
 import UI.MDI_Internal_Trading_Windows.Orders_and_PositionsWindow.ORDERS_and_POSITIONS_WINDOW;
 import UI.MDI_Internal_Trading_Windows.WatchList.WatchList_Window;
 import UI.Main_Trading_Window.DeskTop_Pane.MainWindow_DeskTop_Pane;
-import UI.Main_Trading_Window.MENUS.CONNECTIONS_MENU.Connections_Menu;
-import UI.Main_Trading_Window.MENUS.FILE_MENU.File_Menu;
-import UI.Main_Trading_Window.MENUS.REPORTS.Reports_Menu;
-import UI.Main_Trading_Window.MENUS.TRADING_TOOLS_MENU.Trading_Tools_Menu;
+import UI.Main_Trading_Window.MENUS.Connections_Menu;
+import UI.Main_Trading_Window.MENUS.File_Menu;
+import UI.Main_Trading_Window.MENUS.Reports_Menu;
+import UI.Main_Trading_Window.MENUS.Trading_Tools_Menu;
 import UI.Main_Trading_Window.MENUS.Trading_Window_MenuBar;
-import UI.Main_Trading_Window.MENUS.View_Menu.View_Menu;
+import UI.Main_Trading_Window.MENUS.View_Menu;
 import UI.Main_Trading_Window.TOOLBAR.Trading_Window_ToolBar;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 

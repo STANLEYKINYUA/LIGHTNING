@@ -1,4 +1,4 @@
-package UI.Main_Trading_Window.MENUS.FILE_MENU;
+package UI.Main_Trading_Window.MENUS;
 
 import javax.swing.*;
 
@@ -14,11 +14,11 @@ public class File_Menu extends JMenu
         //Add MenuItems and make them Visible.
 
             //Accounts Menu
-        Accounts_Menu_Item Accounts_Menu_Item = new Accounts_Menu_Item();
+        JMenuItem Accounts_Menu_Item = new JMenuItem("ACCOUNTS");
         this.add(Accounts_Menu_Item);
 
             //Preferences Menu
-        Preferences_MenuItem  Preferences_Menu = new Preferences_MenuItem();
+        JMenuItem  Preferences_Menu = new JMenuItem("PREFERENCES");
         this.add(Preferences_Menu);
 
     }
