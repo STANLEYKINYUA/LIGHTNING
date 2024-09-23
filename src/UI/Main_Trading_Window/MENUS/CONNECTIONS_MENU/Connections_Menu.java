@@ -11,5 +11,14 @@ public class Connections_Menu extends JMenu
     {
         this.setText("CONNECTIONS");
 
+        //Add
+        JMenuItem ConnectionsViewer_MenuItem = new JMenuItem();
+        ConnectionsViewer_MenuItem.setText("View Connections");
+        this.add(ConnectionsViewer_MenuItem);
+
+        JMenuItem Manage_Connections_MenuItem = new JMenuItem();
+        Manage_Connections_MenuItem.setText("Manage Connections");
+        this.add(Manage_Connections_MenuItem);
+
     }
 }
