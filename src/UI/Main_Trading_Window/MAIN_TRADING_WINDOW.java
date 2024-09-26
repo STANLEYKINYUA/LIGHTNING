@@ -13,7 +13,8 @@ import UI.Main_Trading_Window.MENUS.Reports_Menu;
 import UI.Main_Trading_Window.MENUS.Trading_Tools_Menu;
 import UI.Main_Trading_Window.MENUS.Trading_Window_MenuBar;
 import UI.Main_Trading_Window.MENUS.View_Menu;
-import UI.Main_Trading_Window.TOOLBAR.Trading_Window_ToolBar;
+import UI.Main_Trading_Window.TOOLBARS.LED_ToolBar.LED_ToolBar;
+import UI.Main_Trading_Window.TOOLBARS.Trading_Window_ToolBar;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 
 import javax.swing.*;
@@ -109,12 +110,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
         this.add(DesktopPane, BorderLayout.CENTER);
 
 
-
-        //Create and Add the MDI Window
-        Create_MDI_Window(DesktopPane,"MDI Window 1",50,50,300,200);
-
-        //Create and Add the Chart Window so we can display it
-        Create_Chart_Window(DesktopPane,"CHART MDI WINDOW",250,250,300,200);
+        //todo Read Workspace Manager and ReOpen last Tabs on the Workspace
 
 
 

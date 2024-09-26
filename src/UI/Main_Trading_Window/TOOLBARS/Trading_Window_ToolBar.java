@@ -1,4 +1,4 @@
-package UI.Main_Trading_Window.TOOLBAR;
+package UI.Main_Trading_Window.TOOLBARS;
 
 
 
@@ -13,12 +13,9 @@ public class Trading_Window_ToolBar extends JToolBar
     {
         this.setRollover(true);
 
-
-        //Change BackGround Color of Toolbar so it stands out.
-        //ToolBar.setBackground(Color.GRAY);
-
         //Create Buttons to add to ToolBar.
 
+        //New Chart Icon
         JButton NewChart_Button = new JButton();
         ImageIcon NewChart_Icon = new ImageIcon("11-ICONS/Combo Chart.png");
 
@@ -30,6 +27,8 @@ public class Trading_Window_ToolBar extends JToolBar
         NewChart_Button.setIcon(ResizedIcon);
         NewChart_Button.setToolTipText("Open Chart");
         this.add(NewChart_Button);
+
+        //Calendar Icon
 
 
 

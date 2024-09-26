@@ -1,4 +1,4 @@
-package UI.Main_Trading_Window.STATUS_BAR;
+package UI.Main_Trading_Window.TOOLBARS.STATUS_Bar;
 
 import javax.swing.*;
 import java.awt.*;
