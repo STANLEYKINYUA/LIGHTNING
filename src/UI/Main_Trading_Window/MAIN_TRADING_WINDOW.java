@@ -109,7 +109,8 @@ public class MAIN_TRADING_WINDOW extends JFrame
         MainWindow_DeskTop_Pane DesktopPane = new MainWindow_DeskTop_Pane();
         this.add(DesktopPane, BorderLayout.CENTER);
 
-
+        //Spawn WatchList that must always Spawn
+        Spawn_WatchList_Window(DesktopPane,0,0,100,100);
         //todo Read Workspace Manager and ReOpen last Tabs on the Workspace
 
 
@@ -123,7 +124,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
     //---------------------------------------------------------------------------------------------
     /** Function that allows MDI windows to be created */
-    void Create_MDI_Window( JDesktopPane DesktopPane , String Title,int x,int y, int W,int H)
+    void Spawn_MDI_Window( JDesktopPane DesktopPane , String Title,int x,int y, int W,int H)
     {
         JInternalFrame Internal_TestFrame = new JInternalFrame(Title,true,true,true,true);
         Internal_TestFrame.setBounds(x,y,W,H);
@@ -137,7 +138,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
     }
 
     //Spawn Chart MDI Window -
-    void Create_Chart_Window(JDesktopPane DesktopPane , String Title , int x , int y , int W, int H)
+    void Spawn_Chart_Window(JDesktopPane DesktopPane , String Title , int x , int y , int W, int H)
     {
         Chart_Mdi_Window Chart_MDI_Window = new Chart_Mdi_Window(Title);
         Chart_MDI_Window.setBounds(x,y,W,H);
@@ -152,9 +153,6 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
     }
 
-
-
-
     //Spawn Calendar MDI Window
     //Spawn DOM  MDI Window
     //Spawn Equity Balances MDI Window
@@ -164,7 +162,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
 
     //Spawn Watchlist MDI Window
-    void Create_WatchList_Window(JDesktopPane DesktopPane,int x,int y, int W,int H)
+    void Spawn_WatchList_Window(JDesktopPane DesktopPane,int x,int y, int W,int H)
     {
         String Title = "WATCHLIST";
 
