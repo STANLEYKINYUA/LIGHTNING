@@ -21,6 +21,14 @@ public class File_Menu extends JMenu
         JMenuItem  Preferences_Menu = new JMenuItem("PREFERENCES");
         this.add(Preferences_Menu);
 
+        //Restart
+        JMenuItem Restart_menuItem = new JMenuItem("RESTART");
+        this.add(Restart_menuItem);
+
+        //Exit
+        JMenuItem Exit_menuItem = new JMenuItem("EXIT");
+        this.add(Exit_menuItem);
+
     }
 
 }
