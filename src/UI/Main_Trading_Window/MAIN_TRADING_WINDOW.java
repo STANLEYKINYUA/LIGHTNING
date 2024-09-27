@@ -110,7 +110,8 @@ public class MAIN_TRADING_WINDOW extends JFrame
         this.add(DesktopPane, BorderLayout.CENTER);
 
         //Spawn WatchList that must always Spawn
-        Spawn_WatchList_Window(DesktopPane,0,0,100,100);
+        Spawn_WatchList_Window(DesktopPane,0,0,400,750);
+
         //todo Read Workspace Manager and ReOpen last Tabs on the Workspace
 
 

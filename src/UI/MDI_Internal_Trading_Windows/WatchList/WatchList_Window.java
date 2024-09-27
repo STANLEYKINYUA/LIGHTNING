@@ -20,8 +20,10 @@ public class WatchList_Window extends JInternalFrame
         JLabel Text = new JLabel("WATCHLIST Window");
         this.add(Text);
 
-        //Add the WatchList Tab Pane
-
+        //Add the WatchList Tab Pane ::  FX , CRYPTO, INDICES, ENERGIES,METALS, COMMODITIES
+        WatchList_TabPANE WatchList_Pane = new WatchList_TabPANE();
+        this.add(WatchList_Pane);
+        WatchList_Pane.setVisible(true);
 
 
     }
