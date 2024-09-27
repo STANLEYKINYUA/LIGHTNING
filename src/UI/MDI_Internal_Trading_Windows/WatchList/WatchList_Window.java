@@ -15,7 +15,8 @@ public class WatchList_Window extends JInternalFrame
         this.setClosable(true);
         this.setMaximizable(true);
         this.setResizable(true);
-        this.setIconifiable(true);
+        this.setIconifiable(false);
+
 
         JLabel Text = new JLabel("WATCHLIST Window");
         this.add(Text);
