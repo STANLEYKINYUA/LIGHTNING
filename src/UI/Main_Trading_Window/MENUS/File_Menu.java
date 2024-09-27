@@ -21,9 +21,9 @@ public class File_Menu extends JMenu
         JMenuItem  Preferences_Menu = new JMenuItem("PREFERENCES");
         this.add(Preferences_Menu);
 
-        //Restart
-        JMenuItem Restart_menuItem = new JMenuItem("RESTART");
-        this.add(Restart_menuItem);
+            //Log off
+        JMenuItem LoggOff_Menu = new JMenuItem("SWITCH USER");
+        this.add(LoggOff_Menu);
 
         //Exit
         JMenuItem Exit_menuItem = new JMenuItem("EXIT");

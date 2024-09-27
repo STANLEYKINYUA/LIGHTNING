@@ -18,6 +18,7 @@ import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.IOException;
 
 public class Login_Window extends JFrame
 {
@@ -124,7 +125,15 @@ public class Login_Window extends JFrame
             this.add(Create_Account_Button);
 
             // Event Listener to display Opening of registration window.
-            Create_Account_Button.addActionListener(e -> {Display_Registration_Window();});
+            Create_Account_Button.addActionListener(e -> {
+                try {
+                    Display_Registration_Window();
+                } catch (IOException ex) {
+                    throw new RuntimeException(ex);
+                } catch (FontFormatException ex) {
+                    throw new RuntimeException(ex);
+                }
+            });
 
 
 
@@ -159,8 +168,7 @@ public class Login_Window extends JFrame
     }
 
     //Display the Registration Window.
-    void Display_Registration_Window()
-    {
+    void Display_Registration_Window() throws IOException, FontFormatException {
         //Display the Registration Form.
         JFrame Registration_Form = new Accounts_Creation_Window();
         Registration_Form.setVisible(true);

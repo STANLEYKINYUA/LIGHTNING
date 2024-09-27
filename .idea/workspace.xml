@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Dukascopy_SDK/JForex-API-2.13.99-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/Dukascopy_SDK/JForex-API-2.13.99.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LIGHTNING.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LIGHTNING.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/Dukascopy_Engine/Dukascopy_Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/Dukascopy_Engine/Dukascopy_Engine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MAIN_TRADING_WINDOW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MAIN_TRADING_WINDOW.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Login_and_Startup_Windows/Account_Creation_Window/Accounts_Creation_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Login_and_Startup_Windows/Account_Creation_Window/Accounts_Creation_Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Login_and_Startup_Windows/LOGIN_WINDOW/Login_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Login_and_Startup_Windows/LOGIN_WINDOW/Login_Window.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/File_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/File_Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/View_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/View_Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +56,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Lightning_Main File.executor": "Run",
+    "Application.Lightning_Main File.executor": "Debug",
     "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",

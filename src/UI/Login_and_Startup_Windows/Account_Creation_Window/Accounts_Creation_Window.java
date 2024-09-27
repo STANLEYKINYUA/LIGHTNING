@@ -1,6 +1,7 @@
 package UI.Login_and_Startup_Windows.Account_Creation_Window;
 
 import UI.Login_and_Startup_Windows.LOGIN_WINDOW.Login_Window;
+import UI.Main_Trading_Window.MAIN_TRADING_WINDOW;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import com.jidesoft.swing.ButtonStyle;
 import com.jidesoft.swing.JideButton;
@@ -9,14 +10,14 @@ import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.*;
 
 public class Accounts_Creation_Window extends JFrame
 {
-    public Accounts_Creation_Window()
-    {
+    public Accounts_Creation_Window()  {
 
         //1. Set Window Size and spawn Location.
-        this.setBounds(200,200,500,700);
+        this.setBounds(200,200,500,600);
         this.setAlwaysOnTop(true);
 
         //2.    Set Window Close Action.
@@ -42,9 +43,10 @@ public class Accounts_Creation_Window extends JFrame
 
 
         //TODO  Add a Large - CREATE ACC LABEL AT THE TOP OF THE WINDOW
-        JLabel AccountCreation_Label = new JLabel("CREATE ACCOUNT ");
-        AccountCreation_Label.setVisible(true);
-        this.add(AccountCreation_Label,"span");
+        JLabel CreateAcc_Label = new JLabel("CREATE ACCOUNT ");
+        CreateAcc_Label.setVisible(true);
+
+        this.add(CreateAcc_Label,"span");
 
 
         //TODO Add Create Acc Form Panel
@@ -52,7 +54,7 @@ public class Accounts_Creation_Window extends JFrame
 
         //Firstname
         JLabel FirstName_Label = new JLabel("FIRST NAME");
-        this.add(FirstName_Label);
+        this.add(FirstName_Label,"span");
 
         JTextField FirstName_txtBox = new JTextField();
         this.add(FirstName_txtBox,"span, width 50%");
@@ -77,13 +79,28 @@ public class Accounts_Creation_Window extends JFrame
         //UserName
         JLabel UserName_Label = new JLabel("USER NAME");
         this.add(UserName_Label);
-
         JTextField UserName_txtBox = new JTextField();
         this.add(UserName_txtBox,"span, width 50%");
 
         //Email + Email Validation
+        JLabel Email_Label = new JLabel("EMAIL");
+        this.add(Email_Label);
+        JTextField Email_txtBox = new JTextField();
+        this.add(Email_txtBox,"span, width 50%");
+
         //Password  + Password Strength Validation ( 6 char + 1 UC+1LC + 1number+ 1symbol)
+        JLabel Password_Label = new JLabel("ENTER PASSWORD");
+        this.add(Password_Label,"width 50%");
+
+        JPasswordField Pasword_TxtBx = new JPasswordField();
+        this.add(Pasword_TxtBx,"span, width 50%");
+
          //Re enter Password
+        JLabel ReEnter_Password_Label = new JLabel("RE-ENTER PASSWORD");
+        this.add(ReEnter_Password_Label,"width 50%");
+
+        JPasswordField ReEnter_Pasword_TxtBx = new JPasswordField();
+        this.add(ReEnter_Pasword_TxtBx,"span, width 50%");
         //Recovery Question1 Combo Box
         //Recovery Questio1 Answer
 
@@ -95,7 +112,8 @@ public class Accounts_Creation_Window extends JFrame
 
         //TODO Create a Create Account Button
         JButton CreateAccount_Button = new JButton("CREATE ACCOUNT");
-        this.add(CreateAccount_Button);
+        this.add(CreateAccount_Button,"span");
+        CreateAccount_Button.addActionListener( e -> Create_Account());
 
         //Todo Create an Exit Button
         JButton Exit_Button = new JButton("EXIT");
@@ -107,6 +125,12 @@ public class Accounts_Creation_Window extends JFrame
     }
 
 
+    public void Create_Account()
+    {
+        this.dispose();
+        MAIN_TRADING_WINDOW TradingWindow = new MAIN_TRADING_WINDOW();
+        TradingWindow.setVisible(true);
+    }
     public void Return_to_Login()
     {
         Login_Window Login = new Login_Window();
