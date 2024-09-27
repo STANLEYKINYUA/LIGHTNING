@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Dukascopy_SDK">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/11- Dependency JARS/Dukascopy_SDK" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/11- Dependency JARS/Dukascopy_SDK" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/11- Dependency JARS/Dukascopy_SDK" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/11- Dependency JARS/Dukascopy_SDK" recursive="false" type="SOURCES" />
+  </library>
+</component>

@@ -14,7 +14,7 @@ public class File_Menu extends JMenu
         //Add MenuItems and make them Visible.
 
             //Accounts Menu
-        JMenuItem Accounts_Menu_Item = new JMenuItem("ACCOUNTS");
+        JMenuItem Accounts_Menu_Item = new JMenuItem("ACCOUNTS & VENUES ");
         this.add(Accounts_Menu_Item);
 
             //Preferences Menu
