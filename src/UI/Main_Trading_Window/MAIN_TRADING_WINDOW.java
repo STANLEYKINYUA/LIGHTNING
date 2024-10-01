@@ -162,8 +162,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
 
     //Spawn Watchlist MDI Window
-    void Spawn_WatchList_Window(JDesktopPane DesktopPane,int x,int y, int W,int H)
-    {
+    void Spawn_WatchList_Window(JDesktopPane DesktopPane,int x,int y, int W,int H) {
         String Title = "WATCHLIST";
 
         WatchList_Window  WatchList = new WatchList_Window();

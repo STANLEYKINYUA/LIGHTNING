@@ -1,13 +1,13 @@
 package UI.MDI_Internal_Trading_Windows.WatchList;
 
+
 import javax.swing.*;
 
 
 public class WatchList_Window extends JInternalFrame
 {
 
-    public WatchList_Window()
-    {
+    public WatchList_Window() {
         //Set Title
         this.setTitle("WATCHLIST");
 
@@ -25,6 +25,9 @@ public class WatchList_Window extends JInternalFrame
         WatchList_TabPANE WatchList_Pane = new WatchList_TabPANE();
         this.add(WatchList_Pane);
         WatchList_Pane.setVisible(true);
+
+        //Create a Dukascopy Client
+
 
 
     }

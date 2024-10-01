@@ -20,6 +20,9 @@ public class Dukascopy_Engine
         int Max_Reconnection_Attempts = 5;
         int Reconnect_after_Time_Seconds = 10;
 
+        //Instantiate a new Dukas Client
+        Dukascopy_Client CLIENT = new Dukascopy_Client(UserName,Password,JNLP_URL);
+
 
     }
 }
