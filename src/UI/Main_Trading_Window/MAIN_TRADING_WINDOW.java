@@ -123,6 +123,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
     //---------------------------------------------------------------------------------------------
     /** Function that allows MDI windows to be created */
+
     void Spawn_MDI_Window( JDesktopPane DesktopPane , String Title,int x,int y, int W,int H)
     {
         JInternalFrame Internal_TestFrame = new JInternalFrame(Title,true,true,true,true);

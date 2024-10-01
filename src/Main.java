@@ -174,10 +174,15 @@ public class Main {
 
 
             //TODO      Remove this and use Config File
-            //  Using FLATMACDark so that I can continue development
 
-            FlatMacDarkLaf.registerCustomDefaultsSource("UI_Backend.THEMES");
+
+            //  Using FLATMACDark so that I can continue development
+           FlatMacDarkLaf.registerCustomDefaultsSource("UI_Backend.THEMES");
             FlatMacDark_LAF.setup();
+
+            //Prefer FlatLight Laf
+            //FlatMacLight_LAF.registerCustomDefaultsSource("UI_Backend.Themes");
+            //FlatMacLight_LAF.setup();
 
 
 

@@ -1,5 +1,7 @@
 package UI.Main_Trading_Window.MENUS;
 
+import UI.MDI_Internal_Trading_Windows.Accounts_and_Venues.Accounts_Venues_Window;
+
 import javax.swing.*;
 
 public class File_Menu extends JMenu
@@ -15,7 +17,9 @@ public class File_Menu extends JMenu
 
             //Accounts Menu
         JMenuItem Accounts_Menu_Item = new JMenuItem("ACCOUNTS & VENUES ");
+        Accounts_Menu_Item.addActionListener( e -> new Accounts_Venues_Window() );
         this.add(Accounts_Menu_Item);
+
 
             //Preferences Menu
         JMenuItem  Preferences_Menu = new JMenuItem("PREFERENCES");
