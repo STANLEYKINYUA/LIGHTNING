@@ -10,10 +10,20 @@ import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 import java.io.*;
 
 public class Accounts_Creation_Window extends JFrame
 {
+    boolean Username_Valid = false;
+    boolean Password_Valid = false;
+    boolean Password_matches_ReenterPassword = false;
+    boolean Password_strong_Enough = false;
+
+
+
+
     public Accounts_Creation_Window()  {
 
         //1. Set Window Size and spawn Location.
@@ -85,15 +95,32 @@ public class Accounts_Creation_Window extends JFrame
         //Email + Email Validation
         JLabel Email_Label = new JLabel("EMAIL");
         this.add(Email_Label);
+
         JTextField Email_txtBox = new JTextField();
+        Email_txtBox.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent e)
+            {
+
+            }
+
+            @Override
+            public void focusLost(FocusEvent e)
+            {
+                //Check if Email is used or not
+
+                //If email used :: Set backColour to red
+
+            }
+        });
         this.add(Email_txtBox,"span, width 50%");
 
         //Password  + Password Strength Validation ( 6 char + 1 UC+1LC + 1number+ 1symbol)
         JLabel Password_Label = new JLabel("ENTER PASSWORD");
         this.add(Password_Label,"width 50%");
 
-        JPasswordField Pasword_TxtBx = new JPasswordField();
-        this.add(Pasword_TxtBx,"span, width 50%");
+        JPasswordField Password_TxtBx = new JPasswordField();
+        this.add(Password_TxtBx,"span, width 50%");
 
          //Re enter Password
         JLabel ReEnter_Password_Label = new JLabel("RE-ENTER PASSWORD");
@@ -101,19 +128,13 @@ public class Accounts_Creation_Window extends JFrame
 
         JPasswordField ReEnter_Pasword_TxtBx = new JPasswordField();
         this.add(ReEnter_Pasword_TxtBx,"span, width 50%");
-        //Recovery Question1 Combo Box
-        //Recovery Questio1 Answer
-
-        //Recovery Question2 Combo Box
-        //Recovery Question2 Answer
-
 
 
 
         //TODO Create a Create Account Button
         JButton CreateAccount_Button = new JButton("CREATE ACCOUNT");
         this.add(CreateAccount_Button,"span");
-        CreateAccount_Button.addActionListener( e -> Create_Account());
+        //CreateAccount_Button.addActionListener( e -> Create_Account();
 
         //Todo Create an Exit Button
         JButton Exit_Button = new JButton("EXIT");
@@ -125,12 +146,29 @@ public class Accounts_Creation_Window extends JFrame
     }
 
 
-    public void Create_Account()
+    public void Create_Account(String UsrName , String Passwrd)
     {
+        //Fetch data from the Text boxes
+        //Validate that the data is correct
+        //validate that a Similar username does not exist
+
+
+        //Check that all conditions have been met
+
+        //Display Pop up and Email Verification Link
+
+
+
+
+
+        //Close this Window
         this.dispose();
+
+        //Open main trading Window
         MAIN_TRADING_WINDOW TradingWindow = new MAIN_TRADING_WINDOW();
         TradingWindow.setVisible(true);
     }
+
     public void Return_to_Login()
     {
         Login_Window Login = new Login_Window();
@@ -145,6 +183,27 @@ public class Accounts_Creation_Window extends JFrame
         System.exit(0);
 
     }
+
+    //Securely Hash the Password
+    private void Encrypt_and_Hash_Password()
+    {}
+
+
+    //Password Strength Check
+    private void Check_Password_has_more_than_6bits(){}
+    private void Check_Password_matches_Reenter_Password(){}
+    private void Test_Password_Strength()
+    {
+        //Must have a
+    }
+
+    //Data Validation
+    private void Check_if_Email_Used(){}
+    private void Check_if_UserName_Used(){}
+
+
+
+    private void Validate_Email_Correct(){}
 
 
 }
