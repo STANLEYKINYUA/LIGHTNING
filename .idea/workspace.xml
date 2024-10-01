@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/UI/MDI_Internal_Trading_Windows/Accounts_and_Venues/Accounts_Venues_Window.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/Dukascopy_Engine/Dukascopy_Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Main_Operational_Windows/s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/SETTINGS_Window/Preferences_window.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MAIN_TRADING_WINDOW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MAIN_TRADING_WINDOW.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/Dukascopy_Engine/Dukascopy_Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/Dukascopy_Engine/Dukascopy_Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/MDI_Internal_Trading_Windows/Accounts_and_Venues/Accounts_Venues_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Operational_Windows/Accounts_and_Venues/Accounts_Venues_Window.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/File_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/File_Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/NEWS_and_INFORMATION/Calendar_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/NEWS_and_INFORMATION/Calendar_Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/NEWS_and_INFORMATION/Crypto_Information_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/NEWS_and_INFORMATION/Crypto_Information_Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/NEWS_and_INFORMATION/Crypto_Specific_BlockChain_Information_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/NEWS_and_INFORMATION/Crypto_Specific_BlockChain_Information_Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/NEWS_and_INFORMATION/Crypto_Specific_Coin_Information_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/NEWS_and_INFORMATION/Crypto_Specific_Coin_Information_Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/NEWS_and_INFORMATION/News_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/NEWS_and_INFORMATION/News_Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,4 +1,4 @@
-package UI.NEWS_and_INFORMATION;
+package TRADING.NEWS_and_INFORMATION;
 
 public class Crypto_Information_Window
 {

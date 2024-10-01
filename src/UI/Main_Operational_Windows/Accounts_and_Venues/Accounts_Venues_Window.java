@@ -1,4 +1,4 @@
-package UI.MDI_Internal_Trading_Windows.Accounts_and_Venues;
+package UI.Main_Operational_Windows.Accounts_and_Venues;
 
 import javax.swing.*;
 

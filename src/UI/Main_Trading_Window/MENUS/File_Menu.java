@@ -1,6 +1,7 @@
 package UI.Main_Trading_Window.MENUS;
 
-import UI.MDI_Internal_Trading_Windows.Accounts_and_Venues.Accounts_Venues_Window;
+import UI.Main_Operational_Windows.Accounts_and_Venues.Accounts_Venues_Window;
+import UI.SETTINGS_Window.Preferences_window;
 
 import javax.swing.*;
 
@@ -23,6 +24,7 @@ public class File_Menu extends JMenu
 
             //Preferences Menu
         JMenuItem  Preferences_Menu = new JMenuItem("PREFERENCES");
+        Preferences_Menu.addActionListener( e-> new Preferences_window());
         this.add(Preferences_Menu);
 
             //Log off
@@ -31,7 +33,13 @@ public class File_Menu extends JMenu
 
         //Exit
         JMenuItem Exit_menuItem = new JMenuItem("EXIT");
+        Exit_menuItem.addActionListener( e-> System.exit(1));
         this.add(Exit_menuItem);
+
+    }
+
+    void Log_Off()
+    {
 
     }
 
