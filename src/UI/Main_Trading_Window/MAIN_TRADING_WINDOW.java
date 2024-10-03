@@ -89,7 +89,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
         //-------------------------------------------------------------------------------------------------------
         //ToolBar & StatusBar that is used to Display Icons
-      
+
 
         //Create a Menubar with it's Functions
 
