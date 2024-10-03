@@ -7,8 +7,6 @@
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/DeskTop_Pane/MainWindow_DeskTop_Pane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/DeskTop_Pane/MainWindow_DeskTop_Pane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/Reports_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/Reports_Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/Trading_Tools_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/Trading_Tools_Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
