@@ -6,6 +6,8 @@ public class MainWindow_DeskTop_Pane extends JDesktopPane
 {
     public MainWindow_DeskTop_Pane()
     {
+        //Add right Mouseclick Listener
+        this.addMouseListener(e-> );
 
     }
 

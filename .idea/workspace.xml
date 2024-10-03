@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/UI_Backend/SETTINGS/PREFERENCES_Window/Preferences_Tabbed_Pane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI_Backend/SETTINGS/PREFERENCES_Window/Preferences_Tabs/Appearances_Tab.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI_Backend/SETTINGS/PREFERENCES_Window/Preferences_Tabs/Performance_Tab.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI_Backend/SETTINGS/PREFERENCES_Window/Preferences_Tabs/Security_Tab.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/PORTFOLIO_MANAGER/GLOBAL_PORTFOLIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/PORTFOLIO_MANAGER/PORTFOLIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/File_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/File_Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/SETTINGS_Window/Preferences_window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI_Backend/SETTINGS/PREFERENCES_Window/Preferences_window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/SETTINGS_Window/Settings_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI_Backend/SETTINGS/PREFERENCES_Window/Settings_Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI_Backend/THEMES/FlatLaf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI_Backend/THEMES/FlatLaf.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI_Backend/THEMES/FlatMacDark_LAF.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI_Backend/THEMES/FlatMacDark_LAF.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/DeskTop_Pane/MainWindow_DeskTop_Pane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/DeskTop_Pane/MainWindow_DeskTop_Pane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/Reports_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/Reports_Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/Trading_Tools_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MENUS/Trading_Tools_Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

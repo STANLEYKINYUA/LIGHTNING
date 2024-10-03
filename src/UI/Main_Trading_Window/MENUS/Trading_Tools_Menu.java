@@ -12,6 +12,10 @@ public class Trading_Tools_Menu extends JMenu
         /* This Displays the text show on the MenuBar */
         this.setText("TRADING TOOLS");
 
+        //CALCULATOR
+        JMenuItem Trading_Calculator = new JMenuItem("CALCULATOR");
+        this.add(Trading_Calculator);
+
         //CALENDAR
         JMenuItem Calendar_menuITEM = new JMenuItem("CALENDAR");
         this.add(Calendar_menuITEM);
