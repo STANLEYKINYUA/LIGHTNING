@@ -1,4 +1,4 @@
-package UI.SETTINGS_Window;
+package UI_Backend.SETTINGS.PREFERENCES_Window;
 
 import javax.swing.*;
 
@@ -15,5 +15,8 @@ public class Preferences_window extends JFrame {
         //Set Focus and State
         this.setAlwaysOnTop(true);
         this.setFocusable(true);
+
+        Preferences_Tabbed_Pane Preferences_Tabbed_Pane = new Preferences_Tabbed_Pane();
+        this.add(Preferences_Tabbed_Pane);
     }
 }

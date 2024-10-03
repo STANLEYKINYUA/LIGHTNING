@@ -1,7 +1,7 @@
 package UI.Main_Trading_Window.MENUS;
 
 import UI.Main_Operational_Windows.Accounts_and_Venues.Accounts_Venues_Window;
-import UI.SETTINGS_Window.Preferences_window;
+import UI_Backend.SETTINGS.PREFERENCES_Window.Preferences_window;
 
 import javax.swing.*;
 

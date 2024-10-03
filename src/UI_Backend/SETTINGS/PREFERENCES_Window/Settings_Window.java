@@ -1,4 +1,4 @@
-package UI.SETTINGS_Window;
+package UI_Backend.SETTINGS.PREFERENCES_Window;
 
 import javax.swing.*;
 
@@ -13,7 +13,7 @@ public class Settings_Window extends JFrame
         this.setBounds(200,300,300,500);
 
         //Set the title of the Window to
-        this.setTitle("SETTINGS_Window");
+        this.setTitle("PREFERENCES_Window");
 
         //TODO  When Settings Altered : Change Config File + Call Specific Objects to reload/Update and read new Config File.
 
