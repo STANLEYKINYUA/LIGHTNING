@@ -89,16 +89,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
         //-------------------------------------------------------------------------------------------------------
         //ToolBar & StatusBar that is used to Display Icons
-        Trading_Window_ToolBar ToolBar = new Trading_Window_ToolBar();
-        JToolBar StatusBar = new JToolBar();
-
-
-        // Create a Content Pane to display the ToolBar & StatusBar.
-        Container ContentPane = this.getContentPane();
-
-        //Add toolbar to the Contentpane Docked North.
-        ContentPane.add(ToolBar , BorderLayout.NORTH);
-        ContentPane.add(StatusBar,BorderLayout.SOUTH);
+      
 
         //Create a Menubar with it's Functions
 

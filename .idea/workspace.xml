@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/Capital_dot_COM/CAPITAL_dotCOM_RestWebSocket_Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/Capital_dot_COM/CAPITAL_dotCOM_RestWebSocket_Engine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/TOOLBARS/Trading_Window_ToolBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/TOOLBARS/Trading_Window_ToolBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MAIN_TRADING_WINDOW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MAIN_TRADING_WINDOW.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
