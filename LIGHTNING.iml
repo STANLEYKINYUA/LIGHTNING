@@ -7,7 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/flatlaf-3.3.jar!/" />
@@ -16,7 +16,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/flatlaf-extras-3.4.jar!/" />
@@ -25,7 +25,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/flatlaf-fonts-inter-4.0.jar!/" />
@@ -34,7 +34,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/flatlaf-fonts-jetbrains-mono-2.304.jar!/" />
@@ -43,7 +43,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/flatlaf-fonts-roboto-2.137.jar!/" />
@@ -52,7 +52,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/flatlaf-fonts-roboto-mono-3.000.jar!/" />
@@ -61,7 +61,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/flatlaf-intellij-themes-3.4.jar!/" />
@@ -70,7 +70,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/flatlaf-jide-oss-3.3.jar!/" />
@@ -79,7 +79,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/flatlaf-swingx-3.3.jar!/" />
@@ -88,7 +88,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/httpclient5-5.3.1.jar!/" />
@@ -97,7 +97,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/jide-oss-3.7.14.jar!/" />
@@ -106,7 +106,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/jsvg-1.4.0.jar!/" />
@@ -115,7 +115,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/junit5-engine-5.0.0-ALPHA.jar!/" />
@@ -124,7 +124,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/miglayout-core-11.3.jar!/" />
@@ -133,7 +133,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/miglayout-swing-11.3.jar!/" />
@@ -142,7 +142,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/mockito-core-5.10.0.jar!/" />
@@ -151,7 +151,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/quickfixj-all-2.3.1.jar!/" />
@@ -160,7 +160,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/swingx-all-1.6.5-1.jar!/" />
@@ -169,7 +169,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/commons-cli-1.5.0.jar!/" />
@@ -178,7 +178,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/httpclient5-cache-5.3.1.jar!/" />
@@ -187,7 +187,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/httpclient5-fluent-5.3.1.jar!/" />
@@ -196,7 +196,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/httpclient5-testing-5.3.1.jar!/" />
@@ -205,7 +205,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/httpcore5-5.2.4.jar!/" />
@@ -214,7 +214,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/httpcore5-h2-5.2.4.jar!/" />
@@ -223,7 +223,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/httpcore5-reactive-5.2.4.jar!/" />
@@ -232,7 +232,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/httpcore5-testing-5.2.4.jar!/" />
@@ -241,7 +241,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/mysql-connector-j-8.3.0.jar!/" />
@@ -250,7 +250,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/reactive-streams-1.0.4.jar!/" />
@@ -259,7 +259,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/rxjava-2.2.21.jar!/" />
@@ -268,7 +268,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/rxjava-3.1.6.jar!/" />
@@ -277,7 +277,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/slf4j-api-1.7.36.jar!/" />
@@ -286,7 +286,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/Modern Docking/modern-docking-api-0.11.1.jar!/" />
@@ -295,7 +295,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/11- Dependency JARS/Modern Docking/modern-docking-single-app-0.11.1.jar!/" />
@@ -304,9 +304,10 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="FlatLaf - Extras" level="project" />
-    <orderEntry type="library" name="miglayout-swing-4.3-20121116.151626-3-javadoc" level="project" />
-    <orderEntry type="library" name="okhttp-5.0.0-alpha.14-sources" level="project" />
-    <orderEntry type="library" name="Dukascopy_SDK" level="project" />
+    <orderEntry type="library" exported="" name="FlatLaf - Extras" level="project" />
+    <orderEntry type="library" exported="" name="miglayout-swing-4.3-20121116.151626-3-javadoc" level="project" />
+    <orderEntry type="library" exported="" name="okhttp-5.0.0-alpha.14-sources" level="project" />
+    <orderEntry type="library" exported="" name="Dukascopy_SDK" level="project" />
+    <orderEntry type="library" name="okio-3.9.1-sources" level="project" />
   </component>
 </module>

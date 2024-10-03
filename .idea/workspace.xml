@@ -5,20 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/Capital_dot_COM/CAPITAL_dotCOM_RestWebSocket_Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/OKIO - Okhttp/okio-3.9.1-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11- Dependency JARS/OKIO - Okhttp/okio-3.9.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/keyextract/keyextract.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LIGHTNING.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LIGHTNING.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/Capital_dot_COM/Capital_dot_Com_RestWebSocket_Engine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/Capital_dot_COM/CAPITAL_dotCOM_RestWebSocket_Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/Capital_dot_COM/CAPITAL_dotCOM_RestWebSocket_Engine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/Generic_Rest_and_WebSocket_Engine_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/Generic_Rest_and_WebSocket_Engine_Interface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/REST/REST_ENGINE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/REST/REST_ENGINE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/REST/REST_WebSocket_Interface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/REST/Rate_Limiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/REST/Rate_Limiter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/Data_Parsers/CandleStick_Bar_Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MarketData_Parsers/Data_Parsers/CandleStick_Bar_Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/Data_Parsers/Generic_Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MarketData_Parsers/Data_Parsers/Generic_Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/Data_Parsers/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MarketData_Parsers/Data_Parsers/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/Data_Parsers/Tick_Data_Bar_Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MarketData_Parsers/Data_Parsers/Tick_Data_Bar_Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/Feed_Normalizer/Feed_Normalizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MarketData_Parsers/Feed_Normalizer/Feed_Normalizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/NEWS/News" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/News_Parsers/News" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +64,7 @@
     "Application.DUKAS_TEST.executor": "Run",
     "Application.Lightning_Main File.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.keyextract.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -77,13 +73,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/11 - PROJECTS/MKU Project/LIGHTNING/11- Dependency JARS/Dukascopy_SDK",
+    "last_opened_file_path": "D:/11 - PROJECTS/MKU Project/LIGHTNING/11- Dependency JARS/OKIO - Okhttp/okio-3.9.1.jar",
     "onboarding.tips.debug.path": "E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/src/Main.java",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.46206897",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.pathVariables"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -120,8 +116,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="keyextract" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="a_PROTOTYPING.keyextract.keyextract" />
+      <module name="LIGHTNING" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="a_PROTOTYPING.keyextract.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Lightning_Main File" />
+      <item itemvalue="Application.keyextract" />
+      <item itemvalue="Application.DUKAS_TEST" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.keyextract" />
         <item itemvalue="Application.DUKAS_TEST" />
       </list>
     </recent_temporary>
