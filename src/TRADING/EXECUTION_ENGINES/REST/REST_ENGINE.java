@@ -11,7 +11,7 @@ import okhttp3.OkHttpClient;
 
 import java.security.Key;
 
-public class REST_ENGINE implements Generic_Rest_and_WebSocket_Engine_Interface
+public class REST_ENGINE  implements Generic_Rest_and_WebSocket_Engine_Interface
 {
     //Data Variables for Rest Engine
     public String VenueName;
@@ -29,20 +29,12 @@ public class REST_ENGINE implements Generic_Rest_and_WebSocket_Engine_Interface
 
     public REST_ENGINE()
     {
+        //
         System.out.println("REST ENGINE CLASS - CALLED");
 
 
         //Create a task to automatically ping the Rest and Web Socket End Points after 5 min - 300s
     }
-
-
-
-
-
-
-
-
-
 
 
     @Override
@@ -98,40 +90,16 @@ public class REST_ENGINE implements Generic_Rest_and_WebSocket_Engine_Interface
 
     }
 
-    @Override
-    public void Fetch_ApiKey_Password()
-    {
-        //Read Key and Password
-        API_Key = Read_Api_Key_from_System_Environment(API_Key_Environment_Name);
-        Password = Read_Api_Password_from_System_Environment(API_Password_Environment_Name);
 
-        //Print the Password and Key
-        System.out.println("KEY = " + API_Key + "Pasword = " + Password);
-
-
-    }
 
     @Override
     public String Read_Api_Key_from_System_Environment(String KeyName)
     {
-        String Key_Name =KeyName;
-        String API_Key = System.getenv(Key_Name);
+        System.out.println("KeyName  = "+ KeyName);
 
-        //Check that API Key is Found
-        if(API_Key == null)
-        {
-            //Api Key has not been Found
+        String API_Key = System.getenv(KeyName);
 
-
-        }
-        else
-        {
-            //Api Key has been Found
-
-        }
-
-
-        //Fetch the API Key and Password from System Environment
+        System.out.println("API KEY = "+ API_Key);
 
         return API_Key;
     }
@@ -139,9 +107,12 @@ public class REST_ENGINE implements Generic_Rest_and_WebSocket_Engine_Interface
     @Override
     public String Read_Api_Password_from_System_Environment(String PasswordNAME)
     {
+        System.out.println("Password Name = "+ PasswordNAME);
+        String Password_Name = System.getenv(PasswordNAME);
 
+        System.out.println("API KEY = "+ API_Key);
 
-        return PasswordNAME;
+        return Password_Name;
     }
 
 

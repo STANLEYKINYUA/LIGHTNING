@@ -45,7 +45,7 @@ public class Main {
 
         //sTART Capital
         CAPITAL_dotCOM_RestWebSocket_Engine CDC = new CAPITAL_dotCOM_RestWebSocket_Engine();
-        
+
 
 
         //TODO Read Config File and determine whether to perform first load actions. load Dark/ Light Mode
