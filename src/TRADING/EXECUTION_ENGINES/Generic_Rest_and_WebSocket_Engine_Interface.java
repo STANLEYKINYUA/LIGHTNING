@@ -1,15 +1,16 @@
-package TRADING.ENGINES;
+package TRADING.EXECUTION_ENGINES;
 
 public interface Generic_Rest_and_WebSocket_Engine_Interface
 {
     // Connection Functions
-    public void Rest_Connect();
-    public void Rest_Disconnect();
-    public void Rest_Reconnect();
+    public void Connect();
+    public void Disconnect();
+    public void Reconnect();
 
-    //Start Various Connection Modes
-    public void Connect_REST();
+    //WebSocket Functions
     public void Connect_WebSocket();
+    public void Disconnect_WebSocket();
+
 
     // Select Session Type
     public void Start_Session_asDEMO();

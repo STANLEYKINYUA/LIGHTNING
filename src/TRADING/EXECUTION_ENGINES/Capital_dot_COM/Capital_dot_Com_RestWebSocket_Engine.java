@@ -1,31 +1,37 @@
-package TRADING.ENGINES.WebSocket;
+package TRADING.EXECUTION_ENGINES.Capital_dot_COM;
 
-import TRADING.ENGINES.Generic_Rest_and_WebSocket_Engine_Interface;
+import TRADING.EXECUTION_ENGINES.Generic_Rest_and_WebSocket_Engine_Interface;
 
-public class WebSocket_Engine implements Generic_Rest_and_WebSocket_Engine_Interface {
-    @Override
-    public void Rest_Connect()
+public class Capital_dot_Com_RestWebSocket_Engine implements Generic_Rest_and_WebSocket_Engine_Interface {
+
+
+    public Capital_dot_Com_RestWebSocket_Engine()
     {
+        //When Created :: Connect to the Venue
+    }
+
+    @Override
+    public void Connect() {
 
     }
 
     @Override
-    public void Rest_Disconnect() {
+    public void Disconnect() {
 
     }
 
     @Override
-    public void Rest_Reconnect() {
-
-    }
-
-    @Override
-    public void Connect_REST() {
+    public void Reconnect() {
 
     }
 
     @Override
     public void Connect_WebSocket() {
+
+    }
+
+    @Override
+    public void Disconnect_WebSocket() {
 
     }
 
