@@ -2,6 +2,9 @@ package UI.Main_Trading_Window.TOOLBARS;
 
 
 
+import UI.Charts_and_Indicatorz.Chart.Chart_Mdi_Window;
+import UI.Main_Trading_Window.MAIN_TRADING_WINDOW;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -38,4 +41,6 @@ public class Trading_Window_ToolBar extends JToolBar
 
 
     }
+
+
 }
