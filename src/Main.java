@@ -18,6 +18,7 @@
 * */
 
 
+import TRADING.EXECUTION_ENGINES.Capital_dot_COM.CAPITAL_dotCOM_RestWebSocket_Engine;
 import UI_Backend.THEMES.*;
 import UI.Login_and_Startup_Windows.Splash_Screen_Window;
 import com.formdev.flatlaf.FlatDarkLaf;
@@ -41,6 +42,10 @@ public class Main {
     {
         //Hello World to prove that the program works.
         System.out.println("BUILD SUCCESS - POST MAVEN!!");
+
+        //sTART Capital
+        CAPITAL_dotCOM_RestWebSocket_Engine CDC = new CAPITAL_dotCOM_RestWebSocket_Engine();
+        
 
 
         //TODO Read Config File and determine whether to perform first load actions. load Dark/ Light Mode
@@ -230,6 +235,7 @@ public class Main {
             //TODO  Draw an Alert Window using my Exceptions and Notifications that shows the full exception Message.
         }
     }
+
 
 
 

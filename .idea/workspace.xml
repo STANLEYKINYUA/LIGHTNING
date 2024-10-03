@@ -5,26 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/REST/REST_ENGINE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/REST/REST_WebSocket_Interface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Elements/Chart_Axis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Elements/Chart_Horizontal_ScrollBars.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Elements/Chart_MousePointer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/Absorbtion_RANGE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/Absorbtion_RENKO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/Absorbtion_RENKO_MEDIAN.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/DUKAS_TEST/DUKAS_TEST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/Capital_dot_COM/CAPITAL_dotCOM_RestWebSocket_Engine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/Dukascopy_Engine/Dukascopy_Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/Dukascopy_Engine/Dukascopy_Engine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/ENGINES/Generic_Rest_and_WebSocket_Engine_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/Generic_Rest_and_WebSocket_Engine_Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/ENGINES/Generic_WebSocket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/ENGINES/REST/REST_ENGINE.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/ENGINES/REST/RateLimiter_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/REST/RateLimiter_Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/ENGINES/REST/Rate_Limiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/REST/Rate_Limiter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/ENGINES/WebSocket/WebSocket_Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/Capital_dot_COM/Capital_dot_Com_RestWebSocket_Engine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/Generic_XY_Chart/Chart_Axis.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/Generic_XY_Chart/Chart_Horizontal_ScrollBars.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Types/Generic_XY_Chart/Chart_MousePointer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/Capital_dot_COM/Capital_dot_Com_RestWebSocket_Engine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/Generic_Rest_and_WebSocket_Engine_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/Generic_Rest_and_WebSocket_Engine_Interface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/REST/REST_ENGINE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/REST/REST_ENGINE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/REST/REST_WebSocket_Interface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/REST/Rate_Limiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/REST/Rate_Limiter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/Data_Parsers/CandleStick_Bar_Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MarketData_Parsers/Data_Parsers/CandleStick_Bar_Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/Data_Parsers/Generic_Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MarketData_Parsers/Data_Parsers/Generic_Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/Data_Parsers/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MarketData_Parsers/Data_Parsers/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/Data_Parsers/Tick_Data_Bar_Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MarketData_Parsers/Data_Parsers/Tick_Data_Bar_Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/MARKET_DATA_FEEDS/Feed_Normalizer/Feed_Normalizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MarketData_Parsers/Feed_Normalizer/Feed_Normalizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/NEWS/News" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/News_Parsers/News" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +82,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.46206897",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
@@ -104,7 +99,7 @@
       <recent name="TRADING" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DUKAS_TEST">
+  <component name="RunManager" selected="Application.Lightning_Main File">
     <configuration name="DUKAS_TEST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="a_PROTOTYPING.DUKAS_TEST.DUKAS_TEST" />
       <module name="LIGHTNING" />

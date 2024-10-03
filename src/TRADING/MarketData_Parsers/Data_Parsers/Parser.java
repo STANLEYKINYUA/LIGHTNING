@@ -1,4 +1,4 @@
-package TRADING.MARKET_DATA_FEEDS.Data_Parsers;
+package TRADING.MarketData_Parsers.Data_Parsers;
 
 public interface Parser
 {

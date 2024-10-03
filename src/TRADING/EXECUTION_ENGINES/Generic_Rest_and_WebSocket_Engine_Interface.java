@@ -2,10 +2,21 @@ package TRADING.EXECUTION_ENGINES;
 
 public interface Generic_Rest_and_WebSocket_Engine_Interface
 {
+    //Fetch API Key from Secure Config File
+    public void Fetch_ApiKey_Password();
+    public String Read_Api_Key_from_System_Environment(String KeyName);
+    public String Read_Api_Password_from_System_Environment(String PasswordNAME);
+
     // Connection Functions
-    public void Connect();
+    public void Connect_with_Password();
+    public void Connect_with_EncryptedPASSWORD();
     public void Disconnect();
     public void Reconnect();
+
+    //Session Maintenance
+    public void Ping_Rest_EndPoint();
+    public void Ping_WebSocket_EndPoint();
+
 
     //WebSocket Functions
     public void Connect_WebSocket();
@@ -16,20 +27,7 @@ public interface Generic_Rest_and_WebSocket_Engine_Interface
     public void Start_Session_asDEMO();
     public void Start_Session_asLIVE();
 
-    //Session Maintenance Functions
-    public void Ping_EndPoint();
 
-    //Read API Key from Secure Config File
-    public void SelectConfigFile_Location();
-    public void Read_Api_Key();
-    public void Decrypt_Api_Key();
-    public void Read_Secret();
-
-    // API Limits and Other Limits
-    public void set_Limit();
-
-
-    // Compute Hashes
 
     // Error Code Parser
     public void Determine_Error();
