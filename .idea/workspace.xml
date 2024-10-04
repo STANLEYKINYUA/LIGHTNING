@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/UI_Backend/CONFIG_MANAGER/CONFIGURATION_MANAGER.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/Capital_dot_COM/CAPITAL_dotCOM_RestWebSocket_Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/Capital_dot_COM/CAPITAL_dotCOM_RestWebSocket_Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart/Generic_XY_Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart/Generic_XY_Chart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MAIN_TRADING_WINDOW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MAIN_TRADING_WINDOW.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI_Backend/THEMES/FlatLaf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI_Backend/THEMES/FlatLaf.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI_Backend/THEMES/FlatMacLight_LAF.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI_Backend/THEMES/FlatMacLight_LAF.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

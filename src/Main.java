@@ -44,7 +44,7 @@ public class Main {
         System.out.println("BUILD SUCCESS - POST MAVEN!!");
 
         //sTART Capital
-       CAPITAL_dotCOM_RestWebSocket_Engine CDC = new CAPITAL_dotCOM_RestWebSocket_Engine();
+      // CAPITAL_dotCOM_RestWebSocket_Engine CDC = new CAPITAL_dotCOM_RestWebSocket_Engine();
 
 
 
@@ -182,12 +182,12 @@ public class Main {
 
 
             //  Using FLATMACDark so that I can continue development
-           FlatMacDarkLaf.registerCustomDefaultsSource("UI_Backend.THEMES");
-            FlatMacDark_LAF.setup();
+           //FlatMacDarkLaf.registerCustomDefaultsSource("UI_Backend.THEMES");
+            //FlatMacDark_LAF.setup();
 
             //Prefer FlatLight Laf
-            //FlatMacLight_LAF.registerCustomDefaultsSource("UI_Backend.Themes");
-            //FlatMacLight_LAF.setup();
+            FlatMacLight_LAF.registerCustomDefaultsSource("UI_Backend.Themes");
+            FlatMacLight_LAF.setup();
 
 
 
