@@ -11,7 +11,8 @@ import java.nio.charset.StandardCharsets;
 import java.sql.SQLOutput;
 import java.net.URL;
 
-public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE {
+public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
+{
     //Venue URL
     String CDC_Rest_BASE_URL = " https://api-capital.backend-capital.com/";
     String CDC_Demo_Rest_BASE_URL = "https://demo-api-capital.backend-capital.com/";
@@ -39,6 +40,8 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE {
             //Send Post Request
             System.out.println("Attempting to connect to Capital.com");
             String EndPoint = CDC_Demo_Rest_BASE_URL + "/session";
+
+            System.out.println("Awaiting Server Response");
             String Session_Response = Send_Post_Request(EndPoint, jsonInputString);
             System.out.println("Session Response : " + Session_Response);
 
@@ -55,7 +58,8 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE {
     }
 
 
-    String Send_Post_Request(String Endpoint, String JSON_InputString) throws Exception {
+    String Send_Post_Request(String Endpoint, String JSON_InputString) throws Exception
+    {
         URL url = new URL(Endpoint);
 
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -72,45 +76,50 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE {
             os.write(input, 0, input.length);
         }
 
-        try (BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream(), StandardCharsets.UTF_8))) {
-            StringBuilder response = new StringBuilder();
+        //Fetch and Output the Response code
+        int status = conn.getResponseCode();
 
-            String responseLine;
-
-            while ((responseLine = br.readLine()) != null) {
-                response.append(responseLine.trim());
-            }
-            return response.toString();
-
-
-        }
-
-
-    }
-
-    private String SendGetRequest(String endpoint) throws Exception {
-        URL url = new URL(endpoint);
-
-        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-
-        conn.setRequestMethod("GET");
-
-        conn.setRequestProperty("X-CAP-API-KEY", API_Key);
-
-        try (BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream(), StandardCharsets.UTF_8)))
-        {
-            StringBuilder response = new StringBuilder();
-
-            String responseLine;
-
-            while ((responseLine = br.readLine()) != null)
+            if(status == HttpURLConnection.HTTP_OK) // Code 200
             {
-                response.append(responseLine.trim());
+                System.out.println("200 - Connection Successful");
+                return readResponse(conn);
+            }
+            else if (status == HttpURLConnection.HTTP_BAD_REQUEST)
+            {
+                System.out.println(" 400 - Malformed Request");
+
             }
 
-            System.out.println(response.toString());
-            return response.toString();
+        return readResponse(conn);
         }
 
+        private static String readResponse(HttpURLConnection conn) throws Exception
+        {
+            String RESPONSE=" ";
+            try
+            {
+                BufferedReader buffRead = new BufferedReader(new InputStreamReader((conn.getInputStream()),StandardCharsets.UTF_8));
+
+                StringBuilder response = new StringBuilder();
+
+                String responseLine;
+
+                while ((responseLine = buffRead.readLine()) != null)
+                {
+                response.append(responseLine.trim());
+                }
+
+                RESPONSE= response.toString();
+
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+
+            return RESPONSE;
+        }
+
+
     }
-}
+
