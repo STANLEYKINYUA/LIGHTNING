@@ -43,9 +43,6 @@ public class MAIN_TRADING_WINDOW extends JFrame
     public MAIN_TRADING_WINDOW()
     {
 
-        //1. Set Window Size and spawn Location.
-        this.setBounds(200,200,800,800);
-
         //Set the Title of the Desktop Pane
         this.setTitle(" LIGHTNING ");
 
@@ -98,7 +95,7 @@ public class MAIN_TRADING_WINDOW extends JFrame
         //Spawn WatchList that must always Spawn
         Spawn_WatchList_Window(DesktopPane,0,0,400,750);
 
-        Spawn_Chart_Window(DesktopPane,"chart",100,100,200,200);
+        Spawn_Chart_Window(DesktopPane,"chart",200,100,600,700);
 
         //todo Read Workspace Manager and ReOpen last Tabs on the Workspace
 

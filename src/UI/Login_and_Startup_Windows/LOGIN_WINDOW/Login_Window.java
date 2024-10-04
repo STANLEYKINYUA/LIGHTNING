@@ -152,7 +152,7 @@ public class Login_Window extends JFrame
        // Display the Main Trading Window
         MAIN_TRADING_WINDOW  MainTrading_Window = new MAIN_TRADING_WINDOW();
 
-        MainTrading_Window.setSize(800,600);
+        MainTrading_Window.setSize(1400,800);
         MainTrading_Window.setLocation(20,20);
         MainTrading_Window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
