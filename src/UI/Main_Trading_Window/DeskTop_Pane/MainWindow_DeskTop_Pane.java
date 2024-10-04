@@ -14,7 +14,7 @@ public class MainWindow_DeskTop_Pane extends JDesktopPane
 
     }
 
-    
+
 
     //Functions
     void Show_Desktop_Pane_Menu()
