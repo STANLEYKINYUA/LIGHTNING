@@ -19,7 +19,7 @@ public class Generic_XY_Chart extends JPanel implements MouseWheelListener, Mous
 {
 
     //Create a List to hold the Data Bars /
-    private List<CandleSticks> CandleSticks_LIST;
+    private final List<CandleSticks> CandleSticks_LIST;
 
     int Space_between_Bars = 10;
 
@@ -50,6 +50,14 @@ public class Generic_XY_Chart extends JPanel implements MouseWheelListener, Mous
     //The Constructor
     public Generic_XY_Chart()
     {
+        //Add the Scrollbars for Horizontal and Vertical
+        JScrollBar Vertical_ScrollBar = new JScrollBar(Adjustable.VERTICAL);
+        this.add(Vertical_ScrollBar);
+
+        JScrollBar Horizontal_ScrollBar = new JScrollBar(Adjustable.HORIZONTAL);
+        this.add(Horizontal_ScrollBar);
+
+
         CandleSticks_LIST = new ArrayList<>();
         addMouseWheelListener(this);
         addMouseMotionListener(this);
@@ -157,17 +165,6 @@ public class Generic_XY_Chart extends JPanel implements MouseWheelListener, Mous
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
     @Override
