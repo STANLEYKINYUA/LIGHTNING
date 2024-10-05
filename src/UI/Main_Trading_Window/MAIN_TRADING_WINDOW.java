@@ -1,6 +1,7 @@
 package UI.Main_Trading_Window;
 
 import UI.Charts_and_Indicatorz.Chart.Chart_Mdi_Window;
+import UI.Charts_and_Indicatorz.Chart.Generic_XY_Chart;
 import UI.MDI_Internal_Trading_Windows.Calendar.Calendar_Window;
 import UI.Charts_and_Indicatorz.Chart_Types.CandleStick_Chart;
 import UI.MDI_Internal_Trading_Windows.Market_ScannerWindow.Market_Scanner_Window;
@@ -130,12 +131,17 @@ public class MAIN_TRADING_WINDOW extends JFrame
         Chart_Mdi_Window Chart_MDI_Window = new Chart_Mdi_Window(Title);
         Chart_MDI_Window.setBounds(x,y,W,H);
 
+
+        Generic_XY_Chart Chart = new Generic_XY_Chart();
+        Chart.setBounds(0,0,500,500);
+        Chart.setBackground(Color.black);
+        Chart.setVisible(true);
+        Chart_MDI_Window.getContentPane().add(Chart);
+
+
+
         DesktopPane.add(Chart_MDI_Window);
         Chart_MDI_Window.setVisible(true);
-
-
-
-
 
 
     }

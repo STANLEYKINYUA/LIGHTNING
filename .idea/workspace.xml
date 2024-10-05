@@ -7,7 +7,7 @@
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart/Chart_Mdi_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart/Chart_Mdi_Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart/Generic_XY_Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart/Generic_XY_Chart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MAIN_TRADING_WINDOW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Trading_Window/MAIN_TRADING_WINDOW.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.DUKAS_TEST.executor": "Run",
-    "Application.Lightning_Main File.executor": "Run",
+    "Application.Lightning_Main File.executor": "Debug",
     "Application.Main.executor": "Run",
     "Application.keyextract.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
