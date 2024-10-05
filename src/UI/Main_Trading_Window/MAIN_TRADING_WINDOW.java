@@ -17,6 +17,8 @@ import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
 
 //TODO  JAVADOC Every Function in this Class
 
@@ -136,10 +138,29 @@ public class MAIN_TRADING_WINDOW extends JFrame
         Chart.setBounds(0,0,500,500);
         Chart.setBackground(Color.black);
         Chart.setVisible(true);
+
+        //Create Component Listener that allows us to grow and shrink our Chart Panel
+        Chart_MDI_Window.addComponentListener(new ComponentAdapter() {
+            /**
+             * Invoked when the component's size changes.
+             *
+             * @param e
+             */
+            @Override
+            public void componentResized(ComponentEvent e)
+            {
+                super.componentResized(e);
+                Chart.setSize(Chart_MDI_Window.getContentPane().getSize());
+            }
+        });
+
+        //  Set the Initial Size of the Chart to Occuppy the whole Window
+        Chart.setSize(Chart_MDI_Window.getContentPane().getSize());
+
+
+
+
         Chart_MDI_Window.getContentPane().add(Chart);
-
-
-
         DesktopPane.add(Chart_MDI_Window);
         Chart_MDI_Window.setVisible(true);
 
