@@ -6,10 +6,7 @@ import com.mysql.cj.x.protobuf.MysqlxCursor;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseMotionListener;
-import java.awt.event.MouseWheelEvent;
-import java.awt.event.MouseWheelListener;
+import java.awt.event.*;
 import java.awt.geom.Rectangle2D;
 import java.util.ArrayList;
 import java.util.List;
@@ -50,7 +47,7 @@ public class Generic_XY_Chart extends JPanel implements MouseWheelListener, Mous
     //The Constructor
     public Generic_XY_Chart()
     {
-        
+
         CandleSticks_LIST = new ArrayList<>();
         addMouseWheelListener(this);
         addMouseMotionListener(this);

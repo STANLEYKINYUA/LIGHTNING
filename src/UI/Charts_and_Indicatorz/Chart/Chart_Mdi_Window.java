@@ -24,7 +24,7 @@ public class Chart_Mdi_Window extends JInternalFrame
         this.setBackground(Color.black);
         //Add the Chart to the Chart Window
         Generic_XY_Chart Chart = new Generic_XY_Chart();
-        this.add(Chart);
+        this.getContentPane().add(Chart);
 
         Chart.setBounds(0,0,500,500);
         Chart.setBackground(Color.black);
