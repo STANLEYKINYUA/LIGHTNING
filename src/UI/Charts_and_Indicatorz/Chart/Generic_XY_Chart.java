@@ -50,14 +50,7 @@ public class Generic_XY_Chart extends JPanel implements MouseWheelListener, Mous
     //The Constructor
     public Generic_XY_Chart()
     {
-        //Add the Scrollbars for Horizontal and Vertical
-        JScrollBar Vertical_ScrollBar = new JScrollBar(Adjustable.VERTICAL);
-        this.add(Vertical_ScrollBar);
-
-        JScrollBar Horizontal_ScrollBar = new JScrollBar(Adjustable.HORIZONTAL);
-        this.add(Horizontal_ScrollBar);
-
-
+        
         CandleSticks_LIST = new ArrayList<>();
         addMouseWheelListener(this);
         addMouseMotionListener(this);
@@ -135,9 +128,27 @@ public class Generic_XY_Chart extends JPanel implements MouseWheelListener, Mous
             int yLow = height - candle.Low_Price;
 
             //Draw the Outer Grid for the Y and X axis
-            //Draw the Internal Grid Lines
 
-            //Draw the High - Low Line
+            //Draw the Internal Grid Lines
+            g2.setColor(Color.blue);
+
+
+                //Draw a vertical Line that extends beyond the Scrollable are
+                g2.drawLine(x + CandleWidth/2,-1000,x + CandleWidth/2 ,1000);
+
+
+            //Draw the High - Low Line - based on the type of bar
+            if(candle.Close_Price > candle.Open_Price)
+            {
+                //Set the Color of the Wick to Green
+                g2.setColor(Color.green);
+            }
+            else
+            {
+                //Set the Color to Red
+                g2.setColor(Color.red);
+            }
+
             g2.drawLine(x + CandleWidth/2 , yHigh, x + CandleWidth/2 , yLow);
 
             //Draw the Candle Body
