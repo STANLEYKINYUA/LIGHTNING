@@ -10,6 +10,13 @@ public class Reports_Menu extends JMenu
     {
         this.setText("REPORTS");
 
+
+        //TRADES REPORT
+        JMenu Trades_Report = new JMenu("TRADES");
+        this.add(Trades_Report);
+
+
+
         //PROFIT AND LOSS
         JMenu Profit_and_Loss = new JMenu("PROFIT AND LOSS");
         this.add(Profit_and_Loss);

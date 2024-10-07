@@ -45,6 +45,8 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
     public MAIN_TRADING_WINDOW()
     {
+        //TODO Spawn a Config File Manager based on the Profile and read and Write only to that Profile
+
 
         //Set the Title of the Desktop Pane
         this.setTitle(" LIGHTNING ");
