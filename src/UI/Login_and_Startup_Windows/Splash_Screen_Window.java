@@ -23,7 +23,7 @@ import java.io.File;
 
 public class Splash_Screen_Window extends javax.swing.JFrame
 {
-    double Version_Number = 0.01;   //  Version Number of the Program.
+    double Version_Number = 0.02;   //  Version Number of the Program.
 
     boolean First_Start = false;
 

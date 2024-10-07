@@ -157,6 +157,9 @@ public class MAIN_TRADING_WINDOW extends JFrame
         //  Set the Initial Size of the Chart to Occuppy the whole Window
         Chart.setSize(Chart_MDI_Window.getContentPane().getSize());
 
+        //Create a Toolbar for the Chart Window
+
+
 
 
 
