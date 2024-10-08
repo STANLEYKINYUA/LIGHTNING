@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<root>
+    <Mdi_Windows>
+
+        <Watch_List>
+            <X_position> 100</X_position>
+            <Y_position> 40</Y_position>
+        </Watch_List>
+
+        <Chart>
+            <Symbol>USDJPY</Symbol>
+            <Period>25_ren</Period>
+            <X_position> 100</X_position>
+            <Y_position> 40</Y_position>
+            <Height> 400</Height>
+            <Width> 600</Width>
+        </Chart>
+
+
+    </Mdi_Windows>
+
+</root>

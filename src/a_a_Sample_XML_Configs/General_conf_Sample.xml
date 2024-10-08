@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- The General Configuration File for Application
+
+> It is encrypted using inbuilt special Hash generated from :
+    KEY :: 10896@NATASHA
+-->
+
+
+<root>
+    <System>
+        <!--The Number of CPU cores in the System-->
+        <Cpu_Cores> 4 </Cpu_Cores>
+        <CPU_speed>2.5G</CPU_speed>
+        <Ram_Installed>16gb </Ram_Installed>
+        <Ram_Speed>2133mHZ</Ram_Speed>
+    </System>
+
+    <!--All the required Libraries and their dependencies-->
+    <Libraries>
+        <JVM_version> 21.22</JVM_version>
+        <MySQL_Available>true</MySQL_Available>
+        <MySQL_Version> 9.14</MySQL_Version>
+    </Libraries>
+
+    <Users>
+        <User1>
+            <First_Name>Michael</First_Name>
+            <Second_Name>Baya </Second_Name>
+            <Third_Name> Charo </Third_Name>
+            <Email>MichaelCharo@Gmail.com</Email>
+            <UserName> Michael_Charo</UserName>
+            <SecureKey> cvd23234psd;LSMFPOSKd[WGL5S;gmlSMFPIWJER></SecureKey>
+        </User1>
+    </Users>
+
+</root>
+
+
