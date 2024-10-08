@@ -43,6 +43,9 @@ public class Main {
         //Hello World to prove that the program works.
         System.out.println("BUILD SUCCESS - POST MAVEN!!");
 
+        //TODO Call the Configuration Manager so that it can Decrypt the General Config
+
+
         //sTART Capital
       // CAPITAL_dotCOM_RestWebSocket_Engine CDC = new CAPITAL_dotCOM_RestWebSocket_Engine();
 
@@ -71,7 +74,7 @@ public class Main {
 
     }
 
-    /** Dark Theme Initialization */
+    /** Start the Application */
     static void init_Application()
     {
         //Start the Swing Application with  a try catch block.
@@ -124,6 +127,16 @@ public class Main {
 
     }
 
+
+
+
+
+
+
+
+
+
+    /** THEMES & UI ELEMENTS*/
 
     /** Create a Function to Set theme. */
     static void Set_Theme(String Theme_to_Set)
