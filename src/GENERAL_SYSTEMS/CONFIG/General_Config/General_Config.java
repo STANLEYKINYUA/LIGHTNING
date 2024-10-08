@@ -1,10 +1,14 @@
 package GENERAL_SYSTEMS.CONFIG.General_Config;
 
-/** Handles General Configuration Settings ie Startup + General Settings */
+/** Handles General Configuration Settings ie Startup + General Settings
+ *
+ *  Writes the Config File in the Form of a Binary text File that is only decrypted at runtime
+ *
+ * */
 public abstract class General_Config
 {
 
-    /** Default Constructor for Config File. */
+
     public General_Config()
     {
         //Test for existence of User Directory - If non-Existent - Create Config File with default values
