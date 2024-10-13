@@ -18,6 +18,7 @@
 * */
 
 
+import GENERAL_SYSTEMS.CONFIG.General_Config.General_Config;
 import TRADING.EXECUTION_ENGINES.Capital_dot_COM.CAPITAL_dotCOM_RestWebSocket_Engine;
 import UI_Backend.THEMES.*;
 import UI.Login_and_Startup_Windows.Splash_Screen_Window;
@@ -42,6 +43,10 @@ public class Main {
     {
         //Hello World to prove that the program works.
         System.out.println("BUILD SUCCESS - POST MAVEN!!");
+
+        //Initiate General Config
+        General_Config General_Configuration_Manager = new General_Config();
+
 
         //TODO Call the Configuration Manager so that it can Decrypt the General Config
 
