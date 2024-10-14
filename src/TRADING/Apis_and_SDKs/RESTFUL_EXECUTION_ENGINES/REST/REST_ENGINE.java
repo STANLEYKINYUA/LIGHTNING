@@ -4,12 +4,9 @@
 *
 * */
 
-package TRADING.EXECUTION_ENGINES.REST;
+package TRADING.Apis_and_SDKs.RESTFUL_EXECUTION_ENGINES.REST;
 
-import TRADING.EXECUTION_ENGINES.Generic_Rest_and_WebSocket_Engine_Interface;
-import okhttp3.OkHttpClient;
-
-import java.security.Key;
+import TRADING.Apis_and_SDKs.RESTFUL_EXECUTION_ENGINES.Generic_Rest_and_WebSocket_Engine_Interface;
 
 public class REST_ENGINE  implements Generic_Rest_and_WebSocket_Engine_Interface
 {

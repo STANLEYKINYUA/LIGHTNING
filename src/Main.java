@@ -19,7 +19,7 @@
 
 
 import GENERAL_SYSTEMS.CONFIG.General_Config.General_Config;
-import TRADING.EXECUTION_ENGINES.Capital_dot_COM.CAPITAL_dotCOM_RestWebSocket_Engine;
+import TRADING.Apis_and_SDKs.RESTFUL_EXECUTION_ENGINES.Capital_dot_COM.CAPITAL_dotCOM_RestWebSocket_Engine;
 import UI_Backend.THEMES.*;
 import UI.Login_and_Startup_Windows.Splash_Screen_Window;
 import com.formdev.flatlaf.FlatDarkLaf;
@@ -34,25 +34,24 @@ import com.formdev.flatlaf.themes.FlatMacDarkLaf;
 import com.formdev.flatlaf.themes.FlatMacLightLaf;
 
 import javax.swing.*;
-
-
+import java.io.IOException;
+import java.net.URISyntaxException;
 
 
 public class Main {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) throws IOException, URISyntaxException, InterruptedException {
         //Hello World to prove that the program works.
         System.out.println("BUILD SUCCESS - POST MAVEN!!");
 
         //Initiate General Config
-        General_Config General_Configuration_Manager = new General_Config();
+        General_Config General_Configuration = new General_Config();
 
 
         //TODO Call the Configuration Manager so that it can Decrypt the General Config
 
 
         //sTART Capital
-      // CAPITAL_dotCOM_RestWebSocket_Engine CDC = new CAPITAL_dotCOM_RestWebSocket_Engine();
+        CAPITAL_dotCOM_RestWebSocket_Engine CDC = new CAPITAL_dotCOM_RestWebSocket_Engine();
 
         //TODO Dukascopy Engine to Start here for testing
 
