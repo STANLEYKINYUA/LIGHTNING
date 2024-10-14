@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/GENERAL_SYSTEMS/CONFIG/User_Config/User_Configuration_Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/RESTFUL_EXECUTION_ENGINES/Parameter_String_Builder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GENERAL_SYSTEMS/CONFIG/General_Config/General_Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GENERAL_SYSTEMS/CONFIG/General_Config/General_Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/Generic_Api_Handler_Interface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/Capital_dot_COM/CAPITAL_dotCOM_RestWebSocket_Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/RESTFUL_EXECUTION_ENGINES/Capital_dot_COM/CAPITAL_dotCOM_RestWebSocket_Engine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/Generic_Rest_and_WebSocket_Engine_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/RESTFUL_EXECUTION_ENGINES/Generic_Rest_and_WebSocket_Engine_Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/REST/REST_ENGINE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/RESTFUL_EXECUTION_ENGINES/REST/REST_ENGINE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/REST/RateLimiter_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/RESTFUL_EXECUTION_ENGINES/REST/RateLimiter_Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/EXECUTION_ENGINES/REST/Rate_Limiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/RESTFUL_EXECUTION_ENGINES/REST/Rate_Limiter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/RESTFUL_EXECUTION_ENGINES/Capital_dot_COM/CAPITAL_dotCOM_RestWebSocket_Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/RESTFUL_EXECUTION_ENGINES/Capital_dot_COM/CAPITAL_dotCOM_RestWebSocket_Engine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

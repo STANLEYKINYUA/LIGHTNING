@@ -37,8 +37,8 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
         String Session_EndPoint = Base_URL + Session;
 
         // Create a Message Body
-        String Message_Body = "{\"encryptedPassword\": \"false\" +"+
-                "               \"identifier\": \"Stanley.andrew.kinyua@gmail.com\",\"+"+
+        String Message_Body = "{\"encryptedPassword\": \"false\" ,"+
+                "               \"identifier\": \"Stanley.andrew.kinyua@gmail.com\","+
                 "               \"password\": \"n@TASHA10896\"}";
 
 
