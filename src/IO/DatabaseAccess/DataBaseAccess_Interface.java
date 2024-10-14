@@ -9,10 +9,10 @@ public interface DataBaseAccess_Interface
     /**Check for Config File Presence */
     void Check_for_Config_File();
 
-    /**Open a Connection to the Database */
-    void Create_Connection();
+    /**Open a Connection to the Database_Engine */
+    void Create_Connection_to_Database();
 
-    /** Close a Connection to the Database */
+    /** Close a Connection to the Database_Engine */
     void Close_Connection();
 
     /**Execute a SQL Statement */
@@ -21,17 +21,19 @@ public interface DataBaseAccess_Interface
     /** DATABASE ACTIONS*/
     String Read_From_Database();
     String Write_to_Database();
-    void CreateTable(String SQL_Command);
-    void DeleteTable(String SQL_Command);
+
+        //Create and Modify Actions
+    void CreateTable(String SQL_Command, String Table_Name);
+    void Add_Table_Columns(String Table_Name , String Column_Name , String Column_DataType);
+
+        //Delete
+    void DeleteTable(String SQL_Command,String Table_Name);
+
+        //Data Manipulation
     void SortTable(String SQL_Command);
     void Execute_Query(String SQL_Command);
 
-
-
-    /**Commit Changes to Database */
     void Commit_Changes();
-
-    /**Revert Changes */
     void Revert_Changes();
 
 }

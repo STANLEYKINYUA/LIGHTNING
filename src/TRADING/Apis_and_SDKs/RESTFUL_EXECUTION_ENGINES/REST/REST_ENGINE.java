@@ -12,17 +12,22 @@ public class REST_ENGINE  implements Generic_Rest_and_WebSocket_Engine_Interface
 {
     //Data Variables for Rest Engine
     public String VenueName;
-    public String API_Key_Environment_Name;
-    public String API_Password_Environment_Name;
+    public String API_Key;
+    public String Password;
 
     //EndPoints
     String WebSocket_EndPoint = " ";
     String Rest_EndPoint = " ";
 
-    //Credentials
-    String API_Key = " ";
-    String Password = " ";
-    String Encrypted_API_Password = " ";
+
+
+
+
+    //URLs
+    final String Base_URL="";
+
+    //URL Extension
+    final String Trade_Extension=" ";
 
     public REST_ENGINE()
     {
