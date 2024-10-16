@@ -2,6 +2,7 @@ package UI.Login_and_Startup_Windows.Account_Creation_Window;
 
 import UI.Login_and_Startup_Windows.LOGIN_WINDOW.Login_Window;
 import UI.Main_Trading_Window.MAIN_TRADING_WINDOW;
+import com.formdev.flatlaf.FlatClientProperties;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import com.jidesoft.swing.ButtonStyle;
 import com.jidesoft.swing.JideButton;
@@ -134,15 +135,22 @@ public class Accounts_Creation_Window extends JFrame
 
 
 
-        //TODO Create a Create Account Button
+        //Create Acc Button
         JButton CreateAccount_Button = new JButton("CREATE ACCOUNT");
-        CreateAccount_Button.setBackground(Color.GREEN);
+
+            //Set button properties so that it can be referred to by property file
+            CreateAccount_Button.putClientProperty("JButton.buttonType","CreateAccButton");
+
+
         this.add(CreateAccount_Button,"span, w 200px , h 50px, center ");
         //CreateAccount_Button.addActionListener( e -> Create_Account();
 
-        //Todo Create an Exit Button
+        //Create an Exit Button
         JButton Exit_Button = new JButton("EXIT");
         Exit_Button.addActionListener(e -> Exit_Application() );
+            //Set button properties so it can be referred to by prop file
+            Exit_Button.putClientProperty("JButton.buttonType","Exit_Button");
+
         this.add(Exit_Button,"span, w 100px , h 50px, center");
 
 

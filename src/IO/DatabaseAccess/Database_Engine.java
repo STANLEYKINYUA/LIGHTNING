@@ -56,7 +56,44 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
      * Checks whether the Schema for Lightning Database is created
      */
     @Override
-    public void Check_if_Lightning_Schema_is_Created() {
+    public void Check_if_Lightning_Schema_is_Created()
+    {
+        System.out.println("Checking for Lightning Database Schema");
+
+        //Create Connection and Check for Database Schema
+        try(Connection TestConnection = DriverManager.getConnection(JDBC_url,UserName,Password))
+        {
+            System.out.println("Connected to MySQL");
+            System.out.println("Checking for Lightning Schema");
+
+            //Check for the Lightning Schema
+                /**Check for all available Schemas on this Dbase Server and print them out */
+            ResultSet Available_Schema = TestConnection.getMetaData().getCatalogs();
+
+            //Number of Schemas on the Server
+            int Schema_Number = 0;
+                //iterate through the all found schemas in the result set
+            while(Available_Schema.next())
+            {
+                String DatabaseName = Available_Schema.getString(1);
+
+                Schema_Number++;
+
+                System.out.println("Schema"+Schema_Number+" = "+ DatabaseName);
+            }
+
+            Available_Schema.close();
+
+        }
+        catch( SQLException SchemaCHECK_Exception)
+        {
+            SchemaCHECK_Exception.printStackTrace();
+
+            System.out.println("Unable to Connect to MySQL - please Try again");
+            System.out.println(" ");
+
+        }
+
 
     }
 
