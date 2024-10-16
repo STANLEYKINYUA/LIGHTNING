@@ -49,6 +49,8 @@ public class Accounts_Creation_Window extends JFrame
         //Create a back button
         JButton Back_Button = new JButton("Return to Login");
         Back_Button.addActionListener( e -> Return_to_Login());
+            //Set the Icon for the Back Button
+
         this.add(Back_Button,"span");
 
 
@@ -134,13 +136,14 @@ public class Accounts_Creation_Window extends JFrame
 
         //TODO Create a Create Account Button
         JButton CreateAccount_Button = new JButton("CREATE ACCOUNT");
-        this.add(CreateAccount_Button,"span");
+        CreateAccount_Button.setBackground(Color.GREEN);
+        this.add(CreateAccount_Button,"span, w 200px , h 50px, center ");
         //CreateAccount_Button.addActionListener( e -> Create_Account();
 
         //Todo Create an Exit Button
         JButton Exit_Button = new JButton("EXIT");
         Exit_Button.addActionListener(e -> Exit_Application() );
-        this.add(Exit_Button,"span");
+        this.add(Exit_Button,"span, w 100px , h 50px, center");
 
 
 
