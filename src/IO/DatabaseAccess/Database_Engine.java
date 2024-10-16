@@ -1,6 +1,7 @@
 package IO.DatabaseAccess;
 
 import java.sql.*;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.Executor;
@@ -72,17 +73,49 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
 
             //Number of Schemas on the Server
             int Schema_Number = 0;
+
+            //Create a Map
+            Map<String , Integer> Schema_Map = new HashMap<>();
+
+
+
                 //iterate through the all found schemas in the result set
             while(Available_Schema.next())
             {
+                int Array_counter = 0;
+
                 String DatabaseName = Available_Schema.getString(1);
 
-                Schema_Number++;
-
                 System.out.println("Schema"+Schema_Number+" = "+ DatabaseName);
+
+                //Add to Schema Map
+                Schema_Map.put(DatabaseName,Schema_Number);
+
+
+
+                Schema_Number++;
             }
 
             Available_Schema.close();
+
+            //Search for the Lightning Schema Map
+           boolean Lightning_Found = Schema_Map.containsKey("lightning");
+           int Lightning_Schema_Number = Schema_Map.get("lightning");
+
+           if(Lightning_Found = true)
+           {
+               //lightning schema has been found
+               System.out.println("Lightning Schema has been Found as Schema Number = " + Lightning_Schema_Number);
+           }
+           else
+           {
+               System.out.println("Lightning Schema has not been Found");
+               System.out.println(" ");
+               System.out.println("Creating Lightning Schema!");
+               
+               System.out.println(" ");
+           }
+
 
         }
         catch( SQLException SchemaCHECK_Exception)

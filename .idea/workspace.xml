@@ -7,10 +7,7 @@
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IO/DatabaseAccess/Database_Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IO/DatabaseAccess/Database_Engine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Login_and_Startup_Windows/Account_Creation_Window/Accounts_Creation_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Login_and_Startup_Windows/Account_Creation_Window/Accounts_Creation_Window.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Main_Operational_Windows/Accounts_and_Venues/Accounts_Venues_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Operational_Windows/Accounts_and_Venues/Accounts_Venues_Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI_Backend/THEMES/FlatLaf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI_Backend/THEMES/FlatLaf.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI_Backend/THEMES/FlatMacLight_LAF.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI_Backend/THEMES/FlatMacLight_LAF.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
