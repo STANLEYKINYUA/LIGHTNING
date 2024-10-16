@@ -20,7 +20,6 @@
 
 import GENERAL_SYSTEMS.CONFIG.General_Config.General_Config;
 import IO.DatabaseAccess.Database_Engine;
-import TRADING.Apis_and_SDKs.RESTFUL_EXECUTION_ENGINES.Capital_dot_COM.CAPITAL_dotCOM_RestWebSocket_Engine;
 import UI_Backend.THEMES.*;
 import UI.Login_and_Startup_Windows.Splash_Screen_Window;
 import com.formdev.flatlaf.FlatDarkLaf;
@@ -53,8 +52,12 @@ public class Main {
 
         //Start the Database_Engine
         Database_Engine Database = new Database_Engine();
+
             //Test if MySQL is installed and running
             Database.Check_if_MySQL_Installed();
+
+            //Test if Lightning DB schema is Created
+            Database.Check_if_Lightning_Schema_is_Created();
 
         //sTART Capital
         //CAPITAL_dotCOM_RestWebSocket_Engine CDC = new CAPITAL_dotCOM_RestWebSocket_Engine();

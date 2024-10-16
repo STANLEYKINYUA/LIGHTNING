@@ -53,6 +53,14 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
     }
 
     /**
+     * Checks whether the Schema for Lightning Database is created
+     */
+    @Override
+    public void Check_if_Lightning_Schema_is_Created() {
+
+    }
+
+    /**
      * Check for Config File Presence
      */
     @Override

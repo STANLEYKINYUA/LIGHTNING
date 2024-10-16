@@ -55,8 +55,8 @@ public class Accounts_Creation_Window extends JFrame
         //TODO  Add a Large - CREATE ACC LABEL AT THE TOP OF THE WINDOW
         JLabel CreateAcc_Label = new JLabel("CREATE ACCOUNT ");
         CreateAcc_Label.setVisible(true);
-
-        this.add(CreateAcc_Label,"span");
+        CreateAcc_Label.setFont(new Font(FlatRobotoFont.FAMILY_SEMIBOLD,Font.BOLD,36));
+        this.add(CreateAcc_Label,"span,center");
 
 
         //TODO Add Create Acc Form Panel
@@ -72,14 +72,14 @@ public class Accounts_Creation_Window extends JFrame
 
         //Middle Name
         JLabel MiddleName_Label = new JLabel("MIDDLE NAME");
-        this.add(MiddleName_Label);
+        this.add(MiddleName_Label,"span");
 
         JTextField MiddleName_txtBox = new JTextField();
         this.add(MiddleName_txtBox,"span, width 50%");
 
         //Last Name
         JLabel LastName_Label = new JLabel("LAST NAME");
-        this.add(LastName_Label);
+        this.add(LastName_Label,"span");
 
         JTextField LastName_txtBox = new JTextField();
         this.add(LastName_txtBox,"span, width 50%");
@@ -88,13 +88,14 @@ public class Accounts_Creation_Window extends JFrame
 
         //UserName
         JLabel UserName_Label = new JLabel("USER NAME");
-        this.add(UserName_Label);
+        this.add(UserName_Label,"span");
+
         JTextField UserName_txtBox = new JTextField();
         this.add(UserName_txtBox,"span, width 50%");
 
         //Email + Email Validation
         JLabel Email_Label = new JLabel("EMAIL");
-        this.add(Email_Label);
+        this.add(Email_Label,"span");
 
         JTextField Email_txtBox = new JTextField();
         Email_txtBox.addFocusListener(new FocusListener() {
@@ -117,14 +118,14 @@ public class Accounts_Creation_Window extends JFrame
 
         //Password  + Password Strength Validation ( 6 char + 1 UC+1LC + 1number+ 1symbol)
         JLabel Password_Label = new JLabel("ENTER PASSWORD");
-        this.add(Password_Label,"width 50%");
+        this.add(Password_Label,"span");
 
         JPasswordField Password_TxtBx = new JPasswordField();
         this.add(Password_TxtBx,"span, width 50%");
 
          //Re enter Password
         JLabel ReEnter_Password_Label = new JLabel("RE-ENTER PASSWORD");
-        this.add(ReEnter_Password_Label,"width 50%");
+        this.add(ReEnter_Password_Label,"span");
 
         JPasswordField ReEnter_Pasword_TxtBx = new JPasswordField();
         this.add(ReEnter_Pasword_TxtBx,"span, width 50%");
