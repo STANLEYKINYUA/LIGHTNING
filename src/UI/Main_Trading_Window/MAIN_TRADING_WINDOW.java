@@ -2,11 +2,11 @@ package UI.Main_Trading_Window;
 
 import UI.Charts_and_Indicatorz.Chart.Chart_Mdi_Window;
 import UI.Charts_and_Indicatorz.Chart.Generic_XY_Chart;
-import UI.MDI_Internal_Trading_Windows.Calendar.Calendar_Window;
+import UI.Main_Trading_Window.z_MDI_Internal_Trading_Windows.Calendar.Calendar_Window;
 import UI.Charts_and_Indicatorz.Chart_Types.CandleStick_Chart;
-import UI.MDI_Internal_Trading_Windows.Market_ScannerWindow.Market_Scanner_Window;
-import UI.MDI_Internal_Trading_Windows.Orders_and_PositionsWindow.ORDERS_and_POSITIONS_WINDOW;
-import UI.MDI_Internal_Trading_Windows.WatchList.WatchList_Window;
+import UI.Main_Trading_Window.z_MDI_Internal_Trading_Windows.Market_ScannerWindow.Market_Scanner_Window;
+import UI.Main_Trading_Window.z_MDI_Internal_Trading_Windows.Orders_and_PositionsWindow.ORDERS_and_POSITIONS_WINDOW;
+import UI.Main_Trading_Window.z_MDI_Internal_Trading_Windows.WatchList.WatchList_Window;
 import UI.Main_Trading_Window.DeskTop_Pane.MainWindow_DeskTop_Pane;
 import UI.Main_Trading_Window.MENUS.File_Menu;
 import UI.Main_Trading_Window.MENUS.Reports_Menu;

@@ -21,6 +21,7 @@
 import GENERAL_SYSTEMS.CONFIG.General_Config.General_Config;
 import IO.DatabaseAccess.Database_Engine;
 import TRADING.Apis_and_SDKs.RESTFUL_EXECUTION_ENGINES.REST.Capital_dot_COM.CAPITAL_dotCOM_RestWebSocket_Engine;
+import TRADING.Apis_and_SDKs.RESTFUL_EXECUTION_ENGINES.REST.Capital_dot_COM.CDC_JsonParser;
 import UI_Backend.THEMES.*;
 import UI.Login_and_Startup_Windows.Splash_Screen_Window;
 import com.formdev.flatlaf.FlatDarkLaf;
@@ -57,7 +58,11 @@ public class Main {
 
 
         //sTART Capital
-        CAPITAL_dotCOM_RestWebSocket_Engine CDC = new CAPITAL_dotCOM_RestWebSocket_Engine();
+        //CAPITAL_dotCOM_RestWebSocket_Engine CDC = new CAPITAL_dotCOM_RestWebSocket_Engine();
+
+
+
+
 
         //TODO Dukascopy Engine to Start here for testing
 

@@ -1,0 +1,62 @@
+FULL RESPONSE WITH HEADERS
+
+HEADERS
+java.net.http.HttpHeaders@f0796361 
+{ 
+	{
+		:status=[200], 
+		access-control-expose-headers=[CST, X-SECURITY-TOKEN], 
+		cache-control=[no-cache, no-store, max-age=0, must-revalidate], 
+		content-security-policy=[connect-src 'self'], 
+		content-type=[application/json], 
+		cst=[Ze2qMFXIF7vKUVkjIlnKkqYl], 
+		date=[Thu, 17 Oct 2024 08:36:16 GMT], 
+		expires=[0], 
+		pragma=[no-cache], 
+		vary=[Origin, Access-Control-Request-Method, Access-Control-Request-Headers], 
+		x-content-type-options=[nosniff], 
+		x-frame-options=[DENY], 
+		x-security-token=[gH5voAIg193Nrn6duO05XWueqi86inF], 
+		x-xss-protection=[1; mode=block]
+	} 
+}
+
+BODY
+
+{
+	"accountType":"CFD",
+	"accountInfo":
+		{
+			"balance":0.0,
+			"deposit":0.0,
+			"profitLoss":0.0,
+			"available":0.0
+		},
+	"currencyIsoCode":"USD",
+	"currencySymbol":"$",
+	"currentAccountId":"231432049297282244",
+	"streamingHost":"wss://api-streaming-capital.backend-capital.com/",
+	"accounts":
+		[
+			{
+				"accountId":"231432049297282244",
+				"accountName":"",
+				"preferred":true,
+				"accountType":"CFD",
+				"currency":"USD",
+				"symbol":"$",
+				"balance":
+						{
+							"balance":0.0,
+							"deposit":0.0,
+							"profitLoss":0.0,
+							"available":0.0
+						}
+			}
+		],
+	"clientId":"29553259",
+	"timezoneOffset":3,
+	"hasActiveDemoAccounts":false,
+	"hasActiveLiveAccounts":true,
+	"trailingStopsEnabled":true
+}

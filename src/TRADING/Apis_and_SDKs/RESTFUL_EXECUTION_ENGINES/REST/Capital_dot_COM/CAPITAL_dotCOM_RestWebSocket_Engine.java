@@ -8,6 +8,8 @@ import java.net.URISyntaxException;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.List;
+import java.util.Map;
 
 
 public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
@@ -17,6 +19,11 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
     final String Password ="n@TASHA10896";
     final String My_Email = "stanley.andrew.kinyua@gmail.com";
     final String Login = "PROJECT-n@T";
+
+    //TOKENS
+    final String CST_Token = " ";
+    final String X_security_Token = " ";
+
     //URLS
     String Base_URL = "https://api-capital.backend-capital.com/api/v1/ ";
     String Base_Demo_Url = "https://demo-api-capital.backend-capital.com/api/v1/ ";
@@ -54,12 +61,33 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
         //Handle the Response
         HttpResponse<String> Response = Capital_dot_Com.send(Session_Initiate_request, HttpResponse.BodyHandlers.ofString());
 
-        //Output the Response
+        //Output the Response and the Headers
         System.out.println(("Our request was = " + Message_Body));
         System.out.println(" ");
+        System.out.println("The Headers we received back were : " + Response.headers());
         System.out.println("The Response that we got was : "+Response.statusCode() +"= " + Response.body());
 
-        //Start a Websocket Session and Start Getting Prices :: 10 Instruments
+        Map<String, List<String>> Headers = Response.headers().map();
+        String cst = Headers.getOrDefault("cst",List.of("")).get(0);
+        String xSecurityToken = Headers.getOrDefault("x-security-token", List.of("")).get(0);
+
+        System.out.println("CST: " + cst);
+        System.out.println("X-SECURITY-TOKEN: " + xSecurityToken);
+
+        //Start a Websocket Session and fetch list of epics +  Start Getting Prices :: 10 Instruments
+
+            //Create a Body to start Streaming Prices of 5 inst:: Crude , EURUSD , BTC , GOLD , SILVER
+            String Streaming_Body = "{\"encryptedPassword\": \"false\" ,"+
+                "               \"identifier\": \"Stanley.andrew.kinyua@gmail.com\","+
+                "               \"password\": \"n@TASHA10896\"}";
+
+            //Create a GET Request to fetch List of Epics
+            HttpRequest GET_WebSocket_Epics = HttpRequest.newBuilder()
+                .uri(new URI("https://api-capital.backend-capital.com/api/v1/marketnavigation"))
+                .header("content-type","application/json")
+                .header("X-CAP-API-KEY",Api_Key)
+                .POST(HttpRequest.BodyPublishers.ofString(Streaming_Body))
+                .build();
 
     }
 
