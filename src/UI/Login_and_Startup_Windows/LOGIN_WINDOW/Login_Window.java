@@ -19,6 +19,9 @@ import net.miginfocom.swing.MigLayout;
 import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
+import java.net.URISyntaxException;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeoutException;
 
 public class Login_Window extends JFrame
 {
@@ -109,7 +112,19 @@ public class Login_Window extends JFrame
             //TODO  Create an exception Handling block to deal with Opening of Main trading Window
             Login_Button.addActionListener(e ->
             {
-                Display_Main_Trading_Window();
+                try {
+                    Display_Main_Trading_Window();
+                } catch (IOException ex) {
+                    throw new RuntimeException(ex);
+                } catch (URISyntaxException ex) {
+                    throw new RuntimeException(ex);
+                } catch (InterruptedException ex) {
+                    throw new RuntimeException(ex);
+                } catch (ExecutionException ex) {
+                    throw new RuntimeException(ex);
+                } catch (TimeoutException ex) {
+                    throw new RuntimeException(ex);
+                }
             });
             //----------------------------------------------------------------------------
 
@@ -147,8 +162,7 @@ public class Login_Window extends JFrame
     }
 
     //Display THE Main Trading Window
-    void Display_Main_Trading_Window()
-    {
+    void Display_Main_Trading_Window() throws IOException, URISyntaxException, InterruptedException, ExecutionException, TimeoutException {
        // Display the Main Trading Window
         MAIN_TRADING_WINDOW  MainTrading_Window = new MAIN_TRADING_WINDOW();
 

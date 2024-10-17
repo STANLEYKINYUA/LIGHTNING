@@ -1,6 +1,7 @@
 package TRADING.Apis_and_SDKs.RESTFUL_EXECUTION_ENGINES.REST.Capital_dot_COM;
 
 import TRADING.Apis_and_SDKs.RESTFUL_EXECUTION_ENGINES.REST.REST_ENGINE;
+import io.reactivex.Completable;
 
 import java.io.IOException;
 import java.net.URI;
@@ -10,6 +11,10 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 
 public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
@@ -33,8 +38,7 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
     final String Session = "session";
     final String Time   = "time";
 
-    public CAPITAL_dotCOM_RestWebSocket_Engine() throws IOException, URISyntaxException, InterruptedException
-    {
+    public CAPITAL_dotCOM_RestWebSocket_Engine() throws IOException, URISyntaxException, InterruptedException, ExecutionException, TimeoutException {
         System.out.println("Starting Capital.com ");
 
         //Instantiate HTTP Client
@@ -58,8 +62,17 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
                 .build();
 
 
-        //Handle the Response
-        HttpResponse<String> Response = Capital_dot_Com.send(Session_Initiate_request, HttpResponse.BodyHandlers.ofString());
+        //Send the response Assyncronously and handle the response when it arrives
+        CompletableFuture<HttpResponse<String>> Assync_Response = Capital_dot_Com.sendAsync(Session_Initiate_request,HttpResponse.BodyHandlers.ofString());
+
+        //HttpResponse<String> Response = Capital_dot_Com.send(Session_Initiate_request, HttpResponse.BodyHandlers.ofString());
+
+        //Hand the response when it gets here
+        Assync_Response.thenApply(HttpResponse::body).get(5, TimeUnit.SECONDS);
+
+        //
+        HttpResponse<String> Response = Assync_Response.join();
+        int Async_Response_Code = Assync_Response.thenApply(HttpResponse::statusCode).get(5,TimeUnit.SECONDS);
 
         //Output the Response and the Headers
         System.out.println(("Our request was = " + Message_Body));

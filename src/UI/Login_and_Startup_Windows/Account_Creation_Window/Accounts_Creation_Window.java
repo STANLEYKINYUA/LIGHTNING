@@ -14,6 +14,9 @@ import java.awt.*;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import java.io.*;
+import java.net.URISyntaxException;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeoutException;
 
 public class Accounts_Creation_Window extends JFrame
 {
@@ -158,8 +161,7 @@ public class Accounts_Creation_Window extends JFrame
     }
 
 
-    public void Create_Account(String UsrName , String Passwrd)
-    {
+    public void Create_Account(String UsrName , String Passwrd) throws IOException, URISyntaxException, InterruptedException, ExecutionException, TimeoutException {
         //Fetch data from the Text boxes
         //Validate that the data is correct
         //validate that a Similar username does not exist

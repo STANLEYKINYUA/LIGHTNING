@@ -1,5 +1,6 @@
 package UI.Main_Trading_Window;
 
+import TRADING.Apis_and_SDKs.RESTFUL_EXECUTION_ENGINES.REST.Capital_dot_COM.CAPITAL_dotCOM_RestWebSocket_Engine;
 import UI.Charts_and_Indicatorz.Chart.Chart_Mdi_Window;
 import UI.Charts_and_Indicatorz.Chart.Generic_XY_Chart;
 import UI.Main_Trading_Window.z_MDI_Internal_Trading_Windows.Calendar.Calendar_Window;
@@ -19,6 +20,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeoutException;
 
 //TODO  JAVADOC Every Function in this Class
 
@@ -36,15 +41,16 @@ public class MAIN_TRADING_WINDOW extends JFrame
     private boolean is_OrdersPositions_Open = false;
     private boolean is_WatchList_Open       = false;
 
-    //
+    //Classes that are relied on for Connections
 
 
 
 
 
 
-    public MAIN_TRADING_WINDOW()
-    {
+
+
+    public MAIN_TRADING_WINDOW() throws IOException, URISyntaxException, InterruptedException, ExecutionException, TimeoutException {
         //TODO Spawn a Config File Manager based on the Profile and read and Write only to that Profile
 
 
@@ -97,10 +103,6 @@ public class MAIN_TRADING_WINDOW extends JFrame
         MainWindow_DeskTop_Pane DesktopPane = new MainWindow_DeskTop_Pane();
         this.add(DesktopPane, BorderLayout.CENTER);
 
-        //Spawn WatchList that must always Spawn
-        Spawn_WatchList_Window(DesktopPane,0,0,400,750);
-
-        Spawn_Chart_Window(DesktopPane,"chart",200,100,600,700);
 
         //todo Read Workspace Manager and ReOpen last Tabs on the Workspace
 
@@ -111,6 +113,12 @@ public class MAIN_TRADING_WINDOW extends JFrame
 
 
 
+    //-----------------------------------------
+    /**Functions that create our trading Venues */
+    void Activate_CapitalDC() throws IOException, URISyntaxException, ExecutionException, InterruptedException, TimeoutException {
+        CAPITAL_dotCOM_RestWebSocket_Engine CapitalDC = new CAPITAL_dotCOM_RestWebSocket_Engine();
+
+    }
 
 
     //---------------------------------------------------------------------------------------------
