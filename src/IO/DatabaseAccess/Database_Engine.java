@@ -20,10 +20,47 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
 
     public Database_Engine()
     {
+        //Perform First Run initializations & Checks
+        Perform_First_Run_Init();
 
 
 
     }
+
+    void Perform_First_Run_Init()
+    {
+        //Check if MySQL is installed and running
+        Check_if_MySQL_Installed();
+
+        //Test if Lightning Schema is created
+        boolean Schema_Found =  Check_if_Lightning_Schema_is_Created();
+        if(!Schema_Found)
+        {
+            //Lightning Schema has not been Found - Create Lightning Schema
+            Create_Database_Schema("lightning");
+
+            //Test for Creation
+            boolean Created_Schema_Found = Check_if_Lightning_Schema_is_Created();
+
+            if(Created_Schema_Found)
+            {
+                System.out.println("Lightning Schema Created Successfully");
+
+                //Create Database Tables
+                Create_Users_Table();
+                Create_Passwords_Table();
+
+            }
+            else
+            {
+                System.out.println("Unable to Create Lightning Schema");
+            }
+
+        }
+
+        //Check for User Space Tables
+        //Check for
+    };
 
     /**
      * Checks whether MySQL is installed or not - if not Throws Exception
@@ -163,6 +200,8 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
            Schema_Statement.executeUpdate(SQL_statement);
 
 
+
+
        }
        catch( Exception Schema_Creation_Exception)
         {
@@ -178,15 +217,96 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
     public void Initialize_Core_Database()
     {
 
-        //Check or Create Database Schema
 
-        //Create Users Table
-        //Create User Configurations Table
-        //Create System Configuration Table
-        //Create Venues and Accounts Related Tables
+
 
 
     }
+
+
+    public void Create_Users_Table()
+    {
+        System.out.println("=====================================================================");
+        System.out.println("Creating Users Table");
+        try(Connection CreateUsersTable_Connection = DriverManager.getConnection(JDBC_url,UserName,Password))
+        {
+
+            Statement CreateUsers_Statement = CreateUsersTable_Connection.createStatement();
+
+
+            String SQL = "CREATE TABLE USERS ("
+                    + "user_id INT not NULL AUTO_INCREMENT,"
+                    + "first_name VARCHAR(255) not NULL,"
+                    + "middle_name VARCHAR(255),"
+                    + "last_name VARCHAR(255) not NULL,"
+                    + "email VARCHAR(255),"
+                    + "PRIMARY KEY ( user_id ))";
+
+            //Set database to send SQL commands to
+            System.out.println("Specifying : Lightning");
+            String USE_SQL = "USE lightning";
+            CreateUsers_Statement.execute(USE_SQL);
+
+            //Send our Command Now
+            System.out.println("Executing - Create User Table SQL");
+            CreateUsers_Statement.execute(SQL);
+            System.out.println("Users Table Created Successfully");
+
+        }
+        catch( Exception Create_UsersTable_Exception)
+        {
+            Create_UsersTable_Exception.printStackTrace();
+            System.out.println("Unable to create Users Table");
+        }
+
+
+
+        System.out.println("=====================================================================");
+        System.out.println(" ");
+
+    }
+    public void Create_Passwords_Table()
+    {
+        System.out.println("=====================================================================");
+        System.out.println("Creating Passwords Table");
+        try(Connection CreateUsersTable_Connection = DriverManager.getConnection(JDBC_url,UserName,Password))
+        {
+
+            Statement CreateUsers_Statement = CreateUsersTable_Connection.createStatement();
+
+
+            String SQL = "CREATE TABLE PASSWORDS ("
+                    + "pwd_id INT not NULL AUTO_INCREMENT,"
+                    + "user_id VARCHAR(255) not NULL,"
+                    + "pwd_hash VARCHAR(255) not NULL,"
+                    + "PRIMARY KEY ( pwd_id ))";
+
+            //Set database to send SQL commands to
+            System.out.println("Specifying : Lightning");
+            String USE_SQL = "USE lightning";
+            CreateUsers_Statement.execute(USE_SQL);
+
+            //Send our Command Now
+            System.out.println("Executing - Create Password Table SQL");
+            CreateUsers_Statement.execute(SQL);
+            System.out.println("Passwords Table Created Successfully");
+
+        }
+        catch( Exception Create_UsersTable_Exception)
+        {
+            Create_UsersTable_Exception.printStackTrace();
+            System.out.println("Unable to create Passwords Table");
+        }
+
+
+
+        System.out.println("=====================================================================");
+        System.out.println(" ");
+    }
+    public void Create_API_Keys_Table(){}
+    public void Create_Venues_Table(){}
+
+
 
 
     /**

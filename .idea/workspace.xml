@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/DEVELOPER_NOTES/DATABASE - DESIGHN NOTES/.$Database.drawio.dtmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IO/DatabaseAccess/DataBaseAccess_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IO/DatabaseAccess/DataBaseAccess_Interface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DEVELOPER_NOTES/DATABASE - DESIGHN NOTES/Database.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/DEVELOPER_NOTES/DATABASE - DESIGHN NOTES/Database.drawio" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IO/DatabaseAccess/Database_Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IO/DatabaseAccess/Database_Engine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/Execution_Venue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/Execution_Venue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/RESTFUL_EXECUTION_ENGINES/Generic_Rest_and_WebSocket_Engine_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/RESTFUL_EXECUTION_ENGINES/Generic_Rest_and_WebSocket_Engine_Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/RESTFUL_EXECUTION_ENGINES/REST/Capital_dot_COM/CAPITAL_dotCOM_RestWebSocket_Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/RESTFUL_EXECUTION_ENGINES/REST/Capital_dot_COM/CAPITAL_dotCOM_RestWebSocket_Engine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/RESTFUL_EXECUTION_ENGINES/REST/REST_ENGINE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/Apis_and_SDKs/RESTFUL_EXECUTION_ENGINES/REST/REST_ENGINE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/MarketData_Engine/Data_Parsers/CandleStick_Bar_Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MarketData_Engine/Data_Parsers/CandleStick_Bar_Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/MarketData_Engine/Data_Parsers/Generic_Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MarketData_Engine/Data_Parsers/Generic_Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/MarketData_Engine/Data_Parsers/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MarketData_Engine/Data_Parsers/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/MarketData_Engine/Data_Parsers/Tick_Data_Bar_Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MarketData_Engine/Data_Parsers/Tick_Data_Bar_Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/MarketData_Engine/Feed_Normalizer/Feed_Normalizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MarketData_Engine/Feed_Normalizer/Feed_Normalizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/MarketData_Engine/Market_Data_Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MarketData_Engine/Market_Data_Engine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Main_Operational_Windows/Accounts_and_Venues/Accounts_Venues_Tabs/Accounts_Tab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Operational_Windows/Accounts_and_Venues/Accounts_Venues_Tabs/Accounts_Tab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Main_Operational_Windows/Accounts_and_Venues/Accounts_Venues_Tabs/Venues_Tab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main_Operational_Windows/Accounts_and_Venues/Accounts_Venues_Tabs/Venues_Tab.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
