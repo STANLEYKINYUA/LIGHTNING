@@ -6,11 +6,19 @@ public interface DataBaseAccess_Interface
     /**Checks whether MySQL is installed or not - if not Throws Exception*/
     void Check_if_MySQL_Installed();
 
-    /**Checks whether the Schema for Lightning Database is created */
-    void Check_if_Lightning_Schema_is_Created();
+    /**
+     * Checks whether the Schema for Lightning Database is created
+     */
+    default boolean Check_if_Lightning_Schema_is_Created() {
+        return false;
+    }
 
-    /**Check for Config File Presence */
-    void Check_for_Config_File();
+
+    //Create a Database Schema
+    void Create_Database_Schema(String Name_in_Lowercase);
+
+    //Initialize Core Database Tables
+    void Initialize_Core_Database();
 
     /**Open a Connection to the Database_Engine */
     void Create_Connection_to_Database();

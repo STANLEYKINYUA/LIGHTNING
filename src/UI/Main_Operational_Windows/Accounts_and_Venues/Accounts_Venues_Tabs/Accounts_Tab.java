@@ -6,6 +6,13 @@ public class Accounts_Tab extends JPanel
 {
     public Accounts_Tab()
     {
+        //Hard Code the Different Venues
+
+        //Capital.com
+        //Binance
+        //OKX
+        //Dukascopy
+
 
     }
 }

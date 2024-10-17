@@ -22,6 +22,7 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
     {
 
 
+
     }
 
     /**
@@ -57,8 +58,10 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
      * Checks whether the Schema for Lightning Database is created
      */
     @Override
-    public void Check_if_Lightning_Schema_is_Created()
+    public boolean Check_if_Lightning_Schema_is_Created()
     {
+        boolean Lightning_Found = false ;
+
         System.out.println("Checking for Lightning Database Schema");
 
         //Create Connection and Check for Database Schema
@@ -68,6 +71,7 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
             System.out.println("Checking for Lightning Schema");
 
             //Check for the Lightning Schema
+
                 /**Check for all available Schemas on this Dbase Server and print them out */
             ResultSet Available_Schema = TestConnection.getMetaData().getCatalogs();
 
@@ -76,8 +80,6 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
 
             //Create a Map
             Map<String , Integer> Schema_Map = new HashMap<>();
-
-
 
                 //iterate through the all found schemas in the result set
             while(Available_Schema.next())
@@ -99,24 +101,26 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
             Available_Schema.close();
 
             //Search for the Lightning Schema Map
-           boolean Lightning_Found = Schema_Map.containsKey("lightning");
-           int Lightning_Schema_Number = Schema_Map.get("lightning");
+           Lightning_Found = Schema_Map.containsKey("lightning");
 
-           if(Lightning_Found = true)
+
+           if(Lightning_Found)
            {
                //lightning schema has been found
+               int Lightning_Schema_Number = Schema_Map.get("lightning");
                System.out.println("Lightning Schema has been Found as Schema Number = " + Lightning_Schema_Number);
+
+
            }
            else
            {
                System.out.println("Lightning Schema has not been Found");
                System.out.println(" ");
-               System.out.println("Creating Lightning Schema!");
-               
-               System.out.println(" ");
+
+                //Create a Schema : Formulate SQL and send to MySQL Server
+
+
            }
-
-
         }
         catch( SQLException SchemaCHECK_Exception)
         {
@@ -128,15 +132,62 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
         }
 
 
+        //return value based on whether schema has been Found or not
+        if(Lightning_Found)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
+
     }
 
-    /**
-     * Check for Config File Presence
-     */
     @Override
-    public void Check_for_Config_File() {
+    public void Create_Database_Schema(String Name_in_LowerCase)
+    {
+        System.out.println("Attempting to Create Lightning Schema");
+
+        //Create a Connection to the Dbase
+       try(Connection SchemaCreation_Connection = DriverManager.getConnection(JDBC_url,UserName,Password))
+       {
+           System.out.println("Successfull Connection to MySQL");
+           //Successfully Connected
+           Statement Schema_Statement = SchemaCreation_Connection.createStatement();
+
+           String SQL_statement = "CREATE DATABASE lightning";
+
+           System.out.println("Executing Create Schema SQL");
+           Schema_Statement.executeUpdate(SQL_statement);
+
+
+       }
+       catch( Exception Schema_Creation_Exception)
+        {
+            Schema_Creation_Exception.printStackTrace();
+        }
+
+
+        //Formulate a Statement and send it
 
     }
+
+    @Override
+    public void Initialize_Core_Database()
+    {
+
+        //Check or Create Database Schema
+
+        //Create Users Table
+        //Create User Configurations Table
+        //Create System Configuration Table
+        //Create Venues and Accounts Related Tables
+
+
+    }
+
 
     /**
      * Open a Connection to the Database_Engine

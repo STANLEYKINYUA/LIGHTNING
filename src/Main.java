@@ -57,7 +57,29 @@ public class Main {
             Database.Check_if_MySQL_Installed();
 
             //Test if Lightning DB schema is Created
-            Database.Check_if_Lightning_Schema_is_Created();
+           boolean Schema_Found =  Database.Check_if_Lightning_Schema_is_Created();
+           if(!Schema_Found)
+           {
+               //Lightning Schema has not been Found - Create Lightning Schema
+               Database.Create_Database_Schema("lightning");
+
+               //Test for Creation
+               boolean Created_Schema_Found = Database.Check_if_Lightning_Schema_is_Created();
+
+               if(!Created_Schema_Found)
+               {
+                   System.out.println("Unable to Create Lightning Schema");
+               }
+               else
+               {
+                   System.out.println("Lightning Schema Created Successfully");
+               }
+
+
+
+
+
+           }
 
         //sTART Capital
         //CAPITAL_dotCOM_RestWebSocket_Engine CDC = new CAPITAL_dotCOM_RestWebSocket_Engine();

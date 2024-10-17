@@ -26,7 +26,8 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
     final String Session = "session";
     final String Time   = "time";
 
-    public CAPITAL_dotCOM_RestWebSocket_Engine() throws IOException, URISyntaxException, InterruptedException {
+    public CAPITAL_dotCOM_RestWebSocket_Engine() throws IOException, URISyntaxException, InterruptedException
+    {
         System.out.println("Starting Capital.com ");
 
         //Instantiate HTTP Client
@@ -59,6 +60,11 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
         System.out.println("The Response that we got was : "+Response.statusCode() +"= " + Response.body());
 
 
+
+    }
+
+    public void Send_Post_Request()
+    {
 
     }
 }
