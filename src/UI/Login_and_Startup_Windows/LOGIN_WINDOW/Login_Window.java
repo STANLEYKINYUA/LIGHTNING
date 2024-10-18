@@ -25,7 +25,7 @@ import java.util.concurrent.TimeoutException;
 
 public class Login_Window extends JFrame
 {
-
+    final String SECURE_HASH_KEY ="j3nau4LbU5.W)$^mv7d;'tTR_{=Q,gHD-S#YA82:[!h}E`*>kf";
     //Create Constructor for this class.
     public Login_Window()
     {
@@ -60,7 +60,7 @@ public class Login_Window extends JFrame
             this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
             //Set the Placement as well as the size of the Window
-            this.setBounds(400,250,400,500);
+            this.setBounds(400,250,600,700);
 
             //Set the Default Label for this Form as ROBOTO
             this.setFont(new Font(FlatRobotoFont.FAMILY , Font.PLAIN , 12));
@@ -69,16 +69,16 @@ public class Login_Window extends JFrame
 
             // LOGIN LABEL for LOGIN FORM.
             LoginLABEL Login_Label = new LoginLABEL();
-            this.add(Login_Label,"span,center,gapbottom 15");
+            this.add(Login_Label,"span,center,gapleft 200 ,gapbottom 15");
 
             //----------------------------------------------------------------------------
             // USERNAME Label
             UsrNameLABEL Usr_Name_Label = new UsrNameLABEL("USER NAME");
-            this.add(Usr_Name_Label,"align label");
+            this.add(Usr_Name_Label,"span,center,gapleft 100");
 
             //UserName Text Box where UserName is Entered.
             UsrNameTxtBOX User_Name_Text_Box = new UsrNameTxtBOX();
-            this.add(User_Name_Text_Box,"span, w 200px! ,h 30px!");
+            this.add(User_Name_Text_Box,"span,center, w 200px! ,h 30px!,gapleft 100");
 
 
             //TODO  Mouse Listener that displays tooltip on Mouse enter Username Field
@@ -87,11 +87,11 @@ public class Login_Window extends JFrame
 
             // Password Field for User
             PasswordLABEL Password_Label = new PasswordLABEL();
-            this.add(Password_Label,"align label");
+            this.add(Password_Label,"span,center,gapleft 100");
 
             //  Password Text Field
             PasswordTxtBox User_Password = new PasswordTxtBox();
-            this.add(User_Password,"span ,w 200px! , h 30px!");
+            this.add(User_Password,"span ,center, w 200px! , h 30px!,gapleft 100");
 
 
 

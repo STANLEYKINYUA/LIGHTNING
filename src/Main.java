@@ -41,7 +41,10 @@ import java.net.URISyntaxException;
 
 
 public class Main {
-    public static void main(String[] args) throws IOException, URISyntaxException, InterruptedException {
+    public static void main(String[] args) throws IOException, URISyntaxException, InterruptedException
+    {
+
+
         //Hello World to prove that the program works.
         System.out.println("BUILD SUCCESS - POST MAVEN!!");
 
@@ -53,7 +56,7 @@ public class Main {
 
 
         //Start the Database_Engine
-        //Database_Engine Database = new Database_Engine();
+        Database_Engine Database = new Database_Engine();
 
 
 

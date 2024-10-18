@@ -49,6 +49,8 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
                 //Create Database Tables
                 Create_Users_Table();
                 Create_Passwords_Table();
+                Create_API_Keys_Table();
+                Create_Venues_Table();
 
             }
             else
@@ -303,8 +305,52 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
         System.out.println("=====================================================================");
         System.out.println(" ");
     }
-    public void Create_API_Keys_Table(){}
-    public void Create_Venues_Table(){}
+    public void Create_API_Keys_Table()
+    {
+        System.out.println("=====================================================================");
+        System.out.println("Creating API Keys Table");
+        try(Connection CreateUsersTable_Connection = DriverManager.getConnection(JDBC_url,UserName,Password))
+        {
+
+            Statement CreateUsers_Statement = CreateUsersTable_Connection.createStatement();
+
+
+            String SQL = "CREATE TABLE API_KEYS ("
+                    + "api_key_id INT not NULL AUTO_INCREMENT,"
+                    + "user_id VARCHAR(255) not NULL,"
+                    + "venue_id VARCHAR(255) not NULL,"
+                    + "account_email VARCHAR(255) not NULL,"
+                    + "api_key_hash VARCHAR(255) not NULL,"
+                    + "api_key_pwd_hash VARCHAR(255) not NULL,"
+                    + "PRIMARY KEY ( api_key_id ))";
+
+            //Set database to send SQL commands to
+            System.out.println("Specifying : Lightning");
+            String USE_SQL = "USE lightning";
+            CreateUsers_Statement.execute(USE_SQL);
+
+            //Send our Command Now
+            System.out.println("Executing - Create API key Table SQL");
+            CreateUsers_Statement.execute(SQL);
+                System.out.println("API Keys table Created Successfully");
+
+        }
+        catch( Exception Create_UsersTable_Exception)
+        {
+            Create_UsersTable_Exception.printStackTrace();
+            System.out.println("Unable to create API keys Table");
+        }
+
+
+
+        System.out.println("=====================================================================");
+        System.out.println(" ");
+
+    }
+    public void Create_Venues_Table()
+    {
+
+    }
 
 
 

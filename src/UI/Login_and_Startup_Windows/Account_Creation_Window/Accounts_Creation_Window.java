@@ -1,11 +1,9 @@
 package UI.Login_and_Startup_Windows.Account_Creation_Window;
 
+import Security_x_Access_Control.Hash_Factory;
 import UI.Login_and_Startup_Windows.LOGIN_WINDOW.Login_Window;
 import UI.Main_Trading_Window.MAIN_TRADING_WINDOW;
-import com.formdev.flatlaf.FlatClientProperties;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
-import com.jidesoft.swing.ButtonStyle;
-import com.jidesoft.swing.JideButton;
 import net.miginfocom.swing.MigLayout;
 
 
@@ -15,6 +13,7 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import java.io.*;
 import java.net.URISyntaxException;
+import java.util.Map;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
 
@@ -25,7 +24,7 @@ public class Accounts_Creation_Window extends JFrame
     boolean Password_matches_ReenterPassword = false;
     boolean Password_strong_Enough = false;
 
-
+    final String SECURE_HASH_KEY ="j3nau4LbU5.W)$^mv7d;'tTR_{=Q,gHD-S#YA82:[!h}E`*>kf";
 
 
     public Accounts_Creation_Window()  {
@@ -146,7 +145,40 @@ public class Accounts_Creation_Window extends JFrame
 
 
         this.add(CreateAccount_Button,"span, w 200px , h 50px, center ");
-        //CreateAccount_Button.addActionListener( e -> Create_Account();
+        CreateAccount_Button.addActionListener( e ->
+        {
+            //Validate that all conditions have been met before Continuing
+            boolean User_Validation_Passed = Validate_User_Data();
+
+
+            //Create User Acc only after User Data has been Verified
+            if(User_Validation_Passed)
+            {
+                //Pick textBox Values
+                Map<String , String> UserDetails_Map = Map.of();
+
+                UserDetails_Map.put("First Name",FirstName_txtBox.getText());
+                UserDetails_Map.put("Middle Name", MiddleName_txtBox.getText());
+                UserDetails_Map.put("Last Name", LastName_txtBox.getText());
+                UserDetails_Map.put("User Name", UserName_txtBox.getText());
+                UserDetails_Map.put("Email",Email_txtBox.getText());
+
+                //Hash Password with sha 512
+                Hash_Factory Sha512_Hasher = new Hash_Factory();
+                String Password = Password_TxtBx.getText();
+                UserDetails_Map.put("Password", Sha512_Hasher.Hash_Password(Password));
+
+                //Call Function to create User
+                //Add User Details to Database
+
+            }
+            else
+            {
+                System.out.println("Account Creation Failed");
+            }
+
+            // Create User and Add to Database
+        } );
 
         //Create an Exit Button
         JButton Exit_Button = new JButton("EXIT");
@@ -161,15 +193,24 @@ public class Accounts_Creation_Window extends JFrame
     }
 
 
-    public void Create_Account(String UsrName , String Passwrd) throws IOException, URISyntaxException, InterruptedException, ExecutionException, TimeoutException {
-        //Fetch data from the Text boxes
-        //Validate that the data is correct
-        //validate that a Similar username does not exist
+    public void Create_User_Account(Map<String,String> User_Details_Map) throws IOException, URISyntaxException, InterruptedException, ExecutionException, TimeoutException
+    {
 
+        System.out.println("Creating New Account");
+
+        //Fetch data from the Form
+        Map<String, String > Details_Map = User_Details_Map;
+
+
+        //Validate that the data is correct
+        //validate that a Similar username does not exist in the Database
+        //Hash the Password using our secure Hash
 
         //Check that all conditions have been met
 
-        //Display Pop up and Email Verification Link
+        //Display Pop up and Email Verification Page
+        //Display alert Window that succefully created Acc
+
 
 
 
@@ -183,6 +224,30 @@ public class Accounts_Creation_Window extends JFrame
         TradingWindow.setVisible(true);
     }
 
+    public String Hash_Password_SHA512(String Password)
+    {
+        String Pwd = Password;
+        String pwd_hash=" ";
+
+        return pwd_hash;
+    }
+
+    public boolean Validate_User_Data()
+    {
+        boolean User_can_be_created = false;
+
+        //Check that there is a first name
+
+        return User_can_be_created;
+    }
+
+    public void Send_Verification_Email(String Email_Adress)
+    {
+        //Generate random 6 digit Number
+
+        //Send to Email
+
+    }
     public void Return_to_Login()
     {
         Login_Window Login = new Login_Window();
@@ -197,10 +262,6 @@ public class Accounts_Creation_Window extends JFrame
         System.exit(0);
 
     }
-
-    //Securely Hash the Password
-    private void Encrypt_and_Hash_Password()
-    {}
 
 
     //Password Strength Check

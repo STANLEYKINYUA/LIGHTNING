@@ -155,7 +155,7 @@ public class General_Config
     }
 
     //Passwords and Usernames Manipulation
-    private void Generate_SHA256_Password_Hash(String Password , String Hash_Key)
+    private void Generate_SHA512_Password_Hash(String Password)
     {
 
     }
