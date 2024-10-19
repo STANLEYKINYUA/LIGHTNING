@@ -38,11 +38,12 @@ import com.formdev.flatlaf.themes.FlatMacLightLaf;
 import javax.swing.*;
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeoutException;
 
 
 public class Main {
-    public static void main(String[] args) throws IOException, URISyntaxException, InterruptedException
-    {
+    public static void main(String[] args) throws IOException, URISyntaxException, InterruptedException, ExecutionException, TimeoutException {
 
 
         //Hello World to prove that the program works.
@@ -61,7 +62,7 @@ public class Main {
 
 
         //sTART Capital
-        //CAPITAL_dotCOM_RestWebSocket_Engine CDC = new CAPITAL_dotCOM_RestWebSocket_Engine();
+        CAPITAL_dotCOM_RestWebSocket_Engine CDC = new CAPITAL_dotCOM_RestWebSocket_Engine();
 
 
 

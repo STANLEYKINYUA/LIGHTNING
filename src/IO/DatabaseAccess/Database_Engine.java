@@ -6,44 +6,38 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.Executor;
 
-public class Database_Engine implements DataBaseAccess_Interface, Connection
-{
+public class Database_Engine implements DataBaseAccess_Interface, Connection {
 
     //Variables
-    private boolean MySQL_Installed = false;
+    private final boolean MySQL_Installed = false;
 
     //Connection Variables
-    String JDBC_url ="jdbc:mysql://localhost:3306";
-    String UserName ="root";
+    String JDBC_url = "jdbc:mysql://localhost:3306";
+    String UserName = "root";
     String Password = "NATASHA10896";
 
 
-    public Database_Engine()
-    {
+    public Database_Engine() {
         //Perform First Run initializations & Checks
         Perform_First_Run_Init();
 
 
-
     }
 
-    void Perform_First_Run_Init()
-    {
+    void Perform_First_Run_Init() {
         //Check if MySQL is installed and running
         Check_if_MySQL_Installed();
 
         //Test if Lightning Schema is created
-        boolean Schema_Found =  Check_if_Lightning_Schema_is_Created();
-        if(!Schema_Found)
-        {
+        boolean Schema_Found = Check_if_Lightning_Schema_is_Created();
+        if (!Schema_Found) {
             //Lightning Schema has not been Found - Create Lightning Schema
             Create_Database_Schema("lightning");
 
             //Test for Creation
             boolean Created_Schema_Found = Check_if_Lightning_Schema_is_Created();
 
-            if(Created_Schema_Found)
-            {
+            if (Created_Schema_Found) {
                 System.out.println("Lightning Schema Created Successfully");
 
                 //Create Database Tables
@@ -52,9 +46,7 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
                 Create_API_Keys_Table();
                 Create_Venues_Table();
 
-            }
-            else
-            {
+            } else {
                 System.out.println("Unable to Create Lightning Schema");
             }
 
@@ -62,27 +54,23 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
 
         //Check for User Space Tables
         //Check for
-    };
+    }
 
     /**
      * Checks whether MySQL is installed or not - if not Throws Exception
      */
     @Override
-    public void Check_if_MySQL_Installed()
-    {
+    public void Check_if_MySQL_Installed() {
         System.out.println(" ");
         System.out.println("Running MySQL - Initialization test");
 
         //Test if there is a MySQL instance on this computer
-        try(Connection TestConnection = DriverManager.getConnection(JDBC_url,UserName,Password))
-        {
+        try (Connection TestConnection = DriverManager.getConnection(JDBC_url, UserName, Password)) {
             System.out.println(" MySQL is installed and Running");
             System.out.println(" ");
 
 
-        }
-        catch( SQLException DBase_Exception)
-        {
+        } catch (SQLException DBase_Exception) {
             DBase_Exception.printStackTrace();
 
             System.out.println("MySQL is not Installed or Not running - Please Configure");
@@ -97,41 +85,37 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
      * Checks whether the Schema for Lightning Database is created
      */
     @Override
-    public boolean Check_if_Lightning_Schema_is_Created()
-    {
-        boolean Lightning_Found = false ;
+    public boolean Check_if_Lightning_Schema_is_Created() {
+        boolean Lightning_Found = false;
 
         System.out.println("Checking for Lightning Database Schema");
 
         //Create Connection and Check for Database Schema
-        try(Connection TestConnection = DriverManager.getConnection(JDBC_url,UserName,Password))
-        {
+        try (Connection TestConnection = DriverManager.getConnection(JDBC_url, UserName, Password)) {
             System.out.println("Connected to MySQL");
             System.out.println("Checking for Lightning Schema");
 
             //Check for the Lightning Schema
 
-                /**Check for all available Schemas on this Dbase Server and print them out */
+            /**Check for all available Schemas on this Dbase Server and print them out */
             ResultSet Available_Schema = TestConnection.getMetaData().getCatalogs();
 
             //Number of Schemas on the Server
             int Schema_Number = 0;
 
             //Create a Map
-            Map<String , Integer> Schema_Map = new HashMap<>();
+            Map<String, Integer> Schema_Map = new HashMap<>();
 
-                //iterate through the all found schemas in the result set
-            while(Available_Schema.next())
-            {
+            //iterate through the all found schemas in the result set
+            while (Available_Schema.next()) {
                 int Array_counter = 0;
 
                 String DatabaseName = Available_Schema.getString(1);
 
-                System.out.println("Schema"+Schema_Number+" = "+ DatabaseName);
+                System.out.println("Schema" + Schema_Number + " = " + DatabaseName);
 
                 //Add to Schema Map
-                Schema_Map.put(DatabaseName,Schema_Number);
-
+                Schema_Map.put(DatabaseName, Schema_Number);
 
 
                 Schema_Number++;
@@ -140,29 +124,24 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
             Available_Schema.close();
 
             //Search for the Lightning Schema Map
-           Lightning_Found = Schema_Map.containsKey("lightning");
+            Lightning_Found = Schema_Map.containsKey("lightning");
 
 
-           if(Lightning_Found)
-           {
-               //lightning schema has been found
-               int Lightning_Schema_Number = Schema_Map.get("lightning");
-               System.out.println("Lightning Schema has been Found as Schema Number = " + Lightning_Schema_Number);
+            if (Lightning_Found) {
+                //lightning schema has been found
+                int Lightning_Schema_Number = Schema_Map.get("lightning");
+                System.out.println("Lightning Schema has been Found as Schema Number = " + Lightning_Schema_Number);
 
 
-           }
-           else
-           {
-               System.out.println("Lightning Schema has not been Found");
-               System.out.println(" ");
+            } else {
+                System.out.println("Lightning Schema has not been Found");
+                System.out.println(" ");
 
                 //Create a Schema : Formulate SQL and send to MySQL Server
 
 
-           }
-        }
-        catch( SQLException SchemaCHECK_Exception)
-        {
+            }
+        } catch (SQLException SchemaCHECK_Exception) {
             SchemaCHECK_Exception.printStackTrace();
 
             System.out.println("Unable to Connect to MySQL - please Try again");
@@ -172,41 +151,28 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
 
 
         //return value based on whether schema has been Found or not
-        if(Lightning_Found)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return Lightning_Found;
 
 
     }
 
     @Override
-    public void Create_Database_Schema(String Name_in_LowerCase)
-    {
+    public void Create_Database_Schema(String Name_in_LowerCase) {
         System.out.println("Attempting to Create Lightning Schema");
 
         //Create a Connection to the Dbase
-       try(Connection SchemaCreation_Connection = DriverManager.getConnection(JDBC_url,UserName,Password))
-       {
-           System.out.println("Successfull Connection to MySQL");
-           //Successfully Connected
-           Statement Schema_Statement = SchemaCreation_Connection.createStatement();
+        try (Connection SchemaCreation_Connection = DriverManager.getConnection(JDBC_url, UserName, Password)) {
+            System.out.println("Successfull Connection to MySQL");
+            //Successfully Connected
+            Statement Schema_Statement = SchemaCreation_Connection.createStatement();
 
-           String SQL_statement = "CREATE DATABASE lightning";
+            String SQL_statement = "CREATE DATABASE lightning";
 
-           System.out.println("Executing Create Schema SQL");
-           Schema_Statement.executeUpdate(SQL_statement);
-
+            System.out.println("Executing Create Schema SQL");
+            Schema_Statement.executeUpdate(SQL_statement);
 
 
-
-       }
-       catch( Exception Schema_Creation_Exception)
-        {
+        } catch (Exception Schema_Creation_Exception) {
             Schema_Creation_Exception.printStackTrace();
         }
 
@@ -216,22 +182,16 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
     }
 
     @Override
-    public void Initialize_Core_Database()
-    {
-
-
-
+    public void Initialize_Core_Database() {
 
 
     }
 
 
-    public void Create_Users_Table()
-    {
+    public void Create_Users_Table() {
         System.out.println("=====================================================================");
         System.out.println("Creating Users Table");
-        try(Connection CreateUsersTable_Connection = DriverManager.getConnection(JDBC_url,UserName,Password))
-        {
+        try (Connection CreateUsersTable_Connection = DriverManager.getConnection(JDBC_url, UserName, Password)) {
 
             Statement CreateUsers_Statement = CreateUsersTable_Connection.createStatement();
 
@@ -241,7 +201,8 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
                     + "first_name VARCHAR(255) not NULL,"
                     + "middle_name VARCHAR(255),"
                     + "last_name VARCHAR(255) not NULL,"
-                    + "email VARCHAR(255),"
+                    + "user_name VARCHAR(255) not NULL,"
+                    + "email VARCHAR(255) not NULL,"
                     + "PRIMARY KEY ( user_id ))";
 
             //Set database to send SQL commands to
@@ -254,25 +215,21 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
             CreateUsers_Statement.execute(SQL);
             System.out.println("Users Table Created Successfully");
 
-        }
-        catch( Exception Create_UsersTable_Exception)
-        {
+        } catch (Exception Create_UsersTable_Exception) {
             Create_UsersTable_Exception.printStackTrace();
             System.out.println("Unable to create Users Table");
         }
-
 
 
         System.out.println("=====================================================================");
         System.out.println(" ");
 
     }
-    public void Create_Passwords_Table()
-    {
+
+    public void Create_Passwords_Table() {
         System.out.println("=====================================================================");
         System.out.println("Creating Passwords Table");
-        try(Connection CreateUsersTable_Connection = DriverManager.getConnection(JDBC_url,UserName,Password))
-        {
+        try (Connection CreateUsersTable_Connection = DriverManager.getConnection(JDBC_url, UserName, Password)) {
 
             Statement CreateUsers_Statement = CreateUsersTable_Connection.createStatement();
 
@@ -293,24 +250,20 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
             CreateUsers_Statement.execute(SQL);
             System.out.println("Passwords Table Created Successfully");
 
-        }
-        catch( Exception Create_UsersTable_Exception)
-        {
+        } catch (Exception Create_UsersTable_Exception) {
             Create_UsersTable_Exception.printStackTrace();
             System.out.println("Unable to create Passwords Table");
         }
 
 
-
         System.out.println("=====================================================================");
         System.out.println(" ");
     }
-    public void Create_API_Keys_Table()
-    {
+
+    public void Create_API_Keys_Table() {
         System.out.println("=====================================================================");
         System.out.println("Creating API Keys Table");
-        try(Connection CreateUsersTable_Connection = DriverManager.getConnection(JDBC_url,UserName,Password))
-        {
+        try (Connection CreateUsersTable_Connection = DriverManager.getConnection(JDBC_url, UserName, Password)) {
 
             Statement CreateUsers_Statement = CreateUsersTable_Connection.createStatement();
 
@@ -332,25 +285,63 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection
             //Send our Command Now
             System.out.println("Executing - Create API key Table SQL");
             CreateUsers_Statement.execute(SQL);
-                System.out.println("API Keys table Created Successfully");
+            System.out.println("API Keys table Created Successfully");
 
-        }
-        catch( Exception Create_UsersTable_Exception)
-        {
+        } catch (Exception Create_UsersTable_Exception) {
             Create_UsersTable_Exception.printStackTrace();
             System.out.println("Unable to create API keys Table");
         }
-
 
 
         System.out.println("=====================================================================");
         System.out.println(" ");
 
     }
-    public void Create_Venues_Table()
-    {
+
+    public void Create_Venues_Table() {
 
     }
+
+
+
+
+    public int Check_if_Exists_in_Database(String TableName,String Value)
+    {
+        int number_of_occurences = 0;
+        String our_Value= Value;
+
+        System.out.println("=====================================================================");
+        System.out.println("Checking for Occurences of = "+ our_Value +" in our Database");
+        try (Connection CreateUsersTable_Connection = DriverManager.getConnection(JDBC_url, UserName, Password))
+        {
+
+            Statement CreateUsers_Statement = CreateUsersTable_Connection.createStatement();
+
+
+            String SQL ="SELECT " +
+                    "";
+
+            //Set database to send SQL commands to
+            System.out.println("Specifying : Lightning");
+            String USE_SQL = "USE lightning";
+            CreateUsers_Statement.execute(USE_SQL);
+
+            //Send our Command Now
+            System.out.println("Executing - Create Password Table SQL");
+            CreateUsers_Statement.execute(SQL);
+            System.out.println("Passwords Table Created Successfully");
+
+        }
+        catch (Exception Create_UsersTable_Exception)
+        {
+            Create_UsersTable_Exception.printStackTrace();
+            System.out.println("Unable to create Passwords Table");
+        }
+
+
+        return number_of_occurences;
+    }
+
 
 
 

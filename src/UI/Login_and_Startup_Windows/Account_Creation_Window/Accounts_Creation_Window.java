@@ -1,5 +1,6 @@
 package UI.Login_and_Startup_Windows.Account_Creation_Window;
 
+import IO.DatabaseAccess.Database_Engine;
 import Security_x_Access_Control.Hash_Factory;
 import UI.Login_and_Startup_Windows.LOGIN_WINDOW.Login_Window;
 import UI.Main_Trading_Window.MAIN_TRADING_WINDOW;
@@ -167,6 +168,12 @@ public class Accounts_Creation_Window extends JFrame
                 Hash_Factory Sha512_Hasher = new Hash_Factory();
                 String Password = Password_TxtBx.getText();
                 UserDetails_Map.put("Password", Sha512_Hasher.Hash_Password(Password));
+
+                //Read Database to see if we find a similar username / Email
+                int number_of_Username_Instances =0;
+                int num_email_instances=0;
+
+                Database_Engine Acc_Creation = new Database_Engine();
 
                 //Call Function to create User
                 //Add User Details to Database

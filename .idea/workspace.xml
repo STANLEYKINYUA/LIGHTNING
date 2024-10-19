@@ -5,22 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/IO/Email_Engine/Email" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IO/Email_Engine/Email_Engine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IO/Email_Engine/Email_Structure.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security_x_Access_Control/Hash_Factory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security_x_Access_Control/Security" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TRADING/SYMBOLOGY/CapitaldotCOM_Epics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TRADING/SYMBOLOGY/FX_Symbols.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Main_Operational_Windows/Accounts_and_Venues/Accounts/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Main_Operational_Windows/Accounts_and_Venues/Venues/Venue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Elements/Bar_Active.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart_Elements/Bar_Historical.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DEVELOPER_NOTES/DATABASE - DESIGHN NOTES/Database.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/DEVELOPER_NOTES/DATABASE - DESIGHN NOTES/Database.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GENERAL_SYSTEMS/CONFIG/General_Config/General_Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GENERAL_SYSTEMS/CONFIG/General_Config/General_Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IO/DatabaseAccess/Database_Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IO/DatabaseAccess/Database_Engine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/Login_and_Startup_Windows/Account_Creation_Window/Accounts_Creation_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Login_and_Startup_Windows/Account_Creation_Window/Accounts_Creation_Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Login_and_Startup_Windows/LOGIN_WINDOW/Login_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Login_and_Startup_Windows/LOGIN_WINDOW/Login_Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +23,7 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
