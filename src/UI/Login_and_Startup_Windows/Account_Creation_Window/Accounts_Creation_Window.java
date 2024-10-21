@@ -3,7 +3,7 @@ package UI.Login_and_Startup_Windows.Account_Creation_Window;
 import IO.DatabaseAccess.Database_Engine;
 import Security_x_Access_Control.Hash_Factory;
 import UI.Login_and_Startup_Windows.LOGIN_WINDOW.Login_Window;
-import UI.Main_Trading_Window.MAIN_TRADING_WINDOW;
+import UI.Trading_Floor_Window.Trading_Floor;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import net.miginfocom.swing.MigLayout;
 
@@ -227,7 +227,7 @@ public class Accounts_Creation_Window extends JFrame
         this.dispose();
 
         //Open main trading Window
-        MAIN_TRADING_WINDOW TradingWindow = new MAIN_TRADING_WINDOW();
+        Trading_Floor TradingWindow = new Trading_Floor();
         TradingWindow.setVisible(true);
     }
 

@@ -11,7 +11,7 @@
 * */
 package UI.Login_and_Startup_Windows.LOGIN_WINDOW;
 
-import UI.Main_Trading_Window.MAIN_TRADING_WINDOW;
+import UI.Trading_Floor_Window.Trading_Floor;
 import UI.Login_and_Startup_Windows.Account_Creation_Window.Accounts_Creation_Window;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import net.miginfocom.swing.MigLayout;
@@ -164,7 +164,7 @@ public class Login_Window extends JFrame
     //Display THE Main Trading Window
     void Display_Main_Trading_Window() throws IOException, URISyntaxException, InterruptedException, ExecutionException, TimeoutException {
        // Display the Main Trading Window
-        MAIN_TRADING_WINDOW  MainTrading_Window = new MAIN_TRADING_WINDOW();
+        Trading_Floor MainTrading_Window = new Trading_Floor();
 
         MainTrading_Window.setSize(1400,800);
         MainTrading_Window.setLocation(20,20);
