@@ -33,8 +33,8 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
 
 
     //URLS
-    String Base_URL = "https://api-capital.backend-capital.com/api/v1/ ";
-    String Base_Demo_Url = "https://demo-api-capital.backend-capital.com/api/v1/ ";
+    String Base_URL = "https://api-capital.backend-capital.com/api/v1/";
+    String Base_Demo_Url = "https://demo-api-capital.backend-capital.com/api/v1/";
 
     //Url Extensions
     final String Ping = "ping";
@@ -46,6 +46,9 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
 
     //Requests
 
+            //Get_Request
+
+            //Post_Request
 
 
     public CAPITAL_dotCOM_RestWebSocket_Engine() throws IOException, URISyntaxException, InterruptedException, ExecutionException, TimeoutException
@@ -58,7 +61,12 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
         //Create a Session
         Create_Session();
 
-        
+
+        //Ping the Session
+        Ping_the_Session();
+
+
+
         //Start a Websocket Session and fetch list of epics +  Start Getting Prices :: 10 Instruments
 
             //Create a Body to start Streaming Prices of 5 inst:: Crude , EURUSD , BTC , GOLD , SILVER
@@ -110,15 +118,63 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
         System.out.println("The Response that we got was : "+Response.statusCode() +"= " + Response.body());
 
         Map<String, List<String>> Headers = Response.headers().map();
-        String cst = Headers.getOrDefault("cst",List.of("")).get(0);
+        String cst_token = Headers.getOrDefault("cst",List.of("")).get(0);
         String xSecurityToken = Headers.getOrDefault("x-security-token", List.of("")).get(0);
 
-        System.out.println("CST: " + cst);
+        System.out.println("CST: " + cst_token);
         System.out.println("X-SECURITY-TOKEN: " + xSecurityToken);
+
+        //Set the CST and X Security Token
+        X_Security_Token = xSecurityToken;
+        CST_Token = cst_token;
+
+        //TODO Create an Object that Pings the Session every 5 minutes to keep connection alive
+
 
     }
 
     //Market Data Subscription
+    public void Ping_the_Session() throws URISyntaxException, ExecutionException, InterruptedException, TimeoutException
+    {
+        System.out.println("=================================================================================");
+
+        System.out.println(" Pinging CDC");
+        //Create the PingURL
+        String Ping_URL ="https://api-capital.backend-capital.com/api/v1/ping" ;
+
+        System.out.println("URL = " + Ping_URL);
+        //Create and send the Ping Request
+        HttpRequest Ping_request = HttpRequest.newBuilder()
+                .uri(new URI(Ping_URL))
+                .header("X-SECURITY-TOKEN", X_Security_Token)
+                .header("CST",CST_Token)
+                .GET()
+                .build();
+
+        System.out.println("Here");
+
+        //Send Request Assynchronously
+        CompletableFuture<HttpResponse<String>> Ping_Assync_Response = Capital_dot_Com.sendAsync(Ping_request,HttpResponse.BodyHandlers.ofString());
+
+
+        //Hand the response when it gets here
+        Ping_Assync_Response.thenApply(HttpResponse::body).get(5, TimeUnit.SECONDS);
+        HttpResponse<String> Response = Ping_Assync_Response.join();
+        int Async_Response_Code = Ping_Assync_Response.thenApply(HttpResponse::statusCode).get(5,TimeUnit.SECONDS);
+
+
+
+
+        //Output the Result
+        System.out.println(" ");
+        System.out.println("PING sent Successfully");
+        System.out.println("Response code : " + Response.statusCode());
+        System.out.println("Response : " + Response.body());
+        System.out.println(" ");
+
+
+        System.out.println("=================================================================================");
+    }
 
     public Map<String, Double> Return_WatchList_Map()
     {
