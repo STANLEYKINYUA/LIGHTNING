@@ -7,6 +7,11 @@ import javax.swing.*;
 public class WatchList_Window extends JInternalFrame
 {
 
+    //Add the WatchList Tab Pane ::  FX , CRYPTO, INDICES, ENERGIES,METALS, COMMODITIES
+    WatchList_TabPANE WatchList_Pane = new WatchList_TabPANE();
+
+
+
     public WatchList_Window() {
         //Set Title
         this.setTitle("WATCHLIST");
@@ -21,12 +26,11 @@ public class WatchList_Window extends JInternalFrame
         JLabel Text = new JLabel("WATCHLIST Window");
         this.add(Text);
 
-        //Add the WatchList Tab Pane ::  FX , CRYPTO, INDICES, ENERGIES,METALS, COMMODITIES
-        WatchList_TabPANE WatchList_Pane = new WatchList_TabPANE();
+
         this.add(WatchList_Pane);
         WatchList_Pane.setVisible(true);
 
-        //Create a Dukascopy Client
+
 
 
 

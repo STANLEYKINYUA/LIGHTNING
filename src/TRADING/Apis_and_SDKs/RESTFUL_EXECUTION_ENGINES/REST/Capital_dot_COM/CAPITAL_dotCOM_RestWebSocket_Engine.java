@@ -9,6 +9,7 @@ import java.net.URISyntaxException;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
@@ -19,15 +20,17 @@ import java.util.concurrent.TimeoutException;
 
 public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
 {
+    //Database Connector to Add and Remove data
+
     // Authentication Information
     final String Api_Key = "EIYbFsrNmWGMwqHV";
     final String Password ="n@TASHA10896";
     final String My_Email = "stanley.andrew.kinyua@gmail.com";
     final String Login = "PROJECT-n@T";
 
-    //TOKENS
-    final String CST_Token = " ";
-    final String X_security_Token = " ";
+    String CST_Token = null;
+    String X_Security_Token = null;
+
 
     //URLS
     String Base_URL = "https://api-capital.backend-capital.com/api/v1/ ";
@@ -38,55 +41,24 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
     final String Session = "session";
     final String Time   = "time";
 
-    public CAPITAL_dotCOM_RestWebSocket_Engine() throws IOException, URISyntaxException, InterruptedException, ExecutionException, TimeoutException {
-        System.out.println("Starting Capital.com ");
+    //Instantiate HTTP Client
+    HttpClient Capital_dot_Com = HttpClient.newBuilder().build();
 
-        //Instantiate HTTP Client
-        HttpClient Capital_dot_Com = HttpClient.newBuilder().build();
+    //Requests
+
+
+
+    public CAPITAL_dotCOM_RestWebSocket_Engine() throws IOException, URISyntaxException, InterruptedException, ExecutionException, TimeoutException
+    {
+        System.out.println("Starting Capital.com ");
 
         //Form Endpoint
         String Session_EndPoint = Base_URL + Session;
 
-        // Create a Message Body
-        String Message_Body = "{\"encryptedPassword\": \"false\" ,"+
-                "               \"identifier\": \"Stanley.andrew.kinyua@gmail.com\","+
-                "               \"password\": \"n@TASHA10896\"}";
+        //Create a Session
+        Create_Session();
 
-
-        //Create a Post Request to start a Session
-        HttpRequest Session_Initiate_request = HttpRequest.newBuilder()
-                .uri(new URI("https://api-capital.backend-capital.com/api/v1/session"))
-                .header("content-type","application/json")
-                .header("X-CAP-API-KEY",Api_Key)
-                .POST(HttpRequest.BodyPublishers.ofString(Message_Body))
-                .build();
-
-
-        //Send the response Assyncronously and handle the response when it arrives
-        CompletableFuture<HttpResponse<String>> Assync_Response = Capital_dot_Com.sendAsync(Session_Initiate_request,HttpResponse.BodyHandlers.ofString());
-
-        //HttpResponse<String> Response = Capital_dot_Com.send(Session_Initiate_request, HttpResponse.BodyHandlers.ofString());
-
-        //Hand the response when it gets here
-        Assync_Response.thenApply(HttpResponse::body).get(5, TimeUnit.SECONDS);
-
-        //
-        HttpResponse<String> Response = Assync_Response.join();
-        int Async_Response_Code = Assync_Response.thenApply(HttpResponse::statusCode).get(5,TimeUnit.SECONDS);
-
-        //Output the Response and the Headers
-        System.out.println(("Our request was = " + Message_Body));
-        System.out.println(" ");
-        System.out.println("The Headers we received back were : " + Response.headers());
-        System.out.println("The Response that we got was : "+Response.statusCode() +"= " + Response.body());
-
-        Map<String, List<String>> Headers = Response.headers().map();
-        String cst = Headers.getOrDefault("cst",List.of("")).get(0);
-        String xSecurityToken = Headers.getOrDefault("x-security-token", List.of("")).get(0);
-
-        System.out.println("CST: " + cst);
-        System.out.println("X-SECURITY-TOKEN: " + xSecurityToken);
-
+        
         //Start a Websocket Session and fetch list of epics +  Start Getting Prices :: 10 Instruments
 
             //Create a Body to start Streaming Prices of 5 inst:: Crude , EURUSD , BTC , GOLD , SILVER
@@ -104,8 +76,57 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
 
     }
 
-    public void Send_Post_Request()
-    {
+    //Session Creation
+    public void Create_Session() throws URISyntaxException, ExecutionException, InterruptedException, TimeoutException {
+        //Form Endpoint
+        String Session_EndPoint = Base_URL + Session;
+
+        // Create a Message Body
+        String Message_Body = "{\"encryptedPassword\": \"false\" ,"+
+                "               \"identifier\": \"Stanley.andrew.kinyua@gmail.com\","+
+                "               \"password\": \"n@TASHA10896\"}";
+
+        //Send the Post Request
+        HttpRequest Session_Initiate_request = HttpRequest.newBuilder()
+                .uri(new URI("https://api-capital.backend-capital.com/api/v1/session"))
+                .header("content-type","application/json")
+                .header("X-CAP-API-KEY",Api_Key)
+                .POST(HttpRequest.BodyPublishers.ofString(Message_Body))
+                .build();
+
+        //Send the response Assyncronously and handle the response when it arrives
+        CompletableFuture<HttpResponse<String>> Assync_Response = Capital_dot_Com.sendAsync(Session_Initiate_request,HttpResponse.BodyHandlers.ofString());
+
+        //Hand the response when it gets here
+        Assync_Response.thenApply(HttpResponse::body).get(5, TimeUnit.SECONDS);
+        HttpResponse<String> Response = Assync_Response.join();
+        int Async_Response_Code = Assync_Response.thenApply(HttpResponse::statusCode).get(5,TimeUnit.SECONDS);
+
+
+        //Output the Response and the Headers
+        System.out.println(("Our request was = " + Message_Body));
+        System.out.println(" ");
+        System.out.println("The Headers we received back were : " + Response.headers());
+        System.out.println("The Response that we got was : "+Response.statusCode() +"= " + Response.body());
+
+        Map<String, List<String>> Headers = Response.headers().map();
+        String cst = Headers.getOrDefault("cst",List.of("")).get(0);
+        String xSecurityToken = Headers.getOrDefault("x-security-token", List.of("")).get(0);
+
+        System.out.println("CST: " + cst);
+        System.out.println("X-SECURITY-TOKEN: " + xSecurityToken);
 
     }
+
+    //Market Data Subscription
+
+    public Map<String, Double> Return_WatchList_Map()
+    {
+        Map<String , Double > WatchList_Map = new HashMap<>();
+
+
+        return WatchList_Map;
+    }
+
+    //Functions related to
 }

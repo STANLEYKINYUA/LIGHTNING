@@ -7,6 +7,7 @@ import UI.Trading_Floor_Window.z_MDI_Internal_Trading_Windows.Calendar.Calendar_
 import UI.Charts_and_Indicatorz.Chart_Types.CandleStick_Chart;
 import UI.Trading_Floor_Window.z_MDI_Internal_Trading_Windows.Market_ScannerWindow.Market_Scanner_Window;
 import UI.Trading_Floor_Window.z_MDI_Internal_Trading_Windows.Orders_and_PositionsWindow.ORDERS_and_POSITIONS_WINDOW;
+import UI.Trading_Floor_Window.z_MDI_Internal_Trading_Windows.WatchList.WatchList_Manager;
 import UI.Trading_Floor_Window.z_MDI_Internal_Trading_Windows.WatchList.WatchList_Window;
 import UI.Trading_Floor_Window.DeskTop_Pane.MainWindow_DeskTop_Pane;
 import UI.Trading_Floor_Window.MENUS.File_Menu;
@@ -22,6 +23,7 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.util.Map;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
 
@@ -41,7 +43,10 @@ public class Trading_Floor extends JFrame
     private boolean is_OrdersPositions_Open = false;
     private boolean is_WatchList_Open       = false;
 
-    //Classes that are relied on for Connections
+
+    //Venue Classes
+    CAPITAL_dotCOM_RestWebSocket_Engine Capital_Dot_Com = new CAPITAL_dotCOM_RestWebSocket_Engine();
+
 
 
 
@@ -49,6 +54,7 @@ public class Trading_Floor extends JFrame
     //Create MenuBar and Add Different Components
     Trading_Window_MenuBar TradingWindowMenuBar = new Trading_Window_MenuBar();
     //---------------------------------------------------------------------------
+
     // Create Menus by calling their respective classes
     File_Menu           File_Menu          = new File_Menu();
     View_Menu           View_Menu          = new View_Menu();
@@ -56,6 +62,16 @@ public class Trading_Floor extends JFrame
     Trading_Tools_Menu  TradingToolsMenu    = new Trading_Tools_Menu();
 
 
+    //Create a Desktop Pane where MDI windows can be Docked.
+    MainWindow_DeskTop_Pane DesktopPane = new MainWindow_DeskTop_Pane();
+
+
+    //Map of Functions that will be called
+
+
+    //WatchList Window + Watchlist Manager
+    WatchList_Window  WatchList = new WatchList_Window();
+    WatchList_Manager WatchlistManager = new WatchList_Manager();
 
 
 
@@ -65,39 +81,17 @@ public class Trading_Floor extends JFrame
 
 
 
-
-
-    public Trading_Floor() throws IOException, URISyntaxException, InterruptedException, ExecutionException, TimeoutException {
+    public Trading_Floor() throws IOException, URISyntaxException, InterruptedException, ExecutionException, TimeoutException
+    {
 
         //Initialize the Trading Floor
         Trading_Floor_Init();
 
-
-        //TODO  Create Menu Items in respective classes
-        //TODO  Add Menu Items to Menu Bars
-        //TODO  Add FlatLaf Specific Features
-        //TODO   Add FLATLAF underline.
-
-
-
-
-        //-------------------------------------------------------------------------------------------------------
-        //ToolBar & StatusBar that is used to Display Icons
-
-
-        //Create a Menubar with it's Functions
-
-
-        //Create a Desktop Pane where MDI windows can be Docked.
-        MainWindow_DeskTop_Pane DesktopPane = new MainWindow_DeskTop_Pane();
-        this.add(DesktopPane, BorderLayout.CENTER);
-
-
+        //Always Open the WatchList and Chart Window
+        Init_WatchList();
 
         //todo Read Workspace Manager and ReOpen last Tabs on the Workspace
         Spawn_Chart_Window(DesktopPane,"CHART_WINDOW",50,50,600,400);
-
-
 
     }
 
@@ -121,6 +115,9 @@ public class Trading_Floor extends JFrame
         //Initialize the Menu System
         Init_Menu_System();
 
+        //Add a Desktop Pane where MDI windows can be docked
+        this.add(DesktopPane, BorderLayout.CENTER);
+
     }
 
     void Init_Menu_System()
@@ -136,6 +133,21 @@ public class Trading_Floor extends JFrame
 
     }
 
+    //-----------------------------------------------------------------------------------------
+
+
+    //-----------------------------------------------------------------------------------------
+    /** Initialize the SubSystem for the Watchlist */
+    void Init_WatchList()
+    {
+        //Create a WatchList
+        Chart_Mdi_Window MDI_Window = new Chart_Mdi_Window("WATCHLIST");
+        WatchList.setBounds(25,25,200,800);
+
+        DesktopPane.add(WatchList);
+        WatchList.setVisible(true);
+
+    }
     //-----------------------------------------------------------------------------------------
 
 

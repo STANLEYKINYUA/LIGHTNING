@@ -10,12 +10,27 @@
 
 package UI.Trading_Floor_Window.z_MDI_Internal_Trading_Windows.WatchList;
 
+import java.util.Map;
+
 public class WatchList_Manager
 {
+
+    //Holds the data
 
     public WatchList_Manager()
     {
 
+
+    }
+
+
+    public void Request_WatchList_Map(Map<String,Double> Watchlist_Map)
+    {
+
+    }
+
+    public void Update_Watchlist_Window()
+    {
 
     }
 }
