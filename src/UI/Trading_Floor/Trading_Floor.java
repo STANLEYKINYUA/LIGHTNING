@@ -18,6 +18,7 @@ import UI.Trading_Floor.MENUS.Trading_Window_MenuBar;
 import UI.Trading_Floor.MENUS.View_Menu;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ComponentAdapter;
@@ -87,8 +88,11 @@ public class Trading_Floor extends JFrame
 
 
 
+
     public Trading_Floor() throws IOException, URISyntaxException, InterruptedException, ExecutionException, TimeoutException
     {
+
+
 
 
         //Initialize the Trading Floor

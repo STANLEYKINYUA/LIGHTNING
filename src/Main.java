@@ -24,6 +24,7 @@ import GENERAL_SYSTEMS.THEMES.*;
 import UI.Login_and_Startup_Windows.Splash_Screen_Window;
 import com.formdev.flatlaf.FlatDarkLaf;
 import com.formdev.flatlaf.FlatLightLaf;
+import com.formdev.flatlaf.extras.FlatSVGIcon;
 import com.formdev.flatlaf.fonts.inter.FlatInterFont;
 import com.formdev.flatlaf.fonts.jetbrains_mono.FlatJetBrainsMonoFont;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
@@ -32,6 +33,7 @@ import com.formdev.flatlaf.intellijthemes.FlatCarbonIJTheme;
 import com.formdev.flatlaf.intellijthemes.FlatDarkPurpleIJTheme;
 import com.formdev.flatlaf.themes.FlatMacDarkLaf;
 import com.formdev.flatlaf.themes.FlatMacLightLaf;
+
 
 import javax.swing.*;
 import java.io.IOException;
@@ -78,8 +80,11 @@ public class Main {
             //TODO  Create LogFiles and initialize Loggers
             //TODO  Read UserAccount Files and prepare Password Hashes
 
+
         //Install FlatLaf Font Packs
         Install_Flat_Laf_Fonts();
+
+
 
         //Install my Custom Fonts
 
