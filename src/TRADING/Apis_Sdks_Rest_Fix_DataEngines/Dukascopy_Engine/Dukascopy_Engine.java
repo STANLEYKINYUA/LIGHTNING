@@ -1,9 +1,5 @@
-package TRADING.Apis_and_SDKs.Dukascopy_Engine;
+package TRADING.Apis_Sdks_Rest_Fix_DataEngines.Dukascopy_Engine;
 
-
-import com.dukascopy.api.system.ClientFactory;
-import com.dukascopy.api.system.IClient;
-import com.github.weisj.jsvg.nodes.Use;
 
 public class Dukascopy_Engine
 {

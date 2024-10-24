@@ -1,6 +1,6 @@
 package a_PROTOTYPING.DUKAS_TEST;
 
-import TRADING.Apis_and_SDKs.Dukascopy_Engine.Dukascopy_Engine;
+import TRADING.Apis_Sdks_Rest_Fix_DataEngines.Dukascopy_Engine.Dukascopy_Engine;
 
 public class DUKAS_TEST {
 

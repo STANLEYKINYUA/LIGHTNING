@@ -1,4 +1,4 @@
-package TRADING.Apis_and_SDKs.Dukascopy_Engine;
+package TRADING.Apis_Sdks_Rest_Fix_DataEngines.Dukascopy_Engine;
 
 import com.dukascopy.api.*;
 import com.dukascopy.api.feed.IFeedDescriptor;
