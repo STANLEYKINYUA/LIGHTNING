@@ -263,7 +263,8 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection {
     public void Create_API_Keys_Table() {
         System.out.println("=====================================================================");
         System.out.println("Creating API Keys Table");
-        try (Connection CreateUsersTable_Connection = DriverManager.getConnection(JDBC_url, UserName, Password)) {
+        try (Connection CreateUsersTable_Connection = DriverManager.getConnection(JDBC_url, UserName, Password))
+        {
 
             Statement CreateUsers_Statement = CreateUsersTable_Connection.createStatement();
 
@@ -287,7 +288,8 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection {
             CreateUsers_Statement.execute(SQL);
             System.out.println("API Keys table Created Successfully");
 
-        } catch (Exception Create_UsersTable_Exception) {
+        }
+        catch (Exception Create_UsersTable_Exception) {
             Create_UsersTable_Exception.printStackTrace();
             System.out.println("Unable to create API keys Table");
         }
@@ -304,6 +306,39 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection {
     //todo Create Venues Table
     public void Create_Venues_Table()
     {
+        System.out.println("=====================================================================");
+        System.out.println("Creating Venues Table");
+        try (Connection CreateUsersTable_Connection = DriverManager.getConnection(JDBC_url, UserName, Password))
+        {
+
+            Statement CreateUsers_Statement = CreateUsersTable_Connection.createStatement();
+
+
+            String SQL = "CREATE TABLE VENUES ("
+                    + "venue_id INT not NULL AUTO_INCREMENT,"
+                    + "venue_name VARCHAR(255) not NULL,"
+                    + "restful BOOLEAN not NULL,"
+                    + "base_currency VARCHAR(255) not NULL,"
+                    + "PRIMARY KEY ( venue_id ))";
+
+            //Set database to send SQL commands to
+            System.out.println("Specifying : Lightning");
+            String USE_SQL = "USE lightning";
+            CreateUsers_Statement.execute(USE_SQL);
+
+            //Send our Command Now
+            System.out.println("Executing - Create API key Table SQL");
+            CreateUsers_Statement.execute(SQL);
+            System.out.println("API Keys table Created Successfully");
+
+        } catch (Exception Create_UsersTable_Exception) {
+            Create_UsersTable_Exception.printStackTrace();
+            System.out.println("Unable to create API keys Table");
+        }
+
+
+        System.out.println("=====================================================================");
+        System.out.println(" ");
 
     }
 
@@ -313,7 +348,11 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection {
 
     }
 
-    //todo Create
+    //todo Create SESSIONS TABLE
+    public void Create_Sessions_Table()
+    {
+
+    }
 
 
 

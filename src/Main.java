@@ -20,6 +20,7 @@
 
 import GENERAL_SYSTEMS.CONFIG.General_Config.General_Config;
 import GENERAL_SYSTEMS.THEMES.*;
+import IO.DatabaseAccess.Database_Engine;
 import UI.Login_and_Startup_Windows.Splash_Screen_Window;
 import com.formdev.flatlaf.FlatDarkLaf;
 import com.formdev.flatlaf.FlatLightLaf;
@@ -57,7 +58,7 @@ public class Main {
         //todo Start the Singleton Database_Engine
         //todo Start the Singleton
 
-        //Database_Engine Database = new Database_Engine();
+        Database_Engine Database = new Database_Engine();
 
 
 
