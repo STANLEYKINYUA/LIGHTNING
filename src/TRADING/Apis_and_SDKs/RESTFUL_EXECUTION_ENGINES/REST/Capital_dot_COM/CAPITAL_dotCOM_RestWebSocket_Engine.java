@@ -85,7 +85,8 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
     }
 
     //Session Creation
-    public void Create_Session() throws URISyntaxException, ExecutionException, InterruptedException, TimeoutException {
+    public void Create_Session() throws URISyntaxException, ExecutionException, InterruptedException, TimeoutException
+    {
         //Form Endpoint
         String Session_EndPoint = Base_URL + Session;
 
@@ -129,51 +130,69 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
         CST_Token = cst_token;
 
         //TODO Create an Object that Pings the Session every 5 minutes to keep connection alive
+        //TODO If First Run :: Fetch List of all Epics and Inject into Database
 
 
     }
 
-    //Market Data Subscription
-    public void Ping_the_Session() throws URISyntaxException, ExecutionException, InterruptedException, TimeoutException
+        //Ping the Rest Web Session to Keep Alive
+        public void Ping_the_Session() throws URISyntaxException, ExecutionException, InterruptedException, TimeoutException
+        {
+            System.out.println("=================================================================================");
+
+            System.out.println(" Pinging CDC");
+            //Create the PingURL
+            String Ping_URL ="https://api-capital.backend-capital.com/api/v1/ping" ;
+
+            System.out.println("URL = " + Ping_URL);
+            //Create and send the Ping Request
+            HttpRequest Ping_request = HttpRequest.newBuilder()
+                    .uri(new URI(Ping_URL))
+                    .header("X-SECURITY-TOKEN", X_Security_Token)
+                    .header("CST",CST_Token)
+                    .GET()
+                    .build();
+
+            System.out.println("Here");
+
+            //Send Request Assynchronously
+            CompletableFuture<HttpResponse<String>> Ping_Assync_Response = Capital_dot_Com.sendAsync(Ping_request,HttpResponse.BodyHandlers.ofString());
+
+
+            //Hand the response when it gets here
+            Ping_Assync_Response.thenApply(HttpResponse::body).get(5, TimeUnit.SECONDS);
+            HttpResponse<String> Response = Ping_Assync_Response.join();
+            int Async_Response_Code = Ping_Assync_Response.thenApply(HttpResponse::statusCode).get(5,TimeUnit.SECONDS);
+
+
+
+
+            //Output the Result
+            System.out.println(" ");
+            System.out.println("PING sent Successfully");
+            System.out.println("Response code : " + Response.statusCode());
+            System.out.println("Response : " + Response.body());
+            System.out.println(" ");
+
+
+            System.out.println("=================================================================================");
+        }
+
+        //Close the Session
+        public void Close_Session()
+        {
+
+        }
+
+    //Market Data
+    public void Subscribe_to_WebSocket()
     {
-        System.out.println("=================================================================================");
 
-        System.out.println(" Pinging CDC");
-        //Create the PingURL
-        String Ping_URL ="https://api-capital.backend-capital.com/api/v1/ping" ;
+    }
 
-        System.out.println("URL = " + Ping_URL);
-        //Create and send the Ping Request
-        HttpRequest Ping_request = HttpRequest.newBuilder()
-                .uri(new URI(Ping_URL))
-                .header("X-SECURITY-TOKEN", X_Security_Token)
-                .header("CST",CST_Token)
-                .GET()
-                .build();
+    public void Ping_WebSocket()
+    {
 
-        System.out.println("Here");
-
-        //Send Request Assynchronously
-        CompletableFuture<HttpResponse<String>> Ping_Assync_Response = Capital_dot_Com.sendAsync(Ping_request,HttpResponse.BodyHandlers.ofString());
-
-
-        //Hand the response when it gets here
-        Ping_Assync_Response.thenApply(HttpResponse::body).get(5, TimeUnit.SECONDS);
-        HttpResponse<String> Response = Ping_Assync_Response.join();
-        int Async_Response_Code = Ping_Assync_Response.thenApply(HttpResponse::statusCode).get(5,TimeUnit.SECONDS);
-
-
-
-
-        //Output the Result
-        System.out.println(" ");
-        System.out.println("PING sent Successfully");
-        System.out.println("Response code : " + Response.statusCode());
-        System.out.println("Response : " + Response.body());
-        System.out.println(" ");
-
-
-        System.out.println("=================================================================================");
     }
 
     public Map<String, Double> Return_WatchList_Map()

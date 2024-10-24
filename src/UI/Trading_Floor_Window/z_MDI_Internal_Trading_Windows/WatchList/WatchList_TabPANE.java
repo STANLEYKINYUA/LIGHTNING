@@ -9,17 +9,21 @@ import javax.swing.*;
 
 public class WatchList_TabPANE extends JTabbedPane
 {
+    //Add Tabbed Panes
+    Markets_Tab Markets_Tab = new Markets_Tab();
+    MyWatchList_Tab MyWatchList_Tab = new MyWatchList_Tab();
+
+
     public WatchList_TabPANE()
     {
-        //Add Tabbed Panes
-        MyWatchList_Tab MyWatchList_Tab = new MyWatchList_Tab();
+        Markets_Tab.add(new JLabel("Markets"));
         MyWatchList_Tab.add(new JLabel("My WatchLists"));
 
-        Markets_Tab Markets_Tab = new Markets_Tab();
-        Markets_Tab.add(new JLabel("Markets"));
-
-        this.addTab("My Watch List",MyWatchList_Tab);
         this.addTab("Markets",Markets_Tab);
+        this.addTab("My Watch List",MyWatchList_Tab);
+
+        //Create a DataGrid and Add to each of these tables
+
 
 
     }

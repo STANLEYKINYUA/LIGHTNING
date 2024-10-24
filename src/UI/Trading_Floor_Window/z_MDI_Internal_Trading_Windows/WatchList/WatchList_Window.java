@@ -10,6 +10,8 @@ public class WatchList_Window extends JInternalFrame
     //Add the WatchList Tab Pane ::  FX , CRYPTO, INDICES, ENERGIES,METALS, COMMODITIES
     WatchList_TabPANE WatchList_Pane = new WatchList_TabPANE();
 
+    //Add a WatchList Manager
+    WatchList_Manager WatchList_Manager = new WatchList_Manager();
 
 
     public WatchList_Window() {

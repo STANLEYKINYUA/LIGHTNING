@@ -5,9 +5,6 @@ import javax.swing.*;
 public class WatchList_Data_Grid_Table extends JTable
 {
 
-
-
-
     public WatchList_Data_Grid_Table()
     {
 

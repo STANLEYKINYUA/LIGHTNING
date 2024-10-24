@@ -6,7 +6,8 @@ import UI.Charts_and_Indicatorz.Chart.Generic_XY_Chart_Panel;
 import UI.Trading_Floor_Window.z_MDI_Internal_Trading_Windows.Calendar.Calendar_Window;
 import UI.Charts_and_Indicatorz.Chart_Types.CandleStick_Chart;
 import UI.Trading_Floor_Window.z_MDI_Internal_Trading_Windows.Market_ScannerWindow.Market_Scanner_Window;
-import UI.Trading_Floor_Window.z_MDI_Internal_Trading_Windows.Orders_and_PositionsWindow.ORDERS_and_POSITIONS_WINDOW;
+import UI.Trading_Floor_Window.z_MDI_Internal_Trading_Windows.Orders_and_PositionsWindow.ORDERS_POSITIONS_WINDOW;
+import UI.Trading_Floor_Window.z_MDI_Internal_Trading_Windows.Orders_and_PositionsWindow.ORDERS_and_POSITIONS_JTabbedPane;
 import UI.Trading_Floor_Window.z_MDI_Internal_Trading_Windows.WatchList.WatchList_Manager;
 import UI.Trading_Floor_Window.z_MDI_Internal_Trading_Windows.WatchList.WatchList_Window;
 import UI.Trading_Floor_Window.DeskTop_Pane.MainWindow_DeskTop_Pane;
@@ -16,6 +17,7 @@ import UI.Trading_Floor_Window.MENUS.Trading_Tools_Menu;
 import UI.Trading_Floor_Window.MENUS.Trading_Window_MenuBar;
 import UI.Trading_Floor_Window.MENUS.View_Menu;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
+import com.mysql.cj.x.protobuf.MysqlxCrud;
 
 import javax.swing.*;
 import java.awt.*;
@@ -23,7 +25,6 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.util.Map;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
 
@@ -45,7 +46,7 @@ public class Trading_Floor extends JFrame
 
 
     //Venue Classes
-    CAPITAL_dotCOM_RestWebSocket_Engine Capital_Dot_Com = new CAPITAL_dotCOM_RestWebSocket_Engine();
+    //CAPITAL_dotCOM_RestWebSocket_Engine Capital_Dot_Com = new CAPITAL_dotCOM_RestWebSocket_Engine();
 
 
 
@@ -69,14 +70,17 @@ public class Trading_Floor extends JFrame
     //Map of Functions that will be called
 
 
+    //Order Management and Positions
+    ORDERS_and_POSITIONS_JTabbedPane Positions_Window = new ORDERS_and_POSITIONS_JTabbedPane();
+
+
+    //Positions Management Window
+    ORDERS_and_POSITIONS_JTabbedPane Orders_Positiions_TAB_PANE = new ORDERS_and_POSITIONS_JTabbedPane();
+    ORDERS_POSITIONS_WINDOW Orders_Positions_MDI_Window = new ORDERS_POSITIONS_WINDOW();
+
     //WatchList Window + Watchlist Manager
-    WatchList_Window  WatchList = new WatchList_Window();
+    WatchList_Window  WatchList_MDI = new WatchList_Window();
     WatchList_Manager WatchlistManager = new WatchList_Manager();
-
-
-
-
-
 
 
 
@@ -89,6 +93,9 @@ public class Trading_Floor extends JFrame
 
         //Always Open the WatchList and Chart Window
         Init_WatchList();
+
+        //Always Open an Order Management Screen
+        Init_Order_Management_System();
 
         //todo Read Workspace Manager and ReOpen last Tabs on the Workspace
         Spawn_Chart_Window(DesktopPane,"CHART_WINDOW",50,50,600,400);
@@ -141,11 +148,22 @@ public class Trading_Floor extends JFrame
     void Init_WatchList()
     {
         //Create a WatchList
-        Chart_Mdi_Window MDI_Window = new Chart_Mdi_Window("WATCHLIST");
-        WatchList.setBounds(25,25,200,800);
+        WatchList_MDI.setBounds(25,25,200,800);
+        DesktopPane.add(WatchList_MDI);
+        WatchList_MDI.setVisible(true);
 
-        DesktopPane.add(WatchList);
-        WatchList.setVisible(true);
+    }
+
+    /** Initialize the Sub System for the Order Management System*/
+    void Init_Order_Management_System()
+    {
+
+        Orders_Positions_MDI_Window.setBounds(25,600,800,300);
+        Orders_Positions_MDI_Window.add(Orders_Positiions_TAB_PANE);
+
+        DesktopPane.add(Orders_Positions_MDI_Window);
+        Orders_Positions_MDI_Window.setVisible(true);
+
 
     }
     //-----------------------------------------------------------------------------------------
@@ -224,6 +242,9 @@ public class Trading_Floor extends JFrame
 
     }
 
+    void Spawn_Orders_Positions_Window()
+    {}
+
     //Spawn Calendar MDI Window
     //Spawn DOM  MDI Window
     //Spawn Equity Balances MDI Window
@@ -261,13 +282,7 @@ public class Trading_Floor extends JFrame
                 // WATCHLIST ,Trade Information ,TRADING.PORTFOLIO Management Windows
 
 
-    void Spawn_Position_and_Order_Management_Window()
-    {
-            //Create a new Orders and Positions Window
-            ORDERS_and_POSITIONS_WINDOW OrdersPositionsWindow = new ORDERS_and_POSITIONS_WINDOW("ORDERS & POSITIONS");
 
-
-    }
     void Spawn_Market_Scanner()
     {
 
