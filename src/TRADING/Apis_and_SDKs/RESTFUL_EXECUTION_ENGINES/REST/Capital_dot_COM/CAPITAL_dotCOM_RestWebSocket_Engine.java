@@ -16,6 +16,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
+import java.util.function.Consumer;
 
 
 public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
@@ -41,8 +42,30 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
     final String Session = "session";
     final String Time   = "time";
 
+
+    //Session Detail Variables
+    int Session_Alive_time_SECONDS = 0;
+    int Max_Session_Time_SECONDS = 540;  // 10 minutes * 60 Seconds - run for 9 min and ping before time runs out
+
+
+
+
     //Instantiate HTTP Client
     HttpClient Capital_dot_Com = HttpClient.newBuilder().build();
+
+    //Different Requests
+
+            // Session Initiate Request
+    String Message_Body = "{\"encryptedPassword\": \"false\" ,"+
+                    "\"identifier\": \"Stanley.andrew.kinyua@gmail.com\","+
+                    "\"password\": \"n@TASHA10896\"}";
+
+    HttpRequest Session_Initiate_request = HttpRequest.newBuilder()
+            .uri(new URI("https://api-capital.backend-capital.com/api/v1/session"))
+            .header("content-type","application/json")
+            .header("X-CAP-API-KEY",Api_Key)
+            .POST(HttpRequest.BodyPublishers.ofString(Message_Body))
+            .build();
 
     //Requests
 
@@ -58,12 +81,15 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
         //Form Endpoint
         String Session_EndPoint = Base_URL + Session;
 
+        //todo Check if a Session is still active :
+            //todo Read Last Section Start time in Milliseconds
+            //todo determine if
         //Create a Session
         Create_Session();
 
 
         //Ping the Session
-        Ping_the_Session();
+
 
 
 
@@ -90,44 +116,85 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
         //Form Endpoint
         String Session_EndPoint = Base_URL + Session;
 
-        // Create a Message Body
-        String Message_Body = "{\"encryptedPassword\": \"false\" ,"+
-                "               \"identifier\": \"Stanley.andrew.kinyua@gmail.com\","+
-                "               \"password\": \"n@TASHA10896\"}";
-
-        //Send the Post Request
-        HttpRequest Session_Initiate_request = HttpRequest.newBuilder()
-                .uri(new URI("https://api-capital.backend-capital.com/api/v1/session"))
-                .header("content-type","application/json")
-                .header("X-CAP-API-KEY",Api_Key)
-                .POST(HttpRequest.BodyPublishers.ofString(Message_Body))
-                .build();
-
         //Send the response Assyncronously and handle the response when it arrives
         CompletableFuture<HttpResponse<String>> Assync_Response = Capital_dot_Com.sendAsync(Session_Initiate_request,HttpResponse.BodyHandlers.ofString());
 
+
+        //Send with Response Event Firing
+        SendAsyncRequest(Capital_dot_Com,Session_Initiate_request,response ->
+        {
+            //Output the Response and the Headers
+            System.out.println(("Our request was = " + Message_Body));
+            System.out.println(" ");
+            System.out.println("The Headers we received back were : " + response.headers());
+            System.out.println("The Response that we got was : "+response.statusCode() +"= " + response.body());
+
+
+            //Handle the Response
+
+                //Successful
+            if(response.statusCode() == 200)
+            {
+                //Fetch the CST Tokens and set them as the Current Value
+                Map<String, List<String>> Headers = response.headers().map();
+                String cst_token = Headers.getOrDefault("cst",List.of("")).get(0);
+                String xSecurityToken = Headers.getOrDefault("x-security-token", List.of("")).get(0);
+
+
+                //Set the CST and X Security Token
+                X_Security_Token = xSecurityToken;
+                CST_Token = cst_token;
+
+                System.out.println("CST: " + cst_token);
+                System.out.println("X-SECURITY-TOKEN: " + xSecurityToken);
+
+                //Feed Cst Token + X security Token into Database
+
+                //Sleep for 5 Seconds and then Close the Session
+
+            }
+                //Bad Request
+            if(response.statusCode() == 400)
+            {
+                //Bad Request
+                System.out.println("Error: " + response.statusCode() + " - " + " Bad Request");
+            }
+                //Unauthorized
+            if(response.statusCode() == 401)
+            {
+                //Bad Request
+                System.out.println("Error: " + response.statusCode() + " - " + " Unauthorized");
+            }
+
+            //Unauthorized
+            if(response.statusCode() == 429)
+            {
+                //Bad Request
+                System.out.println("Error: " + response.statusCode() + " - " + " Too many Requests");
+            }
+
+
+
+
+            //Ping the Session
+
+
+
+            //Create a Timer to Ping the Session every 6 minutes
+            //Alert Other Systems that Connection has Occurred Successfully
+
+
+        });
+
+        /*
         //Hand the response when it gets here
         Assync_Response.thenApply(HttpResponse::body).get(5, TimeUnit.SECONDS);
         HttpResponse<String> Response = Assync_Response.join();
         int Async_Response_Code = Assync_Response.thenApply(HttpResponse::statusCode).get(5,TimeUnit.SECONDS);
 
+        */
 
-        //Output the Response and the Headers
-        System.out.println(("Our request was = " + Message_Body));
-        System.out.println(" ");
-        System.out.println("The Headers we received back were : " + Response.headers());
-        System.out.println("The Response that we got was : "+Response.statusCode() +"= " + Response.body());
 
-        Map<String, List<String>> Headers = Response.headers().map();
-        String cst_token = Headers.getOrDefault("cst",List.of("")).get(0);
-        String xSecurityToken = Headers.getOrDefault("x-security-token", List.of("")).get(0);
-
-        System.out.println("CST: " + cst_token);
-        System.out.println("X-SECURITY-TOKEN: " + xSecurityToken);
-
-        //Set the CST and X Security Token
-        X_Security_Token = xSecurityToken;
-        CST_Token = cst_token;
 
         //TODO Create an Object that Pings the Session every 5 minutes to keep connection alive
         //TODO If First Run :: Fetch List of all Epics and Inject into Database
@@ -135,9 +202,51 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
 
     }
 
-        //Ping the Rest Web Session to Keep Alive
-        public void Ping_the_Session() throws URISyntaxException, ExecutionException, InterruptedException, TimeoutException
-        {
+    public void End_Session() throws URISyntaxException {
+        //Form Endpoint
+        String Session_EndPoint = Base_URL + Session;
+
+
+        //Send a Request to end the Session
+        HttpRequest Ping_request = HttpRequest.newBuilder()
+                .uri(new URI(Session_EndPoint))
+                .header("X-SECURITY-TOKEN", X_Security_Token)
+                .header("CST",CST_Token)
+                .DELETE()
+                .build();
+
+
+    }
+    //Send Assync Events to Prevent Blocking :: Fire EVENT
+    public static void SendAsyncRequest(HttpClient client , HttpRequest Request,Consumer<HttpResponse<String>> onResponse) throws ExecutionException, InterruptedException, TimeoutException
+    {
+
+        client.sendAsync(Request,HttpResponse.BodyHandlers.ofString())
+                .thenAcceptAsync(onResponse)
+                .exceptionally( e ->
+                {
+                    e.printStackTrace();
+                    return null;
+
+                });
+
+
+
+    }
+
+
+    void Fire_Session_Creation_Event()
+    {
+        System.out.println("I am Response Event and I have been Called!!!");
+
+        //Handle the Response
+
+        //if Different Response events for Diff Forms of Data
+    }
+
+    //Ping the Rest Web Session to Keep Alive
+    public void Ping_the_Session() throws URISyntaxException, ExecutionException, InterruptedException, TimeoutException
+    {
             System.out.println("=================================================================================");
 
             System.out.println(" Pinging CDC");
@@ -178,11 +287,6 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
             System.out.println("=================================================================================");
         }
 
-        //Close the Session
-        public void Close_Session()
-        {
-
-        }
 
     //Market Data
     public void Subscribe_to_WebSocket()
@@ -203,5 +307,5 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
         return WatchList_Map;
     }
 
-    //Functions related to
+    //Function called when a Response has been received
 }

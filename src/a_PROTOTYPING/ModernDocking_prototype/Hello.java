@@ -4,7 +4,7 @@ import ModernDocking.Dockable;
 import ModernDocking.DockingRegion;
 import ModernDocking.app.Docking;
 import ModernDocking.app.RootDockingPanel;
-import UI_Backend.THEMES.FlatMacDark_LAF;
+import GENERAL_SYSTEMS.THEMES.FlatMacDark_LAF;
 
 import javax.swing.*;
 import java.awt.*;
@@ -112,7 +112,7 @@ public class Hello
 
     public static void main(String[] args)
     {
-        FlatMacDark_LAF.registerCustomDefaultsSource("UI_Backend.THEMES");
+        FlatMacDark_LAF.registerCustomDefaultsSource("GENERAL_SYSTEMS.THEMES");
         FlatMacDark_LAF.setup();
 
         SwingUtilities.invokeLater(()-> new MainFrame().setVisible(true));

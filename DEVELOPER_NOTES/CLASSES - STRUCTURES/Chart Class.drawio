@@ -129,7 +129,7 @@
         <mxCell id="og2aon5ELJVDpW7Pc3Es-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="og2aon5ELJVDpW7Pc3Es-2" target="og2aon5ELJVDpW7Pc3Es-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="og2aon5ELJVDpW7Pc3Es-2" value="Is internet Available" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+        <mxCell id="og2aon5ELJVDpW7Pc3Es-2" value="Is internet UI.Trading_Floor.Singleton_Test_Class" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
           <mxGeometry x="101.5" y="-238" width="141" height="92" as="geometry" />
         </mxCell>
         <mxCell id="og2aon5ELJVDpW7Pc3Es-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="og2aon5ELJVDpW7Pc3Es-3" target="og2aon5ELJVDpW7Pc3Es-28">
@@ -159,7 +159,7 @@
         <mxCell id="og2aon5ELJVDpW7Pc3Es-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="og2aon5ELJVDpW7Pc3Es-19" source="og2aon5ELJVDpW7Pc3Es-11" target="og2aon5ELJVDpW7Pc3Es-14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="og2aon5ELJVDpW7Pc3Es-11" value="Data Available" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="og2aon5ELJVDpW7Pc3Es-19">
+        <mxCell id="og2aon5ELJVDpW7Pc3Es-11" value="Data UI.Trading_Floor.Singleton_Test_Class" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="og2aon5ELJVDpW7Pc3Es-19">
           <mxGeometry x="87" width="141" height="92" as="geometry" />
         </mxCell>
         <mxCell id="og2aon5ELJVDpW7Pc3Es-12" value="YES" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="og2aon5ELJVDpW7Pc3Es-19">
@@ -204,7 +204,7 @@
         <mxCell id="og2aon5ELJVDpW7Pc3Es-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="og2aon5ELJVDpW7Pc3Es-30" source="og2aon5ELJVDpW7Pc3Es-33" target="og2aon5ELJVDpW7Pc3Es-34">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="og2aon5ELJVDpW7Pc3Es-33" value="Previous bars Available" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="og2aon5ELJVDpW7Pc3Es-30">
+        <mxCell id="og2aon5ELJVDpW7Pc3Es-33" value="Previous bars UI.Trading_Floor.Singleton_Test_Class" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="og2aon5ELJVDpW7Pc3Es-30">
           <mxGeometry x="87" width="141" height="92" as="geometry" />
         </mxCell>
         <mxCell id="og2aon5ELJVDpW7Pc3Es-34" value="NO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" vertex="1" parent="og2aon5ELJVDpW7Pc3Es-30">

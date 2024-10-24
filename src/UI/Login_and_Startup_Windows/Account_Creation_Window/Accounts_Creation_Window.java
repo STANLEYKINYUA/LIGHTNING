@@ -3,7 +3,7 @@ package UI.Login_and_Startup_Windows.Account_Creation_Window;
 import IO.DatabaseAccess.Database_Engine;
 import Security_x_Access_Control.Hash_Factory;
 import UI.Login_and_Startup_Windows.LOGIN_WINDOW.Login_Window;
-import UI.Trading_Floor_Window.Trading_Floor;
+import UI.Trading_Floor.Trading_Floor;
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import net.miginfocom.swing.MigLayout;
 

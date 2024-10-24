@@ -19,10 +19,8 @@
 
 
 import GENERAL_SYSTEMS.CONFIG.General_Config.General_Config;
-import IO.DatabaseAccess.Database_Engine;
 import TRADING.Apis_and_SDKs.RESTFUL_EXECUTION_ENGINES.REST.Capital_dot_COM.CAPITAL_dotCOM_RestWebSocket_Engine;
-import TRADING.Apis_and_SDKs.RESTFUL_EXECUTION_ENGINES.REST.Capital_dot_COM.CDC_JsonParser;
-import UI_Backend.THEMES.*;
+import GENERAL_SYSTEMS.THEMES.*;
 import UI.Login_and_Startup_Windows.Splash_Screen_Window;
 import com.formdev.flatlaf.FlatDarkLaf;
 import com.formdev.flatlaf.FlatLightLaf;
@@ -55,14 +53,16 @@ public class Main {
 
         //TODO Call the Configuration Manager so that it can Decrypt the General Config
 
+        //todo Start the Singleton Logging Engine
+        //todo Start the Singleton Database_Engine
+        //todo Start the Singleton
 
-        //Start the Database_Engine
         //Database_Engine Database = new Database_Engine();
 
 
 
         //sTART Capital
-        //CAPITAL_dotCOM_RestWebSocket_Engine CDC = new CAPITAL_dotCOM_RestWebSocket_Engine();
+        CAPITAL_dotCOM_RestWebSocket_Engine CDC = new CAPITAL_dotCOM_RestWebSocket_Engine();
 
 
 
@@ -171,35 +171,35 @@ public class Main {
             if(Theme == "Carbon")
             {
                 //Set Carbon as the Look and Feel.
-               FlatCarbonIJTheme.registerCustomDefaultsSource("UI_Backend.THEMES");
+               FlatCarbonIJTheme.registerCustomDefaultsSource("GENERAL_SYSTEMS.THEMES");
                 Carbon_Laf.setup();
             }
                     //DarkPurple LAF
             if(Theme == "DarkPurple_LAF")
             {
                 //Set DarkPurple_LAF as the Look and Feel.
-                FlatDarkPurpleIJTheme.registerCustomDefaultsSource("UI_Backend.THEMES");
+                FlatDarkPurpleIJTheme.registerCustomDefaultsSource("GENERAL_SYSTEMS.THEMES");
                 DarkPurple_Laf.setup();
             }
                     //FlatDark LAF
             if(Theme == "FlatDark_LAF")
             {
                 //Set FlatDark_LAF as the Look and Feel.
-                FlatDarkLaf.registerCustomDefaultsSource("UI_Backend.THEMES");
+                FlatDarkLaf.registerCustomDefaultsSource("GENERAL_SYSTEMS.THEMES");
                 FlatDark_Laf.setup();
             }
                     //FlatLight LAF
             if(Theme == "FlatLight_LAF")
             {
                 //Set FlatLight_LAF as the Look and Feel.
-                FlatLightLaf.registerCustomDefaultsSource("UI_Backend.THEMES");
+                FlatLightLaf.registerCustomDefaultsSource("GENERAL_SYSTEMS.THEMES");
                 FlatLight_Laf.setup();
             }
                     //FlatMacDark_LAF LAF
             if(Theme == "FlatMacDark_LAF")
             {
                 //Set Flat MacDark_LAF as the Look and Feel.
-                FlatMacDarkLaf.registerCustomDefaultsSource("UI_Backend.THEMES");
+                FlatMacDarkLaf.registerCustomDefaultsSource("GENERAL_SYSTEMS.THEMES");
                 FlatMacDark_LAF.setup();
 
             }
@@ -207,7 +207,7 @@ public class Main {
             if(Theme == "FlatMacLight_LAF")
             {
                 //Set FlatMacLight_LAF as the Look and Feel.
-                FlatMacLightLaf.registerCustomDefaultsSource("UI_Backend.THEMES");
+                FlatMacLightLaf.registerCustomDefaultsSource("GENERAL_SYSTEMS.THEMES");
                 FlatMacLight_LAF.setup();
             }
 
@@ -216,7 +216,7 @@ public class Main {
 
 
             //  Using FLATMACDark so that I can continue development
-           //FlatMacDarkLaf.registerCustomDefaultsSource("UI_Backend.THEMES");
+           //FlatMacDarkLaf.registerCustomDefaultsSource("GENERAL_SYSTEMS.THEMES");
             //FlatMacDark_LAF.setup();
 
             //Prefer FlatLight Laf
