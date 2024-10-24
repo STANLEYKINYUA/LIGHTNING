@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Toast Notifications">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/11- Dependency JARS/Toast Notifications" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/11- Dependency JARS/Toast Notifications" recursive="false" />
+  </library>
+</component>

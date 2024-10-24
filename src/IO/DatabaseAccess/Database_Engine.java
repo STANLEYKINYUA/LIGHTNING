@@ -298,8 +298,17 @@ public class Database_Engine implements DataBaseAccess_Interface, Connection {
 
     }
 
+
+    //Create Tables for REST
+
     //todo Create Venues Table
     public void Create_Venues_Table()
+    {
+
+    }
+
+    //todo Create Account Details Table
+    public void Create_Account_Details_Table()
     {
 
     }
