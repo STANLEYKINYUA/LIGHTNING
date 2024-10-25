@@ -1,7 +1,7 @@
 package UI.Trading_Floor.MENUS;
 
 import javax.swing.*;
-import UI.Main_Operational_Windows.Connections.Connections;
+import UI.Trading_Floor.Connections.Connections;
 
 public class View_Menu extends JMenu
 {

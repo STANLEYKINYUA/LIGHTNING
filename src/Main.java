@@ -45,6 +45,10 @@ public class Main {
     public static void main(String[] args) throws IOException, URISyntaxException, InterruptedException, ExecutionException, TimeoutException {
 
 
+        //Set Process Name and Variables for Easy Profiling
+
+
+
         //Hello World to prove that the program works.
         System.out.println("BUILD SUCCESS - POST MAVEN!!");
 

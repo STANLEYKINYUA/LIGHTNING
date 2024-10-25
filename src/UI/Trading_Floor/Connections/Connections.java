@@ -1,4 +1,4 @@
-package UI.Main_Operational_Windows.Connections;
+package UI.Trading_Floor.Connections;
 
 import javax.swing.*;
 

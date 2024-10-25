@@ -1,7 +1,7 @@
-package UI.Main_Operational_Windows.Accounts_and_Venues;
+package UI.Trading_Floor.Accounts_and_Venues;
 
-import UI.Main_Operational_Windows.Accounts_and_Venues.Accounts_Venues_Tabs.Accounts_Tab;
-import UI.Main_Operational_Windows.Accounts_and_Venues.Accounts_Venues_Tabs.Venues_Tab;
+import UI.Trading_Floor.Accounts_and_Venues.Accounts_Venues_Tabs.Accounts_Tab;
+import UI.Trading_Floor.Accounts_and_Venues.Accounts_Venues_Tabs.Venues_Tab;
 
 import javax.swing.*;
 

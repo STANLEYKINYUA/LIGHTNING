@@ -5,12 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/UI/Trading_Floor/z_MDI_Internal_Trading_Windows/Depth_of_Market/Cumulative_sum_DOM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DEVELOPER_NOTES/DATABASE - DESIGHN NOTES/.$Database.drawio.dtmp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DEVELOPER_NOTES/DATABASE - DESIGHN NOTES/Database.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/DEVELOPER_NOTES/DATABASE - DESIGHN NOTES/Database.drawio" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IO/DatabaseAccess/Database_Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IO/DatabaseAccess/Database_Engine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TRADING/Apis_Sdks_Rest_Fix_DataEngines/Dukascopy_Engine/Dukascopy_Engine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/a_PROTOTYPING/DUKAS_TEST/DUKAS_TEST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Core_UI_Classes/CHART_AREA_DESKTOP_PANE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Operational_Windows/Accounts_and_Venues/Accounts/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Trading_Floor/Accounts_and_Venues/Accounts/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Operational_Windows/Accounts_and_Venues/Accounts_Venues_TabPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Trading_Floor/Accounts_and_Venues/Accounts_Venues_TabPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Operational_Windows/Accounts_and_Venues/Accounts_Venues_Tabs/Accounts_Tab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Trading_Floor/Accounts_and_Venues/Accounts_Venues_Tabs/Accounts_Tab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Operational_Windows/Accounts_and_Venues/Accounts_Venues_Tabs/Venues_Tab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Trading_Floor/Accounts_and_Venues/Accounts_Venues_Tabs/Venues_Tab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Operational_Windows/Accounts_and_Venues/Accounts_Venues_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Trading_Floor/Accounts_and_Venues/Accounts_Venues_Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Operational_Windows/Accounts_and_Venues/Venues/Venue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Trading_Floor/Accounts_and_Venues/Venues/Venue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Operational_Windows/Connections/Connections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Trading_Floor/Connections/Connections.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Main_Operational_Windows/s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Trading_Floor/MENUS/File_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Trading_Floor/MENUS/File_Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Trading_Floor/MENUS/View_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Trading_Floor/MENUS/View_Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +33,8 @@
       <list>
         <option value="Interface" />
         <option value="Record" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -57,31 +68,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.DUKAS_TEST.executor": "Run",
-    "Application.Lightning_Main File.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.keyextract.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "DEVELOPMENT",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/11 - PROJECTS/MKU Project/LIGHTNING/11- Dependency JARS/Toast Notifications",
-    "onboarding.tips.debug.path": "E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/src/Main.java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.46206897",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "settings.sync"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.DUKAS_TEST.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Lightning_Main File.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.keyextract.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;DEVELOPMENT&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/11 - PROJECTS/MKU Project/LIGHTNING/11- Dependency JARS/Toast Notifications&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.46206897&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\11 - PROJECTS\MKU Project\LIGHTNING\11- Dependency JARS\Toast Notifications" />
