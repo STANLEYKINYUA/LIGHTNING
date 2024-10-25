@@ -1,10 +1,10 @@
 package GENERAL_SYSTEMS.DATE_and_TIME_UTILITIES;
 
-public class My_Timer
+public class High_Resolution_Timer
 {
     int Seconds_Passed;
 
-    public My_Timer()
+    public High_Resolution_Timer()
     {
 
     }
