@@ -1,4 +1,4 @@
-package UI.Trading_Floor.Accounts_and_Venues.Accounts_Venues_Tabs;
+package UI.Trading_Floor.Accounts.Accounts_Venues_Tabs;
 
 import javax.swing.*;
 

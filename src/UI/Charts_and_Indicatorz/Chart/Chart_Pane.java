@@ -8,6 +8,6 @@ public class Chart_Pane extends JScrollPane
 {
     public Chart_Pane()
     {
-        
+
     }
 }

@@ -1,11 +1,11 @@
 package TRADING.MarketData_Engine;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Market_Data_Engine
 {
-    public Market_Data_Engine()
-    {
 
-    }
-
-    static void do_Something(){}
+    //Map of prices for different instruments across different exchanges
+    Map<String ,Double > Capital_DC_Market_Data = new HashMap<>();
 }

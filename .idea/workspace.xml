@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb4ae620-be01-41ec-b7fe-752bf8b0eb46" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/IO/DatabaseAccess/Create_table_USERS.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/Events/EventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/Events/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/Events/boy_Event_observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/Events/school_Event_Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/a_PROTOTYPING/cTrader_Server_Prototype/cTrader_Java_Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/Apis_Sdks_Rest_Fix_DataEngines/Dukascopy_Engine/Dukascopy_Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/Apis_Sdks_Rest_Fix_DataEngines/RESTFUL_EXECUTION_ENGINES/Capital_dot_COM/CAPITAL_dotCOM_RestWebSocket_Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/Apis_Sdks_Rest_Fix_DataEngines/RESTFUL_EXECUTION_ENGINES/Capital_dot_COM/CAPITAL_dotCOM_RestWebSocket_Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/Apis_Sdks_Rest_Fix_DataEngines/cTrader/CTrader_Server_Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/Apis_Sdks_Rest_Fix_DataEngines/cTrader/Generic_cTrader_Interface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/Apis_Sdks_Rest_Fix_DataEngines/cTrader/cTrader_Interpreter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TRADING/MarketData_Engine/Market_Data_Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TRADING/MarketData_Engine/Market_Data_Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart/Chart_Pane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Charts_and_Indicatorz/Chart/Chart_Pane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Trading_Floor/Accounts_and_Venues/Accounts/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Trading_Floor/Accounts/Accounts/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Trading_Floor/Accounts_and_Venues/Accounts_Venues_TabPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Trading_Floor/Accounts/Accounts_Venues_TabPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Trading_Floor/Accounts_and_Venues/Accounts_Venues_Tabs/Accounts_Tab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Trading_Floor/Accounts/Accounts_Venues_Tabs/Accounts_Tab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Trading_Floor/Accounts_and_Venues/Accounts_Venues_Tabs/Venues_Tab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Trading_Floor/Accounts/Accounts_Venues_Tabs/Venues_Tab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Trading_Floor/Accounts_and_Venues/Accounts_Venues_Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Trading_Floor/Accounts/Accounts_Venues_Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Trading_Floor/Accounts_and_Venues/Venues/Venue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Trading_Floor/Accounts/Venues/Venue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Trading_Floor/MENUS/File_Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Trading_Floor/MENUS/File_Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +37,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Record" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -58,6 +80,7 @@
     &quot;Application.DUKAS_TEST.executor&quot;: &quot;Run&quot;,
     &quot;Application.Lightning_Main File.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.cTrader_Java_Server.executor&quot;: &quot;Run&quot;,
     &quot;Application.keyextract.executor&quot;: &quot;Run&quot;,
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
     &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
@@ -67,14 +90,16 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;DEVELOPMENT&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/11 - PROJECTS/MKU Project/LIGHTNING/11- Dependency JARS/Toast Notifications&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;E:/111 - REPO - MKU PROJECT REPO/LIGHTNING/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.46206897&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
+    &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.notifications&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -128,8 +153,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.Lightning_Main File" />
-      <item itemvalue="Application.keyextract" />
       <item itemvalue="Application.DUKAS_TEST" />
+      <item itemvalue="Application.keyextract" />
     </list>
     <recent_temporary>
       <list>

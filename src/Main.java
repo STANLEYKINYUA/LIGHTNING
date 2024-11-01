@@ -42,7 +42,7 @@ import java.util.concurrent.TimeoutException;
 
 
 public class Main {
-    public static void main(String[] args) throws IOException, URISyntaxException, InterruptedException, ExecutionException, TimeoutException {
+    public static void main(String[] args) throws Exception {
 
 
         //Set Process Name and Variables for Easy Profiling
@@ -53,7 +53,7 @@ public class Main {
         System.out.println("BUILD SUCCESS - POST MAVEN!!");
 
         //Initiate General Config
-        General_Config General_Configuration = new General_Config();
+        //General_Config General_Configuration = new General_Config();
 
 
         //TODO Call the Configuration Manager so that it can Decrypt the General Config
@@ -62,7 +62,7 @@ public class Main {
         //todo Start the Singleton Database_Engine
         //todo Start the Singleton
 
-        Database_Engine Database = new Database_Engine();
+        //Database_Engine Database = new Database_Engine();
 
 
 
@@ -71,9 +71,7 @@ public class Main {
 
 
 
-
-
-        //TODO Dukascopy Engine to Start here for testing
+  
 
 
 

@@ -83,8 +83,13 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
         //todo Check if a Session is still active :
             //todo Read Last Section Start time in Milliseconds
             //todo determine if
-        //Create a Session
+        
+        //Create a Session & Create a Keep Alive Function
         Create_Session();
+
+        System.out.println("Session Created ");
+        
+        //Todo Create Session Pinger to Ping every 500 seconds
 
 
         //Ping the Session
@@ -106,7 +111,9 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
                 .header("X-CAP-API-KEY",Api_Key)
                 .POST(HttpRequest.BodyPublishers.ofString(Streaming_Body))
                 .build();
-
+            
+            
+            End_Session();
     }
 
     //Session Creation
@@ -201,21 +208,38 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
 
     }
 
-    public void End_Session() throws URISyntaxException {
+    public void End_Session() throws URISyntaxException, ExecutionException, InterruptedException, TimeoutException {
         //Form Endpoint
         String Session_EndPoint = Base_URL + Session;
 
 
         //Send a Request to end the Session
-        HttpRequest Ping_request = HttpRequest.newBuilder()
+        HttpRequest Delete_Session_Request = HttpRequest.newBuilder()
                 .uri(new URI(Session_EndPoint))
                 .header("X-SECURITY-TOKEN", X_Security_Token)
                 .header("CST",CST_Token)
                 .DELETE()
                 .build();
+        
+        //Receive the Response and Print it out
+        
+        //Send Request Assynchronously
+        CompletableFuture<HttpResponse<String>> Delete_Session_Response = Capital_dot_Com.sendAsync(Delete_Session_Request,HttpResponse.BodyHandlers.ofString());
+
+
+        //Hand the response when it gets here
+       Delete_Session_Response.thenApply(HttpResponse::body).get(5, TimeUnit.SECONDS);
+       HttpResponse<String> Response = Delete_Session_Response.join();
+       int Async_Response_Code = Delete_Session_Response.thenApply(HttpResponse::statusCode).get(5,TimeUnit.SECONDS);
+       
+       //Handle Errors
+        if(Async_Response_Code == 200){}
+        
+        
 
 
     }
+    
     //Send Assync Events to Prevent Blocking :: Fire EVENT
     public static void SendAsyncRequest(HttpClient client , HttpRequest Request,Consumer<HttpResponse<String>> onResponse) throws ExecutionException, InterruptedException, TimeoutException
     {
@@ -243,6 +267,7 @@ public class CAPITAL_dotCOM_RestWebSocket_Engine extends REST_ENGINE
         //if Different Response events for Diff Forms of Data
     }
 
+    
     //Ping the Rest Web Session to Keep Alive
     public void Ping_the_Session() throws URISyntaxException, ExecutionException, InterruptedException, TimeoutException
     {

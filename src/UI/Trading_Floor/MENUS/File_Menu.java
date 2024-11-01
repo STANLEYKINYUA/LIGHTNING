@@ -1,6 +1,6 @@
 package UI.Trading_Floor.MENUS;
 
-import UI.Trading_Floor.Accounts_and_Venues.Accounts_Venues_Window;
+import UI.Trading_Floor.Accounts.Accounts_Venues_Window;
 import GENERAL_SYSTEMS.SETTINGS.PREFERENCES_Window.Preferences_window;
 
 import javax.swing.*;
@@ -17,7 +17,7 @@ public class File_Menu extends JMenu
         //Add MenuItems and make them Visible.
 
             //Accounts Menu
-        JMenuItem Accounts_Menu_Item = new JMenuItem("ACCOUNTS & VENUES ");
+        JMenuItem Accounts_Menu_Item = new JMenuItem("ACCOUNTS MANAGEMENT ");
         Accounts_Menu_Item.addActionListener( e -> new Accounts_Venues_Window() );
         this.add(Accounts_Menu_Item);
 
