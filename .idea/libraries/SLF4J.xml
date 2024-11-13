@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="SLF4J">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/11- Dependency JARS/SLF4J" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/11- Dependency JARS/SLF4J" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/11- Dependency JARS/SLF4J" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/11- Dependency JARS/SLF4J" recursive="false" type="SOURCES" />
+  </library>
+</component>

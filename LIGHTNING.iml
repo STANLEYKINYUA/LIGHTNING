@@ -312,5 +312,6 @@
     <orderEntry type="library" name="mysql-connector-j-9.0.0" level="project" />
     <orderEntry type="library" name="json-20240303" level="project" />
     <orderEntry type="library" name="Toast Notifications" level="project" />
+    <orderEntry type="library" name="SLF4J" level="project" />
   </component>
 </module>
